@@ -25,21 +25,6 @@
   src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
 }
 
-:root {
-  --white: #FFFFFF;
-  --yellow: #EDF109;
-  --neueregular: NeuePowerRegular;
-}
-
-.cl {
-  color: var(--white);
-  text-shadow: 5px 5px red;
-  font-family: var(--neueregular);
-  font-size: 50px;
-  font-weight: 800;
-  text-decoration: overline;
-}
-
 /*#region Helpers for margin and padding*/
 /*-- Margin Top --*/
 .mt-5 {
@@ -1264,4 +1249,52 @@
 }
 
 /*#endregion */
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.header {
+  background-color: transparent;
+  width: 100%;
+  font-family: var(--neueregular);
+}
+
+.header .computer {
+  padding: 30px 0;
+}
+
+.header .computer a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+}
+
+.header .computer a:hover {
+  color: var(--yellow);
+}
+
+.header .computer .navigation .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */

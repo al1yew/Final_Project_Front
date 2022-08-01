@@ -25,22 +25,6 @@
     src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
 }
 
-:root {
-    --white: #FFFFFF;
-    --yellow: #EDF109;
-
-    --neueregular: NeuePowerRegular;
-}
-
-.cl {
-    color: var(--white);
-    text-shadow: 5px 5px red;
-    font-family: var(--neueregular);
-    font-size: 50px;
-    font-weight: 800;
-    text-decoration: overline;
-}
-
 /*#region Helpers for margin and padding*/
 
 /*-- Margin Top --*/
@@ -1277,3 +1261,49 @@
 
 /*#endregion */
 
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.header {
+    background-color: transparent;
+    width: 100%;
+    font-family: var(--neueregular);
+
+    .computer {
+        padding: 30px 0;
+
+        a {
+            transition: 0.2s;
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 0.08em;
+
+            &:hover {
+                color: var(--yellow);
+            }
+        }
+
+        .navigation {
+            
+            .nav {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
