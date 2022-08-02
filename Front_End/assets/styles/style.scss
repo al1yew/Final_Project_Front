@@ -299,11 +299,12 @@ body {
     position: relative;
     font-family: var(--neuebold);
     padding: 0 120px;
+    margin-bottom: 70px;
 
     .mission {
-        width: 32%;
+        width: 35%;
         font-weight: 500;
-        font-size: 60px;
+        font-size: 65px;
         line-height: 114%;
         letter-spacing: 0.08em;
         color: var(--yellow);
@@ -367,5 +368,139 @@ body {
         background-color: var(--white);
         letter-spacing: 0.08em;
         color: black;
+    }
+}
+
+#third {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .new_products {
+        font-family: var(--neuemedium);
+        font-weight: 500;
+        width: 50%;
+        padding-left: 10%;
+        font-size: 65px;
+        line-height: 114%;
+        letter-spacing: 0.08em;
+        color: var(--yellow);
+    }
+
+    .transformed_p {
+        position: absolute;
+        width: 135%;
+        padding: 20px 60px;
+        background-color: var(--yellow);
+        font-family: var(--neuelight);
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 114%;
+        letter-spacing: 0.08em;
+    }
+
+    .transformed_left {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) rotate(13.48deg);
+    }
+
+    .transformed_right {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) rotate(-13.48deg);
+    }
+
+    .slider {
+        height: 72vh;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .slider_element {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 30%;
+            z-index: 1;
+            font-family: var(--neuemedium);
+
+            .empty_space {
+                height: 15%;
+            }
+
+            .element {
+                height: 85%;
+                position: relative;
+
+                .product_name {
+                    position: absolute;
+                    bottom: 7%;
+                    left: 5%;
+                    width: 100%;
+                    font-weight: 500;
+                    color: black;
+                    font-size: 14px;
+                    line-height: 114%;
+                    letter-spacing: 0.08em;
+                }
+
+                img {
+                    vertical-align: bottom;
+                    height: 100%;
+                }
+
+                .product_price {
+                    position: absolute;
+                    bottom: 7%;
+                    right: 6%;
+                    padding: 5px 15px;
+                    background-color: var(--yellow);
+                    transform: rotate(-9.44deg);
+                    color: black;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 114%;
+                    letter-spacing: 0.08em;
+                }
+
+                .wishlist {
+                    position: absolute;
+                    top: 5%;
+                    right: 5%;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        svg {
+                            fill: var(--yellow);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                .empty_space {
+                    order: 0;
+                }
+
+                .element {
+                    order: 1;
+                }
+            }
+
+            &:nth-child(odd) {
+                .empty_space {
+                    order: 1;
+                }
+
+                .element {
+                    order: 0;
+                }
+            }
+        }
     }
 }
