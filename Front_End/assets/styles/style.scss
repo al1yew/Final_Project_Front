@@ -292,3 +292,80 @@ body {
 
     }
 }
+
+#second {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    font-family: var(--neuebold);
+    padding: 0 120px;
+
+    .mission {
+        width: 32%;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 114%;
+        letter-spacing: 0.08em;
+        color: var(--yellow);
+        position: absolute;
+        left: 10%;
+        top: 5%;
+
+        span {
+            font-style: italic;
+        }
+    }
+
+    .image1 {
+        position: absolute;
+        top: 8%;
+        right: 30%;
+        width: 19%;
+        z-index: 8;
+    }
+
+    .keeper {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        left: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .image2 {
+            width: 80%;
+        }
+
+        p {
+            padding-left: 10px;
+            font-family: var(--neueregular);
+            font-weight: 300;
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: 0.08em;
+        }
+    }
+
+    .image3 {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        width: 25%;
+        z-index: 6;
+    }
+
+    .seemore {
+        font-family: var(--neueregular);
+        border: 1px solid #000000;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 95px;
+        background-color: var(--white);
+        letter-spacing: 0.08em;
+        color: black;
+    }
+}
