@@ -103,6 +103,7 @@ body {
   position: fixed;
   left: 0;
   top: 0%;
+  background-color: rgba(0, 0, 0, 0.2);
   color: var(--white);
 }
 
@@ -119,6 +120,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.08em;
+  color: var(--white);
 }
 
 .header .computer a:hover {
@@ -162,7 +164,7 @@ body {
   padding-left: 3px;
 }
 
-.header .computer .navigation .search input {
+.header .computer .navigation .search .search_input {
   width: 90%;
   font-family: var(--neuelight);
   letter-spacing: 0.08em;
@@ -171,19 +173,23 @@ body {
   border: none;
 }
 
-.header .computer .navigation .search input::-webkit-input-placeholder {
+.header .computer .navigation .search .search_input::-webkit-input-placeholder {
   color: var(--white);
 }
 
-.header .computer .navigation .search input:-ms-input-placeholder {
+.header .computer .navigation .search .search_input:-ms-input-placeholder {
   color: var(--white);
 }
 
-.header .computer .navigation .search input::-ms-input-placeholder {
+.header .computer .navigation .search .search_input::-ms-input-placeholder {
   color: var(--white);
 }
 
-.header .computer .navigation .search input::placeholder {
+.header .computer .navigation .search .search_input::placeholder {
+  color: var(--white);
+}
+
+.header .computer .navigation .search .search_input:focus {
   color: var(--white);
 }
 

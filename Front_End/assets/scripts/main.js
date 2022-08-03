@@ -46,22 +46,40 @@ $(document).ready(function () {
 
     //--------------------------------- header scroll
 
+    // $(document).on('scroll', function () {
+    //     if ($(window).scrollTop() > (document.documentElement.clientHeight - 50)) {
+    //         $(".computer").css("padding", "13px 0")
+    //         $(".computer a").addClass("forheaderscroll")
+    //         $(".gender").addClass("forheaderscroll")
+    //         $(".search_input").addClass("forheaderscroll")
+    //         $(".navigation .search ").css("border-bottom", "1px solid black")
+    //         $(".search input").addClass("searchinputforjs")
+    //         $(".search_icon").addClass("forheaderscroll")
+    //         $(".cart_path").css("fill", "black")
+    //         $(".cart_path").css("stroke", "black")
+    //     }
+    //     else {
+    //         $(".computer").css("padding", "30px 0")
+    //         $(".computer a").removeClass("forheaderscroll")
+    //         $(".gender").removeClass("forheaderscroll")
+    //         $(".search_input").removeClass("forheaderscroll")
+    //         $(".navigation .search ").css("border-bottom", "1px solid white")
+    //         $(".search input").removeClass("searchinputforjs")
+    //         $(".search_icon").removeClass("forheaderscroll")
+    //         $(".cart_path").css("fill", "white")
+    //         $(".cart_path").css("stroke", "white")
+    //     }
+    // });
+
     $(document).on('scroll', function () {
-        if ($(window).scrollTop() > (document.documentElement.clientHeight)) {
-            $(".computer").css("padding", "10px 0")
-            $(".computer").css("color", "black")
-            // $(".search_input").css("color", "black")
-            // $(".navigation .search ").css("border-bottom", "1px solid black")
-            // $("#header_search").placeholder.css("color", "black")
-        }//yellow mojno sdelat vmesto black
+        if ($(window).scrollTop() > (document.documentElement.clientHeight - 50)) {
+            $(".header").css("background-color", "rgba(0, 0, 0, 0.2)")
+            $(".computer").css("padding", "13px 0")
+        }
         else {
+            $(".header").css("background-color", "rgba(0, 0, 0, 0)")
             $(".computer").css("padding", "30px 0")
-            $(".computer").css("color", "white")
-            // $(".search_input").css("color", "white")
-            // $(".navigation .search ").css("border-bottom", "1px solid white")
-            // $("#header_search").placeholder.css("color", "white")
         }
     });
-
 
 });
