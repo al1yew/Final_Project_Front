@@ -730,4 +730,19 @@ body {
   line-height: 114%;
   letter-spacing: 0.08em;
 }
+
+#fifth {
+  height: 100vh;
+  margin-top: 70px;
+  position: relative;
+  width: 100%;
+}
+
+#fifth .right {
+  padding: 40px;
+}
+
+#fifth .right p {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
