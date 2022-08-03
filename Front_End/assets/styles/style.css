@@ -590,8 +590,9 @@ body {
   cursor: pointer;
 }
 
-#third .newprodcs .newprodcs_element .element .basket:hover svg {
+#third .newprodcs .newprodcs_element .element .basket:hover .basket_svg {
   fill: var(--yellow);
+  stroke: yellow;
 }
 
 #third .newprodcs .newprodcs_element:nth-child(even) .empty_space {
@@ -739,10 +740,95 @@ body {
 }
 
 #fifth .right {
-  padding: 40px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#fifth .right p {
-  color: red;
+#fifth .right .first {
+  text-align: center;
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 114%;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+#fifth .right img {
+  width: 60%;
+  margin: 25px auto;
+}
+
+#fifth .right .linktobloggerclothes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 57%;
+  margin-bottom: 25px;
+}
+
+#fifth .right .linktobloggerclothes .second {
+  font-family: var(--neueultra);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#fifth .right .linktobloggerclothes .second:hover {
+  color: yellow;
+}
+
+#fifth .right .linktobloggerclothes svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#fifth .right .linktobloggerclothes:hover svg {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  fill: yellow;
+  stroke: yellow;
+}
+
+#fifth .right .third {
+  text-align: center;
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 114%;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+#sixth {
+  overflow: hidden;
+  height: 100vh;
+  font-family: var(--neuebold);
+  background-image: url(../images/main_Page/just_launched.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
