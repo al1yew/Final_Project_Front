@@ -88,7 +88,7 @@ body {
 }
 
 .header {
-    z-index: 1;
+    z-index: 1000;
     background-color: transparent;
     width: 100%;
     font-family: var(--neueregular);
@@ -99,13 +99,14 @@ body {
 
     .computer {
         padding: 30px 0;
+        transition: 0.3s;
+        color: var(--white);
 
         a {
             transition: 0.2s;
             font-weight: 400;
             font-size: 15px;
             letter-spacing: 0.08em;
-            color: var(--white);
 
             &:hover {
                 color: var(--yellow);
@@ -134,7 +135,6 @@ body {
                 input {
                     width: 90%;
                     font-family: var(--neuelight);
-                    color: var(--white);
                     letter-spacing: 0.08em;
                     background-color: transparent;
                     outline: none;
@@ -155,10 +155,8 @@ body {
 
             .cart {
                 position: relative;
-                color: var(--white);
 
                 svg {
-                    color: var(--white);
                     color: #FFFFFF;
                 }
 
@@ -368,6 +366,11 @@ body {
         background-color: var(--white);
         letter-spacing: 0.08em;
         color: black;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: var(--yellow);
+        }
     }
 }
 
@@ -377,19 +380,41 @@ body {
     position: relative;
     width: 100%;
 
-    .new_products {
-        font-family: var(--neuemedium);
-        font-weight: 500;
-        width: 50%;
-        padding-left: 10%;
-        font-size: 65px;
-        line-height: 114%;
-        letter-spacing: 0.08em;
-        color: var(--yellow);
+    .mainpart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .new_products {
+            font-family: var(--neuemedium);
+            font-weight: 500;
+            width: 50%;
+            font-size: 65px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+            color: var(--yellow);
+        }
+
+        .seemore {
+            font-family: var(--neueregular);
+            border: 1px solid #000000;
+            display: block;
+            padding: 20px 95px;
+            background-color: var(--white);
+            letter-spacing: 0.08em;
+            color: black;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: var(--yellow);
+            }
+        }
     }
 
     .transformed_p {
         position: absolute;
+        top: 45%;
         width: 135%;
         padding: 20px 60px;
         background-color: var(--yellow);
@@ -401,30 +426,28 @@ body {
     }
 
     .transformed_left {
-        top: 50%;
         left: 50%;
         transform: translateX(-50%) rotate(13.48deg);
     }
 
     .transformed_right {
-        top: 50%;
         left: 50%;
         transform: translateX(-50%) rotate(-13.48deg);
     }
 
-    .slider {
+    .newprodcs {
         height: 72vh;
-        width: 80%;
         margin: 0 auto;
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
 
-        .slider_element {
+        .newprodcs_element {
+            padding: 0;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            width: 30%;
+            width: 28%;
             z-index: 1;
             font-family: var(--neuemedium);
 
@@ -480,6 +503,20 @@ body {
                         }
                     }
                 }
+
+                .basket {
+                    position: absolute;
+                    top: 5%;
+                    left: 5%;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        svg {
+                            fill: var(--yellow);
+                        }
+                    }
+                }
             }
 
             &:nth-child(even) {
@@ -501,6 +538,114 @@ body {
                     order: 0;
                 }
             }
+        }
+    }
+}
+
+#fourth {
+    margin-top: 70px;
+    height: 100vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+
+    .mainpart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .preorder_prods {
+            font-family: var(--neuemedium);
+            font-weight: 500;
+            width: 60%;
+            font-size: 65px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+            color: var(--yellow);
+        }
+
+        .seemore {
+            font-family: var(--neueregular);
+            border: 1px solid #000000;
+            display: block;
+            padding: 20px 95px;
+            background-color: var(--white);
+            letter-spacing: 0.08em;
+            color: black;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: var(--yellow);
+            }
+        }
+    }
+
+    .slider {
+        margin-bottom: 0;
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        .imagekeeper {
+            position: relative;
+
+            .wishlist {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    svg {
+                        fill: var(--yellow);
+                    }
+                }
+            }
+
+            .basket {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    svg {
+                        fill: var(--yellow);
+                    }
+                }
+            }
+        }
+
+        .preorder {
+            margin-top: 12px;
+            font-family: var(--neuebold);
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+        }
+
+        .name {
+            margin-top: 10px;
+            font-family: var(--neueregular);
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+        }
+
+        .price {
+            margin-top: 7px;
+            font-weight: 700;
+            font-family: var(--neuebold);
+            font-size: 16px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
         }
     }
 }
