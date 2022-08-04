@@ -85,4 +85,14 @@ $(document).ready(function () {
         }
     });
 
+
+    //---------------------------------tabmenu in sidebar
+
+    $('#' + $('.active-tab').data('rel')).show();
+    $('.tab-menu li').click(function () {
+        $(this).addClass('active-tab').siblings('li').removeClass('active-tab');
+        $('#' + $(this).data('rel')).show().siblings('ul').hide();
+    });
 });
+
+
