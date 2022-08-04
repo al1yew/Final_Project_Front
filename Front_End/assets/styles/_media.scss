@@ -54,37 +54,7 @@
 
 
 
-    .sidebarmenu {
-        .active-tab {
-            border-bottom: 2px solid black;
-        }
 
-        .tab_content {
-            display: none;
-        }
-
-        ul {
-            font-family: var(--neuemedium);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: black;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            .woman,
-            .man {
-                padding: 20px;
-                text-align: center;
-            }
-
-            .home,
-            .close {
-                text-align: center;
-            }
-        }
-    }
 
 
 
@@ -96,7 +66,6 @@
 
 
     .mobile {
-        display: none;
         padding: 20px 0;
         transition: 0.3s;
         color: var(--white);
@@ -105,7 +74,38 @@
             font-size: 30px;
         }
 
+        .sidebarmenu {
+            .active-tab {
+                border-bottom: 2px solid black;
+            }
 
+            .tab_content {
+                display: none;
+            }
+
+            ul {
+                font-family: var(--neuemedium);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: black;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                .woman,
+                .man,
+                .home,
+                .close {
+                    padding: 20px 10px;
+                    text-align: center;
+                }
+            }
+
+            .tab_container {
+                padding: 0 10px;
+            }
+        }
 
         .navigation {
             display: flex;
