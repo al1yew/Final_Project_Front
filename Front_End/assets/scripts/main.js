@@ -45,6 +45,7 @@ $(document).ready(function () {
 
 
     //--------------------------------- header scroll
+    //it is for another design 
 
     // $(document).on('scroll', function () {
     //     if ($(window).scrollTop() > (document.documentElement.clientHeight - 50)) {
@@ -70,6 +71,8 @@ $(document).ready(function () {
     //         $(".cart_path").css("stroke", "white")
     //     }
     // });
+
+    //--------------------------------- header scroll
 
     $(document).on('scroll', function () {
         if ($(window).scrollTop() > (document.documentElement.clientHeight - 50)) {
