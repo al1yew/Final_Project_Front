@@ -86,6 +86,11 @@ p {
     width: 48.3333333%;
 }
 
+.col-lg-6-5 {
+    flex: 0 0 auto;
+    width: 54.16666666%;
+}
+
 /*#endregion Custom col classes*/
 
 :root {
@@ -161,6 +166,8 @@ a {
 
             &:hover {
                 color: var(--yellow);
+                font-family: var(--neuemedium);
+                transform: scale(1.2);
             }
         }
 
@@ -405,7 +412,7 @@ a {
         }
 
         p {
-            padding-left: 10px;
+            padding-left: 18px;
             font-family: var(--neueregular);
             font-weight: 300;
             font-size: 23px;
@@ -526,6 +533,7 @@ a {
             .element {
                 height: 85%;
                 position: relative;
+                transition: 0.3s;
 
                 .product_name {
                     position: absolute;
@@ -595,6 +603,10 @@ a {
 
                 .element {
                     order: 1;
+
+                    &:hover {
+                        transform: translateY(-10%);
+                    }
                 }
             }
 
@@ -605,6 +617,10 @@ a {
 
                 .element {
                     order: 0;
+
+                    &:hover {
+                        transform: scale(1.1) rotate(10deg);
+                    }
                 }
             }
         }
@@ -738,6 +754,64 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        transition: 0.5s;
+
+        &:hover .left_up_for_border {
+            height: 100%;
+        }
+
+        &:hover .left_down_for_border {
+            width: 100%;
+        }
+
+        &:hover .right_up_for_border {
+            width: 100%;
+        }
+
+        &:hover .right_down_for_border {
+            height: 100%;
+        }
+
+        .left_up_for_border {
+            height: 0px;
+            width: 2px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--yellow);
+            transition: 0.5s;
+        }
+
+        .left_down_for_border {
+            height: 2px;
+            width: 0px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: var(--yellow);
+            transition: 0.5s;
+        }
+
+        .right_up_for_border {
+            width: 0px;
+            height: 2px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: var(--yellow);
+            transition: 0.5s;
+        }
+
+        .right_down_for_border {
+            height: 0px;
+            width: 2px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: var(--yellow);
+            transition: 0.5s;
+        }
 
         .first {
             text-align: center;
@@ -771,6 +845,7 @@ a {
 
                 &:hover {
                     color: var(--yellow);
+                    transform: scale(1.15);
                 }
             }
 
@@ -912,6 +987,11 @@ a {
 
                 li {
                     margin: 40px 0;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.08);
+                    }
 
                     &:nth-child(1) {
                         &::before {
@@ -1037,24 +1117,31 @@ a {
                 padding: 14px;
                 width: 95%;
                 border: none;
+                font-family: var(--neuelight);
                 outline: none;
 
                 &::placeholder {
                     font-weight: 300;
-                    font-size: 17px;
+                    font-size: 18px;
                     line-height: 114%;
                     letter-spacing: 0.08em;
-                    font-family: var(--neuelight);
                 }
             }
         }
-
 
         button {
             width: 23%;
             background-color: black;
             padding: 14px 40px;
             color: white;
+            transition: 0.25s;
+            outline: none;
+            border: none;
+
+            &:hover {
+                background-color: var(--yellow);
+                color: black;
+            }
         }
     }
 }
@@ -1072,12 +1159,21 @@ a {
     }
 
     .footer_row {
-        padding: 50px 0px;
+        padding: 40px 0px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
 
         .parent_div {
+
+            a {
+                transition: 0.25s;
+
+                &:hover {
+                    transform: scale(1.08);
+                    color: var(--yellow);
+                }
+            }
 
             .child {
                 display: flex;
@@ -1157,10 +1253,21 @@ a {
             justify-content: space-between;
             align-items: baseline;
             flex-direction: column;
+
+            font-family: var(--neueregular);
             font-weight: 400;
             font-size: 16px;
             line-height: 114%;
             letter-spacing: 0.08em;
+
+            a {
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: var(--yellow);
+                }
+            }
         }
 
         .privacyzad {
@@ -1168,10 +1275,19 @@ a {
             justify-content: center;
             align-items: center;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 13.8px;
             line-height: 114%;
             font-family: var(--neueregular);
             letter-spacing: 0.08em;
+
+            a {
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: var(--yellow);
+                }
+            }
         }
 
         .languages {
@@ -1182,6 +1298,15 @@ a {
             display: flex;
             justify-content: end;
             align-items: center;
+
+            a {
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: var(--yellow);
+                }
+            }
 
             svg {
                 margin-right: 8px;

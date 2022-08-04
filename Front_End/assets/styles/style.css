@@ -104,6 +104,13 @@ p {
   width: 48.3333333%;
 }
 
+.col-lg-6-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 54.16666666%;
+}
+
 /*#endregion Custom col classes*/
 :root {
   --white: #FFFFFF;
@@ -153,6 +160,9 @@ a:hover {
 
 .header .computer a:hover {
   color: var(--yellow);
+  font-family: var(--neuemedium);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .header .computer .navigation {
@@ -418,7 +428,7 @@ a:hover {
 }
 
 #second .keeper p {
-  padding-left: 10px;
+  padding-left: 18px;
   font-family: var(--neueregular);
   font-weight: 300;
   font-size: 23px;
@@ -562,6 +572,8 @@ a:hover {
 #third .newprodcs .newprodcs_element .element {
   height: 85%;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #third .newprodcs .newprodcs_element .element .product_name {
@@ -635,6 +647,11 @@ a:hover {
           order: 1;
 }
 
+#third .newprodcs .newprodcs_element:nth-child(even) .element:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
 #third .newprodcs .newprodcs_element:nth-child(odd) .empty_space {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -645,6 +662,11 @@ a:hover {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+}
+
+#third .newprodcs .newprodcs_element:nth-child(odd) .element:hover {
+  -webkit-transform: scale(1.1) rotate(10deg);
+          transform: scale(1.1) rotate(10deg);
 }
 
 #fourth {
@@ -793,6 +815,69 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fifth .right:hover .left_up_for_border {
+  height: 100%;
+}
+
+#fifth .right:hover .left_down_for_border {
+  width: 100%;
+}
+
+#fifth .right:hover .right_up_for_border {
+  width: 100%;
+}
+
+#fifth .right:hover .right_down_for_border {
+  height: 100%;
+}
+
+#fifth .right .left_up_for_border {
+  height: 0px;
+  width: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--yellow);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fifth .right .left_down_for_border {
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fifth .right .right_up_for_border {
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--yellow);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fifth .right .right_down_for_border {
+  height: 0px;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #fifth .right .first {
@@ -836,6 +921,8 @@ a:hover {
 
 #fifth .right .linktobloggerclothes .second:hover {
   color: var(--yellow);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #fifth .right .linktobloggerclothes svg {
@@ -1000,6 +1087,13 @@ a:hover {
 
 #seventh .top_main .right .bottom li {
   margin: 40px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#seventh .top_main .right .bottom li:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 #seventh .top_main .right .bottom li:nth-child(1)::before {
@@ -1143,39 +1237,36 @@ a:hover {
   padding: 14px;
   width: 95%;
   border: none;
+  font-family: var(--neuelight);
   outline: none;
 }
 
 #eighth form .forminside input::-webkit-input-placeholder {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 114%;
   letter-spacing: 0.08em;
-  font-family: var(--neuelight);
 }
 
 #eighth form .forminside input:-ms-input-placeholder {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 114%;
   letter-spacing: 0.08em;
-  font-family: var(--neuelight);
 }
 
 #eighth form .forminside input::-ms-input-placeholder {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 114%;
   letter-spacing: 0.08em;
-  font-family: var(--neuelight);
 }
 
 #eighth form .forminside input::placeholder {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 114%;
   letter-spacing: 0.08em;
-  font-family: var(--neuelight);
 }
 
 #eighth form button {
@@ -1183,6 +1274,15 @@ a:hover {
   background-color: black;
   padding: 14px 40px;
   color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  outline: none;
+  border: none;
+}
+
+#eighth form button:hover {
+  background-color: var(--yellow);
+  color: black;
 }
 
 .footer {
@@ -1205,7 +1305,7 @@ a:hover {
 }
 
 .footer .footer_row {
-  padding: 50px 0px;
+  padding: 40px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1215,6 +1315,17 @@ a:hover {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.footer .footer_row .parent_div a {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.footer .footer_row .parent_div a:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  color: var(--yellow);
 }
 
 .footer .footer_row .parent_div .child {
@@ -1337,10 +1448,22 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: var(--neueregular);
   font-weight: 400;
   font-size: 16px;
   line-height: 114%;
   letter-spacing: 0.08em;
+}
+
+.footer .bye .biz a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .bye .biz a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: var(--yellow);
 }
 
 .footer .bye .privacyzad {
@@ -1354,10 +1477,21 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 13.8px;
   line-height: 114%;
   font-family: var(--neueregular);
   letter-spacing: 0.08em;
+}
+
+.footer .bye .privacyzad a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .bye .privacyzad a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: var(--yellow);
 }
 
 .footer .bye .languages {
@@ -1374,6 +1508,17 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer .bye .languages a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .bye .languages a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: var(--yellow);
 }
 
 .footer .bye .languages svg {
