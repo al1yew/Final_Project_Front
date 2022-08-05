@@ -8,6 +8,13 @@
     --neuebold: NeuePowerBold;
 }
 
+/*ANIMATIONS*/
+
+
+
+/*ANIMATIONS*/
+
+
 /*CUSTOM COLS*/
 
 .col-1-5 {
@@ -27,14 +34,6 @@
 
 @media (max-width: 576px) {
     .computer {
-        display: none;
-    }
-
-    #second {
-        display: none;
-    }
-
-    #third {
         display: none;
     }
 
@@ -312,7 +311,6 @@
         }
     }
 
-
     #first {
         height: 40vh;
         overflow: hidden;
@@ -325,7 +323,7 @@
         position: relative;
 
         .overlay {
-            height: 50vh;
+            height: 40vh;
             width: 100%;
             position: absolute;
             top: 0;
@@ -412,27 +410,26 @@
                 bottom: 8%;
                 right: 5%;
             }
-
         }
     }
 
     #second {
         overflow: hidden;
-        height: 40vh;
+        height: 42vh;
         position: relative;
         font-family: var(--neuebold);
-        padding: 0 120px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
+        padding: 0 20px;
 
         .mission {
-            width: 35%;
+            width: 45%;
             font-weight: 500;
-            font-size: 65px;
+            font-size: 25px;
             line-height: 114%;
             letter-spacing: 0.08em;
             color: var(--yellow);
             position: absolute;
-            left: 10%;
+            left: 20px;
             top: 5%;
 
             span {
@@ -442,31 +439,30 @@
 
         .image1 {
             position: absolute;
-            top: 8%;
-            right: 30%;
-            width: 19%;
+            top: 12%;
+            right: 20px;
+            width: 25%;
             z-index: 8;
         }
 
         .keeper {
             position: absolute;
-            width: 30%;
-            bottom: 0;
-            left: 10%;
+            width: 35%;
+            bottom: 12%;
+            left: 20px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
 
             .image2 {
-                width: 80%;
+                width: 100%;
             }
 
             p {
-                padding-left: 18px;
+                padding-left: 12px;
                 font-family: var(--neueregular);
                 font-weight: 300;
-                font-size: 23px;
-                line-height: 28px;
+                font-size: 12px;
                 letter-spacing: 0.08em;
             }
         }
@@ -474,8 +470,8 @@
         .image3 {
             position: absolute;
             bottom: 0;
-            right: 10%;
-            width: 25%;
+            right: 20px;
+            width: 28%;
             z-index: 6;
         }
 
@@ -485,18 +481,232 @@
             position: absolute;
             display: block;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 20px 95px;
+            left: 20px;
+            padding: 5px 22px;
             background-color: var(--white);
             letter-spacing: 0.08em;
             color: black;
-            transition: 0.2s;
+            font-size: 12px;
+        }
+    }
 
-            &:hover {
-                background-color: var(--yellow);
+    #third {
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .mainpart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .new_products {
+                font-family: var(--neuemedium);
+                font-weight: 500;
+                width: 50%;
+                font-size: 25px;
+                line-height: 114%;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+            }
+
+            .seemore {
+                font-family: var(--neueregular);
+                border: 1px solid #000000;
+                display: block;
+                padding: 5px 22px;
+                background-color: var(--white);
+                letter-spacing: 0.08em;
+                color: black;
+                font-size: 12px;
+            }
+        }
+
+        .transformed_p {
+            position: absolute;
+            top: 45%;
+            width: 150%;
+            font-family: var(--neuelight);
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: var(--yellow);
+            padding: 5px 20px;
+
+            .animation_hashtag {
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-name: hashtag_left;
+                animation-timing-function: linear;
+            }
+
+            @keyframes hashtag_left {
+                from {
+                    left: 0%;
+                    bottom: 0%;
+                    color: red;
+                }
+
+                to {
+                    left: 100%;
+                    color: red;
+                    bottom: 0;
+                }
+            }
+
+            @keyframes hashtag_right {
+                from {
+                    left: 0%;
+                    bottom: 0%;
+                }
+
+                to {
+                    left: 100%;
+                    bottom: 100%;
+                }
+            }
+        }
+
+        .transformed_left {
+            left: 50%;
+            // transform: translateX(-50%) rotate(21deg);
+            animation-name: hashtag_left;
+        }
+
+        .transformed_right {
+            animation-name: hashtag_right;
+            left: 50%;
+            transform: translateX(-50%) rotate(-30deg);
+        }
+
+        .newprodcs {
+            // height: 72vh;
+            margin: 0 auto;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            .newprodcs_element {
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 28%;
+                z-index: 1;
+                font-family: var(--neuemedium);
+
+                .empty_space {
+                    height: 15%;
+                }
+
+                .element {
+                    height: 85%;
+                    position: relative;
+                    transition: 0.3s;
+
+                    .product_name {
+                        position: absolute;
+                        bottom: 7%;
+                        left: 5%;
+                        width: 100%;
+                        font-weight: 500;
+                        color: black;
+                        font-size: 14px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                    }
+
+                    img {
+                        vertical-align: bottom;
+                        height: 100%;
+                    }
+
+                    .product_price {
+                        position: absolute;
+                        bottom: 7%;
+                        right: 6%;
+                        padding: 5px 15px;
+                        background-color: var(--yellow);
+                        transform: rotate(-9.44deg);
+                        color: black;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                    }
+
+                    .wishlist {
+                        position: absolute;
+                        top: 5%;
+                        right: 5%;
+                        transition: 0.2s;
+                        cursor: pointer;
+
+                        &:hover {
+                            svg {
+                                fill: var(--yellow);
+                            }
+                        }
+                    }
+
+                    .basket {
+                        position: absolute;
+                        top: 5%;
+                        left: 5%;
+                        transition: 0.2s;
+                        cursor: pointer;
+
+                        &:hover {
+                            .basket_svg {
+                                fill: var(--yellow);
+                                stroke: var(--yellow);
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(even) {
+                    .empty_space {
+                        order: 0;
+                    }
+
+                    .element {
+                        order: 1;
+
+                        &:hover {
+                            transform: translateY(-10%);
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .empty_space {
+                        order: 1;
+                    }
+
+                    .element {
+                        order: 0;
+
+                        &:hover {
+                            transform: scale(1.1) rotate(10deg);
+                        }
+                    }
+                }
             }
         }
     }
+
+
 
 }
