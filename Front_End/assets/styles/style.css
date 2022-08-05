@@ -48,12 +48,6 @@ p {
   .computer {
     display: none;
   }
-  #fourth {
-    display: none;
-  }
-  #fifth {
-    display: none;
-  }
   #sixth {
     display: none;
   }
@@ -428,9 +422,6 @@ p {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  #first .section_keeper a:hover {
-    color: var(--yellow);
-  }
   #first .section_keeper .discount {
     font-family: var(--neuemedium);
     padding: 1px 3px;
@@ -514,7 +505,7 @@ p {
     display: block;
     bottom: 0;
     left: 20px;
-    padding: 5px 22px;
+    padding: 5px 12px;
     background-color: var(--white);
     letter-spacing: 0.08em;
     color: black;
@@ -536,6 +527,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 10px;
     width: 100%;
   }
   #third .mainpart .new_products {
@@ -551,7 +543,7 @@ p {
     font-family: var(--neueregular);
     border: 1px solid #000000;
     display: block;
-    padding: 5px 22px;
+    padding: 5px 12px;
     background-color: var(--white);
     letter-spacing: 0.08em;
     color: black;
@@ -560,12 +552,14 @@ p {
   #third .transformed_p {
     position: absolute;
     top: 45%;
-    width: 150%;
+    width: 180%;
     font-family: var(--neuelight);
     font-weight: 300;
     font-size: 13px;
     line-height: 114%;
     letter-spacing: 0.08em;
+    background-color: var(--yellow);
+    padding: 5px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,111 +569,85 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: var(--yellow);
-    padding: 5px 20px;
   }
-  #third .transformed_p .animation_hashtag {
+  #third .transformed_p .spans_key {
     -webkit-animation-duration: 10s;
             animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
             animation-direction: normal;
-    -webkit-animation-name: hashtag_left;
-            animation-name: hashtag_left;
+    -webkit-animation-name: carousel;
+            animation-name: carousel;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
   }
-  @-webkit-keyframes hashtag_left {
-    from {
-      left: 0%;
-      bottom: 0%;
-      color: red;
+  @-webkit-keyframes carousel {
+    0% {
+      -webkit-transform: translateX(calc(-20px * 6));
+              transform: translateX(calc(-20px * 6));
     }
-    to {
-      left: 100%;
-      color: blue;
-      bottom: 0;
+    100% {
+      -webkit-transform: translateX(calc(20px * 6));
+              transform: translateX(calc(20px * 6));
     }
   }
-  @keyframes hashtag_left {
-    from {
-      left: 0%;
-      bottom: 0%;
-      color: red;
+  @keyframes carousel {
+    0% {
+      -webkit-transform: translateX(calc(-20px * 6));
+              transform: translateX(calc(-20px * 6));
     }
-    to {
-      left: 100%;
-      color: blue;
-      bottom: 0;
-    }
-  }
-  @-webkit-keyframes hashtag_right {
-    from {
-      left: 0%;
-      bottom: 0%;
-    }
-    to {
-      left: 100%;
-      bottom: 100%;
-    }
-  }
-  @keyframes hashtag_right {
-    from {
-      left: 0%;
-      bottom: 0%;
-    }
-    to {
-      left: 100%;
-      bottom: 100%;
+    100% {
+      -webkit-transform: translateX(calc(20px * 6));
+              transform: translateX(calc(20px * 6));
     }
   }
   #third .transformed_left {
     left: 50%;
-    -webkit-animation-name: hashtag_left;
-            animation-name: hashtag_left;
+    -webkit-transform: translateX(-50%) rotate(28deg);
+            transform: translateX(-50%) rotate(28deg);
   }
   #third .transformed_right {
-    -webkit-animation-name: hashtag_right;
-            animation-name: hashtag_right;
     left: 50%;
-    -webkit-transform: translateX(-50%) rotate(-30deg);
-            transform: translateX(-50%) rotate(-30deg);
+    -webkit-transform: translateX(-50%) rotate(-28deg);
+            transform: translateX(-50%) rotate(-28deg);
   }
   #third .newprodcs {
+    height: 50vh;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #third .newprodcs .notformobile {
+    display: none !important;
   }
   #third .newprodcs .newprodcs_element {
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 28%;
+    width: 43%;
     z-index: 1;
     font-family: var(--neuemedium);
   }
   #third .newprodcs .newprodcs_element .empty_space {
-    height: 15%;
+    height: 10%;
   }
   #third .newprodcs .newprodcs_element .element {
-    height: 85%;
     position: relative;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    border-radius: 5%;
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
@@ -688,50 +656,27 @@ p {
     width: 100%;
     font-weight: 500;
     color: black;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
   #third .newprodcs .newprodcs_element .element img {
+    border-radius: 5%;
     vertical-align: bottom;
-    height: 100%;
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
-    bottom: 7%;
-    right: 6%;
-    padding: 5px 15px;
+    bottom: 18%;
+    right: 7%;
+    padding: 3px 5px;
     background-color: var(--yellow);
     -webkit-transform: rotate(-9.44deg);
             transform: rotate(-9.44deg);
     color: black;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 9px;
     line-height: 114%;
     letter-spacing: 0.08em;
-  }
-  #third .newprodcs .newprodcs_element .element .wishlist {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    cursor: pointer;
-  }
-  #third .newprodcs .newprodcs_element .element .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  #third .newprodcs .newprodcs_element .element .basket {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    cursor: pointer;
-  }
-  #third .newprodcs .newprodcs_element .element .basket:hover .basket_svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
   }
   #third .newprodcs .newprodcs_element:nth-child(even) .empty_space {
     -webkit-box-ordinal-group: 1;
@@ -743,10 +688,6 @@ p {
         -ms-flex-order: 1;
             order: 1;
   }
-  #third .newprodcs .newprodcs_element:nth-child(even) .element:hover {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
   #third .newprodcs .newprodcs_element:nth-child(odd) .empty_space {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -757,9 +698,182 @@ p {
         -ms-flex-order: 0;
             order: 0;
   }
-  #third .newprodcs .newprodcs_element:nth-child(odd) .element:hover {
-    -webkit-transform: scale(1.1) rotate(10deg);
-            transform: scale(1.1) rotate(10deg);
+  #fourth {
+    margin-top: 20px;
+    height: 50vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+  }
+  #fourth .mainpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  #fourth .mainpart .preorder_prods {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    width: 70%;
+    font-size: 20px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  #fourth .mainpart .seemore {
+    font-family: var(--neueregular);
+    border: 1px solid #000000;
+    display: block;
+    padding: 5px 12px;
+    background-color: var(--white);
+    letter-spacing: 0.08em;
+    color: black;
+    font-size: 12px;
+  }
+  #fourth .slider {
+    margin-bottom: 0;
+  }
+  #fourth .slider .slick-slide {
+    margin: 0 10px;
+  }
+  #fourth .slider .imagekeeper {
+    position: relative;
+  }
+  #fourth .slider .imagekeeper .wishlist {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #fourth .slider .imagekeeper .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #fourth .slider .preorder {
+    margin-top: 12px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #fourth .slider .name {
+    margin-top: 10px;
+    font-family: var(--neueregular);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #fourth .slider .price {
+    margin-top: 7px;
+    font-weight: 700;
+    font-family: var(--neuebold);
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #fourth .arrows {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #fourth .slick-dots {
+    display: none !important;
+  }
+  #fifth {
+    height: 100vh;
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+  }
+  #fifth .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  #fifth .right .left_up_for_border {
+    display: none !important;
+  }
+  #fifth .right .left_down_for_border {
+    display: none !important;
+  }
+  #fifth .right .right_up_for_border {
+    display: none !important;
+  }
+  #fifth .right .right_down_for_border {
+    display: none !important;
+  }
+  #fifth .right .first {
+    display: none !important;
+  }
+  #fifth .right .notformobile {
+    display: none !important;
+  }
+  #fifth .right img {
+    width: 60%;
+    margin: 25px auto;
+  }
+  #fifth .right .linktobloggerclothes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #fifth .right .linktobloggerclothes .second {
+    font-family: var(--neueultra);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #fifth .right .third {
+    display: none !important;
+  }
+  #fifth .right .formobile {
+    text-align: center;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 114%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.08em;
+    margin-bottom: 50px;
   }
 }
 
@@ -1106,11 +1220,11 @@ a:hover {
     height: 100vh;
     position: relative;
     font-family: var(--neuebold);
-    padding: 0 120px;
+    padding: 0 10%;
     margin-bottom: 70px;
   }
   #second .mission {
-    width: 35%;
+    width: 45%;
     font-weight: 500;
     font-size: 65px;
     line-height: 114%;
@@ -1133,7 +1247,7 @@ a:hover {
   #second .keeper {
     position: absolute;
     width: 30%;
-    bottom: 0;
+    bottom: 5%;
     left: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1225,15 +1339,56 @@ a:hover {
   }
   #third .transformed_p {
     position: absolute;
-    top: 45%;
-    width: 135%;
-    padding: 20px 60px;
+    top: 50%;
+    width: 250%;
+    padding: 15px 60px;
     background-color: var(--yellow);
     font-family: var(--neuelight);
     font-weight: 300;
     font-size: 50px;
     line-height: 114%;
     letter-spacing: 0.08em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #third .spans_key {
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-name: carousel;
+            animation-name: carousel;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  @-webkit-keyframes carousel {
+    0% {
+      -webkit-transform: translateX(calc(-20px * 6));
+              transform: translateX(calc(-20px * 6));
+    }
+    100% {
+      -webkit-transform: translateX(calc(20px * 6));
+              transform: translateX(calc(20px * 6));
+    }
+  }
+  @keyframes carousel {
+    0% {
+      -webkit-transform: translateX(calc(-20px * 6));
+              transform: translateX(calc(-20px * 6));
+    }
+    100% {
+      -webkit-transform: translateX(calc(20px * 6));
+              transform: translateX(calc(20px * 6));
+    }
   }
   #third .transformed_left {
     left: 50%;
@@ -1283,7 +1438,7 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
-    bottom: 7%;
+    bottom: 16%;
     left: 5%;
     width: 100%;
     font-weight: 500;
@@ -1294,11 +1449,10 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element img {
     vertical-align: bottom;
-    height: 100%;
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
-    bottom: 7%;
+    bottom: 16%;
     right: 6%;
     padding: 5px 15px;
     background-color: var(--yellow);
@@ -1569,7 +1723,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 57%;
+    width: 65%;
     margin-bottom: 25px;
   }
   #fifth .right .linktobloggerclothes .second {
@@ -1810,7 +1964,7 @@ a:hover {
     position: absolute;
     padding: 15px 0;
     color: var(--yellow);
-    width: 350%;
+    width: 400%;
     top: 0;
     left: 0%;
     font-family: var(--neuemedium);
@@ -2058,7 +2212,7 @@ a:hover {
             flex-direction: column;
     font-family: var(--neueregular);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
@@ -2082,7 +2236,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     font-weight: 400;
-    font-size: 13.8px;
+    font-size: 12px;
     line-height: 114%;
     font-family: var(--neueregular);
     letter-spacing: 0.08em;

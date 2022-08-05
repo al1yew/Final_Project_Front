@@ -12,7 +12,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
         prevArrow: $(".prev"),
         nextArrow: $(".next"),
-        // autoplay: true,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -33,11 +33,13 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 500,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
+                    //ili je 1 dene
                     slidesToScroll: 1,
                     adaptiveHeight: true,
+                    dots: false
                 }
             }
         ]
