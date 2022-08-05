@@ -598,7 +598,7 @@ p {
     }
     to {
       left: 100%;
-      color: red;
+      color: blue;
       bottom: 0;
     }
   }
@@ -610,7 +610,7 @@ p {
     }
     to {
       left: 100%;
-      color: red;
+      color: blue;
       bottom: 0;
     }
   }
