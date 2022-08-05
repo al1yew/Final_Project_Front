@@ -93,6 +93,13 @@ $(document).ready(function () {
         $(this).addClass('active-tab').siblings('li').removeClass('active-tab');
         $('#' + $(this).data('rel')).show().siblings('ul').hide();
     });
+
+
+    //---------------------------------Prevent a href in sidebar toggle menu
+
+    $(document).on('click', '.sidebar_ahref', function (e) {
+        e.preventDefault();
+    })
 });
 
 

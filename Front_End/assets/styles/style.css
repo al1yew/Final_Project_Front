@@ -20,6 +20,28 @@ p {
   --neuebold: NeuePowerBold;
 }
 
+/*CUSTOM COLS*/
+.col-1-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 12.5%;
+}
+
+.col-3-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 29.1666%;
+}
+
+.col-4-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 37.5%;
+}
+
 @media (max-width: 576px) {
   .computer {
     display: none;
@@ -49,13 +71,16 @@ p {
     display: none;
   }
   .mobile {
-    padding: 20px 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     color: var(--white);
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--white);
   }
   .mobile .hamburgermenu {
     font-size: 30px;
+    display: none;
   }
   .mobile .sidebarmenu .active-tab {
     border-bottom: 2px solid black;
@@ -63,7 +88,7 @@ p {
   .mobile .sidebarmenu .tab_content {
     display: none;
   }
-  .mobile .sidebarmenu ul {
+  .mobile .sidebarmenu .tab-menu {
     font-family: var(--neuemedium);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,15 +104,96 @@ p {
     margin: 0;
     padding: 0;
   }
-  .mobile .sidebarmenu ul .woman,
-  .mobile .sidebarmenu ul .man,
-  .mobile .sidebarmenu ul .home,
-  .mobile .sidebarmenu ul .close {
+  .mobile .sidebarmenu .tab-menu .woman,
+  .mobile .sidebarmenu .tab-menu .man,
+  .mobile .sidebarmenu .tab-menu .home,
+  .mobile .sidebarmenu .tab-menu .close {
     padding: 20px 10px;
+    font-family: var(--neueultra);
     text-align: center;
   }
-  .mobile .sidebarmenu .tab_container {
-    padding: 0 10px;
+  .mobile .sidebarmenu .tab-menu .homehref {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile .sidebarmenu .tab-menu .sidebar_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 24px;
+  }
+  .mobile .sidebarmenu .tab-menu .sidebar_btn .icon-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile .sidebarmenu .tab_container .tab_content {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile .sidebarmenu .tab_container .tab_content .sidebar_menu_li {
+    padding: 10px;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: var(--neueultra);
+    font-size: 22px;
+  }
+  .mobile .sidebarmenu .tab_container .tab_content .sidebar_menu_li .imagekeeper {
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  .mobile .sidebarmenu .tab_container .tab_content .sidebar_menu_li:nth-child(1) {
+    padding-top: 10px;
+  }
+  .mobile .sidebarmenu .footer_sidebar {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile .sidebarmenu .footer_sidebar li {
+    padding: 10px;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: var(--neueultra);
+    font-size: 16px;
   }
   .mobile .navigation {
     display: -webkit-box;
