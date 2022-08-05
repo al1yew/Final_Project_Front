@@ -65,16 +65,29 @@
     .mobile {
         transition: 0.3s;
         color: var(--white);
-        height: 100vh;
-        overflow-y: scroll;
-        background-color: var(--white);
+        padding: 20px 10px;
 
         .hamburgermenu {
             font-size: 30px;
-            display: none;
+        }
+
+        .open {
+            width: 100% !important;
+            left: 0% !important;
         }
 
         .sidebarmenu {
+            height: 100vh;
+            position: fixed;
+            z-index: 423412;
+            top: 0;
+            left: -100%;
+            color: var(--white);
+            background-color: var(--white);
+            overflow-y: scroll;
+            width: 100%;
+            transition: 0.5s;
+
             .active-tab {
                 border-bottom: 2px solid black;
             }
@@ -153,6 +166,7 @@
             .footer_sidebar {
                 margin: 0;
                 padding: 0;
+                padding-bottom: 50px;
 
                 li {
                     padding: 10px;

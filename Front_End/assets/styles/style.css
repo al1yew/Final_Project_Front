@@ -74,13 +74,27 @@ p {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     color: var(--white);
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: var(--white);
+    padding: 20px 10px;
   }
   .mobile .hamburgermenu {
     font-size: 30px;
-    display: none;
+  }
+  .mobile .open {
+    width: 100% !important;
+    left: 0% !important;
+  }
+  .mobile .sidebarmenu {
+    height: 100vh;
+    position: fixed;
+    z-index: 423412;
+    top: 0;
+    left: -100%;
+    color: var(--white);
+    background-color: var(--white);
+    overflow-y: scroll;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .mobile .sidebarmenu .active-tab {
     border-bottom: 2px solid black;
@@ -177,6 +191,7 @@ p {
   .mobile .sidebarmenu .footer_sidebar {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
   }
   .mobile .sidebarmenu .footer_sidebar li {
     padding: 10px;

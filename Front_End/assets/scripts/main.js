@@ -99,7 +99,40 @@ $(document).ready(function () {
 
     $(document).on('click', '.sidebar_ahref', function (e) {
         e.preventDefault();
-    })
+    });
+
+
+    //---------------------------------Sidebar open
+
+    $(document).on('click', '.hamburgermenu', function (e) {
+
+        if ($('.sidebarmenu').hasClass('open')) {
+
+            $('.sidebarmenu').removeClass('open');
+
+        }
+        else {
+
+            $('.sidebarmenu').addClass('open');
+
+        }
+    });
+
+    //---------------------------------Sidebar close
+
+    $(document).on('click', '.close_btn', function (e) {
+
+        if ($('.sidebarmenu').hasClass('open')) {
+
+            $('.sidebarmenu').removeClass('open');
+
+        }
+        else {
+
+            $('.sidebarmenu').addClass('open');
+
+        }
+    });
 });
 
 
