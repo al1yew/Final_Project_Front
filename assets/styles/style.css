@@ -525,7 +525,7 @@ p {
             animation-iteration-count: infinite;
   }
   #secondthird {
-    margin-top: 20px;
+    margin: 20px 0;
     height: 50vh;
     position: relative;
     overflow: visible;
@@ -629,7 +629,8 @@ p {
     display: none !important;
   }
   #third {
-    height: 50vh;
+    height: 45vh;
+    margin-top: 40px;
     overflow: hidden;
     position: relative;
     width: 100%;
