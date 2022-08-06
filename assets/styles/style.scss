@@ -1301,7 +1301,11 @@ a {
                 }
             }
 
-            .privacyzad {
+            .formobile {
+                display: none;
+            }
+
+            .forcompyuter {
                 display: flex;
                 justify-content: center;
                 align-items: center;

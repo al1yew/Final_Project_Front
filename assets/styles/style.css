@@ -46,12 +46,6 @@ p {
   .computer {
     display: none;
   }
-  .footer {
-    display: none;
-  }
-  body {
-    height: 4000px;
-  }
   .header {
     z-index: 1000;
     background-color: transparent;
@@ -1060,7 +1054,7 @@ p {
     color: var(--yellow);
   }
   #eighth {
-    height: 50vh;
+    height: 20vh;
     background-color: white;
     margin: 0;
     padding: 0;
@@ -1172,6 +1166,212 @@ p {
     border: none;
     outline: none;
     font-size: 9px;
+  }
+  .footer {
+    height: 45vh;
+    background-color: white;
+    padding: 0 10px;
+  }
+  .footer .mainpart {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer_row {
+    padding: 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .footer_row .parent_div a {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+  .footer .footer_row .parent_div .child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer_row .parent_div .child a {
+    margin: 4px 0;
+  }
+  .footer .footer_row .parent_div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 14px;
+  }
+  .footer .footer_row .parent_div:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .footer_row .parent_div:nth-child(3) .socialmedias {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .footer .footer_row .parent_div .footer_header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+  .footer .footer_row .parent_div a {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .footer .footer_row .formobile1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer .footer_row .formobile2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer .footer_row .formobile3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer .bye {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 10px;
+    font-family: var(--neueregular);
+  }
+  .footer .bye .biz {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .footer .bye .forcompyuter {
+    display: none;
+  }
+  .footer .bye .formobile {
+    margin: 10px 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 400;
+    width: 100%;
+    font-size: 12px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .footer .bye .formobile a {
+    padding-left: 7px;
+  }
+  .footer .bye .languages {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 114%;
+    width: 100%;
+    letter-spacing: 0.08em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .bye .languages svg {
+    margin-right: 8px;
   }
 }
 
@@ -2526,7 +2726,10 @@ a:hover {
             transform: scale(1.05);
     color: var(--yellow);
   }
-  .footer .bye .privacyzad {
+  .footer .bye .formobile {
+    display: none;
+  }
+  .footer .bye .forcompyuter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2542,11 +2745,11 @@ a:hover {
     font-family: var(--neueregular);
     letter-spacing: 0.08em;
   }
-  .footer .bye .privacyzad a {
+  .footer .bye .forcompyuter a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .footer .bye .privacyzad a:hover {
+  .footer .bye .forcompyuter a:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     color: var(--yellow);
