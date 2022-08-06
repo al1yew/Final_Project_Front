@@ -48,12 +48,6 @@ p {
   .computer {
     display: none;
   }
-  #sixth {
-    display: none;
-  }
-  #seventh {
-    display: none;
-  }
   #eighth {
     display: none;
   }
@@ -795,7 +789,6 @@ p {
     display: none !important;
   }
   #fifth {
-    height: 100vh;
     margin-top: 70px;
     position: relative;
     width: 100%;
@@ -874,6 +867,202 @@ p {
     width: 100%;
     letter-spacing: 0.08em;
     margin-bottom: 50px;
+  }
+  #sixth {
+    overflow: hidden;
+    height: 40vh;
+    font-family: var(--neuebold);
+    background-image: url(../images/main_Page/just_launched.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 50px 0;
+    background-position: 0% 0%;
+  }
+  #sixth .just_launched {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 3px 10px;
+    background-color: var(--yellow);
+    color: black;
+  }
+  #sixth .shipping {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 114%;
+    font-family: var(--neuemedium);
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #sixth .section_keeper {
+    padding: 5px;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 9px;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+  }
+  #sixth .section_keeper span {
+    font-size: 150%;
+    color: var(--yellow);
+    line-height: 170%;
+  }
+  #sixth .section_keeper a {
+    font-family: var(--neueregular);
+    border: 1px solid #000000;
+    display: block;
+    font-size: 9px;
+    padding: 5px 12px;
+    background-color: var(--white);
+    letter-spacing: 0.08em;
+    color: black;
+  }
+  #seventh {
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0;
+    padding: 0 10px;
+  }
+  #seventh .top_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #seventh .top_main .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #seventh .top_main .right .top {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 114%;
+    font-family: var(--neuemedium);
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  #seventh .top_main .right .bottom {
+    padding: 0;
+    list-style: none;
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin: 10px 0;
+  }
+  #seventh .top_main .right .bottom li {
+    margin: 10px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #seventh .top_main .right .bottom li:nth-child(1)::before {
+    content: '1';
+    margin-right: 10px;
+    padding: 3px 6px;
+    border-radius: 100%;
+    background-color: var(--yellow);
+  }
+  #seventh .top_main .right .bottom li:nth-child(2)::before {
+    content: '2';
+    margin-right: 10px;
+    padding: 3px 5px;
+    border-radius: 100%;
+    background-color: var(--yellow);
+  }
+  #seventh .top_main .right .bottom li:nth-child(3)::before {
+    content: '3';
+    margin-right: 10px;
+    padding: 3px 5px;
+    border-radius: 100%;
+    background-color: var(--yellow);
+  }
+  #seventh .bottom_main {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #seventh .bottom_main .testimoninal_div {
+    padding: 3px 8px;
+    width: 100%;
+  }
+  #seventh .bottom_main .testimoninal_div div {
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  #seventh .bottom_main .testimoninal_div div:nth-child(1) {
+    font-family: var(--neueultra);
+    font-weight: 800;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  #seventh .bottom_main .testimoninal_div div:nth-child(2) {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    text-align: center;
+    font-size: 9px;
+    width: 100%;
+    line-height: 114%;
+  }
+  #seventh .bottom_main .testimoninal_div div:nth-child(2) a {
+    text-decoration: underline;
+    color: var(--yellow);
   }
 }
 
@@ -1001,6 +1190,9 @@ a:hover {
 @media (min-width: 577px) {
   .mobile {
     display: none;
+  }
+  .formobile {
+    display: none !important;
   }
   .header {
     z-index: 1000;
@@ -1723,8 +1915,15 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 65%;
+    width: 60%;
     margin-bottom: 25px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #fifth .right .linktobloggerclothes:hover {
+    color: var(--yellow);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   #fifth .right .linktobloggerclothes .second {
     font-family: var(--neueultra);
@@ -1732,13 +1931,6 @@ a:hover {
     font-size: 11px;
     line-height: 114%;
     letter-spacing: 0.08em;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  #fifth .right .linktobloggerclothes .second:hover {
-    color: var(--yellow);
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
   }
   #fifth .right .linktobloggerclothes svg {
     -webkit-transition: 0.3s;
