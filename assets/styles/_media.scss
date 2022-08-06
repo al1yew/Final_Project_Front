@@ -8,13 +8,6 @@
     --neuebold: NeuePowerBold;
 }
 
-/*ANIMATIONS*/
-
-
-
-/*ANIMATIONS*/
-
-
 /*CUSTOM COLS*/
 
 .col-1-5 {
@@ -34,10 +27,6 @@
 
 @media (max-width: 576px) {
     .computer {
-        display: none;
-    }
-
-    #eighth {
         display: none;
     }
 
@@ -894,7 +883,6 @@
     #seventh {
         overflow: hidden;
         position: relative;
-        margin: 50px 0;
         padding: 0 10px;
 
         .top_main {
@@ -975,6 +963,7 @@
             .testimoninal_div {
                 padding: 3px 8px;
                 width: 100%;
+                margin-bottom: 15px;
 
                 div {
                     text-align: center;
@@ -1003,6 +992,87 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    #eighth {
+        height: 50vh;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        margin-top: 40px;
+
+        .top {
+            position: absolute;
+            padding: 15px 0;
+            color: var(--yellow);
+            width: 450%;
+            top: 0;
+            left: 0%;
+            font-family: var(--neuemedium);
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 114%;
+            text-align: center;
+            letter-spacing: 0.08em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation-name: join_newsletter;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+        }
+
+        form {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+
+            .forminside {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 75%;
+                border-bottom: 1px solid black;
+
+                input {
+                    padding: 4px 10px;
+                    width: 92%;
+                    border: none;
+                    font-family: var(--neuelight);
+                    outline: none;
+
+                    &::placeholder {
+                        font-weight: 300;
+                        font-size: 10px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                    }
+                }
+
+                svg{
+                    width: 7%;
+                }
+            }
+
+            button {
+                font-family: var(--neueregular);
+                background-color: black;
+                display: block;
+                padding: 10px 12px;
+                letter-spacing: 0.08em;
+                color: white;
+                border: none;
+                outline: none;
+                font-size: 9px;
             }
         }
     }
