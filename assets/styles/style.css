@@ -1734,7 +1734,7 @@ p {
     background-color: var(--yellow);
   }
   #third {
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -1897,7 +1897,7 @@ p {
             transform: rotate(-9.44deg);
     color: black;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
@@ -1954,7 +1954,7 @@ p {
   }
   #fourth {
     margin-top: 70px;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -2060,8 +2060,11 @@ p {
         -ms-flex-pack: end;
             justify-content: end;
   }
+  #fourth .next {
+    margin-bottom: -1px;
+  }
   #fifth {
-    height: 100vh;
+    height: 80vh;
     margin-top: 70px;
     position: relative;
     width: 100%;
@@ -4127,7 +4130,7 @@ a:hover {
   color: black;
 }
 
-@media (min-width: 577px) and (max-width: 1149px), (min-width: 1349px) {
+@media (min-width: 577px) and (max-width: 1100px), (min-width: 1349px) {
   .mobile {
     display: none;
   }
@@ -4570,7 +4573,7 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
-    bottom: 16%;
+    bottom: 18%;
     left: 5%;
     width: 100%;
     font-weight: 500;
@@ -4584,7 +4587,7 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
-    bottom: 16%;
+    bottom: 18%;
     right: 6%;
     padding: 5px 15px;
     background-color: var(--yellow);

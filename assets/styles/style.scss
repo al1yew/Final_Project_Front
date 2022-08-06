@@ -116,7 +116,7 @@ a {
     }
 }
 
-@media (min-width: 577px) and(max-width:1149px),
+@media (min-width: 577px) and(max-width:1100px),
 (min-width: 1349px) {
     .mobile {
         display: none;
@@ -572,7 +572,7 @@ a {
 
                     .product_name {
                         position: absolute;
-                        bottom: 16%;
+                        bottom: 18%;
                         left: 5%;
                         width: 100%;
                         font-weight: 500;
@@ -588,7 +588,7 @@ a {
 
                     .product_price {
                         position: absolute;
-                        bottom: 16%;
+                        bottom: 18%;
                         right: 6%;
                         padding: 5px 15px;
                         background-color: var(--yellow);
