@@ -625,6 +625,9 @@ p {
     margin-left: 10px;
     margin-top: 10px;
   }
+  #secondthird .next {
+    margin-bottom: -1px;
+  }
   #secondthird .slick-dots {
     display: none !important;
   }
