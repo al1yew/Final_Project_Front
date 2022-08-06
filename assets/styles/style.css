@@ -524,6 +524,110 @@ p {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
+  #secondthird {
+    margin-top: 20px;
+    height: 50vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+  }
+  #secondthird .mainpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  #secondthird .mainpart .preorder_prods {
+    font-family: var(--neuebold);
+    font-weight: 500;
+    width: 70%;
+    font-size: 25px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  #secondthird .mainpart .seemore {
+    font-family: var(--neueregular);
+    border: 1px solid #000000;
+    display: block;
+    padding: 5px 12px;
+    background-color: var(--white);
+    -webkit-animation-name: mercaniye;
+            animation-name: mercaniye;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    letter-spacing: 0.08em;
+    color: black;
+    font-size: 12px;
+  }
+  #secondthird .slider {
+    margin-bottom: 0;
+  }
+  #secondthird .slider .slick-slide {
+    margin: 0 10px;
+  }
+  #secondthird .slider .imagekeeper {
+    position: relative;
+  }
+  #secondthird .slider .imagekeeper .wishlist {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .preorder {
+    margin-top: 12px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .name {
+    margin-top: 10px;
+    font-family: var(--neueregular);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .price {
+    margin-top: 7px;
+    font-weight: 700;
+    font-family: var(--neuebold);
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .arrows {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #secondthird .slick-dots {
+    display: none !important;
+  }
   #third {
     height: 50vh;
     overflow: hidden;
@@ -1732,6 +1836,117 @@ p {
   }
   #second .seemore:hover {
     background-color: var(--yellow);
+  }
+  #secondthird {
+    margin-top: 70px;
+    height: 90vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+  }
+  #secondthird .mainpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #secondthird .mainpart .preorder_prods {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    width: 60%;
+    font-size: 55px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  #secondthird .mainpart .seemore {
+    font-family: var(--neueregular);
+    border: 1px solid #000000;
+    display: block;
+    padding: 20px 95px;
+    background-color: var(--white);
+    letter-spacing: 0.08em;
+    color: black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #secondthird .mainpart .seemore:hover {
+    background-color: var(--yellow);
+  }
+  #secondthird .slider {
+    margin-bottom: 0;
+  }
+  #secondthird .slider .slick-slide {
+    margin: 0 10px;
+  }
+  #secondthird .slider .imagekeeper {
+    position: relative;
+  }
+  #secondthird .slider .imagekeeper .wishlist {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  #secondthird .slider .imagekeeper .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .basket:hover svg {
+    fill: var(--yellow);
+  }
+  #secondthird .slider .preorder {
+    margin-top: 12px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .name {
+    margin-top: 10px;
+    font-family: var(--neueregular);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .price {
+    margin-top: 7px;
+    font-weight: 700;
+    font-family: var(--neuebold);
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slick-dots {
+    width: 50%;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  #secondthird .next {
+    margin-bottom: -1px;
   }
   #third {
     height: 90vh;
@@ -3022,6 +3237,114 @@ p {
   }
   #second .seemore:hover {
     background-color: var(--yellow);
+  }
+  #secondthird {
+    margin-top: 70px;
+    height: 100vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+  }
+  #secondthird .mainpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #secondthird .mainpart .preorder_prods {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    width: 60%;
+    font-size: 55px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  #secondthird .mainpart .seemore {
+    font-family: var(--neueregular);
+    border: 1px solid #000000;
+    display: block;
+    padding: 20px 95px;
+    background-color: var(--white);
+    letter-spacing: 0.08em;
+    color: black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #secondthird .mainpart .seemore:hover {
+    background-color: var(--yellow);
+  }
+  #secondthird .slider {
+    margin-bottom: 0;
+  }
+  #secondthird .slider .slick-slide {
+    margin: 0 10px;
+  }
+  #secondthird .slider .imagekeeper {
+    position: relative;
+  }
+  #secondthird .slider .imagekeeper .wishlist {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  #secondthird .slider .imagekeeper .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .basket:hover svg {
+    fill: var(--yellow);
+  }
+  #secondthird .slider .preorder {
+    margin-top: 12px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .name {
+    margin-top: 10px;
+    font-family: var(--neueregular);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .price {
+    margin-top: 7px;
+    font-weight: 700;
+    font-family: var(--neuebold);
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slick-dots {
+    width: 50%;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   #third {
     height: 100vh;
@@ -4430,6 +4753,114 @@ a:hover {
   }
   #second .seemore:hover {
     background-color: var(--yellow);
+  }
+  #secondthird {
+    margin-top: 70px;
+    height: 100vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+  }
+  #secondthird .mainpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #secondthird .mainpart .preorder_prods {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    width: 60%;
+    font-size: 65px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  #secondthird .mainpart .seemore {
+    font-family: var(--neueregular);
+    border: 1px solid #000000;
+    display: block;
+    padding: 20px 95px;
+    background-color: var(--white);
+    letter-spacing: 0.08em;
+    color: black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #secondthird .mainpart .seemore:hover {
+    background-color: var(--yellow);
+  }
+  #secondthird .slider {
+    margin-bottom: 0;
+  }
+  #secondthird .slider .slick-slide {
+    margin: 0 10px;
+  }
+  #secondthird .slider .imagekeeper {
+    position: relative;
+  }
+  #secondthird .slider .imagekeeper .wishlist {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  #secondthird .slider .imagekeeper .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #secondthird .slider .imagekeeper .basket:hover svg {
+    fill: var(--yellow);
+  }
+  #secondthird .slider .preorder {
+    margin-top: 12px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .name {
+    margin-top: 10px;
+    font-family: var(--neueregular);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slider .price {
+    margin-top: 7px;
+    font-weight: 700;
+    font-family: var(--neuebold);
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #secondthird .slick-dots {
+    width: 50%;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   #third {
     height: 100vh;
