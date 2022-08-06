@@ -116,7 +116,8 @@ a {
     }
 }
 
-@media (min-width: 577px) {
+@media (min-width: 577px) and(max-width:1149px),
+(min-width: 1349px) {
     .mobile {
         display: none;
     }
