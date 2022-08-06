@@ -45,7 +45,6 @@ $(document).ready(function () {
         ]
     });
 
-
     //--------------------------------- header scroll
     //it is for another design 
 
@@ -77,24 +76,26 @@ $(document).ready(function () {
     //--------------------------------- header scroll
 
     $(document).on('scroll', function () {
-        if ($(window).width() < 576) {
-            if ($(window).scrollTop() > (($(window).height() / 2) - 50)) {
-                $(".mobile").css("padding", "15px 10px")
-                $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)")
+        if (!$('.where').text()) {
+            if ($(window).width() < 576) {
+                if ($(window).scrollTop() > (($(window).height() / 2) - 50)) {
+                    $(".mobile").css("padding", "15px 10px")
+                    $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)")
+                }
+                else {
+                    $(".mobile").css("padding", "20px 10px")
+                    $(".mobile").css("background-color", "rgba(0, 0, 0, 0)")
+                }
             }
             else {
-                $(".mobile").css("padding", "20px 10px")
-                $(".mobile").css("background-color", "rgba(0, 0, 0, 0)")
-            }
-        }
-        else {
-            if ($(window).scrollTop() > ($(window).height() - 50)) {
-                $(".header").css("background-color", "rgba(0, 0, 0, 0.2)")
-                $(".computer").css("padding", "13px 0")
-            }
-            else {
-                $(".header").css("background-color", "rgba(0, 0, 0, 0)")
-                $(".computer").css("padding", "30px 0")
+                if ($(window).scrollTop() > ($(window).height() - 50)) {
+                    $(".header").css("background-color", "rgba(0, 0, 0, 0.2)")
+                    $(".computer").css("padding", "13px 0")
+                }
+                else {
+                    $(".header").css("background-color", "rgba(0, 0, 0, 0)")
+                    $(".computer").css("padding", "30px 0")
+                }
             }
         }
     });
@@ -103,10 +104,11 @@ $(document).ready(function () {
     //---------------------------------tabmenu in sidebar
 
     $('#' + $('.active-tab').data('rel')).show();
-    $('.tab-menu li').click(function () {
+
+    $(document).on('click', '.tab-menu li', function () {
         $(this).addClass('active-tab').siblings('li').removeClass('active-tab');
         $('#' + $(this).data('rel')).show().siblings('ul').hide();
-    });
+    })
 
 
     //---------------------------------Prevent a href in sidebar toggle menu
@@ -139,6 +141,32 @@ $(document).ready(function () {
             $('.sidebarmenu').addClass('open');
         }
     });
+
+
+    //--------------------------------- get location of website to change header design
+    //ne xochu shto b header i footer menalis na raznix stranickax poetomu budu delat js
+
+
+    $(document).on('ready', function () {
+
+        if ($('.where').text()) {
+            $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)")
+            $(".header").css("background-color", "rgba(0, 0, 0, 0.2)")
+            $(".computer").css("padding", "13px 0")
+            $(".mobile").css("padding", "15px 10px")
+        }
+
+    });
+
+
+
+
+
+
+
+
+
+
 });
 
 

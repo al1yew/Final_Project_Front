@@ -13,6 +13,11 @@ p {
 
 @import 'media';
 
+@import 'shop';
+
+@import 'shopmedia';
+
+
 //fonts
 @font-face {
     font-family: NeuePowerLight;
@@ -177,10 +182,10 @@ a {
                 font-size: 15px;
                 letter-spacing: 0.08em;
                 color: var(--white);
+                font-family: var(--neuemedium);
 
                 &:hover {
                     color: var(--yellow);
-                    font-family: var(--neuemedium);
                     transform: scale(1.2);
                 }
             }
@@ -248,6 +253,14 @@ a {
                     svg {
                         color: #FFFFFF;
                     }
+
+                    // a {
+                    //     &:hover {
+                    //         color: white;
+                    //         font-family: var(--neuemedium);
+                    //         transform: scale(1);
+                    //     }
+                    // }
 
                     span {
                         position: absolute;
