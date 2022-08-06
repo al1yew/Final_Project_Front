@@ -4610,7 +4610,91 @@ a:hover {
         flex-wrap: wrap;
   }
   #clothing .all .products .product {
-    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  #clothing .all .products .product .top {
+    position: relative;
+  }
+  #clothing .all .products .product .top .wishlist {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  #clothing .all .products .product .top .wishlist svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #clothing .all .products .product .top .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  #clothing .all .products .product .top .wishlist:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  #clothing .all .products .product .top .basket {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  #clothing .all .products .product .top .basket svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #clothing .all .products .product .top .basket:hover svg {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  #clothing .all .products .product .top .basket:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  #clothing .all .products .product .top .discount_percent {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -2%;
+    right: 2%;
+  }
+  #clothing .all .products .product .top .discount_percent span {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: var(--yellow);
+    color: black;
+    font-family: var(--neueregular);
+  }
+  #clothing .all .products .product .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+  }
+  #clothing .all .products .product .bottom .left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4622,30 +4706,63 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #clothing .all .products .product .top {
-    position: relative;
+  #clothing .all .products .product .bottom .left .up {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
   }
-  #clothing .all .products .product .top .wishlist {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+  #clothing .all .products .product .bottom .left .down {
+    margin-top: 10px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #clothing .all .products .product .bottom .left .down .prevprice {
+    font-size: 19px;
+    text-decoration: line-through;
+  }
+  #clothing .all .products .product .bottom .left .down .discprice {
+    font-size: 19px;
+    text-decoration: none !important;
+  }
+  #clothing .all .products .product .bottom .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #clothing .all .products .product .bottom .right .up select {
+    width: 100%;
+    outline: none;
+  }
+  #clothing .all .products .product .bottom .right .down {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: 12px;
+  }
+  #clothing .all .products .product .bottom .right .down span {
+    padding: 1px 7px;
+    height: 16px;
+    border: 0.3px solid rgba(0, 0, 0, 0.5);
     cursor: pointer;
-  }
-  #clothing .all .products .product .top .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  #clothing .all .products .product .top .basket {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    cursor: pointer;
-  }
-  #clothing .all .products .product .top .basket:hover svg {
-    fill: var(--yellow);
   }
 }
 

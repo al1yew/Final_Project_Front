@@ -255,38 +255,145 @@ a {
                 flex-wrap: wrap;
 
                 .product {
-                    padding: 20px;
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
+                    margin: 20px 0;
 
                     .top {
                         position: relative;
 
                         .wishlist {
                             position: absolute;
-                            top: 5%;
+                            top: 0%;
                             right: 5%;
-                            transition: 0.2s;
+                            transition: 0.3s;
                             cursor: pointer;
+                            background-color: transparent;
+
+                            svg {
+                                transition: 0.3s;
+                            }
 
                             &:hover {
                                 svg {
                                     fill: var(--yellow);
+
+                                    path {
+                                        fill: var(--yellow);
+                                        stroke: var(--yellow);
+                                    }
                                 }
                             }
                         }
 
                         .basket {
                             position: absolute;
-                            top: 5%;
+                            top: 0%;
                             left: 5%;
-                            transition: 0.2s;
+                            transition: 0.3s;
                             cursor: pointer;
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+
+                            svg {
+                                transition: 0.3s;
+                            }
 
                             &:hover {
                                 svg {
                                     fill: var(--yellow);
+                                    stroke: var(--yellow);
+
+                                    path {
+                                        fill: var(--yellow);
+                                        stroke: var(--yellow);
+                                    }
+                                }
+                            }
+                        }
+
+                        .discount_percent {
+                            margin: 0;
+                            padding: 0;
+                            position: absolute;
+                            bottom: -2%;
+                            right: 2%;
+
+                            span {
+                                font-size: 12px;
+                                padding: 5px 10px;
+                                background-color: var(--yellow);
+                                color: black;
+                                font-family: var(--neueregular);
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 15px;
+
+                        .left {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+
+                            .up {
+                                font-weight: 300;
+                                font-size: 15px;
+                                line-height: 114%;
+                                font-family: var(--neuelight);
+                                letter-spacing: 0.08em;
+                            }
+
+                            .down {
+                                margin-top: 10px;
+                                font-family: var(--neuebold);
+                                font-weight: 700;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+
+                                .prevprice {
+                                    font-size: 19px;
+                                    text-decoration: line-through;
+                                }
+
+                                .discprice {
+                                    font-size: 19px;
+                                    text-decoration: none !important;
+                                }
+                            }
+                        }
+
+                        .right {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+
+                            .up {
+                                select {
+                                    width: 100%;
+                                    outline: none;
+                                }
+                            }
+
+                            .down {
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 80%;
+                                margin-top: 12px;
+
+                                span {
+                                    padding: 1px 7px;
+                                    height: 16px;
+                                    border: 0.3px solid rgba(0, 0, 0, 0.5);
+                                    cursor: pointer;
                                 }
                             }
                         }
