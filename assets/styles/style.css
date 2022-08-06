@@ -42,6 +42,28 @@ p {
   width: 37.5%;
 }
 
+@-webkit-keyframes mercaniye {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: black;
+    color: var(--yellow);
+  }
+}
+
+@keyframes mercaniye {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: black;
+    color: var(--yellow);
+  }
+}
+
 @media (max-width: 576px) {
   .computer {
     display: none;
@@ -493,6 +515,14 @@ p {
     letter-spacing: 0.08em;
     color: black;
     font-size: 12px;
+    -webkit-animation-name: mercaniye;
+            animation-name: mercaniye;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
   #third {
     height: 50vh;
@@ -530,6 +560,14 @@ p {
     background-color: var(--white);
     letter-spacing: 0.08em;
     color: black;
+    -webkit-animation-name: mercaniye;
+            animation-name: mercaniye;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     font-size: 12px;
   }
   #third .transformed_p {
@@ -717,6 +755,14 @@ p {
     display: block;
     padding: 5px 12px;
     background-color: var(--white);
+    -webkit-animation-name: mercaniye;
+            animation-name: mercaniye;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     letter-spacing: 0.08em;
     color: black;
     font-size: 12px;
@@ -934,6 +980,14 @@ p {
     background-color: var(--white);
     letter-spacing: 0.08em;
     color: black;
+    -webkit-animation-name: mercaniye;
+            animation-name: mercaniye;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
   #seventh {
     overflow: hidden;
@@ -1252,6 +1306,9 @@ p {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 10px;
+  }
+  .footer .footer_row .parent_div:nth-child(3) .socialmedias .svg_social {
+    padding-left: 5px;
   }
   .footer .footer_row .parent_div .footer_header {
     font-weight: 700;
