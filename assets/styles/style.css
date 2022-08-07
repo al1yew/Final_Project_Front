@@ -512,10 +512,9 @@ p {
     padding: 5px 12px;
     background-color: var(--white);
     letter-spacing: 0.08em;
+    line-height: 114%;
     color: black;
     font-size: 12px;
-    -webkit-animation-name: mercaniye;
-            animation-name: mercaniye;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-duration: 1s;
@@ -559,6 +558,7 @@ p {
     display: block;
     padding: 5px 12px;
     background-color: var(--white);
+    line-height: 114%;
     -webkit-animation-name: mercaniye;
             animation-name: mercaniye;
     -webkit-animation-timing-function: linear;
@@ -664,6 +664,7 @@ p {
     border: 1px solid #000000;
     display: block;
     padding: 5px 12px;
+    line-height: 114%;
     background-color: var(--white);
     letter-spacing: 0.08em;
     color: black;
@@ -859,6 +860,7 @@ p {
     border: 1px solid #000000;
     display: block;
     padding: 5px 12px;
+    line-height: 114%;
     background-color: var(--white);
     -webkit-animation-name: mercaniye;
             animation-name: mercaniye;
@@ -1069,12 +1071,6 @@ p {
     line-height: 150%;
     letter-spacing: 0.08em;
   }
-  #sixth .section_keeper span {
-    font-size: 150%;
-    color: var(--yellow);
-    line-height: 170%;
-    width: 100%;
-  }
   #sixth .section_keeper a {
     font-family: var(--neueregular);
     border: 1px solid #000000;
@@ -1143,7 +1139,7 @@ p {
     margin: 10px 0;
   }
   #seventh .top_main .right .bottom li {
-    margin: 10px 0;
+    margin: 13px 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -5010,6 +5006,24 @@ a:hover {
 }
 
 /*#endregion Custom col classes*/
+/*region scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*region scrollbar*/
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;

@@ -457,9 +457,10 @@
             padding: 5px 12px;
             background-color: var(--white);
             letter-spacing: 0.08em;
+            line-height: 114%;
+
             color: black;
             font-size: 12px;
-            animation-name: mercaniye;
             animation-timing-function: linear;
             animation-duration: 1s;
             animation-iteration-count: infinite;
@@ -497,6 +498,8 @@
                 display: block;
                 padding: 5px 12px;
                 background-color: var(--white);
+                line-height: 114%;
+
                 animation-name: mercaniye;
                 animation-timing-function: linear;
                 animation-duration: 1s;
@@ -605,6 +608,8 @@
                 border: 1px solid #000000;
                 display: block;
                 padding: 5px 12px;
+                line-height: 114%;
+
                 background-color: var(--white);
                 letter-spacing: 0.08em;
                 color: black;
@@ -772,6 +777,8 @@
                 border: 1px solid #000000;
                 display: block;
                 padding: 5px 12px;
+                line-height: 114%;
+
                 background-color: var(--white);
                 animation-name: mercaniye;
                 animation-timing-function: linear;
@@ -983,13 +990,6 @@
             line-height: 150%;
             letter-spacing: 0.08em;
 
-            span {
-                font-size: 150%;
-                color: var(--yellow);
-                line-height: 170%;
-                width: 100%;
-            }
-
             a {
                 font-family: var(--neueregular);
                 border: 1px solid #000000;
@@ -1043,7 +1043,7 @@
                     margin: 10px 0;
 
                     li {
-                        margin: 10px 0;
+                        margin: 13px 0;
                         transition: 0.3s;
 
                         &:nth-child(1) {
