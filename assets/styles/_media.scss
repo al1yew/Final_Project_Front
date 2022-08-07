@@ -28,11 +28,11 @@
 @keyframes mercaniye {
     from {
         background-color: white;
-        color: black;
+        color: var(--yellow);
     }
 
     to {
-        background-color: black;
+        background-color: white;
         color: var(--yellow);
     }
 }
@@ -414,7 +414,7 @@
             position: absolute;
             top: 12%;
             right: 20px;
-            width: 25%;
+            width: 28%;
             z-index: 8;
         }
 
