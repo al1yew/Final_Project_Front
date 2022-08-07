@@ -112,10 +112,25 @@ $(document).ready(function () {
         console.log(input.val())
         console.log(select.val())
 
+        //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
+
     });
 
 
+    $(document).on('click', '.filterdiv', function () {
 
+        $($(this).find('ul')).toggle();
+
+        $(this).find(".svgkeeper").toggleClass('roundarrow')
+
+    });
+
+    $(document).on('click', '.filterul li', function () {
+
+        $(this).parent().parent().children()[0].innerHTML = $(this).text();
+        $(this).addClass("yellowli")
+        $(this).siblings("li").removeClass('yellowli')
+    });
 
 
     //---------------------------------tabmenu in sidebar

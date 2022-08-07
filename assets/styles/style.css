@@ -4612,6 +4612,87 @@ a:hover {
   cursor: pointer;
 }
 
+#clothing .all .filternew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#clothing .all .filternew .filterdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--neueregular);
+  letter-spacing: 0.08em;
+  padding-bottom: 3px;
+  position: relative;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+#clothing .all .filternew .filterdiv svg {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+}
+
+#clothing .all .filternew .filterdiv .svgkeeper {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#clothing .all .filternew .filterdiv span {
+  padding-left: 2px;
+}
+
+#clothing .all .filternew .filterdiv .roundarrow {
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+}
+
+#clothing .all .filternew .filterdiv ul {
+  list-style: none;
+  display: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid black;
+  z-index: 43432;
+}
+
+#clothing .all .filternew .filterdiv ul .yellowli {
+  background-color: var(--yellow);
+}
+
+#clothing .all .filternew .filterdiv ul li {
+  padding: 5px;
+}
+
+#clothing .all .filternew .filterdiv ul li:hover {
+  background-color: var(--yellow);
+}
+
 #clothing .all .products {
   margin: 40px 0;
   display: -webkit-box;
@@ -4781,6 +4862,7 @@ a:hover {
 #clothing .all .products .product .bottom .right .up select {
   width: 100%;
   outline: none;
+  font-family: var(--neueregular);
   border-radius: 0;
 }
 
