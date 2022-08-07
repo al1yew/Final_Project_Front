@@ -938,9 +938,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1022,14 +1022,13 @@ p {
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 9px;
-    line-height: 17px;
     letter-spacing: 0.08em;
     position: absolute;
     bottom: 25%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    padding: 3px 10px;
+    padding: 2px 8px;
     background-color: var(--yellow);
     color: black;
   }
@@ -1067,7 +1066,6 @@ p {
     font-family: var(--neuebold);
     font-weight: 700;
     font-size: 9px;
-    text-align: center;
     line-height: 150%;
     letter-spacing: 0.08em;
   }
@@ -1075,6 +1073,7 @@ p {
     font-size: 150%;
     color: var(--yellow);
     line-height: 170%;
+    width: 100%;
   }
   #sixth .section_keeper a {
     font-family: var(--neueregular);
@@ -2299,9 +2298,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2439,7 +2438,6 @@ p {
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
     letter-spacing: 0.08em;
     position: absolute;
     top: 5%;
@@ -3843,7 +3841,6 @@ p {
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
     letter-spacing: 0.08em;
     position: absolute;
     top: 5%;
@@ -5925,14 +5922,13 @@ a:hover {
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
     letter-spacing: 0.08em;
     position: absolute;
     top: 5%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    padding: 5px 20px;
+    padding: 3px 20px;
     background-color: var(--yellow);
     color: black;
   }

@@ -1056,7 +1056,6 @@ a {
             font-family: var(--neuemedium);
             font-weight: 500;
             font-size: 14px;
-            line-height: 17px;
             letter-spacing: 0.08em;
 
             position: absolute;
@@ -1064,7 +1063,7 @@ a {
             left: 50%;
             transform: translateX(-50%);
 
-            padding: 5px 20px;
+            padding: 3px 20px;
             background-color: var(--yellow);
             color: black;
         }
