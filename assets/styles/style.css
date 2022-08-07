@@ -4864,6 +4864,9 @@ a:hover {
   outline: none;
   font-family: var(--neueregular);
   border-radius: 0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.08em;
 }
 
 #clothing .all .products .product .bottom .right .down {

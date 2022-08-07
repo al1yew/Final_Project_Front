@@ -45,33 +45,6 @@ $(document).ready(function () {
         ]
     });
 
-    //--------------------------------- header scroll
-    //it is for another design 
-
-    // $(document).on('scroll', function () {
-    //     if ($(window).scrollTop() > (document.documentElement.clientHeight - 50)) {
-    //         $(".computer").css("padding", "13px 0")
-    //         $(".computer a").addClass("forheaderscroll")
-    //         $(".gender").addClass("forheaderscroll")
-    //         $(".search_input").addClass("forheaderscroll")
-    //         $(".navigation .search ").css("border-bottom", "1px solid black")
-    //         $(".search input").addClass("searchinputforjs")
-    //         $(".search_icon").addClass("forheaderscroll")
-    //         $(".cart_path").css("fill", "black")
-    //         $(".cart_path").css("stroke", "black")
-    //     }
-    //     else {
-    //         $(".computer").css("padding", "30px 0")
-    //         $(".computer a").removeClass("forheaderscroll")
-    //         $(".gender").removeClass("forheaderscroll")
-    //         $(".search_input").removeClass("forheaderscroll")
-    //         $(".navigation .search ").css("border-bottom", "1px solid white")
-    //         $(".search input").removeClass("searchinputforjs")
-    //         $(".search_icon").removeClass("forheaderscroll")
-    //         $(".cart_path").css("fill", "white")
-    //         $(".cart_path").css("stroke", "white")
-    //     }
-    // });
 
     //--------------------------------- header scroll
 
@@ -79,22 +52,22 @@ $(document).ready(function () {
         if (!$('.where').text()) {
             if ($(window).width() < 576) {
                 if ($(window).scrollTop() > (($(window).height() / 2) - 50)) {
-                    $(".mobile").css("padding", "15px 10px")
-                    $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)")
+                    $(".mobile").css("padding", "15px 10px");
+                    $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)");
                 }
                 else {
-                    $(".mobile").css("padding", "20px 10px")
-                    $(".mobile").css("background-color", "rgba(0, 0, 0, 0)")
+                    $(".mobile").css("padding", "20px 10px");
+                    $(".mobile").css("background-color", "rgba(0, 0, 0, 0)");
                 }
             }
             else {
                 if ($(window).scrollTop() > ($(window).height() - 50)) {
-                    $(".header").css("background-color", "rgba(0, 0, 0, 0.2)")
-                    $(".computer").css("padding", "13px 0")
+                    $(".header").css("background-color", "rgba(0, 0, 0, 0.2)");
+                    $(".computer").css("padding", "13px 0");
                 }
                 else {
-                    $(".header").css("background-color", "rgba(0, 0, 0, 0)")
-                    $(".computer").css("padding", "30px 0")
+                    $(".header").css("background-color", "rgba(0, 0, 0, 0)");
+                    $(".computer").css("padding", "30px 0");
                 }
             }
         }
@@ -106,31 +79,38 @@ $(document).ready(function () {
 
     $(document).on('submit', '.addingtobasketinshoppage', function (e) {
         e.preventDefault();
-        let input = $(this).find('input:checked')
-        let select = $(this).find('option:selected')
+        let input = $(this).find('input:checked');
+        let select = $(this).find('option:selected');
 
-        console.log(input.val())
-        console.log(select.val())
+        console.log(input.val());
+        console.log(select.val());
 
         //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
 
     });
 
 
+
+    //--------------------------------- moya custom sortirovka, ostalnoe ya reshu v MVC
     $(document).on('click', '.filterdiv', function () {
 
         $($(this).find('ul')).toggle();
 
-        $(this).find(".svgkeeper").toggleClass('roundarrow')
+        $(this).find(".svgkeeper").toggleClass('roundarrow');
 
     });
 
     $(document).on('click', '.filterul li', function () {
 
         $(this).parent().parent().children()[0].innerHTML = $(this).text();
-        $(this).addClass("yellowli")
-        $(this).siblings("li").removeClass('yellowli')
+
+        $(this).addClass("yellowli");
+
+        $(this).siblings("li").removeClass('yellowli');
+
     });
+    //--------------------------------- moya custom sortirovka, ostalnoe ya reshu v MVC
+
 
 
     //---------------------------------tabmenu in sidebar
@@ -182,10 +162,10 @@ $(document).ready(function () {
     $(document).on('ready', function () {
 
         if ($('.where').text()) {
-            $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)")
-            $(".header").css("background-color", "rgba(0, 0, 0, 0.2)")
-            $(".computer").css("padding", "13px 0")
-            $(".mobile").css("padding", "15px 10px")
+            $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)");
+            $(".header").css("background-color", "rgba(0, 0, 0, 0.2)");
+            $(".computer").css("padding", "13px 0");
+            $(".mobile").css("padding", "15px 10px");
         }
 
     });
