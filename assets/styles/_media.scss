@@ -27,13 +27,13 @@
 
 @keyframes mercaniye {
     from {
-        background-color: white;
-        color: var(--yellow);
+        background-color: var(--yellow);
+        color: black;
     }
 
     to {
         background-color: white;
-        color: var(--yellow);
+        color: white;
     }
 }
 
@@ -370,12 +370,11 @@
 
             .discount {
                 font-family: var(--neuemedium);
-                padding: 1px 3px;
+                padding: 1.5px 3px;
                 background-color: var(--yellow);
                 color: black;
                 font-weight: 500;
                 font-size: 5px;
-                line-height: 17px;
                 letter-spacing: 0.08em;
                 text-align: center;
                 z-index: 2;
@@ -508,7 +507,7 @@
             }
         }
 
-        .slider {
+        .sliderfirst {
             margin-bottom: 0;
 
             .slick-slide {
@@ -548,13 +547,13 @@
                 margin-top: 10px;
                 font-family: var(--neueregular);
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
             }
 
             .price {
-                margin-top: 7px;
+                margin-top: 10px;
                 font-weight: 700;
                 font-family: var(--neuebold);
                 font-size: 16px;
@@ -568,7 +567,7 @@
             margin-top: 10px;
         }
 
-        .next {
+        .nextfirst {
             margin-bottom: -1px;
         }
 
@@ -677,7 +676,7 @@
                 padding: 0;
                 display: flex;
                 flex-direction: column;
-                width: 43%;
+                width: 45%;
                 z-index: 1;
                 font-family: var(--neuemedium);
 
@@ -688,12 +687,11 @@
                 .element {
                     position: relative;
                     transition: 0.3s;
-                    border-radius: 5%;
 
                     .product_name {
                         position: absolute;
                         bottom: 7%;
-                        left: 5%;
+                        text-align: center;
                         width: 100%;
                         font-weight: 500;
                         color: black;
@@ -703,20 +701,19 @@
                     }
 
                     img {
-                        border-radius: 5%;
                         vertical-align: bottom;
                     }
 
                     .product_price {
                         position: absolute;
-                        bottom: 18%;
+                        top: 8%;
                         right: 7%;
-                        padding: 3px 5px;
+                        padding: 3px 6px;
                         background-color: var(--yellow);
                         transform: rotate(-9.44deg);
                         color: black;
                         font-weight: 500;
-                        font-size: 9px;
+                        font-size: 10px;
                         line-height: 114%;
                         letter-spacing: 0.08em;
                     }
@@ -826,13 +823,13 @@
                 margin-top: 10px;
                 font-family: var(--neueregular);
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
             }
 
             .price {
-                margin-top: 7px;
+                margin-top: 10px;
                 font-weight: 700;
                 font-family: var(--neuebold);
                 font-size: 16px;
@@ -1753,7 +1750,7 @@
             }
         }
 
-        .slider {
+        .sliderfirst {
             margin-bottom: 0;
 
             .slick-slide {
@@ -1805,13 +1802,13 @@
                 margin-top: 10px;
                 font-family: var(--neueregular);
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
             }
 
             .price {
-                margin-top: 7px;
+                margin-top: 10px;
                 font-weight: 700;
                 font-family: var(--neuebold);
                 font-size: 16px;
@@ -1825,9 +1822,14 @@
             right: 0;
             display: flex;
             justify-content: end;
+            margin-bottom: -10px;
         }
 
-        .next {
+        .arrows {
+            margin-top: 10px;
+        }
+
+        .nextfirst {
             margin-bottom: -1px;
         }
     }
@@ -1941,8 +1943,8 @@
 
                     .product_name {
                         position: absolute;
-                        bottom: 27%;
-                        left: 5%;
+                        bottom: 30%;
+                        text-align: center;
                         width: 100%;
                         font-weight: 500;
                         color: black;
@@ -1953,13 +1955,14 @@
 
                     img {
                         vertical-align: bottom;
+                        height: 300px;
                     }
 
                     .product_price {
                         position: absolute;
-                        bottom: 27%;
-                        right: 6%;
-                        padding: 3px 8px;
+                        top: 5%;
+                        right: 8%;
+                        padding: 2px 7px;
                         background-color: var(--yellow);
                         transform: rotate(-9.44deg);
                         color: black;
@@ -2122,13 +2125,13 @@
                 margin-top: 10px;
                 font-family: var(--neueregular);
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
             }
 
             .price {
-                margin-top: 7px;
+                margin-top: 10px;
                 font-weight: 700;
                 font-family: var(--neuebold);
                 font-size: 16px;
@@ -2142,9 +2145,14 @@
             right: 0;
             display: flex;
             justify-content: end;
+            margin-bottom: -10px;
         }
 
-        .next {
+        .arrows {
+            margin-top: 10px;
+        }
+
+        .nextfirst {
             margin-bottom: -1px;
         }
     }
@@ -3112,7 +3120,7 @@
             }
         }
 
-        .slider {
+        .sliderfirst {
             margin-bottom: 0;
 
             .slick-slide {
@@ -3164,13 +3172,13 @@
                 margin-top: 10px;
                 font-family: var(--neueregular);
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
             }
 
             .price {
-                margin-top: 7px;
+                margin-top: 10px;
                 font-weight: 700;
                 font-family: var(--neuebold);
                 font-size: 16px;
@@ -3184,6 +3192,11 @@
             right: 0;
             display: flex;
             justify-content: end;
+            margin-bottom: -10px;
+        }
+
+        .arrows {
+            margin-top: 10px;
         }
     }
 
@@ -3308,6 +3321,7 @@
 
                     img {
                         vertical-align: bottom;
+                        height: 350px;
                     }
 
                     .product_price {
@@ -3477,13 +3491,13 @@
                 margin-top: 10px;
                 font-family: var(--neueregular);
                 font-weight: 500;
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
             }
 
             .price {
-                margin-top: 7px;
+                margin-top: 10px;
                 font-weight: 700;
                 font-family: var(--neuebold);
                 font-size: 16px;
@@ -3497,6 +3511,11 @@
             right: 0;
             display: flex;
             justify-content: end;
+            margin-bottom: -10px;
+        }
+
+        .arrows {
+            margin-top: 10px;
         }
     }
 

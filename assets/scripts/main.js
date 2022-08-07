@@ -1,7 +1,51 @@
 
 $(document).ready(function () {
 
-    //---------------------------------main page slider
+    //---------------------------------main page first slider 
+
+    $('.sliderfirst').slick({
+        dots: true,
+        infinite: true,
+        speed: 400,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        adaptiveHeight: true,
+        prevArrow: $(".prevfirst"),
+        nextArrow: $(".nextfirst"),
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    adaptiveHeight: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    adaptiveHeight: true,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    //ili je 1 dene
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    //---------------------------------main page second slider 
 
     $('.slider').slick({
         dots: true,

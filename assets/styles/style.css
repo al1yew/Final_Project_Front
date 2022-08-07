@@ -44,23 +44,23 @@ p {
 
 @-webkit-keyframes mercaniye {
   from {
-    background-color: white;
-    color: var(--yellow);
+    background-color: var(--yellow);
+    color: black;
   }
   to {
     background-color: white;
-    color: var(--yellow);
+    color: white;
   }
 }
 
 @keyframes mercaniye {
   from {
-    background-color: white;
-    color: var(--yellow);
+    background-color: var(--yellow);
+    color: black;
   }
   to {
     background-color: white;
-    color: var(--yellow);
+    color: white;
   }
 }
 
@@ -429,12 +429,11 @@ p {
   }
   #first .section_keeper .discount {
     font-family: var(--neuemedium);
-    padding: 1px 3px;
+    padding: 1.5px 3px;
     background-color: var(--yellow);
     color: black;
     font-weight: 500;
     font-size: 5px;
-    line-height: 17px;
     letter-spacing: 0.08em;
     text-align: center;
     z-index: 2;
@@ -572,16 +571,16 @@ p {
     color: black;
     font-size: 12px;
   }
-  #secondthird .slider {
+  #secondthird .sliderfirst {
     margin-bottom: 0;
   }
-  #secondthird .slider .slick-slide {
+  #secondthird .sliderfirst .slick-slide {
     margin: 0 10px;
   }
-  #secondthird .slider .imagekeeper {
+  #secondthird .sliderfirst .imagekeeper {
     position: relative;
   }
-  #secondthird .slider .imagekeeper .wishlist {
+  #secondthird .sliderfirst .imagekeeper .wishlist {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -589,7 +588,7 @@ p {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .basket {
+  #secondthird .sliderfirst .imagekeeper .basket {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -597,7 +596,7 @@ p {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .preorder {
+  #secondthird .sliderfirst .preorder {
     margin-top: 12px;
     font-family: var(--neuebold);
     font-weight: 700;
@@ -605,16 +604,16 @@ p {
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .name {
+  #secondthird .sliderfirst .name {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .price {
-    margin-top: 7px;
+  #secondthird .sliderfirst .price {
+    margin-top: 10px;
     font-weight: 700;
     font-family: var(--neuebold);
     font-size: 16px;
@@ -625,7 +624,7 @@ p {
     margin-left: 10px;
     margin-top: 10px;
   }
-  #secondthird .next {
+  #secondthird .nextfirst {
     margin-bottom: -1px;
   }
   #secondthird .slick-dots {
@@ -765,7 +764,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 43%;
+    width: 45%;
     z-index: 1;
     font-family: var(--neuemedium);
   }
@@ -776,12 +775,11 @@ p {
     position: relative;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 5%;
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
     bottom: 7%;
-    left: 5%;
+    text-align: center;
     width: 100%;
     font-weight: 500;
     color: black;
@@ -790,20 +788,19 @@ p {
     letter-spacing: 0.08em;
   }
   #third .newprodcs .newprodcs_element .element img {
-    border-radius: 5%;
     vertical-align: bottom;
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
-    bottom: 18%;
+    top: 8%;
     right: 7%;
-    padding: 3px 5px;
+    padding: 3px 6px;
     background-color: var(--yellow);
     -webkit-transform: rotate(-9.44deg);
             transform: rotate(-9.44deg);
     color: black;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
@@ -912,12 +909,12 @@ p {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
   #fourth .slider .price {
-    margin-top: 7px;
+    margin-top: 10px;
     font-weight: 700;
     font-family: var(--neuebold);
     font-size: 16px;
@@ -1884,16 +1881,16 @@ p {
   #secondthird .mainpart .seemore:hover {
     background-color: var(--yellow);
   }
-  #secondthird .slider {
+  #secondthird .sliderfirst {
     margin-bottom: 0;
   }
-  #secondthird .slider .slick-slide {
+  #secondthird .sliderfirst .slick-slide {
     margin: 0 10px;
   }
-  #secondthird .slider .imagekeeper {
+  #secondthird .sliderfirst .imagekeeper {
     position: relative;
   }
-  #secondthird .slider .imagekeeper .wishlist {
+  #secondthird .sliderfirst .imagekeeper .wishlist {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -1901,10 +1898,10 @@ p {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .wishlist:hover svg {
+  #secondthird .sliderfirst .imagekeeper .wishlist:hover svg {
     fill: var(--yellow);
   }
-  #secondthird .slider .imagekeeper .basket {
+  #secondthird .sliderfirst .imagekeeper .basket {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -1912,10 +1909,10 @@ p {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .basket:hover svg {
+  #secondthird .sliderfirst .imagekeeper .basket:hover svg {
     fill: var(--yellow);
   }
-  #secondthird .slider .preorder {
+  #secondthird .sliderfirst .preorder {
     margin-top: 12px;
     font-family: var(--neuebold);
     font-weight: 700;
@@ -1923,16 +1920,16 @@ p {
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .name {
+  #secondthird .sliderfirst .name {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .price {
-    margin-top: 7px;
+  #secondthird .sliderfirst .price {
+    margin-top: 10px;
     font-weight: 700;
     font-family: var(--neuebold);
     font-size: 16px;
@@ -1948,8 +1945,12 @@ p {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    margin-bottom: -10px;
   }
-  #secondthird .next {
+  #secondthird .arrows {
+    margin-top: 10px;
+  }
+  #secondthird .nextfirst {
     margin-bottom: -1px;
   }
   #third {
@@ -2094,8 +2095,8 @@ p {
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
-    bottom: 27%;
-    left: 5%;
+    bottom: 30%;
+    text-align: center;
     width: 100%;
     font-weight: 500;
     color: black;
@@ -2105,12 +2106,13 @@ p {
   }
   #third .newprodcs .newprodcs_element .element img {
     vertical-align: bottom;
+    height: 300px;
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
-    bottom: 27%;
-    right: 6%;
-    padding: 3px 8px;
+    top: 5%;
+    right: 8%;
+    padding: 2px 7px;
     background-color: var(--yellow);
     -webkit-transform: rotate(-9.44deg);
             transform: rotate(-9.44deg);
@@ -2257,12 +2259,12 @@ p {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
   #fourth .slider .price {
-    margin-top: 7px;
+    margin-top: 10px;
     font-weight: 700;
     font-family: var(--neuebold);
     font-size: 16px;
@@ -2278,8 +2280,12 @@ p {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    margin-bottom: -10px;
   }
-  #fourth .next {
+  #fourth .arrows {
+    margin-top: 10px;
+  }
+  #fourth .nextfirst {
     margin-bottom: -1px;
   }
   #fifth {
@@ -3285,16 +3291,16 @@ p {
   #secondthird .mainpart .seemore:hover {
     background-color: var(--yellow);
   }
-  #secondthird .slider {
+  #secondthird .sliderfirst {
     margin-bottom: 0;
   }
-  #secondthird .slider .slick-slide {
+  #secondthird .sliderfirst .slick-slide {
     margin: 0 10px;
   }
-  #secondthird .slider .imagekeeper {
+  #secondthird .sliderfirst .imagekeeper {
     position: relative;
   }
-  #secondthird .slider .imagekeeper .wishlist {
+  #secondthird .sliderfirst .imagekeeper .wishlist {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -3302,10 +3308,10 @@ p {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .wishlist:hover svg {
+  #secondthird .sliderfirst .imagekeeper .wishlist:hover svg {
     fill: var(--yellow);
   }
-  #secondthird .slider .imagekeeper .basket {
+  #secondthird .sliderfirst .imagekeeper .basket {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -3313,10 +3319,10 @@ p {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .basket:hover svg {
+  #secondthird .sliderfirst .imagekeeper .basket:hover svg {
     fill: var(--yellow);
   }
-  #secondthird .slider .preorder {
+  #secondthird .sliderfirst .preorder {
     margin-top: 12px;
     font-family: var(--neuebold);
     font-weight: 700;
@@ -3324,16 +3330,16 @@ p {
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .name {
+  #secondthird .sliderfirst .name {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .price {
-    margin-top: 7px;
+  #secondthird .sliderfirst .price {
+    margin-top: 10px;
     font-weight: 700;
     font-family: var(--neuebold);
     font-size: 16px;
@@ -3349,6 +3355,10 @@ p {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    margin-bottom: -10px;
+  }
+  #secondthird .arrows {
+    margin-top: 10px;
   }
   #third {
     height: 100vh;
@@ -3503,6 +3513,7 @@ p {
   }
   #third .newprodcs .newprodcs_element .element img {
     vertical-align: bottom;
+    height: 350px;
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
@@ -3655,12 +3666,12 @@ p {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
   #fourth .slider .price {
-    margin-top: 7px;
+    margin-top: 10px;
     font-weight: 700;
     font-family: var(--neuebold);
     font-size: 16px;
@@ -3676,6 +3687,10 @@ p {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    margin-bottom: -10px;
+  }
+  #fourth .arrows {
+    margin-top: 10px;
   }
   #fifth {
     height: 100vh;
@@ -5361,16 +5376,16 @@ a:hover {
   #secondthird .mainpart .seemore:hover {
     background-color: var(--yellow);
   }
-  #secondthird .slider {
+  #secondthird .sliderfirst {
     margin-bottom: 0;
   }
-  #secondthird .slider .slick-slide {
+  #secondthird .sliderfirst .slick-slide {
     margin: 0 10px;
   }
-  #secondthird .slider .imagekeeper {
+  #secondthird .sliderfirst .imagekeeper {
     position: relative;
   }
-  #secondthird .slider .imagekeeper .wishlist {
+  #secondthird .sliderfirst .imagekeeper .wishlist {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -5378,10 +5393,10 @@ a:hover {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .wishlist:hover svg {
+  #secondthird .sliderfirst .imagekeeper .wishlist:hover svg {
     fill: var(--yellow);
   }
-  #secondthird .slider .imagekeeper .basket {
+  #secondthird .sliderfirst .imagekeeper .basket {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -5389,10 +5404,10 @@ a:hover {
     transition: 0.2s;
     cursor: pointer;
   }
-  #secondthird .slider .imagekeeper .basket:hover svg {
+  #secondthird .sliderfirst .imagekeeper .basket:hover svg {
     fill: var(--yellow);
   }
-  #secondthird .slider .preorder {
+  #secondthird .sliderfirst .preorder {
     margin-top: 12px;
     font-family: var(--neuebold);
     font-weight: 700;
@@ -5400,7 +5415,7 @@ a:hover {
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .name {
+  #secondthird .sliderfirst .name {
     margin-top: 10px;
     font-family: var(--neueregular);
     font-weight: 500;
@@ -5408,7 +5423,7 @@ a:hover {
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  #secondthird .slider .price {
+  #secondthird .sliderfirst .price {
     margin-top: 7px;
     font-weight: 700;
     font-family: var(--neuebold);
@@ -5579,6 +5594,7 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element img {
     vertical-align: bottom;
+    height: 350px;
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
@@ -5729,6 +5745,7 @@ a:hover {
   }
   #fourth .slider .name {
     margin-top: 10px;
+    margin-bottom: 5px;
     font-family: var(--neueregular);
     font-weight: 500;
     font-size: 13px;
@@ -5739,7 +5756,7 @@ a:hover {
     margin-top: 7px;
     font-weight: 700;
     font-family: var(--neuebold);
-    font-size: 16px;
+    font-size: 20px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
@@ -5752,6 +5769,10 @@ a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    margin-bottom: -10px;
+  }
+  #fourth .arrows {
+    margin-top: 10px;
   }
   #fifth {
     height: 100vh;
