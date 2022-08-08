@@ -267,11 +267,31 @@ $(document).ready(function () {
         console.log(a, aa)
 
         alert(`${a} min value, ${aa} max value -- information for fetch`)
-
+        
         // vse bulari da fetch edeceyik vessalam
     });
 
     $(document).on('pointerup', '.range-max', function () {
+        let aa = $('.range-max').val();
+        let a = $('.range-min').val();
+        console.log(a, aa)
+
+        alert(`${a} min value, ${aa} max value -- information for fetch`)
+
+        // vse bulari da fetch edeceyik vessalam
+    });
+
+    $(document).on('mouseup', '.range-min', function () {
+        let aa = $('.range-max').val();
+        let a = $('.range-min').val();
+        console.log(a, aa)
+
+        alert(`${a} min value, ${aa} max value -- information for fetch`)
+
+        // vse bulari da fetch edeceyik vessalam
+    });
+
+    $(document).on('mouseup', '.range-max', function () {
         let aa = $('.range-max').val();
         let a = $('.range-min').val();
         console.log(a, aa)
