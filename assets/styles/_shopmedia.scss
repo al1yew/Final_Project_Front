@@ -418,7 +418,7 @@ p {
                                 transition: 0.3s;
                             }
 
-                            &:hover {
+                            &:focus {
                                 svg {
                                     fill: var(--yellow);
 
@@ -430,8 +430,6 @@ p {
                             }
                         }
 
-
-
                         .discount_percent {
                             margin: 0;
                             padding: 0;
@@ -440,8 +438,8 @@ p {
                             right: 2%;
 
                             span {
-                                font-size: 12px;
-                                padding: 5px 10px;
+                                font-size: 11px;
+                                padding: 3px 7px;
                                 background-color: var(--yellow);
                                 color: black;
                                 font-family: var(--neueregular);
@@ -494,7 +492,7 @@ p {
 
                             .basket {
                                 position: absolute;
-                                top: 5%;
+                                top: 4%;
                                 left: 5%;
                                 transition: 0.3s;
                                 cursor: pointer;

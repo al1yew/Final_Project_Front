@@ -5453,10 +5453,10 @@ p {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  #clothing .all .products .product .top .wishlist:hover svg {
+  #clothing .all .products .product .top .wishlist:focus svg {
     fill: var(--yellow);
   }
-  #clothing .all .products .product .top .wishlist:hover svg path {
+  #clothing .all .products .product .top .wishlist:focus svg path {
     fill: var(--yellow);
     stroke: var(--yellow);
   }
@@ -5468,8 +5468,8 @@ p {
     right: 2%;
   }
   #clothing .all .products .product .top .discount_percent span {
-    font-size: 12px;
-    padding: 5px 10px;
+    font-size: 11px;
+    padding: 3px 7px;
     background-color: var(--yellow);
     color: black;
     font-family: var(--neueregular);
@@ -5534,7 +5534,7 @@ p {
   }
   #clothing .all .products .product .bottom .right .basket {
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 5%;
     -webkit-transition: 0.3s;
     transition: 0.3s;

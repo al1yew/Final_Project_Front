@@ -159,9 +159,14 @@ $(document).ready(function () {
     //---------------------------------products stranica form dla zakaza produkta submit na button
 
     $(document).on('mousedown', '.addingtobasketinshoppage .down label', function (e) {
-        e.preventDefault();
-        console.log('skaks')
-        $(this).append('<ion-icon name="checkmark-outline" class="markicon"></ion-icon>')
+
+        if ($(this).html() == '') {
+            $(this).append('<ion-icon name="checkmark-outline" class="markicon"></ion-icon>')
+        }
+        else {
+            $(this).text('')
+        }
+
 
         $(this).siblings('label').text('')
     });
