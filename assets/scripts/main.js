@@ -130,10 +130,21 @@ $(document).ready(function () {
         console.log(select.val());
 
         //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
-
+        // https://api.color.pizza/v1/{{hexvalue without the #}} eto dla togo shto b 
+        //color name tojemojno vpisivat, otpravlayem tuda value bez #
+        //https://api.color.pizza/v1/c777b3,8a77c7 naprimer ya otpravil dva cveta, 
+        //fetch delayem tudai vse budet super  
+        //https://github.com/meodai/color-names
+        //nado bi dla SORT BY POPULAR schitat v MVC skolko raz zaxodili na moy sayt
     });
 
+    $(function () {
+        var loaded = parseInt(localStorage.getItem('loaded'), 10),
+            loaded_numb = loaded ? loaded + 1 : 1;
+        localStorage.setItem('loaded', loaded_numb);
 
+        $('body').append('<p>This page was loaded by you ' + loaded_numb + ' times !');
+    });
 
     //--------------------------------- moya custom sortirovka, ostalnoe ya reshu v MVC
     $(document).on('click', '.filterdiv', function () {
