@@ -270,6 +270,10 @@ $(document).ready(function () {
 
         $(this).siblings("li").removeClass('yellowli');
 
+        //https://github.com/al1yew?tab=repositories&q=&type=public&language=&sort=name,
+        //znacit nado pridumat kakim budet fetch. Ya budu otpravlat dofiqa variables v 
+        //index, i vse oni budut vot tak zapisivatsa v moy fetchovskiy url
+        //te kotorie user ne vibral, ne otpravlayutsa, ostayutsa pustimi
     });
     //#endregion moya custom sortirovka, ostalnoe ya reshu v MVC
 
@@ -345,7 +349,13 @@ $(document).ready(function () {
 
     //#endregion get location of user on website
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region 
+
+    
+
+    //#endregion
 
 
 

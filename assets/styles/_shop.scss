@@ -174,6 +174,7 @@ p {
         border-radius: 50%;
         background: var(--yellow);
         outline: 1px solid black;
+        padding: 10px;
         pointer-events: auto;
         -webkit-appearance: none;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -221,10 +222,6 @@ a {
 .where {
     opacity: 0;
     margin-top: 30px;
-}
-
-.elebele {
-    height: 2000px;
 }
 
 // @media (min-width: 577px) and(max-width:1100px),
@@ -427,8 +424,6 @@ a {
             }
         }
 
-
-
         .products {
             margin: 40px 0;
             display: flex;
@@ -603,35 +598,54 @@ a {
                 }
             }
         }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                li {
+                    background-color: black;
+                    width: 10%;
+                    padding-top: 1px;
+                    cursor: pointer;
+                }
+
+                .activepagination {
+                    background-color: var(--yellow);
+                    padding: 1.5px 0;
+                }
+            }
+        }
+
+        .loadmore {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+
+            a {
+                padding: 20px 90px;
+                color: black;
+                border: 1px solid black;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 114%;
+                font-family: var(--neueregular);
+                letter-spacing: 0.08em;
+
+            }
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // }
