@@ -4396,6 +4396,13 @@ p {
   width: 12.5%;
 }
 
+.col-lg-1-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 15%;
+}
+
 .col-lg-2-2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;

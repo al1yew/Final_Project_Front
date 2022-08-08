@@ -136,15 +136,31 @@ $(document).ready(function () {
         //fetch delayem tudai vse budet super  
         //https://github.com/meodai/color-names
         //nado bi dla SORT BY POPULAR schitat v MVC skolko raz zaxodili na moy sayt
+        // prosto her defe product detail sehifesine daxil olanda hemin produktun
+        //v sql u neqo budet viewedTimes kolonkasi, ona ++ olsun, i takje checkout
+        //olanda nado vsem etim produktam delat dla most purchased ++ shto b bili 
+        //toje popularni tipa
+
+
     });
 
-    $(function () {
-        var loaded = parseInt(localStorage.getItem('loaded'), 10),
-            loaded_numb = loaded ? loaded + 1 : 1;
-        localStorage.setItem('loaded', loaded_numb);
 
-        $('body').append('<p>This page was loaded by you ' + loaded_numb + ' times !');
+    //--------------------------------- Categorii naverxu pod headerom shop str
+
+    $(document).on('click', '.headcategoryli', function (e) {
+
+        e.preventDefault();
+
+        $($(this).children()[0]).addClass("activespan");
+
+        $(this).siblings('li').find('a').removeClass('activespan')
+
+        //burda da fetch yazacam, ya da ki mvc de yazdigimiz header 
+        //tabmenu kimi yazacam gedsimm
+
+
     });
+
 
     //--------------------------------- moya custom sortirovka, ostalnoe ya reshu v MVC
     $(document).on('click', '.filterdiv', function () {
