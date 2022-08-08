@@ -370,7 +370,7 @@
 
     #second {
         overflow: hidden;
-        height: 42vh;
+        height: 47vh;
         position: relative;
         font-family: var(--neuebold);
         margin-bottom: 50px;
@@ -1005,6 +1005,7 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 flex-direction: column;
+                padding-left: 20px;
 
                 .top {
                     font-weight: 500;

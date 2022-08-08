@@ -421,7 +421,7 @@ p {
   }
   #second {
     overflow: hidden;
-    height: 42vh;
+    height: 47vh;
     position: relative;
     font-family: var(--neuebold);
     margin-bottom: 50px;
@@ -1097,6 +1097,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 20px;
   }
   #seventh .top_main .right .top {
     font-weight: 500;
