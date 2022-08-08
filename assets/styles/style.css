@@ -4453,6 +4453,126 @@ p {
 }
 
 /*#endregion Custom col classes*/
+.pricerange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricerange .price-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.pricerange .price-input .inputspan {
+  margin: 0 10px;
+}
+
+.pricerange .price-input .axirincnispan {
+  margin-right: 10px;
+}
+
+.pricerange input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.pricerange input {
+  width: 30%;
+  font-size: 16px;
+  font-family: var(--neueregular);
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.pricerange ::-moz-selection {
+  color: #fff;
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+.pricerange ::selection {
+  color: #fff;
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+.pricerange input[type="number"]::-webkit-outer-spin-button,
+.pricerange input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.pricerange .slider1 {
+  height: 1px;
+  right: 12px;
+  top: 76%;
+  width: 84%;
+  position: absolute;
+  border-radius: 5px;
+  background: black;
+}
+
+.pricerange .range-input {
+  position: relative;
+  width: 83%;
+  margin-top: 17px;
+  height: 2px;
+}
+
+.pricerange .range-input input {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 5px;
+  top: 48%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.pricerange input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: var(--yellow);
+  pointer-events: auto;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.pricerange input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: var(--yellow);
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -4632,6 +4752,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+  padding: 0 12px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -4706,138 +4827,6 @@ a:hover {
 
 #clothing .all .filternew .filterdiv ul li:hover {
   background-color: var(--yellow);
-}
-
-#clothing .all .pricerange::-moz-selection {
-  color: #fff;
-  background: #17A2B8;
-}
-
-#clothing .all .pricerange::selection {
-  color: #fff;
-  background: #17A2B8;
-}
-
-#clothing .all .pricerange .wrapper {
-  width: 400px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px 25px 40px;
-  -webkit-box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-}
-
-#clothing .all .pricerange header h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-#clothing .all .pricerange header p {
-  margin-top: 5px;
-  font-size: 16px;
-}
-
-#clothing .all .pricerange .price-input {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 30px 0 35px;
-}
-
-#clothing .all .pricerange .price-input .field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 45px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#clothing .all .pricerange .field input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  font-size: 19px;
-  margin-left: 12px;
-  border-radius: 5px;
-  text-align: center;
-  border: 1px solid #999;
-  -moz-appearance: textfield;
-}
-
-#clothing .all .pricerange input[type="number"]::-webkit-outer-spin-button,
-#clothing .all .pricerange input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-#clothing .all .pricerange .price-input .separator {
-  width: 130px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 19px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#clothing .all .pricerange .slider {
-  height: 5px;
-  position: relative;
-  background: #ddd;
-  border-radius: 5px;
-}
-
-#clothing .all .pricerange .slider .progress {
-  height: 100%;
-  left: 25%;
-  right: 25%;
-  position: absolute;
-  border-radius: 5px;
-  background: #17A2B8;
-}
-
-#clothing .all .pricerange .range-input {
-  position: relative;
-}
-
-#clothing .all .pricerange .range-input input {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: -5px;
-  background: none;
-  pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-#clothing .all .pricerange input[type="range"]::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
-  border-radius: 50%;
-  background: #17A2B8;
-  pointer-events: auto;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-
-#clothing .all .pricerange input[type="range"]::-moz-range-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: #17A2B8;
-  pointer-events: auto;
-  -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 #clothing .all .products {

@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+    //#region slayderi
 
     //---------------------------------main page first slider 
 
@@ -89,6 +90,11 @@ $(document).ready(function () {
         ]
     });
 
+    //#endregion slayderi
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region header scroll
 
     //--------------------------------- header scroll
 
@@ -117,7 +123,11 @@ $(document).ready(function () {
         }
     });
 
+    //#endregion header scroll
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region  form products page
 
     //---------------------------------products stranica form dla zakaza produkta submit na button
 
@@ -141,9 +151,13 @@ $(document).ready(function () {
         //olanda nado vsem etim produktam delat dla most purchased ++ shto b bili 
         //toje popularni tipa
 
-
     });
 
+    //#endregion form products page
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region  shop page tabmenu categories
 
     //--------------------------------- Categorii naverxu pod headerom shop str
 
@@ -160,27 +174,18 @@ $(document).ready(function () {
 
     });
 
+    //#endregion shop page tabmenu categories
 
+    //---------------------------------------------------------------------------------------------------------------
 
-    //--------------------------------- INPUT RANGE
-    $(document).on('mouseup', '.range-min', function () {
-        let a = $('.range-min').val();
-        console.log(a)
+    //#region INPUT RANGE
 
-        // vse bulari da fetch edeceyik vessalam
-    });
-
-    $(document).on('mouseup', '.range-max', function () {
-        let aa = $('.range-max').val();
-        console.log(aa)
-
-        // vse bulari da fetch edeceyik vessalam
-    });
+    //#region input range internetden 
 
     const rangeInput = document.querySelectorAll(".range-input input"),
         priceInput = document.querySelectorAll(".price-input input"),
-        range = document.querySelector(".slider .progress");
-    let priceGap = 1000;
+        range = document.querySelector(".slider1 .progress");
+    let priceGap = 1;
     priceInput.forEach(input => {
         input.addEventListener("input", e => {
             let minPrice = parseInt(priceInput[0].value),
@@ -215,11 +220,29 @@ $(document).ready(function () {
             }
         });
     });
-    //--------------------------------- INPUT RANGE
 
 
+    //#endregion 
 
-    //--------------------------------- moya custom sortirovka, ostalnoe ya reshu v MVC
+    $(document).on('mouseup', '.range-min', function () {
+        let a = $('.range-min').val();
+        console.log(a)
+
+        // vse bulari da fetch edeceyik vessalam
+    });
+
+    $(document).on('mouseup', '.range-max', function () {
+        let aa = $('.range-max').val();
+        console.log(aa)
+
+        // vse bulari da fetch edeceyik vessalam
+    });
+
+    //#endregion INPUT RANGE
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region moya custom sortirovka, ostalnoe ya reshu v MVC
     $(document).on('click', '.filterdiv', function () {
 
         $($(this).find('ul')).toggle();
@@ -237,9 +260,11 @@ $(document).ready(function () {
         $(this).siblings("li").removeClass('yellowli');
 
     });
-    //--------------------------------- moya custom sortirovka, ostalnoe ya reshu v MVC
+    //#endregion moya custom sortirovka, ostalnoe ya reshu v MVC
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region  sidebar tabmenu
 
     //---------------------------------tabmenu in sidebar
 
@@ -250,13 +275,17 @@ $(document).ready(function () {
         $('#' + $(this).data('rel')).show().siblings('ul').hide();
     })
 
-
     //---------------------------------Prevent a href in sidebar toggle menu
 
     $(document).on('click', '.sidebar_ahref', function (e) {
         e.preventDefault();
     });
 
+    //#endregion sidebar tabmenu
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region sidebar open close
 
     //---------------------------------Sidebar open
 
@@ -282,6 +311,11 @@ $(document).ready(function () {
         }
     });
 
+    //#endregion sidebar open close
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region get location of user on website
 
     //--------------------------------- get location of website to change header design
     //ne xochu shto b header i footer menalis na raznix stranickax poetomu budu delat js
@@ -297,6 +331,10 @@ $(document).ready(function () {
         }
 
     });
+
+    //#endregion get location of user on website
+
+
 
 
 
