@@ -137,21 +137,23 @@ $(document).ready(function () {
         let input = $(this).find('input:checked');
         let select = $(this).find('option:selected');
 
-        console.log(input.val());
+        console.log(input.val().slice(1));
         console.log(select.val());
 
-        //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
-        // https://api.color.pizza/v1/{{hexvalue without the #}} eto dla togo shto b 
-        //color name toje mojno bilo vpisivat, otpravlayem tuda value bez #
-        //https://api.color.pizza/v1/c777b3,8a77c7 naprimer ya otpravil dva cveta, 
-        //fetch delayem tuda i on vozvrashayet mne json kak ya ponal - smotri guthub
-        //https://github.com/meodai/color-names
-        //nado bi dla SORT BY POPULAR schitat v MVC skolko raz zaxodili na moy sayt
-        // prosto her defe product detail sehifesine daxil olanda hemin produktun
-        //v sql u neqo budet viewedTimes kolonkasi, ona ++ olsun, i takje checkout
-        //olanda nado vsem etim produktam delat dla most purchased ++ shto b bili 
-        //toje popularni tipa
 
+        let colorname = ''
+
+        fetch(`https://api.color.pizza/v1/${input.val().slice(1)}`)
+            .then(res => res.json())
+            .then(data => {
+                colorname = data.paletteTitle
+                console.log(colorname)
+                alert(`${input.val()} color selected HEX, --${colorname}-- returned from fetch, ${select.val()} size`)
+            })
+
+        //nado vspomnit kak otpravlali ID produkta, kjc forma asp-route-id verecem,
+        //bubirsi fetchin icinde fetch yazacam, linki custom edecem, hamsini gonderecem
+        //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
     });
 
     //---------------------------------products stranica form dla zakaza produkta submit na button
@@ -194,6 +196,7 @@ $(document).ready(function () {
     //#region input range internetden 
 
     const rangeInput = document.querySelectorAll(".range-input input"),
+        priceInputMobile = document.querySelectorAll(".price-input-mobile input"),
         priceInput = document.querySelectorAll(".price-input input"),
         range = document.querySelector(".slider1 .progress");
     let priceGap = 1;
@@ -201,6 +204,22 @@ $(document).ready(function () {
         input.addEventListener("input", e => {
             let minPrice = parseInt(priceInput[0].value),
                 maxPrice = parseInt(priceInput[1].value);
+
+            if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
+                if (e.target.className === "input-min") {
+                    rangeInput[0].value = minPrice;
+                    range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                } else {
+                    rangeInput[1].value = maxPrice;
+                    range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                }
+            }
+        });
+    });
+    priceInputMobile.forEach(input => {
+        input.addEventListener("input", e => {
+            let minPrice = parseInt(priceInputMobile[0].value),
+                maxPrice = parseInt(priceInputMobile[1].value);
 
             if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
                 if (e.target.className === "input-min") {
@@ -226,6 +245,8 @@ $(document).ready(function () {
             } else {
                 priceInput[0].value = minVal;
                 priceInput[1].value = maxVal;
+                priceInputMobile[0].value = minVal;
+                priceInputMobile[1].value = maxVal;
                 range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
                 range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
             }
@@ -353,7 +374,7 @@ $(document).ready(function () {
 
     //#region 
 
-    
+
 
     //#endregion
 

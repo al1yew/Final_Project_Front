@@ -4453,128 +4453,6 @@ p {
 }
 
 /*#endregion Custom col classes*/
-.pricerange {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 12px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricerange .price-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: 1px solid black;
-}
-
-.pricerange .price-input .inputspan {
-  margin: 0 10px;
-}
-
-.pricerange .price-input .axirincnispan {
-  margin-right: 10px;
-}
-
-.pricerange input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
-}
-
-.pricerange input {
-  width: 30%;
-  font-size: 16px;
-  font-family: var(--neueregular);
-  border: none;
-  outline: none;
-  text-align: center;
-}
-
-.pricerange ::-moz-selection {
-  color: #fff;
-  background: var(--yellow);
-  cursor: pointer;
-}
-
-.pricerange ::selection {
-  color: #fff;
-  background: var(--yellow);
-  cursor: pointer;
-}
-
-.pricerange input[type="number"]::-webkit-outer-spin-button,
-.pricerange input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.pricerange .slider1 {
-  height: 0.8px;
-  right: 12px;
-  top: 76%;
-  width: 84%;
-  position: absolute;
-  border-radius: 5px;
-  background: black;
-}
-
-.pricerange .range-input {
-  position: relative;
-  width: 83%;
-  margin-top: 17px;
-  height: 0px;
-}
-
-.pricerange .range-input input {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 5px;
-  top: 48%;
-  background: none;
-  pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.pricerange input[type="range"]::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
-  border-radius: 50%;
-  background: var(--yellow);
-  outline: 1px solid black;
-  padding: 10px;
-  pointer-events: auto;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-
-.pricerange input[type="range"]::-moz-range-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: var(--yellow);
-  pointer-events: auto;
-  -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -4600,6 +4478,12 @@ a:hover {
 .where {
   opacity: 0;
   margin-top: 30px;
+}
+
+@media (min-width: 577px) {
+  .price-input-mobile {
+    display: none !important;
+  }
 }
 
 #categories {
@@ -4825,6 +4709,128 @@ a:hover {
 
 #clothing .all .filternew .filterdiv ul li:hover {
   background-color: var(--yellow);
+}
+
+#clothing .all .pricerange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#clothing .all .pricerange .price-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+#clothing .all .pricerange .price-input .inputspan {
+  margin: 0 10px;
+}
+
+#clothing .all .pricerange .price-input .axirincnispan {
+  margin-right: 10px;
+}
+
+#clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+#clothing .all .pricerange input {
+  width: 30%;
+  font-size: 16px;
+  font-family: var(--neueregular);
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+#clothing .all .pricerange ::-moz-selection {
+  color: #fff;
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+#clothing .all .pricerange ::selection {
+  color: #fff;
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+#clothing .all .pricerange input[type="number"]::-webkit-outer-spin-button,
+#clothing .all .pricerange input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#clothing .all .pricerange .slider1 {
+  height: 0.8px;
+  right: 12px;
+  top: 76%;
+  width: 84%;
+  position: absolute;
+  border-radius: 5px;
+  background: black;
+}
+
+#clothing .all .pricerange .range-input {
+  position: relative;
+  width: 83%;
+  margin-top: 17px;
+  height: 0px;
+}
+
+#clothing .all .pricerange .range-input input {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 5px;
+  top: 48%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#clothing .all .pricerange input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: var(--yellow);
+  outline: 1px solid black;
+  padding: 10px;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+#clothing .all .pricerange input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: var(--yellow);
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 #clothing .all .products {
@@ -5100,6 +5106,654 @@ a:hover {
   line-height: 114%;
   font-family: var(--neueregular);
   letter-spacing: 0.08em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+/*#region Custom col classes*/
+.col-2-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 17.5%;
+}
+
+/*#endregion Custom col classes*/
+@media (max-width: 576px) {
+  :root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
+  .where {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  #categories {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  #categories .head_categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 0 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: var(--neueregular);
+  }
+  #categories .head_categories li {
+    padding: 5px 5px;
+  }
+  #categories .head_categories li span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+  }
+  #categories .head_categories li span:hover {
+    text-decoration: underline;
+  }
+  #categories .head_categories li .activespan {
+    padding: 3px 8px;
+    background-color: var(--yellow);
+    text-decoration: underline;
+  }
+  #shoptext {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+  }
+  #shoptext p {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  #shoptext p span:first-child {
+    color: var(--yellow);
+    font-family: var(--neuebold);
+  }
+  #shoptext p span:last-child {
+    font-style: italic;
+  }
+  .breadcrumb {
+    padding: 5px 5px;
+    margin: 0;
+  }
+  .breadcrumb .keeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+  }
+  .breadcrumb .keeper div {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+  }
+  .breadcrumb .keeper a {
+    font-family: var(--neueregular);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+  }
+  .breadcrumb .keeper a:hover {
+    text-decoration: underline;
+  }
+  #clothing .all .top {
+    text-align: center;
+    font-family: var(--neueultra);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--yellow);
+    letter-spacing: 0.08em;
+  }
+  #clothing .all .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  #clothing .all .filter select {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    padding-bottom: 3px;
+    cursor: pointer;
+  }
+  #clothing .all .filternew {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    padding: 0 17px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+  }
+  #clothing .all .filternew .filterdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 10px;
+    font-family: var(--neueregular);
+    padding-bottom: 3px;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 6px 0;
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  #clothing .all .filternew .filterdiv svg {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
+  }
+  #clothing .all .filternew .filterdiv .svgkeeper {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    width: 10%;
+  }
+  #clothing .all .filternew .filterdiv .sorttype {
+    padding-left: 2px;
+    width: 90% !important;
+  }
+  #clothing .all .filternew .filterdiv .roundarrow {
+    -webkit-transform: rotate(180deg) !important;
+            transform: rotate(180deg) !important;
+  }
+  #clothing .all .filternew .filterdiv ul {
+    list-style: none;
+    display: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 150%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    border: 1px solid black;
+    z-index: 43432;
+  }
+  #clothing .all .filternew .filterdiv ul .yellowli {
+    background-color: var(--yellow);
+  }
+  #clothing .all .filternew .filterdiv ul li {
+    padding: 5px;
+  }
+  #clothing .all .filternew .filterdiv ul li:hover {
+    background-color: var(--yellow);
+  }
+  #clothing .all .filternew .price-input-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30%;
+    border-bottom: 1px solid black;
+    font-family: var(--neueregular);
+    margin-bottom: 4px;
+  }
+  #clothing .all .filternew .price-input-mobile .inputspan {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  #clothing .all .filternew .price-input-mobile .axirincnispan {
+    margin-right: 4px;
+  }
+  #clothing .all .filternew .price-input-mobile .input-max {
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    font-family: var(--neueregular);
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  #clothing .all .filternew .price-input-mobile .input-min {
+    width: 40%;
+    outline: none;
+    padding-left: 0px;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    font-family: var(--neueregular);
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  #clothing .all .pricerange {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 12px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+            appearance: none;
+  }
+  #clothing .all .pricerange .price-input {
+    display: none !important;
+  }
+  #clothing .all .pricerange ::-moz-selection {
+    color: #fff;
+    background: var(--yellow);
+    cursor: pointer;
+  }
+  #clothing .all .pricerange ::selection {
+    color: #fff;
+    background: var(--yellow);
+    cursor: pointer;
+  }
+  #clothing .all .pricerange input[type="number"]::-webkit-outer-spin-button,
+  #clothing .all .pricerange input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  #clothing .all .pricerange .slider1 {
+    height: 0.8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 50%;
+    width: 90%;
+    position: absolute;
+    border-radius: 5px;
+    background: black;
+  }
+  #clothing .all .pricerange .range-input {
+    position: relative;
+    width: 90%;
+    margin-bottom: 15px;
+    height: 0px;
+  }
+  #clothing .all .pricerange .range-input input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #clothing .all .pricerange input[type="range"]::-webkit-slider-thumb {
+    height: 23px;
+    width: 23px;
+    background: var(--yellow);
+    border: none;
+    outline: none;
+    padding: 10px;
+    pointer-events: auto;
+    -webkit-appearance: none;
+  }
+  #clothing .all .pricerange input[type="range"]::-moz-range-thumb {
+    height: 23px;
+    width: 23px;
+    border: none;
+    border-radius: 50%;
+    background: var(--yellow);
+    pointer-events: auto;
+    -moz-appearance: none;
+  }
+  #clothing .all .products {
+    margin: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #clothing .all .products .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+    position: relative;
+  }
+  #clothing .all .products .product .top {
+    position: relative;
+  }
+  #clothing .all .products .product .top .wishlist {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  #clothing .all .products .product .top .wishlist svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #clothing .all .products .product .top .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  #clothing .all .products .product .top .wishlist:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  #clothing .all .products .product .top .discount_percent {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -2%;
+    right: 2%;
+  }
+  #clothing .all .products .product .top .discount_percent span {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: var(--yellow);
+    color: black;
+    font-family: var(--neueregular);
+  }
+  #clothing .all .products .product .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+  }
+  #clothing .all .products .product .bottom .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #clothing .all .products .product .bottom .left .up {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+  }
+  #clothing .all .products .product .bottom .left .down {
+    margin-top: 10px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  #clothing .all .products .product .bottom .left .down .prevprice {
+    font-size: 19px;
+    text-decoration: line-through;
+  }
+  #clothing .all .products .product .bottom .left .down .discprice {
+    font-size: 19px;
+    text-decoration: none !important;
+  }
+  #clothing .all .products .product .bottom .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #clothing .all .products .product .bottom .right .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  #clothing .all .products .product .bottom .right .basket svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #clothing .all .products .product .bottom .right .basket:hover svg {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  #clothing .all .products .product .bottom .right .basket:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  #clothing .all .products .product .bottom .right .up select {
+    width: 100%;
+    outline: none;
+    font-family: var(--neueregular);
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+  }
+  #clothing .all .products .product .bottom .right .down {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: 12px;
+  }
+  #clothing .all .products .product .bottom .right .down input {
+    display: none;
+  }
+  #clothing .all .products .product .bottom .right .down label {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border: 0.3px solid white;
+    outline: 0.3px solid black;
+    position: relative;
+  }
+  #clothing .all .products .product .bottom .right .down label .markicon {
+    font-size: 20px;
+    position: absolute;
+    bottom: -30%;
+    left: -25%;
+  }
+  #clothing .all .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  #clothing .all .pagination ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #clothing .all .pagination ul li {
+    background-color: black;
+    width: 10%;
+    padding-top: 1px;
+    cursor: pointer;
+  }
+  #clothing .all .pagination ul .activepagination {
+    background-color: var(--yellow);
+    padding: 1.5px 0;
+  }
+  #clothing .all .loadmore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  #clothing .all .loadmore a {
+    padding: 20px 90px;
+    color: black;
+    border: 1px solid black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
 }
 
 @font-face {
