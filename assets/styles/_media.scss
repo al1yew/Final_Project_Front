@@ -8,23 +8,6 @@
     --neuebold: NeuePowerBold;
 }
 
-/*CUSTOM COLS*/
-
-.col-1-5 {
-    flex: 0 0 auto;
-    width: 12.5%;
-}
-
-.col-3-5 {
-    flex: 0 0 auto;
-    width: 29.1666%;
-}
-
-.col-4-5 {
-    flex: 0 0 auto;
-    width: 37.5%;
-}
-
 @keyframes mercaniye {
     from {
         background-color: var(--yellow);

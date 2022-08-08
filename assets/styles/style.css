@@ -20,28 +20,6 @@ p {
   --neuebold: NeuePowerBold;
 }
 
-/*CUSTOM COLS*/
-.col-1-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 12.5%;
-}
-
-.col-3-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 29.1666%;
-}
-
-.col-4-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 37.5%;
-}
-
 @-webkit-keyframes mercaniye {
   from {
     background-color: var(--yellow);
@@ -4381,78 +4359,6 @@ p {
   src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
 }
 
-/*#region Custom col classes*/
-.col-lg-0-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 4.16666666%;
-}
-
-.col-lg-1-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 12.5%;
-}
-
-.col-lg-1-8 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 15%;
-}
-
-.col-lg-2-2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 18.333333%;
-}
-
-.col-lg-2-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 20.8333333%;
-}
-
-.col-lg-3-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 29.16666666%;
-}
-
-.col-lg-4-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 37.5%;
-}
-
-.col-lg-5-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 45.8333%;
-}
-
-.col-lg-5-8 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 48.3333333%;
-}
-
-.col-lg-6-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 54.16666666%;
-}
-
-/*#endregion Custom col classes*/
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -5145,15 +5051,6 @@ p {
   src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
 }
 
-/*#region Custom col classes*/
-.col-2-1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 17.5%;
-}
-
-/*#endregion Custom col classes*/
 @media (max-width: 576px) {
   :root {
     --white: #FFFFFF;
@@ -5188,7 +5085,7 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding: 0 12px;
+    padding: 0 7px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5240,7 +5137,7 @@ p {
     font-style: italic;
   }
   .breadcrumb {
-    padding: 5px 5px;
+    padding: 5px 0px;
     margin: 0;
   }
   .breadcrumb .keeper {
@@ -5311,7 +5208,7 @@ p {
     display: -ms-flexbox;
     display: flex;
     margin-top: 30px;
-    padding: 0 17px;
+    padding: 0 12px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -5437,6 +5334,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 10px;
     position: relative;
     overflow: hidden;
   }
@@ -5481,7 +5379,7 @@ p {
   #clothing .all .pricerange .range-input input {
     position: absolute;
     cursor: pointer;
-    width: 100%;
+    width: 110%;
     height: 5px;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -5515,6 +5413,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0 12px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -5800,64 +5699,6 @@ p {
 }
 
 /*ANIMATIONS*/
-/*#region Custom col classes*/
-.col-lg-0-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 4.16666666%;
-}
-
-.col-lg-2-2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 18.333333%;
-}
-
-.col-lg-2-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 20.8333333%;
-}
-
-.col-lg-3-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 29.16666666%;
-}
-
-.col-lg-4-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 37.5%;
-}
-
-.col-lg-5-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 45.8333%;
-}
-
-.col-lg-5-8 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 48.3333333%;
-}
-
-.col-lg-6-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 54.16666666%;
-}
-
-/*#endregion Custom col classes*/
 /*region scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;

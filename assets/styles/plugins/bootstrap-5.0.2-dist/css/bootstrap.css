@@ -979,9 +979,19 @@ progress {
   width: 8.33333333%;
 }
 
+.col-1-5 {
+  flex: 0 0 auto;
+  width: 12.5%;
+}
+
 .col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
+}
+
+.col-2-1 {
+  flex: 0 0 auto;
+  width: 17.5%;
 }
 
 .col-3 {
@@ -989,9 +999,19 @@ progress {
   width: 25%;
 }
 
+.col-3-5 {
+  flex: 0 0 auto;
+  width: 29.1666%;
+}
+
 .col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
+}
+
+.col-4-5 {
+  flex: 0 0 auto;
+  width: 37.5%;
 }
 
 .col-5 {
@@ -1552,6 +1572,56 @@ progress {
   .col-lg-12 {
     flex: 0 0 auto;
     width: 100%;
+  }
+
+  .col-lg-0-5 {
+    flex: 0 0 auto;
+    width: 4.16666666%;
+  }
+
+  .col-lg-1-5 {
+    flex: 0 0 auto;
+    width: 12.5%;
+  }
+
+  .col-lg-1-8 {
+    flex: 0 0 auto;
+    width: 15%;
+  }
+
+  .col-lg-2-2 {
+    flex: 0 0 auto;
+    width: 18.333333%;
+  }
+
+  .col-lg-2-5 {
+    flex: 0 0 auto;
+    width: 20.8333333%;
+  }
+
+  .col-lg-3-5 {
+    flex: 0 0 auto;
+    width: 29.16666666%;
+  }
+
+  .col-lg-4-5 {
+    flex: 0 0 auto;
+    width: 37.5%;
+  }
+
+  .col-lg-5-5 {
+    flex: 0 0 auto;
+    width: 45.8333%;
+  }
+
+  .col-lg-5-8 {
+    flex: 0 0 auto;
+    width: 48.3333333%;
+  }
+
+  .col-lg-6-5 {
+    flex: 0 0 auto;
+    width: 54.16666666%;
   }
 
   .offset-lg-0 {

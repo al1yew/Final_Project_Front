@@ -34,19 +34,7 @@ p {
     src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
 }
 
-/*#region Custom col classes*/
-
-.col-2-1 {
-    flex: 0 0 auto;
-    width: 17.5%;
-}
-
-/*#endregion Custom col classes*/
-
-
 @media (max-width: 576px) {
-
-
 
     :root {
         --white: #FFFFFF;
@@ -85,7 +73,7 @@ p {
             list-style: none;
             padding: 0;
             margin: 0;
-            padding: 0 12px;
+            padding: 0 7px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -142,7 +130,7 @@ p {
     }
 
     .breadcrumb {
-        padding: 5px 5px;
+        padding: 5px 0px;
         margin: 0;
 
         .keeper {
@@ -209,7 +197,7 @@ p {
             .filternew {
                 display: flex;
                 margin-top: 30px;
-                padding: 0 17px;
+                padding: 0 12px;
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
@@ -324,6 +312,7 @@ p {
                 justify-content: space-between;
                 height: 30px;
                 align-items: center;
+                margin-top: 10px;
                 position: relative;
                 overflow: hidden;
 
@@ -367,7 +356,7 @@ p {
                 .range-input input {
                     position: absolute;
                     cursor: pointer;
-                    width: 100%;
+                    width: 110%;
                     height: 5px;
                     top: 50%;
                     transform: translateY(-50%);
@@ -402,6 +391,7 @@ p {
             .products {
                 margin: 40px 0;
                 display: flex;
+                padding: 0 12px;
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
@@ -622,9 +612,5 @@ p {
             }
         }
     }
-
-
-
-
 
 }
