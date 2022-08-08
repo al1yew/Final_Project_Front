@@ -1237,14 +1237,17 @@
                     display: flex;
 
                     .socialmedias {
-                        width: 100%;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         margin-top: 10px;
 
-                        .svg_social {
-                            padding-left: 5px;
+                        .svg_social_fb {
+                            padding-left: 7px;
+                        }
+
+                        .svg_social_tw {
+                            padding-top: 4px;
                         }
                     }
                 }
@@ -1277,6 +1280,7 @@
 
             .formobile3 {
                 order: 2;
+                padding: 0;
             }
         }
 

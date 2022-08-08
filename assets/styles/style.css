@@ -1373,7 +1373,6 @@ p {
     display: flex;
   }
   .footer .footer_row .parent_div:nth-child(3) .socialmedias {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1385,8 +1384,11 @@ p {
             align-items: center;
     margin-top: 10px;
   }
-  .footer .footer_row .parent_div:nth-child(3) .socialmedias .svg_social {
-    padding-left: 5px;
+  .footer .footer_row .parent_div:nth-child(3) .socialmedias .svg_social_fb {
+    padding-left: 7px;
+  }
+  .footer .footer_row .parent_div:nth-child(3) .socialmedias .svg_social_tw {
+    padding-top: 4px;
   }
   .footer .footer_row .parent_div .footer_header {
     font-weight: 700;
@@ -1417,6 +1419,7 @@ p {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    padding: 0;
   }
   .footer .bye {
     display: -webkit-box;
@@ -5085,7 +5088,7 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding: 0 7px;
+    padding: 12px 7px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5117,9 +5120,9 @@ p {
     text-decoration: underline;
   }
   #shoptext {
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: 1px solid black;
-    padding-top: 15px;
+    padding-bottom: 10px;
   }
   #shoptext p {
     font-family: var(--neueregular);
@@ -5500,13 +5503,13 @@ p {
   }
   #clothing .all .products .product .bottom .left .up {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 114%;
     font-family: var(--neuelight);
     letter-spacing: 0.08em;
   }
   #clothing .all .products .product .bottom .left .down {
-    margin-top: 10px;
+    margin-top: 15px;
     font-family: var(--neuebold);
     font-weight: 700;
     line-height: 114%;
@@ -5555,6 +5558,9 @@ p {
     fill: var(--yellow);
     stroke: var(--yellow);
   }
+  #clothing .all .products .product .bottom .right .up {
+    margin-top: -10px;
+  }
   #clothing .all .products .product .bottom .right .up select {
     width: 100%;
     outline: none;
@@ -5562,7 +5568,16 @@ p {
     border-radius: 0;
     font-weight: 400;
     font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border: 0.7px solid black;
+    border-radius: 2px;
     letter-spacing: 0.08em;
+  }
+  #clothing .all .products .product .bottom .right .up select option {
+    background-color: white;
   }
   #clothing .all .products .product .bottom .right .down {
     margin: 0 auto;
@@ -5576,24 +5591,25 @@ p {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
-    margin-top: 12px;
+    margin-top: 5px;
   }
   #clothing .all .products .product .bottom .right .down input {
     display: none;
   }
   #clothing .all .products .product .bottom .right .down label {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
+    max-width: 19px;
+    max-height: 19px;
     cursor: pointer;
-    border: 0.3px solid white;
-    outline: 0.3px solid black;
+    outline: 0.8px solid black;
     position: relative;
   }
   #clothing .all .products .product .bottom .right .down label .markicon {
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
-    bottom: -30%;
-    left: -25%;
+    bottom: -10%;
+    left: -10%;
   }
   #clothing .all .pagination {
     display: -webkit-box;

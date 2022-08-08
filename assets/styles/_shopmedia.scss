@@ -73,7 +73,7 @@ p {
             list-style: none;
             padding: 0;
             margin: 0;
-            padding: 0 7px;
+            padding: 12px 7px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -104,9 +104,9 @@ p {
     }
 
     #shoptext {
-        padding: 10px 0;
+        padding: 20px 0;
         border-bottom: 1px solid black;
-        padding-top: 15px;
+        padding-bottom: 10px;
 
         p {
             font-family: var(--neueregular);
@@ -460,14 +460,14 @@ p {
 
                             .up {
                                 font-weight: 300;
-                                font-size: 15px;
+                                font-size: 13px;
                                 line-height: 114%;
                                 font-family: var(--neuelight);
                                 letter-spacing: 0.08em;
                             }
 
                             .down {
-                                margin-top: 10px;
+                                margin-top: 15px;
                                 font-family: var(--neuebold);
                                 font-weight: 700;
                                 line-height: 114%;
@@ -518,6 +518,8 @@ p {
                             }
 
                             .up {
+                                margin-top: -10px;
+
                                 select {
                                     width: 100%;
                                     outline: none;
@@ -525,7 +527,17 @@ p {
                                     border-radius: 0;
                                     font-weight: 400;
                                     font-size: 14px;
+                                    padding: 0;
+                                    margin: 0;
+                                    color: black;
+                                    background-color: white;
+                                    border: 0.7px solid black;
+                                    border-radius: 2px;
                                     letter-spacing: 0.08em;
+
+                                    option {
+                                        background-color: white;
+                                    }
                                 }
                             }
 
@@ -535,25 +547,26 @@ p {
                                 justify-content: space-between;
                                 align-items: center;
                                 width: 80%;
-                                margin-top: 12px;
+                                margin-top: 5px;
 
                                 input {
                                     display: none;
                                 }
 
                                 label {
-                                    height: 15px;
-                                    width: 15px;
+                                    height: 20px;
+                                    width: 20px;
+                                    max-width: 19px;
+                                    max-height: 19px;
                                     cursor: pointer;
-                                    border: 0.3px solid white;
-                                    outline: 0.3px solid black;
+                                    outline: 0.8px solid black;
                                     position: relative;
 
                                     .markicon {
-                                        font-size: 20px;
+                                        font-size: 25px;
                                         position: absolute;
-                                        bottom: -30%;
-                                        left: -25%;
+                                        bottom: -10%;
+                                        left: -10%;
                                     }
                                 }
                             }
