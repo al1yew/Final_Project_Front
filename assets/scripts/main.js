@@ -267,7 +267,7 @@ $(document).ready(function () {
         console.log(a, aa)
 
         alert(`${a} min value, ${aa} max value -- information for fetch`)
-        
+
         // vse bulari da fetch edeceyik vessalam
     });
 
