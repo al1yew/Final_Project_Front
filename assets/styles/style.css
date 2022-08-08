@@ -4523,7 +4523,7 @@ p {
 }
 
 .pricerange .slider1 {
-  height: 1px;
+  height: 0.8px;
   right: 12px;
   top: 76%;
   width: 84%;
@@ -4536,7 +4536,7 @@ p {
   position: relative;
   width: 83%;
   margin-top: 17px;
-  height: 2px;
+  height: 0px;
 }
 
 .pricerange .range-input input {
@@ -4556,6 +4556,7 @@ p {
   width: 17px;
   border-radius: 50%;
   background: var(--yellow);
+  outline: 1px solid black;
   pointer-events: auto;
   -webkit-appearance: none;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -5030,6 +5031,14 @@ a:hover {
   cursor: pointer;
   border: 0.3px solid white;
   outline: 0.3px solid black;
+  position: relative;
+}
+
+#clothing .all .products .product .bottom .right .down label .markicon {
+  font-size: 20px;
+  position: absolute;
+  bottom: -30%;
+  left: -25%;
 }
 
 @font-face {

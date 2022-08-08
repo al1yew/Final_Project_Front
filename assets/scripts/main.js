@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+
     //#region slayderi
 
     //---------------------------------main page first slider 
@@ -141,9 +142,9 @@ $(document).ready(function () {
 
         //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
         // https://api.color.pizza/v1/{{hexvalue without the #}} eto dla togo shto b 
-        //color name tojemojno vpisivat, otpravlayem tuda value bez #
+        //color name toje mojno bilo vpisivat, otpravlayem tuda value bez #
         //https://api.color.pizza/v1/c777b3,8a77c7 naprimer ya otpravil dva cveta, 
-        //fetch delayem tudai vse budet super  
+        //fetch delayem tuda i on vozvrashayet mne json kak ya ponal - smotri guthub
         //https://github.com/meodai/color-names
         //nado bi dla SORT BY POPULAR schitat v MVC skolko raz zaxodili na moy sayt
         // prosto her defe product detail sehifesine daxil olanda hemin produktun
@@ -151,6 +152,16 @@ $(document).ready(function () {
         //olanda nado vsem etim produktam delat dla most purchased ++ shto b bili 
         //toje popularni tipa
 
+    });
+
+    //---------------------------------products stranica form dla zakaza produkta submit na button
+
+    $(document).on('mousedown', '.addingtobasketinshoppage .down label', function (e) {
+        e.preventDefault();
+        console.log('skaks')
+        $(this).append('<ion-icon name="checkmark-outline" class="markicon"></ion-icon>')
+
+        $(this).siblings('label').text('')
     });
 
     //#endregion form products page
