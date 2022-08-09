@@ -173,19 +173,6 @@ a {
                         }
                     }
 
-                    // .searchinputforjs {
-                    //     width: 90%;
-                    //     font-family: var(--neuelight);
-                    //     letter-spacing: 0.08em;
-                    //     background-color: transparent;
-                    //     outline: none;
-                    //     border: none;
-
-                    //     &::placeholder {
-                    //         color: yellow !important;
-                    //     }
-                    // }
-
                     .search_icon {
                         color: var(--white);
                         font-size: 18px;
@@ -197,28 +184,96 @@ a {
                 .cart {
                     position: relative;
 
-                    svg {
-                        color: #FFFFFF;
+                    a {
+                        svg {
+                            color: #FFFFFF;
+                        }
+
+                        span {
+                            position: absolute;
+                            top: -8px;
+                            right: -3px;
+                            padding: 5px;
+                            border-radius: 100%;
+                            background-color: var(--yellow);
+                            font-size: 11px;
+                            line-height: 8px;
+                            color: black;
+                        }
                     }
 
-                    // a {
-                    //     &:hover {
-                    //         color: white;
-                    //         font-family: var(--neuemedium);
-                    //         transform: scale(1);
-                    //     }
-                    // }
+                    &:hover .minibasket {
+                        opacity: 1;
+                        visibility: visible;
+                    }
 
-                    span {
+                    .minibasket {
+                        opacity: 1;
+                        transition: 0.5s;
+                        visibility: hidden;
                         position: absolute;
-                        top: -8px;
-                        right: -3px;
-                        padding: 5px;
-                        border-radius: 100%;
-                        background-color: var(--yellow);
-                        font-size: 11px;
-                        line-height: 8px;
+                        top: 100%;
+                        right: 50%;
+                        transform: translateX(50%);
+                        width: 370px;
+                        height: 430px;
+                        overflow-y: scroll;
+                        background-color: white;
+                        z-index: 234567;
+                        padding: 15px;
                         color: black;
+
+                        .basket_count {
+                            font-family: var(--neuebold);
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 114%;
+                            letter-spacing: 0.08em;
+                            margin-bottom: 10px;
+                        }
+
+                        .basket_item {
+                            font-family: var(--neuemedium);
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 114%;
+                            letter-spacing: 0.08em;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 20px;
+
+                            .middle {
+                                padding: 0px 10px;
+
+                                ul {
+                                    list-style: none;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    li {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-bottom: 7px;
+
+                                        &:nth-child(1) {
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            font-family: var(--neuelight);
+                                        }
+
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .right {
+                                margin: auto 0;
+                            }
+                        }
                     }
                 }
 
