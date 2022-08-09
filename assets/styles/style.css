@@ -421,10 +421,9 @@ p {
   }
   #second {
     overflow: hidden;
-    height: 47vh;
+    height: 370px;
     position: relative;
     font-family: var(--neuebold);
-    margin-bottom: 50px;
     padding: 0 20px;
   }
   #second .mission {
@@ -443,7 +442,7 @@ p {
   }
   #second .image1 {
     position: absolute;
-    top: 12%;
+    top: 10%;
     right: 20px;
     width: 28%;
     z-index: 8;
@@ -451,7 +450,7 @@ p {
   #second .keeper {
     position: absolute;
     width: 35%;
-    bottom: 12%;
+    top: 33%;
     left: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -475,7 +474,7 @@ p {
   }
   #second .image3 {
     position: absolute;
-    bottom: 0;
+    bottom: 8%;
     right: 20px;
     width: 28%;
     z-index: 6;
@@ -485,13 +484,15 @@ p {
     border: 1px solid #000000;
     position: absolute;
     display: block;
-    bottom: 0;
+    bottom: 8%;
     left: 20px;
     padding: 5px 12px;
     background-color: var(--white);
     letter-spacing: 0.08em;
     line-height: 114%;
     color: black;
+    -webkit-animation-name: mercaniye;
+            animation-name: mercaniye;
     font-size: 12px;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;

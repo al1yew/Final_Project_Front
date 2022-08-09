@@ -370,10 +370,10 @@
 
     #second {
         overflow: hidden;
-        height: 47vh;
+        // height: 47vh;
+        height: 370px;
         position: relative;
         font-family: var(--neuebold);
-        margin-bottom: 50px;
         padding: 0 20px;
 
         .mission {
@@ -394,7 +394,7 @@
 
         .image1 {
             position: absolute;
-            top: 12%;
+            top: 10%;
             right: 20px;
             width: 28%;
             z-index: 8;
@@ -403,7 +403,7 @@
         .keeper {
             position: absolute;
             width: 35%;
-            bottom: 12%;
+            top: 33%;
             left: 20px;
             display: flex;
             justify-content: space-between;
@@ -424,7 +424,7 @@
 
         .image3 {
             position: absolute;
-            bottom: 0;
+            bottom: 8%;
             right: 20px;
             width: 28%;
             z-index: 6;
@@ -435,7 +435,7 @@
             border: 1px solid #000000;
             position: absolute;
             display: block;
-            bottom: 0;
+            bottom: 8%;
             left: 20px;
             padding: 5px 12px;
             background-color: var(--white);
@@ -443,6 +443,7 @@
             line-height: 114%;
 
             color: black;
+            animation-name: mercaniye;
             font-size: 12px;
             animation-timing-function: linear;
             animation-duration: 1s;
