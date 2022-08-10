@@ -2465,7 +2465,6 @@ p {
     height: 100vh;
     position: relative;
     font-family: var(--neuebold);
-    padding: 0 10%;
     margin-bottom: 70px;
   }
   #second .mission {
@@ -7445,7 +7444,6 @@ a:hover {
     height: 100vh;
     position: relative;
     font-family: var(--neuebold);
-    padding: 0 10%;
     margin-bottom: 70px;
   }
   #second .mission {
