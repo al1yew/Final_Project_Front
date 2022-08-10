@@ -1810,7 +1810,7 @@
                         span {
                             position: absolute;
                             top: -8px;
-                            right: -3px;
+                            right: -7px;
                             padding: 5px;
                             border-radius: 100%;
                             background-color: var(--yellow);
@@ -2322,7 +2322,7 @@
         margin-bottom: 70px;
 
         .mission {
-            width: 45%;
+            width: 33%;
             font-weight: 500;
             font-size: 55px;
             line-height: 114%;
@@ -2339,8 +2339,8 @@
 
         .image1 {
             position: absolute;
-            top: 8%;
-            right: 30%;
+            top: 13%;
+            right: 27%;
             width: 19%;
             z-index: 8;
         }
@@ -2398,7 +2398,7 @@
 
     #secondthird {
         margin-top: 70px;
-        height: 90vh;
+        height: 80vh;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -2521,7 +2521,7 @@
     }
 
     #third {
-        height: 90vh;
+        height: 85vh;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -2720,7 +2720,7 @@
     }
 
     #fourth {
-        margin-top: 70px;
+        margin-top: 30px;
         height: 90vh;
         position: relative;
         overflow: visible;
@@ -2838,14 +2838,14 @@
             margin-top: 10px;
         }
 
-        .nextfirst {
+        .next {
             margin-bottom: -1px;
         }
     }
 
     #fifth {
         height: 80vh;
-        margin-top: 70px;
+        margin-top: 30px;
         position: relative;
         width: 100%;
 
@@ -2982,7 +2982,7 @@
         background-size: cover;
         max-width: 100%;
         position: relative;
-        margin: 50px 0;
+        margin: 30px 0;
 
         .just_launched {
             font-family: var(--neuemedium);
@@ -3001,7 +3001,7 @@
         }
 
         .shipping {
-            width: 70%;
+            width: 90%;
             font-weight: 500;
             font-size: 86px;
             line-height: 114%;
@@ -3050,10 +3050,10 @@
     }
 
     #seventh {
-        height: 100vh;
+        height: 85vh;
         overflow: hidden;
         position: relative;
-        margin: 50px 0;
+        margin: 30px 0;
 
         .top_main {
             display: flex;
@@ -3178,7 +3178,7 @@
             position: absolute;
             padding: 15px 0;
             color: var(--yellow);
-            width: 400%;
+            width: 450%;
             top: 0;
             left: 0%;
             font-family: var(--neuemedium);
@@ -3351,7 +3351,7 @@
                 justify-content: space-between;
                 align-items: baseline;
                 flex-direction: column;
-
+                padding: 0;
                 font-family: var(--neueregular);
                 font-weight: 400;
                 font-size: 14px;
@@ -3373,6 +3373,7 @@
             }
 
             .forcompyuter {
+                padding: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -3397,6 +3398,7 @@
                 font-size: 12px;
                 line-height: 114%;
                 letter-spacing: 0.08em;
+                padding: 0;
                 display: flex;
                 justify-content: end;
                 align-items: center;
@@ -4101,7 +4103,7 @@
 
     #secondthird {
         margin-top: 70px;
-        height: 100vh;
+        height: 85vh;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -4214,13 +4216,17 @@
             margin-bottom: -10px;
         }
 
+        .nextfirst {
+            margin-bottom: -1px;
+        }
+
         .arrows {
             margin-top: 10px;
         }
     }
 
     #third {
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -4328,7 +4334,7 @@
 
                     .product_name {
                         position: absolute;
-                        bottom: 5%;
+                        bottom: 17%;
                         left: 5%;
                         width: 100%;
                         font-weight: 500;
@@ -4419,8 +4425,8 @@
     }
 
     #fourth {
-        margin-top: 70px;
-        height: 100vh;
+        margin-top: 30px;
+        height: 91vh;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -4539,8 +4545,8 @@
     }
 
     #fifth {
-        height: 100vh;
-        margin-top: 70px;
+        height: 87vh;
+        margin-top: 30px;
         position: relative;
         width: 100%;
 
@@ -4696,7 +4702,7 @@
         }
 
         .shipping {
-            width: 70%;
+            width: 90%;
             font-weight: 500;
             font-size: 86px;
             line-height: 114%;
@@ -4745,7 +4751,7 @@
     }
 
     #seventh {
-        height: 100vh;
+        height: 80vh;
         overflow: hidden;
         position: relative;
         margin: 50px 0;

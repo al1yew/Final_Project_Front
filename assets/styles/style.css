@@ -1987,7 +1987,7 @@ p {
   .header .computer .navigation .cart a span {
     position: absolute;
     top: -8px;
-    right: -3px;
+    right: -7px;
     padding: 5px;
     border-radius: 100%;
     background-color: var(--yellow);
@@ -2484,7 +2484,7 @@ p {
     margin-bottom: 70px;
   }
   #second .mission {
-    width: 45%;
+    width: 33%;
     font-weight: 500;
     font-size: 55px;
     line-height: 114%;
@@ -2499,8 +2499,8 @@ p {
   }
   #second .image1 {
     position: absolute;
-    top: 8%;
-    right: 30%;
+    top: 13%;
+    right: 27%;
     width: 19%;
     z-index: 8;
   }
@@ -2558,7 +2558,7 @@ p {
   }
   #secondthird {
     margin-top: 70px;
-    height: 90vh;
+    height: 80vh;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -2672,7 +2672,7 @@ p {
     margin-bottom: -1px;
   }
   #third {
-    height: 90vh;
+    height: 85vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -2892,7 +2892,7 @@ p {
             transform: scale(1.1) rotate(10deg);
   }
   #fourth {
-    margin-top: 70px;
+    margin-top: 30px;
     height: 90vh;
     position: relative;
     overflow: visible;
@@ -3003,12 +3003,12 @@ p {
   #fourth .arrows {
     margin-top: 10px;
   }
-  #fourth .nextfirst {
+  #fourth .next {
     margin-bottom: -1px;
   }
   #fifth {
     height: 80vh;
-    margin-top: 70px;
+    margin-top: 30px;
     position: relative;
     width: 100%;
   }
@@ -3151,7 +3151,7 @@ p {
     background-size: cover;
     max-width: 100%;
     position: relative;
-    margin: 50px 0;
+    margin: 30px 0;
   }
   #sixth .just_launched {
     font-family: var(--neuemedium);
@@ -3168,7 +3168,7 @@ p {
     color: black;
   }
   #sixth .shipping {
-    width: 70%;
+    width: 90%;
     font-weight: 500;
     font-size: 86px;
     line-height: 114%;
@@ -3219,10 +3219,10 @@ p {
     background-color: var(--yellow);
   }
   #seventh {
-    height: 100vh;
+    height: 85vh;
     overflow: hidden;
     position: relative;
-    margin: 50px 0;
+    margin: 30px 0;
   }
   #seventh .top_main {
     display: -webkit-box;
@@ -3346,7 +3346,7 @@ p {
     position: absolute;
     padding: 15px 0;
     color: var(--yellow);
-    width: 400%;
+    width: 450%;
     top: 0;
     left: 0%;
     font-family: var(--neuemedium);
@@ -3592,6 +3592,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
     font-family: var(--neueregular);
     font-weight: 400;
     font-size: 14px;
@@ -3611,6 +3612,7 @@ p {
     display: none;
   }
   .footer .bye .forcompyuter {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3640,6 +3642,7 @@ p {
     font-size: 12px;
     line-height: 114%;
     letter-spacing: 0.08em;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4345,7 +4348,7 @@ p {
   }
   #secondthird {
     margin-top: 70px;
-    height: 100vh;
+    height: 85vh;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -4452,11 +4455,14 @@ p {
             justify-content: end;
     margin-bottom: -10px;
   }
+  #secondthird .nextfirst {
+    margin-bottom: -1px;
+  }
   #secondthird .arrows {
     margin-top: 10px;
   }
   #third {
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -4597,7 +4603,7 @@ p {
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
-    bottom: 5%;
+    bottom: 17%;
     left: 5%;
     width: 100%;
     font-weight: 500;
@@ -4676,8 +4682,8 @@ p {
             transform: scale(1.1) rotate(10deg);
   }
   #fourth {
-    margin-top: 70px;
-    height: 100vh;
+    margin-top: 30px;
+    height: 91vh;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -4788,8 +4794,8 @@ p {
     margin-top: 10px;
   }
   #fifth {
-    height: 100vh;
-    margin-top: 70px;
+    height: 87vh;
+    margin-top: 30px;
     position: relative;
     width: 100%;
   }
@@ -4949,7 +4955,7 @@ p {
     color: black;
   }
   #sixth .shipping {
-    width: 70%;
+    width: 90%;
     font-weight: 500;
     font-size: 86px;
     line-height: 114%;
@@ -5000,7 +5006,7 @@ p {
     background-color: var(--yellow);
   }
   #seventh {
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
     margin: 50px 0;
@@ -7005,7 +7011,7 @@ a:hover {
     transition: 0.3s;
     visibility: hidden;
     position: absolute;
-    top: 100%;
+    top: 120%;
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
@@ -7552,8 +7558,8 @@ a:hover {
     background-color: var(--yellow);
   }
   #secondthird {
-    margin-top: 70px;
-    height: 100vh;
+    margin-top: 30px;
+    height: 90vh;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -7652,12 +7658,16 @@ a:hover {
   #secondthird .slick-dots {
     width: 50%;
     right: 0;
+    bottom: -54px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+  #secondthird .arrows {
+    margin-top: 20px;
   }
   #third {
     height: 100vh;
@@ -7801,7 +7811,7 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element .product_name {
     position: absolute;
-    bottom: 18%;
+    bottom: 16%;
     left: 5%;
     width: 100%;
     font-weight: 500;
@@ -7816,7 +7826,7 @@ a:hover {
   }
   #third .newprodcs .newprodcs_element .element .product_price {
     position: absolute;
-    bottom: 18%;
+    bottom: 16%;
     right: 6%;
     padding: 5px 15px;
     background-color: var(--yellow);
@@ -7880,7 +7890,7 @@ a:hover {
             transform: scale(1.1) rotate(10deg);
   }
   #fourth {
-    margin-top: 70px;
+    margin-top: 30px;
     height: 100vh;
     position: relative;
     overflow: visible;
@@ -7981,16 +7991,19 @@ a:hover {
   #fourth .slick-dots {
     width: 50%;
     right: 0;
+    bottom: -54px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    margin-bottom: -10px;
   }
   #fourth .arrows {
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+  #fourth .next {
+    margin-bottom: -1px;
   }
   #fifth {
     height: 100vh;
@@ -8205,10 +8218,10 @@ a:hover {
     background-color: var(--yellow);
   }
   #seventh {
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
-    margin: 50px 0;
+    margin: 30px 0;
   }
   #seventh .top_main {
     display: -webkit-box;

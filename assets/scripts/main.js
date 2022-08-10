@@ -410,13 +410,6 @@ $(document).ready(function () {
 
     //---------------------------------Open basket close basket on phone, Open Close accountinfo 
 
-    // $(document).on('click', function (e) {
-    //     console.log()
-    //     if (!$(e.target).hasClass('cart')) {
-    //         $('.minibasket').fadeOut(200);
-    //     }
-    // }) shto bi on zakrival basket pri najatii na inuyu chast okoshka
-
     $(document).on('click', '.cart', function (e) {
         if ($(window).width() < 576) {
             e.preventDefault();
