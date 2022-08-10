@@ -404,9 +404,24 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region 
+    //#region Open basket close basket on phne
 
+    //---------------------------------open basket close basket on phone
 
+    // $(document).on('click', function (e) {
+    //     console.log()
+    //     if (!$(e.target).hasClass('cart')) {
+    //         $('.minibasket').fadeOut(200);
+    //     }
+    // }) shto bi on zakrival basket pri najatii na inuyu chast okoshka
+
+    $(document).on('click', '.cart', function (e) {
+        if ($(window).width() < 576) {
+            e.preventDefault();
+            $('.minibasket').css('width', `${$(window).width() * 0.9}`)
+            $('.minibasket').fadeToggle(200);
+        }
+    });
 
     //#endregion
 

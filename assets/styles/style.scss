@@ -203,21 +203,20 @@ a {
                     }
 
                     &:hover .minibasket {
-                        // opacity: 1;
-                        // visibility: visible;
+                        opacity: 1;
+                        visibility: visible;
                     }
 
                     .minibasket {
-                        // opacity: 1;
-                        // transition: 0.5s;
-                        // visibility: hidden;
+                        opacity: 0;
+                        transition: 0.3s;
+                        visibility: hidden;
                         position: absolute;
                         top: 100%;
                         right: 50%;
                         transform: translateX(50%);
                         width: 360px;
-                        height: 430px;
-                        overflow-y: scroll;
+                        height: 400px;
                         background-color: white;
                         z-index: 234567;
                         color: black;
@@ -233,11 +232,21 @@ a {
                             line-height: 114%;
                             letter-spacing: 0.08em;
                             border-bottom: 0.5px solid black;
-                            margin-bottom: 10px;
-                            padding-bottom: 10px;
+                            background-color: white;
+                            position: fixed;
+                            padding: 8px 0;
+                            padding-left: 15px;
+                            z-index: 3231;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
                         }
 
                         .basket_items {
+                            height: 65%;
+                            overflow-y: scroll;
+                            margin: 30px 0;
+
                             .basket_item {
                                 font-family: var(--neuemedium);
                                 font-weight: 500;
@@ -258,9 +267,9 @@ a {
                                     padding: 0px 10px;
                                     position: relative;
 
-                                    .classforbasketscss {
+                                    .classforbasketscssdelete {
                                         position: absolute;
-                                        right: 20px;
+                                        right: 15px;
                                         top: 50%;
                                         transform: translateY(-50%);
                                     }
@@ -358,6 +367,97 @@ a {
                                     }
 
 
+                                }
+                            }
+                        }
+
+                        .basketbottombtns {
+                            height: 30%;
+                            position: fixed;
+                            padding: 0;
+                            margin: 0;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            color: black;
+                            padding: 10px 15px;
+
+                            .top {
+                                height: 40%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                padding-top: 3px;
+
+                                .lefttop {
+                                    font-weight: 800;
+                                    font-size: 12px;
+                                    line-height: 114%;
+                                    font-family: var(--neueultra);
+                                    letter-spacing: 0.08em;
+                                }
+
+                                .leftbottom {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 114%;
+                                    margin-top: 6px;
+                                    font-family: var(--neuemedium);
+                                    letter-spacing: 0.08em;
+                                }
+
+                                .righttop {
+                                    font-weight: 800;
+                                    font-size: 13px;
+                                    line-height: 114%;
+                                    font-family: var(--neueultra);
+                                    letter-spacing: 0.1em;
+                                }
+
+                                .rightbottom {
+                                    font-weight: 500;
+                                    font-size: 13px;
+                                    line-height: 114%;
+                                    margin-top: 6px;
+                                    font-family: var(--neuemedium);
+                                    letter-spacing: 0.08em;
+                                }
+                            }
+
+                            .bottom {
+                                height: 60%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .left,
+                                .right {
+                                    border: 1px solid black;
+                                    padding: 10px 0;
+                                    text-align: center;
+                                    width: 47%;
+                                }
+
+                                .right {
+                                    background-color: black;
+
+                                    a {
+                                        color: white !important;
+                                    }
+                                }
+
+                                a {
+                                    font-family: var(--neueregular);
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 114%;
+                                    letter-spacing: 0.08em;
+                                    color: black;
+                                    width: 47%;
                                 }
                             }
                         }
@@ -721,7 +821,7 @@ a {
         .transformed_p {
             position: absolute;
             top: 50%;
-            width: 250%;
+            width: 500%;
             padding: 15px 60px;
             background-color: var(--yellow);
             font-family: var(--neuelight);
@@ -735,7 +835,7 @@ a {
         }
 
         .spans_key {
-            animation-duration: 10s;
+            animation-duration: 15s;
             animation-iteration-count: infinite;
             animation-direction: normal;
             animation-name: carousel;
