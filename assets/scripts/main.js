@@ -138,6 +138,9 @@ $(document).ready(function () {
         e.preventDefault();
         let input = $(this).find('input:checked');
         let select = $(this).find('option:selected');
+        console.log($(this).find('input:checked'))
+        console.log(input.val());
+        console.log(select.val());
 
         console.log(input.val().slice(1));
         console.log(select.val());
