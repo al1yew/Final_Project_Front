@@ -404,9 +404,9 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region Open basket close basket on phne
+    //#region Open basket close basket on phone, Open Close accountinfo 
 
-    //---------------------------------open basket close basket on phone
+    //---------------------------------Open basket close basket on phone, Open Close accountinfo 
 
     // $(document).on('click', function (e) {
     //     console.log()
@@ -420,6 +420,14 @@ $(document).ready(function () {
             e.preventDefault();
             $('.minibasket').css('width', `${$(window).width() * 0.9}`)
             $('.minibasket').fadeToggle(200);
+        }
+    });
+
+    $(document).on('click', '.account', function (e) {
+        if ($(window).width() < 576) {
+            e.preventDefault();
+            $('.accountinfo').css('width', `${$(window).width() * 0.9}`)
+            $('.accountinfo').fadeToggle(200);
         }
     });
 

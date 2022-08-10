@@ -510,8 +510,9 @@
                 }
 
                 .account {
+                    position: relative;
 
-                    a {
+                    .accounthref {
                         border-radius: 100%;
                         padding: 10px 9px;
                         background-color: var(--yellow);
@@ -519,6 +520,104 @@
                         svg {
                             padding-left: 1px;
                             padding-bottom: 3px;
+                        }
+                    }
+
+                    .accountinfo {
+                        display: none;
+                        position: absolute;
+                        top: 168%;
+                        right: 50%;
+                        transform: translateX(3.2%);
+                        z-index: 4333;
+                        background-color: white;
+                        color: black;
+
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                width: 100%;
+                                padding: 10px 20px;
+                                border-bottom: 1px solid black;
+
+                                a {
+                                    transition: 0.4s;
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+
+                                &:nth-child(1) {
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 114%;
+                                    letter-spacing: 0.08em;
+                                    font-family: var(--neueregular);
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    padding-top: 15px;
+
+                                    a {
+                                        background-color: black;
+                                        color: white;
+                                        padding: 15px 70px;
+                                        transition: 0.3s;
+                                    }
+
+                                    div {
+                                        margin-top: 10px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-direction: column;
+
+                                        span {
+                                            font-weight: 400;
+                                            font-size: 12px;
+                                            line-height: 114%;
+                                            font-family: var(--neueregular);
+                                            letter-spacing: 0.08em;
+                                        }
+
+                                        a {
+                                            background-color: white;
+                                            color: black;
+                                            padding: 0;
+                                            font-weight: 700;
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            text-align: right;
+                                            letter-spacing: 0.08em;
+                                            text-decoration-line: underline;
+                                            font-family: var(--neuebold);
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5),
+                                &:nth-child(6) {
+                                    a {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                    }
+                                }
+
+                                &:nth-child(6) {
+                                    border: none;
+                                }
+                            }
                         }
                     }
                 }
@@ -1978,8 +2077,9 @@
                 }
 
                 .account {
+                    position: relative;
 
-                    a {
+                    .accounthref {
                         border-radius: 100%;
                         padding: 10px 10px;
                         background-color: var(--yellow);
@@ -1987,6 +2087,113 @@
                         svg {
                             padding-left: 1px;
                             padding-bottom: 3px;
+                        }
+                    }
+
+                    &:hover .accountinfo {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    .accountinfo {
+                        position: absolute;
+                        top: 125%;
+                        left: 0%;
+                        transform: translateX(-58%);
+                        width: 300px;
+                        z-index: 4333;
+                        background-color: white;
+                        color: black;
+                        opacity: 0;
+                        transition: 0.3s;
+                        visibility: hidden;
+
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                width: 100%;
+                                padding: 10px 20px;
+                                border-bottom: 1px solid black;
+
+                                a {
+                                    transition: 0.4s;
+                                    color: black;
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+
+                                &:nth-child(1) {
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 114%;
+                                    letter-spacing: 0.08em;
+                                    font-family: var(--neueregular);
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    padding-top: 15px;
+
+                                    a {
+                                        background-color: black;
+                                        color: white;
+                                        padding: 15px 70px;
+                                        transition: 0.3s;
+                                    }
+
+                                    div {
+                                        margin-top: 10px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-direction: column;
+
+                                        span {
+                                            font-weight: 400;
+                                            font-size: 12px;
+                                            line-height: 114%;
+                                            font-family: var(--neueregular);
+                                            letter-spacing: 0.08em;
+                                        }
+
+                                        a {
+                                            background-color: white;
+                                            color: black;
+                                            padding: 0;
+                                            font-weight: 700;
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            text-align: right;
+                                            letter-spacing: 0.08em;
+                                            text-decoration-line: underline;
+                                            font-family: var(--neuebold);
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5),
+                                &:nth-child(6) {
+                                    a {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                    }
+                                }
+
+                                &:nth-child(6) {
+                                    border: none;
+                                }
+                            }
                         }
                     }
                 }
@@ -3567,8 +3774,9 @@
                 }
 
                 .account {
+                    position: relative;
 
-                    a {
+                    .accounthref {
                         border-radius: 100%;
                         padding: 10px 10px;
                         background-color: var(--yellow);
@@ -3576,6 +3784,113 @@
                         svg {
                             padding-left: 1px;
                             padding-bottom: 3px;
+                        }
+                    }
+
+                    &:hover .accountinfo {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    .accountinfo {
+                        position: absolute;
+                        top: 125%;
+                        left: 0%;
+                        transform: translateX(-78%);
+                        width: 300px;
+                        z-index: 4333;
+                        background-color: white;
+                        color: black;
+                        opacity: 0;
+                        transition: 0.3s;
+                        visibility: hidden;
+
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                width: 100%;
+                                padding: 10px 20px;
+                                border-bottom: 1px solid black;
+
+                                a {
+                                    transition: 0.4s;
+                                    color: black;
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+
+                                &:nth-child(1) {
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 114%;
+                                    letter-spacing: 0.08em;
+                                    font-family: var(--neueregular);
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    padding-top: 15px;
+
+                                    a {
+                                        background-color: black;
+                                        color: white;
+                                        padding: 15px 70px;
+                                        transition: 0.3s;
+                                    }
+
+                                    div {
+                                        margin-top: 10px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-direction: column;
+
+                                        span {
+                                            font-weight: 400;
+                                            font-size: 12px;
+                                            line-height: 114%;
+                                            font-family: var(--neueregular);
+                                            letter-spacing: 0.08em;
+                                        }
+
+                                        a {
+                                            background-color: white;
+                                            color: black;
+                                            padding: 0;
+                                            font-weight: 700;
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            text-align: right;
+                                            letter-spacing: 0.08em;
+                                            text-decoration-line: underline;
+                                            font-family: var(--neuebold);
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5),
+                                &:nth-child(6) {
+                                    a {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                    }
+                                }
+
+                                &:nth-child(6) {
+                                    border: none;
+                                }
+                            }
                         }
                     }
                 }
