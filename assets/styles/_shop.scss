@@ -85,11 +85,17 @@ a {
         justify-content: space-between;
         align-items: center;
         font-family: var(--neueregular);
+        position: relative;
 
         li {
             padding: 15px 0;
 
-            span {
+            &:hover .categorymenu {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            a {
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 18px;
@@ -104,6 +110,58 @@ a {
                 padding: 2px 8px;
                 background-color: var(--yellow);
                 text-decoration: underline;
+            }
+
+            .categorymenu {
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                background-color: white;
+                box-shadow: 0px 0px 5px var(--yellow);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                padding: 25px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 101%;
+                z-index: 32;
+
+                .left {
+                    span {
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 18px;
+                        font-family: var(--neuebold);
+                        letter-spacing: 0.08em;
+                        text-decoration-line: underline;
+                        margin-bottom: 15px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            padding: 6px 0;
+
+                            &:first-child {
+                                padding-top: 25px;
+                            }
+                        }
+                    }
+                }
+
+                .middle {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                }
             }
         }
     }

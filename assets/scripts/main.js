@@ -397,7 +397,7 @@ $(document).ready(function () {
             $(".header").css("background-color", "rgba(0, 0, 0, 0.2)");
             $(".computer").css("padding", "13px 0");
             $(".mobile").css("padding", "15px 10px");
-            alert(`${window.innerHeight} visota, ${window.innerWidth} shirina`)
+            // alert(`${window.innerHeight} visota, ${window.innerWidth} shirina`)
         }
 
     });
