@@ -131,6 +131,21 @@ a {
                 z-index: 32;
 
                 .left {
+                    height: 100%;
+                    overflow-y: scroll;
+
+                    &::-webkit-scrollbar-track {
+                        background: white;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background: white;
+                    }
+
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: white;
+                    }
+
                     span {
                         font-weight: 700;
                         font-size: 15px;

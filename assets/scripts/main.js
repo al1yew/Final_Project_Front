@@ -428,8 +428,20 @@ $(document).ready(function () {
 
     //#endregion
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region open close shop page categories menamenu
 
+    //--------------------------------- open close shop page categories menamenu
+
+    $(document).on('click', '.categoryhref', function (e) {
+        if ($(window).width() < 576) {
+            e.preventDefault();
+            $('.categorymenu').fadeToggle(100);
+        }
+    });
+
+    //#endregion open close shop page categories menamenu
 
 
 
