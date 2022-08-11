@@ -446,8 +446,106 @@ $(document).ready(function () {
 
     //#endregion open close shop page categories menamenu
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region product detail page slider
+
+    //--------------------------------- product detail page slider
+
+    $('.completing_products').slick({
+        dots: false,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+        prevArrow: $(".prevfirstdetail"),
+        nextArrow: $(".nextfirstdetail"),
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    adaptiveHeight: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    adaptiveHeight: true,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    //ili je 1 dene
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    //#endregion product detail page slider
 
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region product detail page slider bottom 
+
+    //--------------------------------- product detail page slider bottom
+
+    $('.related_items').slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        prevArrow: $(".prevfirstdetailbottom"),
+        nextArrow: $(".nextfirstdetailbottom"),
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    adaptiveHeight: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    adaptiveHeight: true,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    //ili je 1 dene
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    //#endregion product detail page slider bottom
 
 
 

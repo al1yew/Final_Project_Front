@@ -68,20 +68,37 @@ body {
 @media (min-width: 577px) and(max-width:1100px),
 (min-width: 1349px) {
 
+    .breadcrumb {
+        a {
+            &:nth-child(1) {
+                padding-left: 5px;
+            }
+        }
+    }
+
     .all {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
 
         .leftmain {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .mainimgkeeper {
+                padding: 5px;
+            }
+
             .photos {
                 display: grid;
                 grid-template-columns: repeat(2, 50%);
                 grid-template-rows: repeat(8, 100px);
-                margin: 100px 0;
 
                 .photo {
-                    padding: 5px !important;
+                    padding: 5px;
                     overflow: hidden;
 
                     &:nth-child(1) {
@@ -94,16 +111,541 @@ body {
 
                     &:nth-child(3) {
                         grid-area: 1 / 2 / 6 / 3;
+                        padding-left: 0;
                     }
 
                     &:nth-child(4) {
                         grid-area: 6 / 2 / 9 / 3;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .productinfo {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 30px 5px;
+
+                .productinfoinner {
+                    display: flex;
+                    flex-direction: column;
+
+                    .top {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 30px;
+
+                        span {
+                            &:nth-child(1) {
+                                font-family: var(--neuebold);
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 14px;
+                                letter-spacing: 0.08em;
+                                margin-bottom: 15px;
+                            }
+
+                            &:nth-child(2) {
+                                font-family: var(--neueultra);
+                                font-weight: 800;
+                                font-size: 18px;
+                                line-height: 18px;
+                                letter-spacing: 0.08em;
+                                margin-bottom: 15px;
+                            }
+                        }
+
+                        p {
+                            font-family: var(--neuelight);
+                            font-weight: 300;
+                            font-size: 20px;
+                            line-height: 25px;
+                            letter-spacing: 0.08em;
+                            padding: 0;
+                        }
+                    }
+
+                    .middle {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 30px;
+
+                        span {
+                            &:nth-child(1) {
+                                font-family: var(--neuebold);
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 14px;
+                                letter-spacing: 0.08em;
+                                margin-bottom: 15px;
+                            }
+
+                            &:nth-child(2) {
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 14px;
+                                letter-spacing: 0.08em;
+                                font-family: var(--neuelight);
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 14px;
+                            letter-spacing: 0.08em;
+                            margin-bottom: 15px;
+                            font-family: var(--neuebold);
+                        }
+
+                        p {
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 25px;
+                            letter-spacing: 0.08em;
+                            font-family: var(--neuelight);
+                        }
+                    }
+                }
+            }
+
+            .completing_all {
+                margin: 30px 0;
+                padding-left: 5px;
+
+                p {
+                    font-weight: 800;
+                    font-size: 50px;
+                    line-height: 114%;
+                    letter-spacing: 0.08em;
+                    font-family: var(--neuebold);
+                    color: var(--yellow);
+                    margin-bottom: 30px;
+
+                    span {
+                        font-style: oblique;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .completing_div {
+                    padding: 5px;
+
+                    .nextfirstdetail {
+                        margin-bottom: -1px;
+                    }
+
+                    .arrows {
+                        margin-top: 15px;
+                    }
+
+                    .completing_products {
+                        .product {
+                            padding-right: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            position: relative;
+
+                            .top {
+                                position: relative;
+
+                                .wishlist {
+                                    position: absolute;
+                                    top: 6%;
+                                    right: 5%;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+                                    background-color: transparent;
+
+                                    svg {
+                                        transition: 0.3s;
+                                    }
+
+                                    &:hover {
+                                        svg {
+                                            fill: var(--yellow);
+
+                                            path {
+                                                fill: var(--yellow);
+                                                stroke: var(--yellow);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .discount_percent {
+                                    margin: 0;
+                                    padding: 0;
+                                    position: absolute;
+                                    bottom: 3%;
+                                    right: 3%;
+
+                                    span {
+                                        font-family: var(--neuebold);
+                                        font-size: 13px;
+                                        padding: 5px 10px;
+                                        letter-spacing: 0.1em;
+                                        background-color: var(--yellow);
+                                        color: black;
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-top: 15px;
+                                padding-bottom: 5px;
+
+                                .left {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: column;
+
+                                    .up {
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        line-height: 114%;
+                                        font-family: var(--neuelight);
+                                        letter-spacing: 0.08em;
+                                    }
+
+                                    .down {
+                                        margin-top: 10px;
+                                        font-family: var(--neuebold);
+                                        font-weight: 700;
+                                        line-height: 114%;
+                                        letter-spacing: 0.08em;
+
+                                        .prevprice {
+                                            font-size: 19px;
+                                            text-decoration: line-through;
+                                        }
+
+                                        .discprice {
+                                            font-size: 19px;
+                                            text-decoration: none !important;
+                                        }
+                                    }
+                                }
+
+                                .right {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: column;
+
+                                    .basket {
+                                        position: absolute;
+                                        top: 5%;
+                                        left: 5%;
+                                        transition: 0.3s;
+                                        cursor: pointer;
+                                        border: none;
+                                        outline: none;
+                                        background-color: transparent;
+
+                                        svg {
+                                            transition: 0.3s;
+                                        }
+
+                                        &:hover {
+                                            svg {
+                                                fill: var(--yellow);
+                                                stroke: var(--yellow);
+
+                                                path {
+                                                    fill: var(--yellow);
+                                                    stroke: var(--yellow);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .up {
+                                        select {
+                                            width: 100%;
+                                            outline: none;
+                                            font-family: var(--neueregular);
+                                            border-radius: 0;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            letter-spacing: 0.08em;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0 auto;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 80%;
+                                        margin-top: 12px;
+
+                                        input {
+                                            display: none;
+                                        }
+
+                                        label {
+                                            height: 15px;
+                                            width: 15px;
+                                            cursor: pointer;
+                                            border: 0.3px solid white;
+                                            outline: 0.3px solid black;
+                                            position: relative;
+
+                                            .markicon {
+                                                font-size: 20px;
+                                                position: absolute;
+                                                bottom: -30%;
+                                                left: -25%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
 
-        .rightmain {}
+        .rightmain {
+            display: flex;
+            flex-direction: column;
+
+            
+        }
+
+        .related_items_all {
+            margin: 30px 0;
+            padding-left: 17px;
+
+            p {
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 114%;
+                letter-spacing: 0.08em;
+                font-family: var(--neuebold);
+                color: var(--yellow);
+                margin-bottom: 30px;
+
+                span {
+                    font-style: oblique;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .relateditems_div {
+                padding: 5px;
+
+                .nextfirstdetail {
+                    margin-bottom: -1px;
+                }
+
+                .arrows {
+                    margin-top: 15px;
+                }
+
+                .related_items {
+                    .product {
+                        padding-right: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        position: relative;
+
+                        .top {
+                            position: relative;
+
+                            .wishlist {
+                                position: absolute;
+                                top: 6%;
+                                right: 5%;
+                                transition: 0.3s;
+                                cursor: pointer;
+                                background-color: transparent;
+
+                                svg {
+                                    transition: 0.3s;
+                                }
+
+                                &:hover {
+                                    svg {
+                                        fill: var(--yellow);
+
+                                        path {
+                                            fill: var(--yellow);
+                                            stroke: var(--yellow);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .discount_percent {
+                                margin: 0;
+                                padding: 0;
+                                position: absolute;
+                                bottom: 3%;
+                                right: 3%;
+
+                                span {
+                                    font-family: var(--neuebold);
+                                    font-size: 13px;
+                                    padding: 5px 10px;
+                                    letter-spacing: 0.1em;
+                                    background-color: var(--yellow);
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 15px;
+                            padding-bottom: 5px;
+
+                            .left {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: column;
+
+                                .up {
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 114%;
+                                    font-family: var(--neuelight);
+                                    letter-spacing: 0.08em;
+                                }
+
+                                .down {
+                                    margin-top: 10px;
+                                    font-family: var(--neuebold);
+                                    font-weight: 700;
+                                    line-height: 114%;
+                                    letter-spacing: 0.08em;
+
+                                    .prevprice {
+                                        font-size: 19px;
+                                        text-decoration: line-through;
+                                    }
+
+                                    .discprice {
+                                        font-size: 19px;
+                                        text-decoration: none !important;
+                                    }
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: column;
+
+                                .basket {
+                                    position: absolute;
+                                    top: 5%;
+                                    left: 5%;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+                                    border: none;
+                                    outline: none;
+                                    background-color: transparent;
+
+                                    svg {
+                                        transition: 0.3s;
+                                    }
+
+                                    &:hover {
+                                        svg {
+                                            fill: var(--yellow);
+                                            stroke: var(--yellow);
+
+                                            path {
+                                                fill: var(--yellow);
+                                                stroke: var(--yellow);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .up {
+                                    select {
+                                        width: 100%;
+                                        outline: none;
+                                        font-family: var(--neueregular);
+                                        border-radius: 0;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        letter-spacing: 0.08em;
+                                    }
+                                }
+
+                                .down {
+                                    margin: 0 auto;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 80%;
+                                    margin-top: 12px;
+
+                                    input {
+                                        display: none;
+                                    }
+
+                                    label {
+                                        height: 15px;
+                                        width: 15px;
+                                        cursor: pointer;
+                                        border: 0.3px solid white;
+                                        outline: 0.3px solid black;
+                                        position: relative;
+
+                                        .markicon {
+                                            font-size: 20px;
+                                            position: absolute;
+                                            bottom: -30%;
+                                            left: -25%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .discover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+
+            a {
+                padding: 15px 40px;
+                color: black;
+                background-color: white;
+                border: 1px solid black;
+                font-family: var(--neueregular);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 114%;
+                letter-spacing: 0.08em;
+            }
+        }
     }
 
 }
