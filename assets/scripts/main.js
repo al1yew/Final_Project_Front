@@ -461,7 +461,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
         prevArrow: $(".prevfirstdetail"),
         nextArrow: $(".nextfirstdetail"),
-        autoplay: true,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -482,9 +482,9 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 576,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     //ili je 1 dene
                     slidesToScroll: 1,
                     adaptiveHeight: true,
@@ -512,7 +512,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
         prevArrow: $(".prevfirstdetailbottom"),
         nextArrow: $(".nextfirstdetailbottom"),
-        autoplay: true,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -533,7 +533,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 2,
                     //ili je 1 dene
