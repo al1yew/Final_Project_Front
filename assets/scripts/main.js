@@ -456,8 +456,8 @@ $(document).ready(function () {
         dots: false,
         infinite: true,
         speed: 600,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         prevArrow: $(".prevfirstdetail"),
         nextArrow: $(".nextfirstdetail"),
@@ -546,6 +546,64 @@ $(document).ready(function () {
     });
 
     //#endregion product detail page slider bottom
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region product detail page form
+    $(document).on('click', '.buydiv', function () {
+
+        $($(this).find('ul')).toggle();
+
+        $(this).find(".svgkeeper").toggleClass('roundarrow');
+
+    });
+
+    $(document).on('click', '.buyul li', function () {
+
+        $(this).parent().parent().children()[0].innerHTML = $(this).text();
+
+        $(this).addClass("yellowli selected");
+        //yellow li ile selected klassi da atim bura ki form on submit olanda 
+        //goture bilim id-sini
+
+        $(this).siblings("li").removeClass('yellowli');
+
+        //https://github.com/al1yew?tab=repositories&q=&type=public&language=&sort=name,
+        //znacit nado pridumat kakim budet fetch. Ya budu otpravlat dofiqa variables v 
+        //index, i vse oni budut vot tak zapisivatsa v moy fetchovskiy url
+        //te kotorie user ne vibral, ne otpravlayutsa, ostayutsa pustimi
+    });
+    //#endregion product detail page form
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region product detail page more info click
+
+    $(document).on('click', '.togglemenutop', function () {
+
+        $($(this).find('div')).toggle(200);
+
+    });
+
+    $(document).on('click', '.togglemenubottom', function () {
+
+        $($(this).find('.infobottom')).toggle(200);
+
+    });
+
+    //#endregion product detail page more info click
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
