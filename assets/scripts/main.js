@@ -277,15 +277,17 @@ $(document).ready(function () {
         alert(`${a} min value, ${aa} max value -- information for fetch`)
     });
 
-    $(document).on('keyup', '.input-min, .input-max', function () {
+    $(document).on('keyup', '.input-min, .input-max', function (e) {
+        if ((e.which >= 48 && e.which <= 57)
+            || (e.which >= 96 && e.which <= 105)) {
 
-        let aa = $('.range-max').val();
-        let a = $('.range-min').val();
+            let a = parseInt($('.input-min').val());
+            let aa = parseInt($('.input-max').val());
+            console.log(a)
+            console.log(aa)
 
-        console.log(a);
-        console.log(aa);
-
-        alert(`${a} min value, ${aa} max value -- information for fetch`)
+            alert(`${a} min value, ${aa} max value -- information for fetch`)
+        }
     });
 
     //#endregion INPUT RANGE
