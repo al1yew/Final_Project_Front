@@ -279,7 +279,8 @@ $(document).ready(function () {
 
     $(document).on('keyup', '.input-min, .input-max', function (e) {
         if ((e.which >= 48 && e.which <= 57)
-            || (e.which >= 96 && e.which <= 105)) {
+            || (e.which >= 96 && e.which <= 105)
+            || e.which == 8) {
 
             let a = parseInt($('.input-min').val());
             let aa = parseInt($('.input-max').val());
