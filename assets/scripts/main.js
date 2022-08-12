@@ -496,7 +496,6 @@ $(document).ready(function () {
 
     //#endregion product detail page slider
 
-
     //---------------------------------------------------------------------------------------------------------------
 
     //#region product detail page slider bottom 
@@ -535,7 +534,7 @@ $(document).ready(function () {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     //ili je 1 dene
                     slidesToScroll: 1,
                     adaptiveHeight: true,
@@ -581,7 +580,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.togglemenutop', function () {
 
-        $($(this).find('div')).toggle(200);
+        $($(this).find('.infotop')).toggle(200);
 
     });
 
