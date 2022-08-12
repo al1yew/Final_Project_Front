@@ -58,6 +58,10 @@ a {
 }
 
 @media (max-width: 576px) {
+    .all {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .leftmain {
         display: flex;
@@ -379,7 +383,7 @@ a {
         display: flex;
         margin-top: 30px;
         padding: 17px;
-        flex-direction: column;
+        flex-wrap: wrap;
 
         .top {
             order: 2;
@@ -501,7 +505,8 @@ a {
                 margin-top: 15px;
                 margin-bottom: 15px;
                 display: flex;
-                flex-direction: column;
+                flex-wrap: wrap;
+
 
                 .buydiv {
                     display: flex;
@@ -1264,4 +1269,147 @@ a {
     }
 }
 
-@media(min-width: 1200px) and (max-width:1350px) {}
+@media(min-width: 1200px) and (max-width:1350px) {
+    .breadcrumb {
+        margin-top: 30px;
+
+        a {
+            &:nth-child(1) {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .feedbackdiv {
+        a {
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-decoration-line: underline;
+            font-family: var(--neuebold);
+        }
+
+        .stardiv {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            padding-left: 16px;
+
+            .staricon {
+                margin-left: 3px;
+                font-size: 16px;
+            }
+
+            .yellow {
+                color: var(--yellow);
+            }
+        }
+    }
+
+    .rightmain {
+        .bottom {
+            order: 1;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+
+            .moreinfo {
+                font-family: var(--neuebold);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 14px;
+                letter-spacing: 0.08em;
+                margin-bottom: 15px;
+            }
+
+            .togglemenutop {
+                margin-bottom: 15px;
+                padding: 12px;
+                border: 0.5px solid black;
+                cursor: pointer;
+
+                span {
+                    font-family: var(--neuelight);
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: 0.08em;
+                }
+
+                .infotop {
+                    display: none;
+                    padding-top: 8px;
+                }
+            }
+
+            .togglemenubottom {
+                margin-bottom: 15px;
+                padding: 12px;
+                border: 0.5px solid black;
+                cursor: pointer;
+
+                span {
+                    font-family: var(--neuelight);
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: 0.08em;
+                }
+
+                .infobottom {
+                    padding-top: 8px;
+                    display: none;
+
+                    .allsocial {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        a {
+                            width: 23%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .leftmain {
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(13, 60px);
+
+            .photo {
+                overflow: hidden;
+                padding: 5px;
+
+                &:nth-child(1) {
+                    grid-area: 1 / 1 / 6 / 2;
+                }
+
+                &:nth-child(2) {
+                    grid-area: 6 / 1 / 14 / 2;
+                }
+
+                &:nth-child(3) {
+                    grid-area: 1 / 2 / 9 / 3;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                }
+
+                &:nth-child(4) {
+                    grid-area: 9 / 2 / 14 / 3;
+                    padding-left: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
