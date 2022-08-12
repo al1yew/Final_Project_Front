@@ -962,6 +962,7 @@ p {
   }
   #secondthird .arrows {
     margin-left: 10px;
+    cursor: pointer;
     margin-top: 10px;
   }
   #secondthird .nextfirst {
@@ -1264,6 +1265,7 @@ p {
     letter-spacing: 0.08em;
   }
   #fourth .arrows {
+    cursor: pointer;
     margin-left: 10px;
     margin-top: 10px;
   }
@@ -2666,6 +2668,7 @@ p {
     margin-bottom: -10px;
   }
   #secondthird .arrows {
+    cursor: pointer;
     margin-top: 10px;
   }
   #secondthird .nextfirst {
@@ -3002,6 +3005,7 @@ p {
   }
   #fourth .arrows {
     margin-top: 10px;
+    cursor: pointer;
   }
   #fourth .next {
     margin-bottom: -1px;
@@ -4459,6 +4463,7 @@ p {
     margin-bottom: -1px;
   }
   #secondthird .arrows {
+    cursor: pointer;
     margin-top: 10px;
   }
   #third {
@@ -4791,6 +4796,7 @@ p {
     margin-bottom: -10px;
   }
   #fourth .arrows {
+    cursor: pointer;
     margin-top: 10px;
   }
   #fifth {
@@ -5513,6 +5519,12 @@ a:hover {
 .where {
   opacity: 0;
   margin-top: 30px;
+}
+
+@media (min-width: 577px) and (max-width: 1100px), (min-width: 1349px) {
+  .seeall {
+    display: none;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 1100px) and (min-width: 577px), (min-width: 1349px) and (min-width: 577px) {
@@ -6447,6 +6459,7 @@ p {
   #categories .head_categories li .categorymenu .left {
     height: 100%;
     overflow-y: scroll;
+    position: relative;
   }
   #categories .head_categories li .categorymenu .left span {
     font-weight: 700;
@@ -6457,6 +6470,15 @@ p {
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
     margin-bottom: 15px;
+  }
+  #categories .head_categories li .categorymenu .left .seeall {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 12px;
+    font-family: var(--neueregular);
+    color: var(--yellow);
+    text-decoration: none;
   }
   #categories .head_categories li .categorymenu .left ul {
     list-style: none;
@@ -6640,7 +6662,7 @@ p {
     background-color: var(--yellow);
   }
   #clothing .all .filternew .filterdiv ul li {
-    padding: 5px;
+    padding: 6px;
   }
   #clothing .all .filternew .filterdiv ul li:hover {
     background-color: var(--yellow);
@@ -6755,9 +6777,9 @@ p {
     cursor: pointer;
     width: 110%;
     height: 5px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 100%;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
     background: none;
     pointer-events: none;
     -webkit-appearance: none;
@@ -6767,10 +6789,13 @@ p {
     height: 23px;
     width: 23px;
     background: var(--yellow);
-    border: none;
+    border: 0.4px solid black;
     outline: none;
     padding: 10px;
     pointer-events: auto;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+            box-shadow: 0px 0px 0px 0px;
+    border-radius: 100%;
     -webkit-appearance: none;
   }
   #clothing .all .pricerange input[type="range"]::-moz-range-thumb {
@@ -6781,6 +6806,7 @@ p {
     background: var(--yellow);
     pointer-events: auto;
     -moz-appearance: none;
+    box-shadow: 0px 0px 0px 0px;
   }
   #clothing .all .products {
     margin: 40px 0;
@@ -7043,6 +7069,9 @@ p {
 }
 
 @media (min-width: 1100px) and (max-width: 1200px) {
+  .seeall {
+    display: none;
+  }
   #categories {
     width: 100%;
     background-color: white;
@@ -7330,6 +7359,9 @@ p {
 }
 
 @media (min-width: 1200px) and (max-width: 1350px) {
+  .seeall {
+    display: none;
+  }
   #categories {
     width: 100%;
     background-color: white;
@@ -8487,6 +8519,7 @@ a:hover {
   }
   #secondthird .arrows {
     margin-top: 20px;
+    cursor: pointer;
   }
   #third {
     height: 100vh;
@@ -8819,6 +8852,7 @@ a:hover {
             justify-content: end;
   }
   #fourth .arrows {
+    cursor: pointer;
     margin-top: 20px;
   }
   #fourth .next {

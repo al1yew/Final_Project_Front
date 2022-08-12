@@ -117,6 +117,7 @@ p {
                     .left {
                         height: 100%;
                         overflow-y: scroll;
+                        position: relative;
 
                         span {
                             font-weight: 700;
@@ -126,6 +127,16 @@ p {
                             letter-spacing: 0.08em;
                             text-decoration-line: underline;
                             margin-bottom: 15px;
+                        }
+
+                        .seeall {
+                            position: absolute;
+                            top: 4px;
+                            right: 0;
+                            font-size: 12px;
+                            font-family: var(--neueregular);
+                            color: var(--yellow);
+                            text-decoration: none;
                         }
 
                         ul {
@@ -312,7 +323,7 @@ p {
                         }
 
                         li {
-                            padding: 5px;
+                            padding: 6px;
 
                             &:hover {
                                 background-color: var(--yellow);
@@ -425,8 +436,8 @@ p {
                     cursor: pointer;
                     width: 110%;
                     height: 5px;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: 100%;
+                    transform: translateY(100%);
                     background: none;
                     pointer-events: none;
                     -webkit-appearance: none;
@@ -437,10 +448,12 @@ p {
                     height: 23px;
                     width: 23px;
                     background: var(--yellow);
-                    border: none;
+                    border: 0.4px solid black;
                     outline: none;
                     padding: 10px;
                     pointer-events: auto;
+                    box-shadow: 0px 0px 0px 0px;
+                    border-radius: 100%;
                     -webkit-appearance: none;
                 }
 
@@ -452,6 +465,7 @@ p {
                     background: var(--yellow);
                     pointer-events: auto;
                     -moz-appearance: none;
+                    box-shadow: 0px 0px 0px 0px;
                 }
             }
 
@@ -692,6 +706,11 @@ p {
 }
 
 @media(min-width: 1100px) and (max-width:1200px) {
+
+    .seeall {
+        display: none;
+    }
+
     #categories {
         width: 100%;
         background-color: white;
@@ -959,6 +978,10 @@ p {
 }
 
 @media(min-width: 1200px) and (max-width:1350px) {
+    .seeall {
+        display: none;
+    }
+
     #categories {
         width: 100%;
         background-color: white;

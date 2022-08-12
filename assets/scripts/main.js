@@ -135,16 +135,18 @@ $(document).ready(function () {
     //---------------------------------products stranica form dla zakaza produkta submit na button
 
     $(document).on('submit', '.addingtobasketinshoppage', function (e) {
+
         e.preventDefault();
+
         let input = $(this).find('input:checked');
+
         let select = $(this).find('option:selected');
+
         console.log($(this).find('input:checked'))
+
         console.log(input.val());
-        console.log(select.val());
 
-        console.log(input.val().slice(1));
         console.log(select.val());
-
 
         let colorname = ''
 
@@ -185,7 +187,9 @@ $(document).ready(function () {
 
     $(document).on('click', '.headcategoryli', function (e) {
 
-        e.preventDefault();
+        if ($(window).width() < 576) {
+            e.preventDefault();
+        }
 
         $($(this).children()[0]).addClass("activespan");
 
