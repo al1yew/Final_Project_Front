@@ -413,7 +413,7 @@ $(document).ready(function () {
 
     //---------------------------------Open basket close basket on phone, Open Close accountinfo 
 
-    $(document).on('click', '.cart', function (e) {
+    $(document).on('click', '.openbasket', function (e) {
         if ($(window).width() < 576) {
             e.preventDefault();
             $('.minibasket').css('width', `${$(window).width() * 0.9}`)
@@ -421,7 +421,7 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('click', '.account', function (e) {
+    $(document).on('click', '.accounthref', function (e) {
         if ($(window).width() < 576) {
             e.preventDefault();
             $('.accountinfo').css('width', `${$(window).width() * 0.9}`)
@@ -592,6 +592,26 @@ $(document).ready(function () {
 
     //#endregion product detail page more info click
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region product detail page modal
+
+    $(document).on('click', '.imgofprod', function () {
+
+        $('.modal').addClass('modalotkroysa');
+
+        let a = $(($(this).children()[0])).attr('src')
+
+        $('.modalphoto').attr('src', a)
+    });
+
+    $(document).on('click', '.closemodal', function () {
+
+        $('.modal').removeClass('modalotkroysa');
+    });
+
+
+    //#endregion product detail page modal
 
 
 
