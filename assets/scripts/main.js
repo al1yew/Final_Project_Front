@@ -613,9 +613,9 @@ $(document).ready(function () {
         console.log(result)
         result++;
         $(this).prev().val(result)
-        //her defe basilanda fetch edeceyik cookie-de set edeceyik. 
-        //bunun ucun action olacaq onsuzda, add to basket olan.
-        //ya da elave nese birshey 
+
+        $($(this).parent().children()[0]).fadeIn(180);
+
     });
 
     $(document).on('click', '.minus', function (e) {
@@ -623,6 +623,8 @@ $(document).ready(function () {
 
         let result = Number($(this).next().val());
         console.log(result)
+
+        $($(this).parent().children()[0]).fadeIn(180);
 
         if (result > 1) {
             result--;
@@ -636,9 +638,33 @@ $(document).ready(function () {
         //ya da elave nese birshey 
     });
 
+    $(document).on('keyup', '.result', function (e) {
+
+        if ((e.which >= 48 && e.which <= 57)
+            || (e.which >= 96 && e.which <= 105)
+            || e.which == 8) {
+
+            $($(this).parent().children()[0]).fadeIn(180);
+
+            // alert(`${$(this).val()} count of product`);
+
+        }
+
+    });
+
+    $(document).on('click', '.confirmcount', function (e) {
+        alert('salam')
+    });
 
     //#endregion basket html product quantity
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region 
+
+
+
+    //#endregion 
 
 
 
