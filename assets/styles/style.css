@@ -11945,6 +11945,7 @@ a:hover {
 
 .basketsecond {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .basketsecond .firstp {
@@ -11955,6 +11956,14 @@ a:hover {
   letter-spacing: 0.08em;
   color: var(--yellow);
   margin-bottom: 30px;
+}
+
+.basketsecond ::-webkit-scrollbar-thumb {
+  background: gainsboro;
+}
+
+.basketsecond ::-webkit-scrollbar-thumb:hover {
+  background: gainsboro;
 }
 
 .basketsecond .all {
@@ -11974,6 +11983,8 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .basketsecond .all .left .basketlement {
@@ -11987,7 +11998,11 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.basketsecond .all .left .basketlement:last-child {
+  margin-bottom: 15px;
 }
 
 .basketsecond .all .left .basketlement .rightleft {

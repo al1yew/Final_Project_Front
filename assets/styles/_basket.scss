@@ -101,6 +101,7 @@ a {
 
 .basketsecond {
     margin-top: 30px;
+    margin-bottom: 30px;
 
     .firstp {
         font-family: var(--neueultra);
@@ -112,6 +113,14 @@ a {
         margin-bottom: 30px;
     }
 
+    ::-webkit-scrollbar-thumb {
+        background: rgb(220, 220, 220);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(220, 220, 220);
+    }
+
     .all {
         display: flex;
         justify-content: space-between;
@@ -120,13 +129,19 @@ a {
         .left {
             display: flex;
             flex-direction: column;
+            height: 80vh;
+            overflow-y: scroll;
 
             .basketlement {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 position: relative;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
+
+                &:last-child {
+                    margin-bottom: 15px;
+                }
 
                 .rightleft {
                     display: flex;
@@ -223,7 +238,6 @@ a {
                                 font-weight: 400;
                                 display: none;
                                 font-size: 14px;
-                                // border-bottom: 0.5px dashed black;
                                 letter-spacing: 0.1em;
                                 color: var(--yellow);
                                 text-align: center;
@@ -274,6 +288,8 @@ a {
                 }
             }
         }
+
+        .right {}
 
     }
 }
