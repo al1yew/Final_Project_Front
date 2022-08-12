@@ -602,9 +602,42 @@ $(document).ready(function () {
 
     //#endregion product detail page modal
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region basket html product quantity
+
+    $(document).on('click', '.plus', function (e) {
+        e.preventDefault();
+
+        let result = Number($(this).prev().val());
+        console.log(result)
+        result++;
+        $(this).prev().val(result)
+        //her defe basilanda fetch edeceyik cookie-de set edeceyik. 
+        //bunun ucun action olacaq onsuzda, add to basket olan.
+        //ya da elave nese birshey 
+    });
+
+    $(document).on('click', '.minus', function (e) {
+        e.preventDefault();
+
+        let result = Number($(this).next().val());
+        console.log(result)
+
+        if (result > 1) {
+            result--;
+            $(this).next().val(result)
+        }
+        else {
+            $(this).next().val('1')
+        }
+        //her defe basilanda fetch edeceyik cookie-de set edeceyik. 
+        //bunun ucun action olacaq onsuzda, add to basket olan.
+        //ya da elave nese birshey 
+    });
 
 
-
+    //#endregion basket html product quantity
 
 
 

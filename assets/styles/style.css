@@ -11831,6 +11831,325 @@ a {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+.basketfirst {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.basketfirst .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.basketfirst .all .keeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basketfirst .all .keeper .top {
+  font-family: var(--neueultra);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 18px;
+}
+
+.basketfirst .all .keeper .bottom {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 114%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
+}
+
+.basketsecond {
+  margin-top: 30px;
+}
+
+.basketsecond .firstp {
+  font-family: var(--neueultra);
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+  margin-bottom: 30px;
+}
+
+.basketsecond .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.basketsecond .all .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basketsecond .all .left .basketlement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.basketsecond .all .left .basketlement .rightleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.basketsecond .all .left .basketlement .rightleft .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .top p {
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .top span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  font-family: var(--neueultra);
+}
+
+.basketsecond .all .left .basketlement .rightleft .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .middle div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
+  padding-left: 20px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+}
+
+.basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 114%;
+  font-family: var(--neuebold);
+  letter-spacing: 0.08em;
+}
+
+.basketsecond .all .left .basketlement .rightleft .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .bottom a {
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.basketsecond .all .left .basketlement .rightleft .bottom div:nth-child(2) {
+  padding-left: 20px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px;
+  border: 0.8px solid black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basketsecond .all .left .basketlement .rightleft .bottom .productquantity a {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
+  width: 20%;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  font-family: var(--neueregular);
+}
+
+.basketsecond .all .left .basketlement .deletefrombasketinbaskethtmlpage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: NeuePowerLight;
   src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
