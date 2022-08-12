@@ -172,7 +172,6 @@ $(document).ready(function () {
             $(this).text('')
         }
 
-
         $(this).siblings('label').text('')
     });
 
@@ -266,44 +265,23 @@ $(document).ready(function () {
 
     //#endregion 
 
-    $(document).on('pointerup', '.range-min', function () {
+    $(document).on('pointerup', '.range-max, .range-min', function () {
         let aa = $('.range-max').val();
         let a = $('.range-min').val();
         console.log(a, aa)
 
         alert(`${a} min value, ${aa} max value -- information for fetch`)
-
-        // vse bulari da fetch edeceyik vessalam
     });
 
-    $(document).on('pointerup', '.range-max', function () {
+    $(document).on('keyup', '.input-min, .input-max', function () {
+
         let aa = $('.range-max').val();
         let a = $('.range-min').val();
-        console.log(a, aa)
+
+        console.log(a);
+        console.log(aa);
 
         alert(`${a} min value, ${aa} max value -- information for fetch`)
-
-        // vse bulari da fetch edeceyik vessalam
-    });
-
-    $(document).on('mouseup', '.range-min', function () {
-        let aa = $('.range-max').val();
-        let a = $('.range-min').val();
-        console.log(a, aa)
-
-        alert(`${a} min value, ${aa} max value -- information for fetch`)
-
-        // vse bulari da fetch edeceyik vessalam
-    });
-
-    $(document).on('mouseup', '.range-max', function () {
-        let aa = $('.range-max').val();
-        let a = $('.range-min').val();
-        console.log(a, aa)
-
-        alert(`${a} min value, ${aa} max value -- information for fetch`)
-
-        // vse bulari da fetch edeceyik vessalam
     });
 
     //#endregion INPUT RANGE
@@ -433,18 +411,22 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region open close shop page categories menamenu
+    //#region open close shop page categories megamenu
 
     //--------------------------------- open close shop page categories menamenu
 
     $(document).on('click', '.categoryhref', function (e) {
         if ($(window).width() < 576) {
             e.preventDefault();
-            $('.categorymenu').fadeToggle(100);
+            console.log($($(this).parent()).siblings('li').find('.categorymenu'))
+
+            $($(this).parent()).siblings('li').find('.categorymenu').attr('style', 'display: none;');
+
+            $($(this).next()).fadeToggle(100);
         }
     });
 
-    //#endregion open close shop page categories menamenu
+    //#endregion open close shop page categories megamenu
 
     //---------------------------------------------------------------------------------------------------------------
 
