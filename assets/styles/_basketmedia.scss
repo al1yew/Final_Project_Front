@@ -213,7 +213,7 @@ a {
                                     font-family: var(--neuebold);
                                     font-weight: 400;
                                     display: none;
-                                    font-size: 10px;
+                                    font-size: 14px;
                                     letter-spacing: 0.1em;
                                     color: var(--yellow);
                                     text-align: center;
@@ -221,10 +221,10 @@ a {
                                     padding: 3px;
                                     width: 100%;
                                     position: absolute;
-                                    left: 50%;
-                                    top: -100%;
+                                    left: 100%;
+                                    top: 50%;
                                     z-index: 423;
-                                    transform: translateX(-50%);
+                                    transform: translateY(-50%);
                                     transition: 0.4s;
 
                                     &:hover {

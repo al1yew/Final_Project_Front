@@ -12986,7 +12986,7 @@ a:hover {
     font-family: var(--neuebold);
     font-weight: 400;
     display: none;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.1em;
     color: var(--yellow);
     text-align: center;
@@ -12994,11 +12994,11 @@ a:hover {
     padding: 3px;
     width: 100%;
     position: absolute;
-    left: 50%;
-    top: -100%;
+    left: 100%;
+    top: 50%;
     z-index: 423;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
