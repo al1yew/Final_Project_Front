@@ -614,7 +614,7 @@ $(document).ready(function () {
         result++;
         $(this).prev().val(result)
 
-        $($(this).parent().children()[0]).fadeIn(180);
+        // $($(this).parent().children()[0]).fadeIn(180);
 
     });
 
@@ -624,7 +624,7 @@ $(document).ready(function () {
         let result = Number($(this).next().val());
         console.log(result)
 
-        $($(this).parent().children()[0]).fadeIn(180);
+        // $($(this).parent().children()[0]).fadeIn(180);
 
         if (result > 1) {
             result--;
@@ -644,7 +644,7 @@ $(document).ready(function () {
             || (e.which >= 96 && e.which <= 105)
             || e.which == 8) {
 
-            $($(this).parent().children()[0]).fadeIn(180);
+            // $($(this).parent().children()[0]).fadeIn(180);
 
             // alert(`${$(this).val()} count of product`);
 
@@ -652,9 +652,9 @@ $(document).ready(function () {
 
     });
 
-    $(document).on('click', '.confirmcount', function (e) {
-        alert('salam')
-    });
+    // $(document).on('click', '.confirmcount', function (e) {
+    //     alert('salam')
+    // });
 
     //#endregion basket html product quantity
 
