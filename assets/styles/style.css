@@ -14612,6 +14612,8 @@ a:hover {
   position: absolute;
   top: 33%;
   right: 2%;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -14621,6 +14623,8 @@ a:hover {
   top: 31%;
   right: 2%;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 .registersection .all form .passworddiv .infopass {
@@ -14750,177 +14754,328 @@ a:hover {
   text-decoration: underline;
 }
 
-.loginsection {
-  width: 100%;
-  margin-bottom: 35px;
+@media (min-width: 576px) {
+  .loginsection {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .loginsection .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loginsection .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 10px;
+  }
+  .loginsection .all .secondp {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 127%;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .loginsection .all form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loginsection .all form label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .loginsection .all form label span {
+    color: red;
+  }
+  .loginsection .all form .loginbtn {
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    border: 1px solid black;
+  }
+  .loginsection .all form .bottomlogin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loginsection .all form .bottomlogin .rememberme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loginsection .all form .bottomlogin .rememberme label {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    padding: 0;
+    margin: 0;
+  }
+  .loginsection .all form .bottomlogin .rememberme input {
+    text-align: start;
+    margin-right: 10px;
+  }
+  .loginsection .all form .bottomlogin .forgot {
+    text-align: end;
+    font-family: var(--neuemedium);
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .loginsection .all form .textinp {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .loginsection .all form .passworddiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .loginsection .all form .passworddiv .seepass {
+    position: absolute;
+    top: 40%;
+    width: 30px;
+    height: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
+  .loginsection .all form .passworddiv .closepass {
+    position: absolute;
+    display: none;
+    top: 38%;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .loginsection .all form .passworddiv .infopass {
+    font-family: var(--neueregular);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
 }
 
-.loginsection .all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.loginsection .all .firstp {
-  font-family: var(--neueultra);
-  font-size: 50px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: var(--yellow);
-  margin-bottom: 20px;
-}
-
-.loginsection .all .secondp {
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 127%;
-  margin-bottom: 25px;
-  text-align: center;
-  letter-spacing: 0.08em;
-}
-
-.loginsection .all form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.loginsection .all form label {
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-  margin-bottom: 10px;
-}
-
-.loginsection .all form label span {
-  color: red;
-}
-
-.loginsection .all form .loginbtn {
-  margin: 0 auto;
-  margin-top: 40px;
-  background-color: var(--yellow);
-  text-align: center;
-  padding: 10px 0;
-  color: black;
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  border: 1px solid black;
-}
-
-.loginsection .all form .bottomlogin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.loginsection .all form .bottomlogin .rememberme {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.loginsection .all form .bottomlogin .rememberme label {
-  font-family: var(--neuemedium);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-  padding: 0;
-  margin: 0;
-}
-
-.loginsection .all form .bottomlogin .rememberme input {
-  text-align: start;
-  margin-right: 10px;
-}
-
-.loginsection .all form .bottomlogin .forgot {
-  text-align: end;
-  font-family: var(--neuemedium);
-  font-size: 14px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.loginsection .all form .textinp {
-  width: 100%;
-  border: 1px solid black;
-  outline: none;
-  border-radius: 3px;
-  margin-bottom: 30px;
-  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding: 10px 10px;
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 0.08em;
-}
-
-.loginsection .all form .passworddiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-}
-
-.loginsection .all form .passworddiv .seepass {
-  position: absolute;
-  top: 40%;
-  right: 2%;
-  cursor: pointer;
-}
-
-.loginsection .all form .passworddiv .closepass {
-  position: absolute;
-  display: none;
-  top: 38%;
-  right: 2%;
-  cursor: pointer;
-}
-
-.loginsection .all form .passworddiv .infopass {
-  font-family: var(--neueregular);
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 12px;
-  padding-left: 5px;
-  margin-bottom: 10px;
+@media (max-width: 576px) {
+  .loginsection {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .loginsection .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loginsection .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 10px;
+  }
+  .loginsection .all .secondp {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 127%;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .loginsection .all form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loginsection .all form label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .loginsection .all form label span {
+    color: red;
+  }
+  .loginsection .all form .loginbtn {
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    border: 1px solid black;
+  }
+  .loginsection .all form .bottomlogin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loginsection .all form .bottomlogin .rememberme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loginsection .all form .bottomlogin .rememberme label {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    padding: 0;
+    margin: 0;
+  }
+  .loginsection .all form .bottomlogin .rememberme input {
+    text-align: start;
+    margin-right: 10px;
+  }
+  .loginsection .all form .bottomlogin .forgot {
+    text-align: end;
+    font-family: var(--neuemedium);
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .loginsection .all form .textinp {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .loginsection .all form .passworddiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .loginsection .all form .passworddiv .seepass {
+    position: absolute;
+    top: 37%;
+    right: 3%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  .loginsection .all form .passworddiv .closepass {
+    position: absolute;
+    display: none;
+    top: 36%;
+    right: 3%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  .loginsection .all form .passworddiv .infopass {
+    font-family: var(--neueregular);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 @font-face {

@@ -93,145 +93,303 @@ a {
     }
 }
 
-.loginsection {
-    width: 100%;
-    margin-bottom: 35px;
+@media(min-width:576px) {
+    .loginsection {
+        width: 100%;
+        margin-bottom: 35px;
 
-    .all {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .firstp {
-            font-family: var(--neueultra);
-            font-size: 50px;
-            line-height: 60px;
-            text-align: center;
-            letter-spacing: 0.08em;
-            color: var(--yellow);
-            margin-bottom: 20px;
-        }
-
-        .secondp {
-            font-family: var(--neuelight);
-            font-weight: 300;
-            font-size: 13px;
-            line-height: 127%;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 0.08em;
-        }
-
-        form {
+        .all {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
 
-            label {
+            .firstp {
+                font-family: var(--neueultra);
+                font-size: 50px;
+                line-height: 60px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+                margin-bottom: 10px;
+            }
+
+            .secondp {
                 font-family: var(--neuelight);
                 font-weight: 300;
-                font-size: 14px;
+                font-size: 13px;
                 line-height: 127%;
-                letter-spacing: 0.08em;
-                margin-bottom: 10px;
-
-                span {
-                    color: red;
-                }
-            }
-
-            .loginbtn {
-                margin: 0 auto;
-                margin-top: 40px;
-                background-color: var(--yellow);
+                margin-bottom: 25px;
                 text-align: center;
-                padding: 10px 0;
-                color: black;
-                font-family: var(--neueregular);
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 114%;
                 letter-spacing: 0.08em;
-                border: 1px solid black;
             }
 
-            .bottomlogin {
+            form {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
 
-                .rememberme {
-                    display: flex;
-                    align-items: center;
-
-                    label {
-                        font-family: var(--neuemedium);
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 127%;
-                        letter-spacing: 0.08em;
-                        padding: 0;
-                        margin: 0;
-                    }
-
-                    input {
-                        text-align: start;
-                        margin-right: 10px;
-                    }
-                }
-
-                .forgot {
-                    text-align: end;
-                    font-family: var(--neuemedium);
+                label {
+                    font-family: var(--neuelight);
+                    font-weight: 300;
                     font-size: 14px;
                     line-height: 127%;
                     letter-spacing: 0.08em;
-                    text-decoration-line: underline;
+                    margin-bottom: 10px;
+
+                    span {
+                        color: red;
+                    }
+                }
+
+                .loginbtn {
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    background-color: var(--yellow);
+                    text-align: center;
+                    padding: 10px 0;
+                    color: black;
+                    font-family: var(--neueregular);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 114%;
+                    letter-spacing: 0.08em;
+                    border: 1px solid black;
+                }
+
+                .bottomlogin {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .rememberme {
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            font-family: var(--neuemedium);
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 127%;
+                            letter-spacing: 0.08em;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        input {
+                            text-align: start;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .forgot {
+                        text-align: end;
+                        font-family: var(--neuemedium);
+                        font-size: 14px;
+                        line-height: 127%;
+                        letter-spacing: 0.08em;
+                        text-decoration-line: underline;
+                    }
+                }
+
+                .textinp {
+                    width: 100%;
+                    border: 1px solid black;
+                    outline: none;
+                    border-radius: 3px;
+                    margin-bottom: 30px;
+                    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                    padding: 10px 10px;
+                    font-family: var(--neuelight);
+                    font-weight: 300;
+                    font-size: 15px;
+                    letter-spacing: 0.08em;
+                }
+
+                .passworddiv {
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    .seepass {
+                        position: absolute;
+                        top: 40%;
+                        width: 30px;
+                        height: 30px;
+                        right: 2%;
+                        cursor: pointer;
+                    }
+
+                    .closepass {
+                        position: absolute;
+                        display: none;
+                        top: 38%;
+                        right: 2%;
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+
+                    .infopass {
+                        font-family: var(--neueregular);
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-left: 5px;
+                        margin-bottom: 10px;
+                    }
                 }
             }
+        }
+    }
+}
 
-            .textinp {
-                width: 100%;
-                border: 1px solid black;
-                outline: none;
-                border-radius: 3px;
-                margin-bottom: 30px;
-                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-                padding: 10px 10px;
+@media(max-width:576px) {
+
+    .loginsection {
+        width: 100%;
+        margin-bottom: 35px;
+
+        .all {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .firstp {
+                font-family: var(--neueultra);
+                font-size: 50px;
+                line-height: 60px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+                margin-bottom: 10px;
+            }
+
+            .secondp {
                 font-family: var(--neuelight);
                 font-weight: 300;
-                font-size: 15px;
+                font-size: 13px;
+                line-height: 127%;
+                margin-bottom: 25px;
+                text-align: center;
                 letter-spacing: 0.08em;
             }
 
-            .passworddiv {
+            form {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
                 flex-wrap: wrap;
-                position: relative;
 
-                .seepass {
-                    position: absolute;
-                    top: 40%;
-                    right: 2%;
-                    cursor: pointer;
-                }
-
-                .closepass {
-                    position: absolute;
-                    display: none;
-                    top: 38%;
-                    right: 2%;
-                    cursor: pointer;
-                }
-
-                .infopass {
-                    font-family: var(--neueregular);
+                label {
+                    font-family: var(--neuelight);
                     font-weight: 300;
-                    font-size: 12px;
-                    line-height: 12px;
-                    padding-left: 5px;
+                    font-size: 14px;
+                    line-height: 127%;
+                    letter-spacing: 0.08em;
                     margin-bottom: 10px;
+
+                    span {
+                        color: red;
+                    }
+                }
+
+                .loginbtn {
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    background-color: var(--yellow);
+                    text-align: center;
+                    padding: 10px 0;
+                    color: black;
+                    font-family: var(--neueregular);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 114%;
+                    letter-spacing: 0.08em;
+                    border: 1px solid black;
+                }
+
+                .bottomlogin {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .rememberme {
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            font-family: var(--neuemedium);
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 127%;
+                            letter-spacing: 0.08em;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        input {
+                            text-align: start;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .forgot {
+                        text-align: end;
+                        font-family: var(--neuemedium);
+                        font-size: 14px;
+                        line-height: 127%;
+                        letter-spacing: 0.08em;
+                        text-decoration-line: underline;
+                    }
+                }
+
+                .textinp {
+                    width: 100%;
+                    border: 1px solid black;
+                    outline: none;
+                    border-radius: 3px;
+                    margin-bottom: 30px;
+                    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                    padding: 10px 10px;
+                    font-family: var(--neuelight);
+                    font-weight: 300;
+                    font-size: 15px;
+                    letter-spacing: 0.08em;
+                }
+
+                .passworddiv {
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    .seepass {
+                        position: absolute;
+                        top: 37%;
+                        right: 3%;
+                        cursor: pointer;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .closepass {
+                        position: absolute;
+                        display: none;
+                        top: 36%;
+                        right: 3%;
+                        cursor: pointer;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .infopass {
+                        font-family: var(--neueregular);
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-left: 5px;
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
