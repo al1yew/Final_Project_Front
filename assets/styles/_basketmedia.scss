@@ -61,88 +61,41 @@ a {
     margin-top: 30px;
 }
 
-@media(min-width:577px) and (max-width: 1100px),
-(min-width: 1350px) {
+@media(max-width: 576px) {
+
     .basketfirst {
-        width: 100%;
-        margin-top: 30px;
-
-        .all {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-
-            .keeper {
-                display: flex;
-                flex-direction: column;
-
-                .top {
-                    font-family: var(--neueultra);
-                    font-weight: 800;
-                    font-size: 20px;
-                    line-height: 24px;
-                    text-align: center;
-                    letter-spacing: 0.08em;
-                    margin-bottom: 18px;
-                }
-
-                .bottom {
-                    font-weight: 500;
-                    font-size: 15px;
-                    line-height: 114%;
-                    text-align: center;
-                    letter-spacing: 0.08em;
-                    font-family: var(--neuemedium);
-                }
-            }
-
-        }
+        display: none;
     }
 
     .basketsecond {
         margin-top: 30px;
-        margin-bottom: 30px;
 
         .firstp {
             font-family: var(--neueultra);
-            font-size: 50px;
-            line-height: 60px;
+            font-size: 25px;
             text-align: center;
             letter-spacing: 0.08em;
             color: var(--yellow);
             margin-bottom: 30px;
         }
 
-        ::-webkit-scrollbar-thumb {
-            background: rgb(220, 220, 220);
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgb(220, 220, 220);
-        }
-
         .all {
             display: flex;
             justify-content: space-between;
-            // align-items: center;
 
             .left {
                 display: flex;
                 flex-direction: column;
-                height: 86vh;
-                overflow-y: scroll;
 
                 .basketlement {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     position: relative;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
 
                     &:last-child {
-                        margin-bottom: 15px;
+                        margin-bottom: 8px;
                     }
 
                     .rightleft {
@@ -153,57 +106,64 @@ a {
                         .top {
                             display: flex;
                             flex-direction: column;
-                            margin-bottom: 25px;
-                            padding-left: 20px;
+                            margin-bottom: 10px;
+                            padding-left: 10px;
 
                             p {
                                 font-family: var(--neueregular);
                                 font-weight: 400;
-                                font-size: 15px;
+                                font-size: 12px;
                                 line-height: 18px;
-                                letter-spacing: 0.08em;
-                                margin-bottom: 10px;
+                                letter-spacing: 0.09em;
                             }
 
-                            span {
+                            .price {
                                 font-weight: 700;
-                                font-size: 15px;
+                                font-size: 13px;
                                 line-height: 114%;
                                 letter-spacing: 0.08em;
                                 font-family: var(--neueultra);
+                                position: absolute;
+                                top: 0;
+                                right: 0;
                             }
                         }
 
                         .middle {
                             display: flex;
                             align-items: center;
+                            justify-content: space-between;
                             flex-wrap: wrap;
-                            margin-bottom: 25px;
-                            padding-left: 20px;
+                            margin-bottom: 10px;
+                            padding-left: 10px;
 
                             div {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-bottom: 15px;
 
                                 &:nth-child(2),
                                 &:nth-child(4) {
-                                    padding-left: 20px;
+                                    padding-left: 10px;
+                                }
+
+                                &:nth-child(1),
+                                &:nth-child(2) {
+                                    margin-bottom: 5px;
                                 }
 
                                 span {
                                     &:nth-child(1) {
                                         font-family: var(--neueregular);
                                         font-weight: 400;
-                                        font-size: 13px;
+                                        font-size: 9px;
                                         line-height: 114%;
                                         letter-spacing: 0.08em;
                                     }
 
                                     &:nth-child(2) {
                                         font-weight: 700;
-                                        font-size: 13px;
+                                        font-size: 10px;
                                         line-height: 114%;
                                         font-family: var(--neuebold);
                                         letter-spacing: 0.08em;
@@ -214,33 +174,36 @@ a {
 
                         .bottom {
                             display: flex;
-                            justify-content: space-between;
                             align-items: center;
-                            padding-left: 20px;
+                            padding-left: 10px;
+
+                            .compwishlist {
+                                display: none;
+                            }
 
                             .mobilewishlist {
-                                display: none;
+                                position: absolute;
+                                bottom: 0%;
+                                right: 12%;
+                            }
+
+                            .fororderwish {
+                                order: 2;
+                            }
+
+                            .fororderquan {
+                                order: 1;
                             }
 
                             .deletefrombasketinbaskethtmlpage {
                                 position: absolute;
-                                top: 0;
+                                bottom: 1px;
                                 right: 0;
-                                cursor: pointer;
-                            }
-
-                            .compwishlist {
-                                font-family: var(--neueregular);
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 114%;
-                                letter-spacing: 0.08em;
-                                text-decoration-line: underline;
                             }
 
                             .productquantity {
                                 display: flex;
-                                padding: 5px 10px;
+                                padding: 2px 5px;
                                 border: 0.8px solid black;
                                 justify-content: space-between;
                                 align-items: center;
@@ -250,7 +213,7 @@ a {
                                     font-family: var(--neuebold);
                                     font-weight: 400;
                                     display: none;
-                                    font-size: 14px;
+                                    font-size: 10px;
                                     letter-spacing: 0.1em;
                                     color: var(--yellow);
                                     text-align: center;
@@ -285,13 +248,15 @@ a {
                                     outline: none;
                                     font-style: normal;
                                     font-weight: 400;
-                                    font-size: 16px;
+                                    font-size: 15px;
                                     line-height: 114%;
                                     font-family: var(--neueregular);
                                 }
                             }
                         }
                     }
+
+
                 }
             }
 
@@ -446,16 +411,17 @@ a {
     .basketthird {
         .thirdall {
             .youmaylikesection {
-                margin: 50px 0;
+                margin: 20px 0;
+                padding-left: 17px;
 
                 p {
                     font-weight: 800;
-                    font-size: 50px;
+                    font-size: 30px;
                     line-height: 114%;
                     letter-spacing: 0.08em;
                     font-family: var(--neuebold);
                     color: var(--yellow);
-                    margin-bottom: 30px;
+                    margin-bottom: 15px;
 
                     span {
                         font-style: oblique;
@@ -464,27 +430,31 @@ a {
                     }
                 }
 
-                .youmaylikediv {
+                .youmaylikesectiondiv {
                     padding: 5px;
 
-                    .nextbasket {
+                    .nextfirstdetail {
                         margin-bottom: -1px;
                     }
 
                     .arrows {
-                        margin-top: 15px;
-                        cursor: pointer;
+                        margin-top: 10px;
                     }
 
                     .youmaylikeitems {
+                        margin: 20px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
                         .product {
-                            padding-right: 10px;
                             display: flex;
                             justify-content: space-between;
                             flex-direction: column;
                             position: relative;
 
-                            .producttop {
+                            .top {
                                 position: relative;
 
                                 .wishlist {
@@ -499,7 +469,7 @@ a {
                                         transition: 0.3s;
                                     }
 
-                                    &:hover {
+                                    &:focus {
                                         svg {
                                             fill: var(--yellow);
 
@@ -520,8 +490,8 @@ a {
 
                                     span {
                                         font-family: var(--neuebold);
-                                        font-size: 13px;
-                                        padding: 5px 10px;
+                                        font-size: 11px;
+                                        padding: 3px 7px;
                                         letter-spacing: 0.1em;
                                         background-color: var(--yellow);
                                         color: black;
@@ -529,28 +499,28 @@ a {
                                 }
                             }
 
-                            .productbottom {
+                            .bottom {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
                                 margin-top: 15px;
-                                padding-bottom: 5px;
+                                padding: 0 5px;
 
-                                .productleft {
+                                .left {
                                     display: flex;
                                     justify-content: space-between;
                                     flex-direction: column;
 
                                     .up {
                                         font-weight: 300;
-                                        font-size: 15px;
+                                        font-size: 13px;
                                         line-height: 114%;
                                         font-family: var(--neuelight);
                                         letter-spacing: 0.08em;
                                     }
 
                                     .down {
-                                        margin-top: 10px;
+                                        margin-top: 15px;
                                         font-family: var(--neuebold);
                                         font-weight: 700;
                                         line-height: 114%;
@@ -568,14 +538,14 @@ a {
                                     }
                                 }
 
-                                .productright {
+                                .right {
                                     display: flex;
                                     justify-content: space-between;
                                     flex-direction: column;
 
                                     .basket {
                                         position: absolute;
-                                        top: 5%;
+                                        top: 4%;
                                         left: 5%;
                                         transition: 0.3s;
                                         cursor: pointer;
@@ -601,6 +571,8 @@ a {
                                     }
 
                                     .up {
+                                        margin-top: -10px;
+
                                         select {
                                             width: 100%;
                                             outline: none;
@@ -608,7 +580,17 @@ a {
                                             border-radius: 0;
                                             font-weight: 400;
                                             font-size: 14px;
+                                            padding: 0;
+                                            margin: 0;
+                                            color: black;
+                                            background-color: white;
+                                            border: 0.7px solid black;
+                                            border-radius: 2px;
                                             letter-spacing: 0.08em;
+
+                                            option {
+                                                background-color: white;
+                                            }
                                         }
                                     }
 
@@ -618,25 +600,26 @@ a {
                                         justify-content: space-between;
                                         align-items: center;
                                         width: 80%;
-                                        margin-top: 12px;
+                                        margin-top: 5px;
 
                                         input {
                                             display: none;
                                         }
 
                                         label {
-                                            height: 15px;
-                                            width: 15px;
+                                            height: 20px;
+                                            width: 20px;
+                                            max-width: 19px;
+                                            max-height: 19px;
                                             cursor: pointer;
-                                            border: 0.3px solid white;
-                                            outline: 0.3px solid black;
+                                            outline: 0.8px solid black;
                                             position: relative;
 
                                             .markicon {
-                                                font-size: 20px;
+                                                font-size: 25px;
                                                 position: absolute;
-                                                bottom: -30%;
-                                                left: -25%;
+                                                bottom: -10%;
+                                                left: -10%;
                                             }
                                         }
                                     }
@@ -652,16 +635,17 @@ a {
     .basketfourth {
         .fourthall {
             .recentlyviewed {
-                margin: 50px 0;
+                margin: 20px 0;
+                padding-left: 17px;
 
                 p {
                     font-weight: 800;
-                    font-size: 50px;
+                    font-size: 30px;
                     line-height: 114%;
                     letter-spacing: 0.08em;
                     font-family: var(--neuebold);
                     color: var(--yellow);
-                    margin-bottom: 30px;
+                    margin-bottom: 15px;
 
                     span {
                         font-style: oblique;
@@ -673,24 +657,28 @@ a {
                 .recentlyvieweddiv {
                     padding: 5px;
 
-                    .nextbasket {
+                    .nextfirstdetail {
                         margin-bottom: -1px;
                     }
 
                     .arrows {
-                        margin-top: 15px;
-                        cursor: pointer;
+                        margin-top: 10px;
                     }
 
                     .recentlyvieweditems {
+                        margin: 20px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
                         .product {
-                            padding-right: 10px;
                             display: flex;
                             justify-content: space-between;
                             flex-direction: column;
                             position: relative;
 
-                            .producttop {
+                            .top {
                                 position: relative;
 
                                 .wishlist {
@@ -705,7 +693,7 @@ a {
                                         transition: 0.3s;
                                     }
 
-                                    &:hover {
+                                    &:focus {
                                         svg {
                                             fill: var(--yellow);
 
@@ -726,8 +714,8 @@ a {
 
                                     span {
                                         font-family: var(--neuebold);
-                                        font-size: 13px;
-                                        padding: 5px 10px;
+                                        font-size: 11px;
+                                        padding: 3px 7px;
                                         letter-spacing: 0.1em;
                                         background-color: var(--yellow);
                                         color: black;
@@ -735,28 +723,28 @@ a {
                                 }
                             }
 
-                            .productbottom {
+                            .bottom {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
                                 margin-top: 15px;
-                                padding-bottom: 5px;
+                                padding: 0 5px;
 
-                                .productleft {
+                                .left {
                                     display: flex;
                                     justify-content: space-between;
                                     flex-direction: column;
 
                                     .up {
                                         font-weight: 300;
-                                        font-size: 15px;
+                                        font-size: 13px;
                                         line-height: 114%;
                                         font-family: var(--neuelight);
                                         letter-spacing: 0.08em;
                                     }
 
                                     .down {
-                                        margin-top: 10px;
+                                        margin-top: 15px;
                                         font-family: var(--neuebold);
                                         font-weight: 700;
                                         line-height: 114%;
@@ -774,14 +762,14 @@ a {
                                     }
                                 }
 
-                                .productright {
+                                .right {
                                     display: flex;
                                     justify-content: space-between;
                                     flex-direction: column;
 
                                     .basket {
                                         position: absolute;
-                                        top: 5%;
+                                        top: 4%;
                                         left: 5%;
                                         transition: 0.3s;
                                         cursor: pointer;
@@ -807,6 +795,8 @@ a {
                                     }
 
                                     .up {
+                                        margin-top: -10px;
+
                                         select {
                                             width: 100%;
                                             outline: none;
@@ -814,7 +804,17 @@ a {
                                             border-radius: 0;
                                             font-weight: 400;
                                             font-size: 14px;
+                                            padding: 0;
+                                            margin: 0;
+                                            color: black;
+                                            background-color: white;
+                                            border: 0.7px solid black;
+                                            border-radius: 2px;
                                             letter-spacing: 0.08em;
+
+                                            option {
+                                                background-color: white;
+                                            }
                                         }
                                     }
 
@@ -824,25 +824,26 @@ a {
                                         justify-content: space-between;
                                         align-items: center;
                                         width: 80%;
-                                        margin-top: 12px;
+                                        margin-top: 5px;
 
                                         input {
                                             display: none;
                                         }
 
                                         label {
-                                            height: 15px;
-                                            width: 15px;
+                                            height: 20px;
+                                            width: 20px;
+                                            max-width: 19px;
+                                            max-height: 19px;
                                             cursor: pointer;
-                                            border: 0.3px solid white;
-                                            outline: 0.3px solid black;
+                                            outline: 0.8px solid black;
                                             position: relative;
 
                                             .markicon {
-                                                font-size: 20px;
+                                                font-size: 25px;
                                                 position: absolute;
-                                                bottom: -30%;
-                                                left: -25%;
+                                                bottom: -10%;
+                                                left: -10%;
                                             }
                                         }
                                     }

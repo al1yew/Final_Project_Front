@@ -660,11 +660,104 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region 
+    //#region basket first slider
 
+    //--------------------------------- product detail page slider
 
+    $('.youmaylikeitems').slick({
+        dots: false,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+        prevArrow: $(".prevbasket"),
+        nextArrow: $(".nextbasket"),
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    adaptiveHeight: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    adaptiveHeight: true,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    //ili je 1 dene
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false
+                }
+            }
+        ]
+    });
 
-    //#endregion 
+    //#endregion basket first slider
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region basket slider second
+
+    //--------------------------------- product detail page slider
+
+    $('.recentlyvieweditems').slick({
+        dots: false,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+        prevArrow: $(".prevbasketsecond"),
+        nextArrow: $(".nextbasketsecond"),
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    adaptiveHeight: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    adaptiveHeight: true,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    //ili je 1 dene
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    //#endregion basket slider second
+
 
 
 

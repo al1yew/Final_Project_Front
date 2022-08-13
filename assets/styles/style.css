@@ -11895,297 +11895,1769 @@ a:hover {
   margin-top: 30px;
 }
 
-.basketfirst {
-  width: 100%;
-  margin-top: 30px;
+@media (min-width: 577px) and (max-width: 1100px), (min-width: 1350px) {
+  .basketfirst {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .basketfirst .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .basketfirst .all .keeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketfirst .all .keeper .top {
+    font-family: var(--neueultra);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+  .basketfirst .all .keeper .bottom {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 114%;
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+  }
+  .basketsecond {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .basketsecond .firstp {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .basketsecond ::-webkit-scrollbar-thumb {
+    background: gainsboro;
+  }
+  .basketsecond ::-webkit-scrollbar-thumb:hover {
+    background: gainsboro;
+  }
+  .basketsecond .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .basketsecond .all .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 86vh;
+    overflow-y: scroll;
+  }
+  .basketsecond .all .left .basketlement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .basketsecond .all .left .basketlement:last-child {
+    margin-bottom: 15px;
+  }
+  .basketsecond .all .left .basketlement .rightleft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .basketsecond .all .left .basketlement .rightleft .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .top p {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .top span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueultra);
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
+    padding-left: 20px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 20px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .mobilewishlist {
+    display: none;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .deletefrombasketinbaskethtmlpage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .compwishlist {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 10px;
+    border: 0.8px solid black;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity .confirmcount {
+    font-family: var(--neuebold);
+    font-weight: 400;
+    display: none;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: var(--yellow);
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    z-index: 423;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity .confirmcount:hover {
+    border-top: 0.5px dashed black;
+    border-bottom: 0.5px dashed black;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity a {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
+    width: 20%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+  }
+  .basketsecond .all .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 40px;
+  }
+  .basketsecond .all .right .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .basketsecond .all .right .top span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .basketsecond .all .right .top span:nth-child(1), .basketsecond .all .right .top span:nth-child(2) {
+    padding-bottom: 20px;
+  }
+  .basketsecond .all .right .top span:nth-child(2), .basketsecond .all .right .top span:nth-child(4) {
+    font-family: var(--neuebold);
+  }
+  .basketsecond .all .right .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .basketsecond .all .right .middle span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .basketsecond .all .right .middle span:nth-child(2) {
+    font-family: var(--neuebold);
+  }
+  .basketsecond .all .right .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .basketsecond .all .right .bottom .checkouthref {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .basketsecond .all .right .bottom .paywith {
+    border-top: 1px solid black;
+    font-family: var(--neuemedium);
+    padding-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(1) {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(2), .basketsecond .all .right .bottom .paywith span:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(2) {
+    margin-right: 10px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(4) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    margin-top: 15px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(5) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    margin-top: 20px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(5) a {
+    text-decoration: underline;
+    font-family: var(--neuebold);
+    font-size: 12px;
+  }
+  .basketsecond .all .right .bottom .paywith .policyhref {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection {
+    margin: 50px 0;
+  }
+  .basketthird .thirdall .youmaylikesection p {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuebold);
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .basketthird .thirdall .youmaylikesection p span {
+    font-style: oblique;
+    padding: 0;
+    margin: 0;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv {
+    padding: 5px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .nextbasket {
+    margin-bottom: -1px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .arrows {
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product {
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop {
+    position: relative;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop .wishlist {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop .wishlist svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop .wishlist:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop .discount_percent {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .producttop .discount_percent span {
+    font-family: var(--neuebold);
+    font-size: 13px;
+    padding: 5px 10px;
+    letter-spacing: 0.1em;
+    background-color: var(--yellow);
+    color: black;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productleft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productleft .up {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productleft .down {
+    margin-top: 10px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productleft .down .prevprice {
+    font-size: 19px;
+    text-decoration: line-through;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productleft .down .discprice {
+    font-size: 19px;
+    text-decoration: none !important;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .basket svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .basket:hover svg {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .basket:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .up select {
+    width: 100%;
+    outline: none;
+    font-family: var(--neueregular);
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .down {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: 12px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .down input {
+    display: none;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .down label {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border: 0.3px solid white;
+    outline: 0.3px solid black;
+    position: relative;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .productbottom .productright .down label .markicon {
+    font-size: 20px;
+    position: absolute;
+    bottom: -30%;
+    left: -25%;
+  }
+  .basketfourth .fourthall .recentlyviewed {
+    margin: 50px 0;
+  }
+  .basketfourth .fourthall .recentlyviewed p {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuebold);
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .basketfourth .fourthall .recentlyviewed p span {
+    font-style: oblique;
+    padding: 0;
+    margin: 0;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv {
+    padding: 5px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .nextbasket {
+    margin-bottom: -1px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .arrows {
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product {
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop {
+    position: relative;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop .wishlist {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop .wishlist svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop .wishlist:hover svg {
+    fill: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop .wishlist:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop .discount_percent {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .producttop .discount_percent span {
+    font-family: var(--neuebold);
+    font-size: 13px;
+    padding: 5px 10px;
+    letter-spacing: 0.1em;
+    background-color: var(--yellow);
+    color: black;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productleft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productleft .up {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productleft .down {
+    margin-top: 10px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productleft .down .prevprice {
+    font-size: 19px;
+    text-decoration: line-through;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productleft .down .discprice {
+    font-size: 19px;
+    text-decoration: none !important;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .basket {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .basket svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .basket:hover svg {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .basket:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .up select {
+    width: 100%;
+    outline: none;
+    font-family: var(--neueregular);
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .down {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: 12px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .down input {
+    display: none;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .down label {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border: 0.3px solid white;
+    outline: 0.3px solid black;
+    position: relative;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .productbottom .productright .down label .markicon {
+    font-size: 20px;
+    position: absolute;
+    bottom: -30%;
+    left: -25%;
+  }
+  .discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .discover a {
+    padding: 15px 40px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
 }
 
-.basketfirst .all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.basketfirst .all .keeper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.basketfirst .all .keeper .top {
-  font-family: var(--neueultra);
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  margin-bottom: 18px;
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
 }
 
-.basketfirst .all .keeper .bottom {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 114%;
-  text-align: center;
-  letter-spacing: 0.08em;
-  font-family: var(--neuemedium);
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
 }
 
-.basketsecond {
-  margin-top: 30px;
-  margin-bottom: 30px;
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
 }
 
-.basketsecond .firstp {
-  font-family: var(--neueultra);
-  font-size: 50px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: var(--yellow);
-  margin-bottom: 30px;
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
 }
 
-.basketsecond ::-webkit-scrollbar-thumb {
-  background: gainsboro;
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
 }
 
-.basketsecond ::-webkit-scrollbar-thumb:hover {
-  background: gainsboro;
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
 }
 
-.basketsecond .all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.basketsecond .all .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 80vh;
-  overflow-y: scroll;
-}
-
-.basketsecond .all .left .basketlement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.basketsecond .all .left .basketlement:last-child {
-  margin-bottom: 15px;
-}
-
-.basketsecond .all .left .basketlement .rightleft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-.basketsecond .all .left .basketlement .rightleft .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 25px;
-  padding-left: 20px;
-}
-
-.basketsecond .all .left .basketlement .rightleft .top p {
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.08em;
-  margin-bottom: 10px;
-}
-
-.basketsecond .all .left .basketlement .rightleft .top span {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  font-family: var(--neueultra);
-}
-
-.basketsecond .all .left .basketlement .rightleft .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 25px;
-  padding-left: 20px;
-}
-
-.basketsecond .all .left .basketlement .rightleft .middle div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
-}
-
-.basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
-  padding-left: 20px;
-}
-
-.basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-}
-
-.basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 114%;
-  font-family: var(--neuebold);
-  letter-spacing: 0.08em;
-}
-
-.basketsecond .all .left .basketlement .rightleft .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 20px;
-}
-
-.basketsecond .all .left .basketlement .rightleft .bottom a {
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px 10px;
-  border: 0.8px solid black;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.basketsecond .all .left .basketlement .rightleft .bottom .productquantity .confirmcount {
-  font-family: var(--neuebold);
-  font-weight: 400;
-  display: none;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  color: var(--yellow);
-  text-align: center;
+a {
+  color: black;
   text-decoration: none;
-  padding: 3px;
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  top: -100%;
-  z-index: 423;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-.basketsecond .all .left .basketlement .rightleft .bottom .productquantity .confirmcount:hover {
-  border-top: 0.5px dashed black;
-  border-bottom: 0.5px dashed black;
+a:hover {
+  color: black;
 }
 
-.basketsecond .all .left .basketlement .rightleft .bottom .productquantity a {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 20px;
+.where {
+  opacity: 0;
+  margin-top: 30px;
 }
 
-.basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
-  width: 20%;
-  text-align: center;
-  border: none;
-  outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114%;
-  font-family: var(--neueregular);
-}
-
-.basketsecond .all .left .basketlement .deletefrombasketinbaskethtmlpage {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
+@media (max-width: 576px) {
+  .basketfirst {
+    display: none;
+  }
+  .basketsecond {
+    margin-top: 30px;
+  }
+  .basketsecond .firstp {
+    font-family: var(--neueultra);
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .basketsecond .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .basketsecond .all .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketsecond .all .left .basketlement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .basketsecond .all .left .basketlement:last-child {
+    margin-bottom: 8px;
+  }
+  .basketsecond .all .left .basketlement .rightleft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .basketsecond .all .left .basketlement .rightleft .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .top p {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+  }
+  .basketsecond .all .left .basketlement .rightleft .top .price {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueultra);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
+    padding-left: 10px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(1), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2) {
+    margin-bottom: 5px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .compwishlist {
+    display: none;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .mobilewishlist {
+    position: absolute;
+    bottom: 0%;
+    right: 12%;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .fororderwish {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .fororderquan {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .deletefrombasketinbaskethtmlpage {
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px 5px;
+    border: 0.8px solid black;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity .confirmcount {
+    font-family: var(--neuebold);
+    font-weight: 400;
+    display: none;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--yellow);
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    z-index: 423;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity .confirmcount:hover {
+    border-top: 0.5px dashed black;
+    border-bottom: 0.5px dashed black;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity a {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+  }
+  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
+    width: 20%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+  }
+  .basketsecond .all .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 40px;
+  }
+  .basketsecond .all .right .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .basketsecond .all .right .top span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .basketsecond .all .right .top span:nth-child(1), .basketsecond .all .right .top span:nth-child(2) {
+    padding-bottom: 20px;
+  }
+  .basketsecond .all .right .top span:nth-child(2), .basketsecond .all .right .top span:nth-child(4) {
+    font-family: var(--neuebold);
+  }
+  .basketsecond .all .right .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .basketsecond .all .right .middle span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .basketsecond .all .right .middle span:nth-child(2) {
+    font-family: var(--neuebold);
+  }
+  .basketsecond .all .right .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .basketsecond .all .right .bottom .checkouthref {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .basketsecond .all .right .bottom .paywith {
+    border-top: 1px solid black;
+    font-family: var(--neuemedium);
+    padding-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(1) {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(2), .basketsecond .all .right .bottom .paywith span:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(2) {
+    margin-right: 10px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(4) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    margin-top: 15px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(5) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+    margin-top: 20px;
+  }
+  .basketsecond .all .right .bottom .paywith span:nth-child(5) a {
+    text-decoration: underline;
+    font-family: var(--neuebold);
+    font-size: 12px;
+  }
+  .basketsecond .all .right .bottom .paywith .policyhref {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection {
+    margin: 20px 0;
+    padding-left: 17px;
+  }
+  .basketthird .thirdall .youmaylikesection p {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuebold);
+    color: var(--yellow);
+    margin-bottom: 15px;
+  }
+  .basketthird .thirdall .youmaylikesection p span {
+    font-style: oblique;
+    padding: 0;
+    margin: 0;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv {
+    padding: 5px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .nextfirstdetail {
+    margin-bottom: -1px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .arrows {
+    margin-top: 10px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top {
+    position: relative;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top .wishlist {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top .wishlist svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top .wishlist:focus svg {
+    fill: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top .wishlist:focus svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top .discount_percent {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .top .discount_percent span {
+    font-family: var(--neuebold);
+    font-size: 11px;
+    padding: 3px 7px;
+    letter-spacing: 0.1em;
+    background-color: var(--yellow);
+    color: black;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+    padding: 0 5px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .left .up {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .left .down {
+    margin-top: 15px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .left .down .prevprice {
+    font-size: 19px;
+    text-decoration: line-through;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .left .down .discprice {
+    font-size: 19px;
+    text-decoration: none !important;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .basket {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .basket svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .basket:hover svg {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .basket:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .up {
+    margin-top: -10px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .up select {
+    width: 100%;
+    outline: none;
+    font-family: var(--neueregular);
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border: 0.7px solid black;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .up select option {
+    background-color: white;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .down {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: 5px;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .down input {
+    display: none;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .down label {
+    height: 20px;
+    width: 20px;
+    max-width: 19px;
+    max-height: 19px;
+    cursor: pointer;
+    outline: 0.8px solid black;
+    position: relative;
+  }
+  .basketthird .thirdall .youmaylikesection .youmaylikesectiondiv .youmaylikeitems .product .bottom .right .down label .markicon {
+    font-size: 25px;
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+  }
+  .basketfourth .fourthall .recentlyviewed {
+    margin: 20px 0;
+    padding-left: 17px;
+  }
+  .basketfourth .fourthall .recentlyviewed p {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuebold);
+    color: var(--yellow);
+    margin-bottom: 15px;
+  }
+  .basketfourth .fourthall .recentlyviewed p span {
+    font-style: oblique;
+    padding: 0;
+    margin: 0;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv {
+    padding: 5px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .nextfirstdetail {
+    margin-bottom: -1px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .arrows {
+    margin-top: 10px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top {
+    position: relative;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:focus svg {
+    fill: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:focus svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent span {
+    font-family: var(--neuebold);
+    font-size: 11px;
+    padding: 3px 7px;
+    letter-spacing: 0.1em;
+    background-color: var(--yellow);
+    color: black;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+    padding: 0 5px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .left .up {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .left .down {
+    margin-top: 15px;
+    font-family: var(--neuebold);
+    font-weight: 700;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .left .down .prevprice {
+    font-size: 19px;
+    text-decoration: line-through;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .left .down .discprice {
+    font-size: 19px;
+    text-decoration: none !important;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .basket {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .basket svg {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .basket:hover svg {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .basket:hover svg path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .up {
+    margin-top: -10px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .up select {
+    width: 100%;
+    outline: none;
+    font-family: var(--neueregular);
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border: 0.7px solid black;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .up select option {
+    background-color: white;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .down {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: 5px;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .down input {
+    display: none;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .down label {
+    height: 20px;
+    width: 20px;
+    max-width: 19px;
+    max-height: 19px;
+    cursor: pointer;
+    outline: 0.8px solid black;
+    position: relative;
+  }
+  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .right .down label .markicon {
+    font-size: 25px;
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+  }
+  .discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .discover a {
+    padding: 15px 40px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
 }
 
 @font-face {
