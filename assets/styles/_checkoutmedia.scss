@@ -64,7 +64,7 @@ a {
 @media(max-width: 576px) {
 
     .checkoutsection {
-        margin-top: 30px;
+        margin-top: 10px;
 
         .all {
             display: flex;
@@ -76,7 +76,7 @@ a {
                 text-align: center;
                 letter-spacing: 0.08em;
                 color: var(--yellow);
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             .leftcheckout {
@@ -92,7 +92,7 @@ a {
                     flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
 
                     div {
                         margin-bottom: 8px;
@@ -135,7 +135,7 @@ a {
                         }
                     }
                 }
-
+                
                 .carddiv {
                     display: flex;
                     flex-wrap: wrap;

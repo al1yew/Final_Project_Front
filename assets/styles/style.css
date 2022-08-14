@@ -15144,7 +15144,7 @@ a:hover {
 
 @media (min-width: 577px) {
   .checkoutsection {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
   .checkoutsection .all {
@@ -15785,7 +15785,7 @@ a:hover {
 
 @media (max-width: 576px) {
   .checkoutsection {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .checkoutsection .all {
     display: -webkit-box;
@@ -15801,7 +15801,7 @@ a:hover {
     text-align: center;
     letter-spacing: 0.08em;
     color: var(--yellow);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .checkoutsection .all .leftcheckout {
     display: -webkit-box;
@@ -15832,7 +15832,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .checkoutsection .all .leftcheckout .top div,
   .checkoutsection .all .leftcheckout .bottom div {

@@ -869,3 +869,53 @@ $(document).ready(function () {
 });
 
 
+
+/*
+            let url = $('.updateForm').attr('action');
+
+            let key = $(this).prev().attr('name');
+            let value = $(this).prev().val();
+            console.log(key)
+            console.log(value)
+
+            let bodyObj = {
+                key: key,
+                value: value
+            }
+
+            fetch(url, {
+            method: 'Post',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept':'application/json'
+            },
+            body: JSON.stringify(bodyObj)
+            })
+            .then(res => res.text())
+            .then(data => {
+                $('.settingContainer').html(data)
+            })
+
+            [HttpPost]
+            public async Task<IActionResult> Update([FromBody] SettingVM settingVM)
+            {
+                List<Setting> settings = await _context.Settings.ToListAsync();
+
+                if (!settings.Any(x=>x.Key == settingVM.key))
+                {
+                    return BadRequest();
+                }
+
+                settings.FirstOrDefault(x => x.Key == settingVM.key).Value = settingVM.value;
+
+                await _context.SaveChangesAsync();
+
+                return PartialView("_SettingIndexPartial",settings.ToDictionary(x=>x.Key, x=>x.Value));
+            }
+
+            public class SettingVM
+            {
+                public string key { get; set; }
+                public string value { get; set; }
+            }
+*/
