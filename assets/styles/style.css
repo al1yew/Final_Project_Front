@@ -15078,6 +15078,1297 @@ a:hover {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+@media (min-width: 577px) {
+  .checkoutsection {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .checkoutsection .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .checkoutsection .all .leftcheckout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .top,
+  .checkoutsection .all .leftcheckout .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .checkoutsection .all .leftcheckout .top div,
+  .checkoutsection .all .leftcheckout .bottom div {
+    margin-bottom: 8px;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(1),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(1) {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(2),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(2) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: end;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(2), .checkoutsection .all .leftcheckout .top div:nth-child(3), .checkoutsection .all .leftcheckout .top div:nth-child(4),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(2),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(3),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(4) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .carddiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .carddiv span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(1) {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(2) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    text-align: end;
+    cursor: pointer;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu {
+    border: 0.8px solid black;
+    border-radius: 10px;
+    background-color: white;
+    height: 200px;
+    position: relative;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(2) {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(3) {
+    position: absolute;
+    bottom: 0%;
+    right: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(4) {
+    position: absolute;
+    bottom: 0%;
+    left: 10px;
+  }
+  .checkoutsection .all .rightcheckout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkoutsection .all .rightcheckout .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .checkoutsection .all .rightcheckout .top span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .checkoutsection .all .rightcheckout .top span:nth-child(1), .checkoutsection .all .rightcheckout .top span:nth-child(2) {
+    padding-bottom: 20px;
+  }
+  .checkoutsection .all .rightcheckout .top span:nth-child(2), .checkoutsection .all .rightcheckout .top span:nth-child(4) {
+    font-family: var(--neuebold);
+  }
+  .checkoutsection .all .rightcheckout .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .checkoutsection .all .rightcheckout .middle span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .checkoutsection .all .rightcheckout .middle span:nth-child(2) {
+    font-family: var(--neuebold);
+  }
+  .checkoutsection .all .rightcheckout .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .checkoutsection .all .rightcheckout .bottom .aldiq {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith {
+    border-top: 1px solid black;
+    font-family: var(--neuemedium);
+    padding-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith span {
+    font-weight: 500;
+    font-size: 12px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith a:nth-child(1) {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith a:nth-child(2) {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith a:nth-child(3) {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formkeeper {
+    position: relative;
+  }
+  .checkoutsection .all .formkeeper .closeform {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .checkoutsection .all .forminfokeeper {
+    display: none;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform .checkoutaccinfoname {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform .checkoutaccinfosurname {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform label span {
+    color: red;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform input {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formaddresskeeper {
+    display: none;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform .checkoutcity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform .checkoutcountry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform label span {
+    color: red;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform input {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formcardkeeper {
+    display: none;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform .checkoutcity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform .checkoutcountry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform label span {
+    color: red;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform input {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .boughtorders {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .boughtorders .orderdet {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+  }
+  .checkoutsection .all .boughtorders div {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .checkoutsection .all .boughtorders div .deletebasketelementfromcheckout {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .checkoutsection {
+    margin-top: 30px;
+  }
+  .checkoutsection .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .checkoutsection .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .checkoutsection .all .leftcheckout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .top,
+  .checkoutsection .all .leftcheckout .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .checkoutsection .all .leftcheckout .top div,
+  .checkoutsection .all .leftcheckout .bottom div {
+    margin-bottom: 8px;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(1),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(1) {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(2),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(2) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    text-align: end;
+  }
+  .checkoutsection .all .leftcheckout .top div:nth-child(2), .checkoutsection .all .leftcheckout .top div:nth-child(3), .checkoutsection .all .leftcheckout .top div:nth-child(4),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(2),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(3),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(4) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .carddiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .carddiv span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(1) {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(2) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    text-align: end;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu {
+    border: 0.8px solid black;
+    border-radius: 10px;
+    background-color: white;
+    height: 200px;
+    position: relative;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(2) {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(3) {
+    position: absolute;
+    bottom: 0%;
+    right: 10px;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .cardozu span:nth-child(4) {
+    position: absolute;
+    bottom: 0%;
+    left: 10px;
+  }
+  .checkoutsection .all .rightcheckout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .checkoutsection .all .rightcheckout .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .checkoutsection .all .rightcheckout .top span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .checkoutsection .all .rightcheckout .top span:nth-child(1), .checkoutsection .all .rightcheckout .top span:nth-child(2) {
+    padding-bottom: 10px;
+  }
+  .checkoutsection .all .rightcheckout .top span:nth-child(2), .checkoutsection .all .rightcheckout .top span:nth-child(4) {
+    font-family: var(--neuebold);
+    text-align: end;
+  }
+  .checkoutsection .all .rightcheckout .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .checkoutsection .all .rightcheckout .middle span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .checkoutsection .all .rightcheckout .middle span:nth-child(2) {
+    text-align: end;
+    font-family: var(--neuebold);
+  }
+  .checkoutsection .all .rightcheckout .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .checkoutsection .all .rightcheckout .bottom .aldiq {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith {
+    border-top: 1px solid black;
+    font-family: var(--neuemedium);
+    padding-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith span {
+    font-weight: 500;
+    font-size: 12px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith a:nth-child(1) {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith a:nth-child(2) {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .rightcheckout .bottom .paywith a:nth-child(3) {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formkeeper {
+    position: relative;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .checkoutsection .all .formkeeper .closeform {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .checkoutsection .all .forminfokeeper {
+    display: none;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform .checkoutaccinfoname {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform .checkoutaccinfosurname {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform label span {
+    color: red;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .forminfokeeper .changeaccountinfoform input {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formaddresskeeper {
+    display: none;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform .checkoutcity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform .checkoutcountry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform label span {
+    color: red;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formaddresskeeper .changeaddressform input {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formcardkeeper {
+    display: none;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform .checkoutcity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform .checkoutcountry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform label span {
+    color: red;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .formcardkeeper .changecardform input {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .boughtorders {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .boughtorders .orderdet {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+  }
+  .checkoutsection .all .boughtorders div {
+    position: relative;
+    padding: 4px;
+  }
+  .checkoutsection .all .boughtorders div .deletebasketelementfromcheckout {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+  }
+}
+
 @font-face {
   font-family: NeuePowerLight;
   src: url(../fonts/Neue_Power/NeuePower-Light.ttf);

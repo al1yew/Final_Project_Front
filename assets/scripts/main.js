@@ -778,7 +778,88 @@ $(document).ready(function () {
 
     //#endregion register eye icon
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region checkout forms
+
+    //--------------------------------- checkout forms
+
+    $(document).on('click', '.changeinfo', function () {
+        // $('.formaddresskeeper').hide();
+        $('.formcardkeeper, .rightcheckout, .formaddresskeeper').hide();
+        // $('.rightcheckout').hide();
+        $('.forminfokeeper').fadeIn(200);
+        $('.changeinfo').fadeOut(200);
+        $('.changeaddress').fadeIn(200);
+        $('.changecard').fadeIn(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(800)
+        }
+    });
+
+    $(document).on('submit', '.changeaccountinfoform', function () {
+        $('.forminfokeeper').hide();
+        $('.rightcheckout').fadeIn(200);
+        $('.changeinfo').fadeIn(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(0)
+        }
+    });
+
+    $(document).on('click', '.changeaddress', function () {
+        // $('.forminfokeeper').hide();
+        $('.formcardkeeper, .rightcheckout, .forminfokeeper').hide();
+        // $('.rightcheckout').hide();
+        $('.formaddresskeeper').fadeIn(200);
+        $('.changeinfo').fadeIn(200);
+        $('.changecard').fadeIn(200);
+        $('.changeaddress').fadeOut(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(800)
+        }
+    });
+
+    $(document).on('submit', '.changeaddressform', function () {
+        $('.formaddresskeeper').hide();
+        $('.rightcheckout').fadeIn(200);
+        $('.changeaddress').fadeIn(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(0)
+        }
+    });
+
+    $(document).on('click', '.changecard', function () {
+        $('.formaddresskeeper, .rightcheckout, .forminfokeeper').hide();
+        $('.formcardkeeper').fadeIn(200);
+        $('.changecard').fadeOut(200);
+        $('.changeinfo').fadeIn(200);
+        $('.changeaddress').fadeIn(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(800)
+        }
+    });
+
+    $(document).on('submit', '.changecardform', function () {
+        $('.formcardkeeper').hide();
+        $('.rightcheckout').fadeIn(200);
+        $('.changecard').fadeIn(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(0)
+        }
+    });
+
+    $(document).on('click', '.closeform', function () {
+        $(this).parent().hide()
+        $('.rightcheckout').fadeIn(200);
+        $('.changecard').fadeIn(200);
+        $('.changeinfo').fadeIn(200);
+        $('.changeaddress').fadeIn(200);
+        if ($(window).width() < 576) {
+            $(window).scrollTop(0)
+        }
+    });
+
+    //#endregion checkout forms
 
 
 

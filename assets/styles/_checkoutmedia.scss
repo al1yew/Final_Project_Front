@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: NeuePowerLight;
+    src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerMedium;
+    src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerRegular;
+    src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerUltra;
+    src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerBold;
+    src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.where {
+    opacity: 0;
+    margin-top: 30px;
+}
+
+@media(max-width: 576px) {
+
+    .checkoutsection {
+        margin-top: 30px;
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+
+            .firstp {
+                font-family: var(--neueultra);
+                font-size: 25px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+                margin-bottom: 30px;
+            }
+
+            .leftcheckout {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                order: 1;
+                align-items: center;
+
+                .top,
+                .bottom {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    div {
+                        margin-bottom: 8px;
+
+                        &:nth-child(1) {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            span {
+                                &:nth-child(1) {
+                                    font-weight: 800;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    font-family: var(--neueultra);
+                                    letter-spacing: 0.08em;
+                                }
+
+                                &:nth-child(2) {
+                                    font-weight: 800;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    font-family: var(--neueregular);
+                                    letter-spacing: 0.08em;
+                                    text-decoration: underline;
+                                    text-align: end;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 114%;
+                            font-family: var(--neueregular);
+                            letter-spacing: 0.08em;
+                        }
+                    }
+                }
+
+                .carddiv {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+                    align-items: center;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 114%;
+                        font-family: var(--neuebold);
+                        letter-spacing: 0.08em;
+                        margin-bottom: 10px;
+                    }
+
+                    .bashliq {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span {
+                            &:nth-child(1) {
+                                font-weight: 800;
+                                font-size: 20px;
+                                line-height: 24px;
+                                font-family: var(--neueultra);
+                                letter-spacing: 0.08em;
+                            }
+
+                            &:nth-child(2) {
+                                font-weight: 800;
+                                font-size: 14px;
+                                line-height: 24px;
+                                font-family: var(--neueregular);
+                                letter-spacing: 0.08em;
+                                text-decoration: underline;
+                                text-align: end;
+                            }
+                        }
+                    }
+
+                    .cardozu {
+                        border: 0.8px solid black;
+                        border-radius: 10px;
+                        background-color: white;
+                        height: 200px;
+                        position: relative;
+
+                        span {
+
+                            &:nth-child(1) {
+                                position: absolute;
+                                top: 5px;
+                                right: 10px;
+                            }
+
+                            &:nth-child(2) {
+                                position: absolute;
+                                bottom: 10%;
+                                right: 10px;
+                            }
+
+                            &:nth-child(3) {
+                                position: absolute;
+                                bottom: 0%;
+                                right: 10px;
+                            }
+
+                            &:nth-child(4) {
+                                position: absolute;
+                                bottom: 0%;
+                                left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rightcheckout {
+                display: flex;
+                flex-direction: column;
+                margin-top: 25px;
+                order: 3;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border-bottom: 1px solid black;
+                    border-top: 1px solid black;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+
+                    span {
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                        font-family: var(--neueregular);
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            padding-bottom: 10px;
+                        }
+
+                        &:nth-child(2),
+                        &:nth-child(4) {
+                            font-family: var(--neuebold);
+                            text-align: end;
+                        }
+                    }
+                }
+
+                .middle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border-bottom: 1px solid black;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+
+                    span {
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                        font-family: var(--neueregular);
+
+                        &:nth-child(2) {
+                            text-align: end;
+                            font-family: var(--neuebold);
+                        }
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    width: 100%;
+
+                    .aldiq {
+                        font-family: var(--neueregular);
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                        width: 100%;
+                        padding: 20px;
+                        background-color: var(--yellow);
+                        border: 1px solid black;
+                        color: black;
+                        text-align: center;
+                        margin-bottom: 25px;
+                    }
+
+                    .paywith {
+                        border-top: 1px solid black;
+                        font-family: var(--neuemedium);
+                        padding-top: 25px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        span {
+                            font-weight: 500;
+                            font-size: 12px;
+                            font-family: var(--neueregular);
+                            letter-spacing: 0.08em;
+                            margin-bottom: 15px;
+                        }
+
+                        a {
+
+                            &:nth-child(1) {
+                                font-weight: 300;
+                                font-size: 12px;
+                                letter-spacing: 0.08em;
+                                text-decoration: underline;
+                            }
+
+                            &:nth-child(2) {
+                                font-family: var(--neuemedium);
+                                font-weight: 500;
+                                font-size: 10px;
+                                line-height: 127%;
+                                letter-spacing: 0.08em;
+                            }
+
+                            &:nth-child(3) {
+                                margin-top: 20px;
+                                padding: 10px;
+                                text-align: center;
+                                width: 100%;
+                                border: 1px solid black;
+                                font-weight: 300;
+                                font-size: 10px;
+                                line-height: 12px;
+                                letter-spacing: 0.08em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .formkeeper {
+                position: relative;
+                margin-bottom: 30px;
+                order: 3;
+
+                .closeform {
+                    position: absolute;
+                    top: -20px;
+                    right: 10px;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            .forminfokeeper {
+                display: none;
+
+                .changeaccountinfoform {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .checkoutaccinfoname {
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 5px;
+                    }
+
+                    .checkoutaccinfosurname {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 5px;
+                    }
+
+                    label {
+                        font-family: var(--neuelight);
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 127%;
+                        letter-spacing: 0.08em;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    button {
+                        margin-top: 20px;
+                        width: 100%;
+                        background-color: black;
+                        text-align: center;
+                        padding: 10px 0;
+                        color: white;
+                        font-family: var(--neueregular);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: 1px solid black;
+                        outline: none;
+                        border-radius: 3px;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                        padding: 5px 10px;
+                        font-family: var(--neuelight);
+                        font-weight: 300;
+                        font-size: 15px;
+                        letter-spacing: 0.08em;
+                    }
+                }
+            }
+
+            .formaddresskeeper {
+                display: none;
+
+                .changeaddressform {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .checkoutcity {
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 5px;
+                    }
+
+                    .checkoutcountry {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 5px;
+                    }
+
+                    label {
+                        font-family: var(--neuelight);
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 127%;
+                        letter-spacing: 0.08em;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    button {
+                        margin-top: 10px;
+                        width: 100%;
+                        background-color: black;
+                        text-align: center;
+                        padding: 10px 0;
+                        color: white;
+                        font-family: var(--neueregular);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: 1px solid black;
+                        outline: none;
+                        border-radius: 3px;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                        padding: 5px 10px;
+                        font-family: var(--neuelight);
+                        font-weight: 300;
+                        font-size: 15px;
+                        letter-spacing: 0.08em;
+                    }
+                }
+            }
+
+            .formcardkeeper {
+                display: none;
+
+                .changecardform {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .checkoutcity {
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 5px;
+                    }
+
+                    .checkoutcountry {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 5px;
+                    }
+
+                    label {
+                        font-family: var(--neuelight);
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 127%;
+                        letter-spacing: 0.08em;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    button {
+                        margin-top: 10px;
+                        width: 100%;
+                        background-color: black;
+                        text-align: center;
+                        padding: 10px 0;
+                        color: white;
+                        font-family: var(--neueregular);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 114%;
+                        letter-spacing: 0.08em;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: 1px solid black;
+                        outline: none;
+                        border-radius: 3px;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                        padding: 5px 10px;
+                        font-family: var(--neuelight);
+                        font-weight: 300;
+                        font-size: 15px;
+                        letter-spacing: 0.08em;
+                    }
+                }
+            }
+
+            .boughtorders {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                order: 2;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .orderdet {
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-family: var(--neueultra);
+                    letter-spacing: 0.08em;
+                    margin-bottom: 15px;
+                }
+
+                div {
+                    position: relative;
+                    padding: 4px;
+
+                    .deletebasketelementfromcheckout {
+                        position: absolute;
+                        top: 3%;
+                        right: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
