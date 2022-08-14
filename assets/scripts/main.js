@@ -797,7 +797,23 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('submit', '.changeaccountinfoform', function () {
+    $(document).on('submit', '.changeaccountinfoform', function (e) {
+        e.preventDefault();
+
+        const form = document.getElementById('changeaccountinfoform');
+        const formData = new FormData(form);
+
+        $('#fullnameorder').attr('value', `${formData.get('name').trim()} ${formData.get('surname').trim()}`)
+        $('#phoneorder').attr('value', formData.get('phone').trim())
+        $('#emailorder').attr('value', formData.get('email').trim())
+
+        $('#name').val('')
+        $('#surname').val('')
+        $('#email').val('')
+        $('#phone').val('')
+
+        //burdan sonra uje fetch edeceyik
+
         $('.forminfokeeper').hide();
         $('.rightcheckout').fadeIn(200);
         $('.changeinfo').fadeIn(200);
@@ -807,9 +823,7 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.changeaddress', function () {
-        // $('.forminfokeeper').hide();
         $('.formcardkeeper, .rightcheckout, .forminfokeeper').hide();
-        // $('.rightcheckout').hide();
         $('.formaddresskeeper').fadeIn(200);
         $('.changeinfo').fadeIn(200);
         $('.changecard').fadeIn(200);
@@ -819,10 +833,27 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('submit', '.changeaddressform', function () {
+    $(document).on('submit', '.changeaddressform', function (e) {
+        e.preventDefault();
+
+        const form = document.getElementById('changeaddressform');
+        const formData = new FormData(form);
+
+        $('#addressorder').attr('value', `${formData.get('address1').trim()}, ${formData.get('address2') != '' ? formData.get('address2').trim() + ', ' : ''}${formData.get('zipcode').trim()}`)
+        $('#citycountryorder').attr('value', `${formData.get('city').trim()}, ${formData.get('country').trim()}`)
+
+        $('#address1').val('')
+        $('#address2').val('')
+        $('#country').val('')
+        $('#city').val('')
+        $('#zipcode').val('')
+
+        //burdan sonra uje fetch edeceyik
+
         $('.formaddresskeeper').hide();
         $('.rightcheckout').fadeIn(200);
         $('.changeaddress').fadeIn(200);
+
         if ($(window).width() < 576) {
             $(window).scrollTop(0)
         }
@@ -839,7 +870,23 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('submit', '.changecardform', function () {
+    $(document).on('submit', '.changecardform', function (e) {
+        e.preventDefault();
+
+        const form = document.getElementById('changecardform');
+        const formData = new FormData(form);
+
+        $('#cardnoorder').attr('value', `${formData.get('cardno').trim()}`)
+        $('#cardexpireorder').attr('value', `${formData.get('expire').trim()}`)
+        $('#cardholderorder').attr('value', `${formData.get('cardname').trim()} ${formData.get('cardsurname').trim()}`)
+
+        $('#cvv').val('')
+        $('#expire').val('')
+        $('#cardno').val('')
+        $('#cardname').val('')
+        $('#cardsurname').val('')
+
+        //sonra da hamsini fetch edirik
         $('.formcardkeeper').hide();
         $('.rightcheckout').fadeIn(200);
         $('.changecard').fadeIn(200);

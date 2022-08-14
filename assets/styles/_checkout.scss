@@ -95,6 +95,19 @@ a {
                     align-items: center;
                     margin-bottom: 30px;
 
+                    input {
+                        margin-bottom: 8px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 114%;
+                        font-family: var(--neueregular);
+                        letter-spacing: 0.08em;
+                        background-color: white;
+                        border: none;
+                        outline: none;
+                        color: black;
+                    }
+
                     div {
                         margin-bottom: 8px;
 
@@ -159,6 +172,7 @@ a {
                         flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
+                        color: black;
 
                         span {
                             &:nth-child(1) {
@@ -187,13 +201,48 @@ a {
                         border-radius: 10px;
                         background-color: white;
                         height: 200px;
+                        color: black;
                         position: relative;
 
-                        span {
+                        input {
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 114%;
+                            font-family: var(--neuebold);
+                            letter-spacing: 0.08em;
+                            margin-bottom: 10px;
+                            border: none;
+                            outline: none;
+                            color: black;
+                            background-color: white;
+                            position: absolute;
+                            width: fit-content;
 
+                            &:nth-child(2) {
+                                top: 4%;
+                                left: 12px;
+                                text-align: start;
+                                width: 60%;
+                            }
+
+                            &:nth-child(3) {
+                                top: 16%;
+                                left: 12px;
+                                text-align: start;
+                            }
+
+                            &:nth-child(4) {
+                                bottom: 0%;
+                                left: 12px;
+                                width: 80%;
+                                text-align: start;
+                            }
+                        }
+
+                        span {
                             &:nth-child(1) {
                                 position: absolute;
-                                top: 5px;
+                                top: 10px;
                                 right: 10px;
                             }
 
@@ -487,6 +536,65 @@ a {
 
             .formcardkeeper {
                 display: none;
+
+                .closeform {
+                    position: absolute;
+                    top: -35px !important;
+                    right: 10px;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+
+                .bash {
+                    border: 1px solid black;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    padding: 5px 20px;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .left {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-family: var(--neueregular);
+
+                        span {
+                            &:nth-child(1) {
+                                padding-bottom: 2px;
+
+                                img {
+                                    padding-bottom: 2px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+
+                            &:nth-child(2) {
+                                justify-content: start;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
 
                 .changecardform {
                     display: flex;
