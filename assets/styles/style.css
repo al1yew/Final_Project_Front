@@ -247,6 +247,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .header .mobile .navigation .nav {
     display: -webkit-box;
@@ -270,6 +271,85 @@ p {
     border-bottom: 1px solid #FFFFFF;
     padding: 0;
     padding-left: 3px;
+  }
+  .header .mobile .navigation .search .searchmenu {
+    width: 90%;
+    max-height: 260px;
+    background-color: white;
+    overflow-y: scroll;
+    position: absolute;
+    top: 148%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 3333;
+    -webkit-box-shadow: 0px 0px 5px var(--yellow);
+            box-shadow: 0px 0px 5px var(--yellow);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements {
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul li:last-child a {
+    border: none;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul li a {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: black;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa .strelka {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .mobile .navigation .search .searchmenu .searchelements ul li:hover {
+    color: var(--yellow);
   }
   .header .mobile .navigation .search .search_input {
     width: 90%;
@@ -673,7 +753,10 @@ p {
     font-family: var(--neuebold);
     margin-top: 5px;
   }
-  .header .mobile .navigation .account .accountinfo ul li:nth-child(2) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(3) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(4) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(5) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(6) a {
+  .header .mobile .navigation .account .accountinfo ul li:last-child {
+    border: none;
+  }
+  .header .mobile .navigation .account .accountinfo ul li:nth-child(2) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(3) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(4) a, .header .mobile .navigation .account .accountinfo ul li:nth-child(5) a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -683,9 +766,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .header .mobile .navigation .account .accountinfo ul li:nth-child(6) {
-    border: none;
   }
   #first {
     height: 40vh;
@@ -1950,6 +2030,98 @@ p {
     border-bottom: 1px solid #FFFFFF;
     padding: 0;
     padding-left: 3px;
+    position: relative;
+  }
+  .header .computer .navigation .search a {
+    -webkit-transition: 0s;
+    transition: 0s;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    color: var(--white);
+  }
+  .header .computer .navigation .search a:hover {
+    color: black;
+    font-family: var(--neueregular);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .header .computer .navigation .search .searchmenu {
+    width: 150%;
+    max-height: 230px;
+    background-color: white;
+    overflow-y: scroll;
+    position: absolute;
+    top: 140%;
+    left: -25%;
+    z-index: 3333;
+    -webkit-box-shadow: 0px 0px 5px var(--yellow);
+            box-shadow: 0px 0px 5px var(--yellow);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements {
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li:last-child a {
+    border: none;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: black;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa .strelka {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li:hover {
+    color: var(--yellow);
   }
   .header .computer .navigation .search .search_input {
     width: 90%;
@@ -2370,7 +2542,7 @@ p {
     font-family: var(--neuebold);
     margin-top: 5px;
   }
-  .header .computer .navigation .account .accountinfo ul li:nth-child(2) a, .header .computer .navigation .account .accountinfo ul li:nth-child(3) a, .header .computer .navigation .account .accountinfo ul li:nth-child(4) a, .header .computer .navigation .account .accountinfo ul li:nth-child(5) a, .header .computer .navigation .account .accountinfo ul li:nth-child(6) a {
+  .header .computer .navigation .account .accountinfo ul li:nth-child(2) a, .header .computer .navigation .account .accountinfo ul li:nth-child(3) a, .header .computer .navigation .account .accountinfo ul li:nth-child(4) a, .header .computer .navigation .account .accountinfo ul li:nth-child(5) a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2381,7 +2553,7 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header .computer .navigation .account .accountinfo ul li:nth-child(6) {
+  .header .computer .navigation .account .accountinfo ul li:last-child {
     border: none;
   }
   #first {
@@ -3741,6 +3913,98 @@ p {
     border-bottom: 1px solid #FFFFFF;
     padding: 0;
     padding-left: 3px;
+    position: relative;
+  }
+  .header .computer .navigation .search a {
+    -webkit-transition: 0s;
+    transition: 0s;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    color: var(--white);
+  }
+  .header .computer .navigation .search a:hover {
+    color: black;
+    font-family: var(--neueregular);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .header .computer .navigation .search .searchmenu {
+    width: 150%;
+    max-height: 230px;
+    background-color: white;
+    overflow-y: scroll;
+    position: absolute;
+    top: 140%;
+    left: -25%;
+    z-index: 3333;
+    -webkit-box-shadow: 0px 0px 5px var(--yellow);
+            box-shadow: 0px 0px 5px var(--yellow);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements {
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li:last-child a {
+    border: none;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: black;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa .strelka {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li:hover {
+    color: var(--yellow);
   }
   .header .computer .navigation .search .search_input {
     width: 90%;
@@ -4161,7 +4425,7 @@ p {
     font-family: var(--neuebold);
     margin-top: 5px;
   }
-  .header .computer .navigation .account .accountinfo ul li:nth-child(2) a, .header .computer .navigation .account .accountinfo ul li:nth-child(3) a, .header .computer .navigation .account .accountinfo ul li:nth-child(4) a, .header .computer .navigation .account .accountinfo ul li:nth-child(5) a, .header .computer .navigation .account .accountinfo ul li:nth-child(6) a {
+  .header .computer .navigation .account .accountinfo ul li:nth-child(2) a, .header .computer .navigation .account .accountinfo ul li:nth-child(3) a, .header .computer .navigation .account .accountinfo ul li:nth-child(4) a, .header .computer .navigation .account .accountinfo ul li:nth-child(5) a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4172,7 +4436,7 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header .computer .navigation .account .accountinfo ul li:nth-child(6) {
+  .header .computer .navigation .account .accountinfo ul li:last-child {
     border: none;
   }
   #first {
@@ -18677,6 +18941,84 @@ a:hover {
     border-bottom: 1px solid #FFFFFF;
     padding: 0;
     padding-left: 3px;
+    position: relative;
+  }
+  .header .computer .navigation .search .searchmenu {
+    width: 150%;
+    max-height: 230px;
+    background-color: white;
+    overflow-y: scroll;
+    position: absolute;
+    top: 140%;
+    left: -25%;
+    z-index: 3333;
+    -webkit-box-shadow: 0px 0px 5px var(--yellow);
+            box-shadow: 0px 0px 5px var(--yellow);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements {
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li:last-child a {
+    border: none;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: black;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li a .osnovnayainfa .strelka {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .computer .navigation .search .searchmenu .searchelements ul li:hover {
+    color: var(--yellow);
   }
   .header .computer .navigation .search .search_input {
     width: 90%;
@@ -19022,7 +19364,6 @@ a:hover {
   .header .computer .navigation .account .accountinfo ul li {
     width: 100%;
     padding: 10px 20px;
-    border-bottom: 1px solid black;
   }
   .header .computer .navigation .account .accountinfo ul li a {
     -webkit-transition: 0.4s;
@@ -19050,6 +19391,7 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-bottom: 1px solid black;
     padding-top: 15px;
   }
   .header .computer .navigation .account .accountinfo ul li:nth-child(1) a {
@@ -19096,7 +19438,10 @@ a:hover {
     font-family: var(--neuebold);
     margin-top: 5px;
   }
-  .header .computer .navigation .account .accountinfo ul li:nth-child(2) a, .header .computer .navigation .account .accountinfo ul li:nth-child(3) a, .header .computer .navigation .account .accountinfo ul li:nth-child(4) a, .header .computer .navigation .account .accountinfo ul li:nth-child(5) a, .header .computer .navigation .account .accountinfo ul li:nth-child(6) a {
+  .header .computer .navigation .account .accountinfo ul li:nth-child(2), .header .computer .navigation .account .accountinfo ul li:nth-child(3), .header .computer .navigation .account .accountinfo ul li:nth-child(4), .header .computer .navigation .account .accountinfo ul li:nth-child(5) {
+    border-bottom: 1px solid black;
+  }
+  .header .computer .navigation .account .accountinfo ul li:nth-child(2) a, .header .computer .navigation .account .accountinfo ul li:nth-child(3) a, .header .computer .navigation .account .accountinfo ul li:nth-child(4) a, .header .computer .navigation .account .accountinfo ul li:nth-child(5) a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -19107,7 +19452,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header .computer .navigation .account .accountinfo ul li:nth-child(6) {
+  .header .computer .navigation .account .accountinfo ul li:last-child {
     border: none;
   }
   #first {

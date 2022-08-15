@@ -194,6 +194,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                position: relative;
 
                 .nav {
                     display: flex;
@@ -208,6 +209,78 @@
                     border-bottom: 1px solid #FFFFFF;
                     padding: 0;
                     padding-left: 3px;
+
+                    .searchmenu {
+                        width: 90%;
+                        max-height: 260px;
+                        background-color: white;
+                        overflow-y: scroll;
+                        position: absolute;
+                        top: 148%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 3333;
+                        box-shadow: 0px 0px 5px var(--yellow);
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                        .searchelements {
+                            padding: 0px 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    &:last-child {
+                                        a {
+                                            border: none;
+                                        }
+                                    }
+
+                                    a {
+                                        padding: 10px 0;
+                                        border-bottom: 1px solid black;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        transition: 0.3s;
+                                        color: black;
+
+                                        .osnovnayainfa {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            span {
+                                                &:nth-child(1) {
+                                                    font-family: var(--neueregular);
+                                                    font-weight: 400;
+                                                    font-size: 12px;
+                                                    line-height: 114%;
+                                                    letter-spacing: 0.08em;
+                                                }
+                                            }
+
+                                            .strelka {
+                                                display: flex;
+                                                justify-content: end;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     .search_input {
                         width: 90%;
@@ -607,21 +680,20 @@
                                     }
                                 }
 
+                                &:last-child {
+                                    border: none;
+                                }
+
                                 &:nth-child(2),
                                 &:nth-child(3),
                                 &:nth-child(4),
-                                &:nth-child(5),
-                                &:nth-child(6) {
+                                &:nth-child(5) {
                                     a {
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
 
                                     }
-                                }
-
-                                &:nth-child(6) {
-                                    border: none;
                                 }
                             }
                         }
@@ -1775,6 +1847,92 @@
                     border-bottom: 1px solid #FFFFFF;
                     padding: 0;
                     padding-left: 3px;
+                    position: relative;
+
+                    a {
+                        transition: 0s;
+                        font-weight: 400;
+                        font-size: 15px;
+                        letter-spacing: 0.08em;
+                        color: var(--white);
+
+                        &:hover {
+                            color: black;
+                            font-family: var(--neueregular);
+                            transform: scale(1);
+                        }
+                    }
+
+                    .searchmenu {
+                        width: 150%;
+                        max-height: 230px;
+                        background-color: white;
+                        overflow-y: scroll;
+                        position: absolute;
+                        top: 140%;
+                        left: -25%;
+                        z-index: 3333;
+                        box-shadow: 0px 0px 5px var(--yellow);
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                        .searchelements {
+                            padding: 0px 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    &:last-child {
+                                        a {
+                                            border: none;
+                                        }
+                                    }
+
+                                    a {
+                                        padding: 10px 0;
+                                        border-bottom: 1px solid black;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        transition: 0.3s;
+                                        color: black;
+
+                                        .osnovnayainfa {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            span {
+                                                &:nth-child(1) {
+                                                    font-family: var(--neueregular);
+                                                    font-weight: 400;
+                                                    font-size: 12px;
+                                                    line-height: 114%;
+                                                    letter-spacing: 0.08em;
+                                                }
+                                            }
+
+                                            .strelka {
+                                                display: flex;
+                                                justify-content: end;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     .search_input {
                         width: 90%;
@@ -2194,8 +2352,7 @@
                                 &:nth-child(2),
                                 &:nth-child(3),
                                 &:nth-child(4),
-                                &:nth-child(5),
-                                &:nth-child(6) {
+                                &:nth-child(5) {
                                     a {
                                         display: flex;
                                         justify-content: space-between;
@@ -2204,7 +2361,7 @@
                                     }
                                 }
 
-                                &:nth-child(6) {
+                                &:last-child {
                                     border: none;
                                 }
                             }
@@ -3481,6 +3638,92 @@
                     border-bottom: 1px solid #FFFFFF;
                     padding: 0;
                     padding-left: 3px;
+                    position: relative;
+
+                    a {
+                        transition: 0s;
+                        font-weight: 400;
+                        font-size: 15px;
+                        letter-spacing: 0.08em;
+                        color: var(--white);
+
+                        &:hover {
+                            color: black;
+                            font-family: var(--neueregular);
+                            transform: scale(1);
+                        }
+                    }
+
+                    .searchmenu {
+                        width: 150%;
+                        max-height: 230px;
+                        background-color: white;
+                        overflow-y: scroll;
+                        position: absolute;
+                        top: 140%;
+                        left: -25%;
+                        z-index: 3333;
+                        box-shadow: 0px 0px 5px var(--yellow);
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                        .searchelements {
+                            padding: 0px 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    &:last-child {
+                                        a {
+                                            border: none;
+                                        }
+                                    }
+
+                                    a {
+                                        padding: 10px 0;
+                                        border-bottom: 1px solid black;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        transition: 0.3s;
+                                        color: black;
+
+                                        .osnovnayainfa {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            span {
+                                                &:nth-child(1) {
+                                                    font-family: var(--neueregular);
+                                                    font-weight: 400;
+                                                    font-size: 12px;
+                                                    line-height: 114%;
+                                                    letter-spacing: 0.08em;
+                                                }
+                                            }
+
+                                            .strelka {
+                                                display: flex;
+                                                justify-content: end;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     .search_input {
                         width: 90%;
@@ -3900,8 +4143,7 @@
                                 &:nth-child(2),
                                 &:nth-child(3),
                                 &:nth-child(4),
-                                &:nth-child(5),
-                                &:nth-child(6) {
+                                &:nth-child(5) {
                                     a {
                                         display: flex;
                                         justify-content: space-between;
@@ -3910,7 +4152,7 @@
                                     }
                                 }
 
-                                &:nth-child(6) {
+                                &:last-child {
                                     border: none;
                                 }
                             }

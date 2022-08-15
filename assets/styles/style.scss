@@ -183,6 +183,78 @@ a {
                     border-bottom: 1px solid #FFFFFF;
                     padding: 0;
                     padding-left: 3px;
+                    position: relative;
+
+                    .searchmenu {
+                        width: 150%;
+                        max-height: 230px;
+                        background-color: white;
+                        overflow-y: scroll;
+                        position: absolute;
+                        top: 140%;
+                        left: -25%;
+                        z-index: 3333;
+                        box-shadow: 0px 0px 5px var(--yellow);
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                        .searchelements {
+                            padding: 0px 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    &:last-child {
+                                        a {
+                                            border: none;
+                                        }
+                                    }
+
+                                    a {
+                                        padding: 10px 0;
+                                        border-bottom: 1px solid black;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        transition: 0.3s;
+                                        color: black;
+
+                                        .osnovnayainfa {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            span {
+                                                &:nth-child(1) {
+                                                    font-family: var(--neueregular);
+                                                    font-weight: 400;
+                                                    font-size: 12px;
+                                                    line-height: 114%;
+                                                    letter-spacing: 0.08em;
+                                                }
+                                            }
+
+                                            .strelka {
+                                                display: flex;
+                                                justify-content: end;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     .search_input {
                         width: 90%;
@@ -540,7 +612,6 @@ a {
                             li {
                                 width: 100%;
                                 padding: 10px 20px;
-                                border-bottom: 1px solid black;
 
                                 a {
                                     transition: 0.4s;
@@ -560,6 +631,7 @@ a {
                                     justify-content: space-between;
                                     align-items: center;
                                     flex-direction: column;
+                                    border-bottom: 1px solid black;
                                     padding-top: 15px;
 
                                     a {
@@ -603,17 +675,17 @@ a {
                                 &:nth-child(2),
                                 &:nth-child(3),
                                 &:nth-child(4),
-                                &:nth-child(5),
-                                &:nth-child(6) {
+                                &:nth-child(5) {
+                                    border-bottom: 1px solid black;
+
                                     a {
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
-
                                     }
                                 }
 
-                                &:nth-child(6) {
+                                &:last-child {
                                     border: none;
                                 }
                             }
