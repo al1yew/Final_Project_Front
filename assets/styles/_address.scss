@@ -62,7 +62,7 @@ a {
 }
 
 
-.mycards {
+.myaddresses {
     margin-top: 10px;
     margin-bottom: 30px;
 
@@ -80,79 +80,87 @@ a {
             color: var(--yellow);
         }
 
-        .carddiv {
+        .addressdiv {
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 30px;
             align-items: center;
 
-            .cardinozu {
+            .addressinozu {
                 padding: 0 10px;
                 margin-top: 20px;
 
-                .headword {
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 114%;
-                    font-family: var(--neuebold);
-                    letter-spacing: 0.08em;
-                    margin-bottom: 10px;
-                }
-
-                .cardozu {
+                .addressozu {
                     border: 0.8px solid black;
-                    border-radius: 10px;
                     background-color: white;
-                    height: 200px;
+                    height: 300px;
                     color: black;
+                    border-radius: 10px;
                     position: relative;
 
-                    span {
-                        font-weight: 700;
-                        font-size: 12px;
-                        line-height: 114%;
-                        font-family: var(--neuebold);
-                        letter-spacing: 0.08em;
-                        color: black;
-                        background-color: white;
-                        margin-bottom: 10px;
+                    .top {
+                        border-bottom: 0.8px solid black;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        span {
+                            font-family: var(--neuebold);
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 18px;
+                            letter-spacing: 0.08em;
+                            padding: 0 20px;
+
+                            &:nth-child(1) {
+                                padding-bottom: 15px;
+                                padding-top: 15px;
+                            }
+
+                            &:nth-child(2) {
+                                padding-bottom: 15px;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        padding: 20px;
+
+                        span {
+                            font-weight: 300;
+                            font-size: 13px;
+                            line-height: 114%;
+                            font-family: var(--neueregular);
+                            letter-spacing: 0.08em;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-wrap: wrap;
+
+                            span {
+                                padding-bottom: 10px;
+
+                                &:nth-child(2) {
+                                    font-family: var(--neuebold);
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .deleteaddress {
                         position: absolute;
-
-                        &:nth-child(1) {
-                            position: absolute;
-                            top: 10px;
-                            right: 10px;
-                        }
-
-                        &:nth-child(2) {
-                            position: absolute;
-                            top: 4%;
-                            left: 10px;
-                        }
-
-                        &:nth-child(3) {
-                            position: absolute;
-                            top: 14%;
-                            left: 10px;
-                        }
-
-                        &:nth-child(4) {
-                            position: absolute;
-                            bottom: 0%;
-                            left: 10px;
-                        }
-
-                        &:nth-child(5) {
-                            position: absolute;
-                            top: 27%;
-                            right: 10px;
-                        }
+                        bottom: 10px;
+                        left: 20px;
                     }
 
                     .makemain {
                         position: absolute;
-                        bottom: 0%;
-                        right: 10px;
+                        bottom: 10px;
+                        right: 20px;
 
                         a {
                             text-decoration: underline;
@@ -167,21 +175,19 @@ a {
 
                     .ismain {
                         position: absolute;
+                        bottom: 10px;
                         right: 10px;
-                        bottom: 0%;
-                        text-decoration: underline;
-                        font-size: 13px;
                         color: var(--yellow);
                     }
                 }
             }
 
-            .cardform {
+            .addressform {
                 padding: 0 10px;
                 margin-top: 20px;
                 position: relative;
 
-                .clicktoaddnewcard {
+                .clicktoaddnewaddress {
                     font-size: 30px;
                     font-family: var(--neueultra);
                     opacity: 0.6;
@@ -201,9 +207,9 @@ a {
 
                 .again_allcontent {
                     border: 0.8px solid black;
-                    border-radius: 10px;
-                    height: 200px;
+                    height: 300px;
                     color: black;
+                    border-radius: 10px;
                     padding: 10px;
                     display: flex;
                     justify-content: center;
@@ -212,7 +218,7 @@ a {
                     .allcontent {
                         display: none;
 
-                        .cardozu {
+                        .addressozu {
                             background-color: white;
                             color: black;
                             position: relative;
@@ -246,10 +252,13 @@ a {
                                 font-weight: 300;
                                 font-size: 13px;
                                 letter-spacing: 0.08em;
+
+
                             }
                         }
                     }
                 }
+
             }
         }
     }

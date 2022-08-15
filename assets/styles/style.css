@@ -17141,9 +17141,6 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -17215,29 +17212,29 @@ a:hover {
   right: 10px;
 }
 
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(6) {
+.mycards .all .carddiv .cardinozu .cardozu .makemain {
   position: absolute;
   bottom: 0%;
   right: 10px;
 }
 
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(6) a {
+.mycards .all .carddiv .cardinozu .cardozu .makemain a {
   text-decoration: underline;
   font-size: 13px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(6) a:hover {
+.mycards .all .carddiv .cardinozu .cardozu .makemain a:hover {
   color: var(--yellow);
 }
 
 .mycards .all .carddiv .cardinozu .cardozu .ismain {
   position: absolute;
-  bottom: 10%;
+  right: 10px;
+  bottom: 0%;
   text-decoration: underline;
   font-size: 13px;
-  left: 10px;
   color: var(--yellow);
 }
 
@@ -17260,7 +17257,7 @@ a:hover {
           transform: translate(-50%, -50%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  z-index: 1322144324;
+  z-index: 14;
 }
 
 .mycards .all .carddiv .cardform .clicktoaddnewcard:hover {
@@ -17271,6 +17268,7 @@ a:hover {
   border: 0.8px solid black;
   border-radius: 10px;
   height: 200px;
+  color: black;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17318,6 +17316,313 @@ a:hover {
 }
 
 .mycards .all .carddiv .cardform .again_allcontent .allcontent .cardozu input {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+  padding: 5px 8px;
+  font-family: var(--neuelight);
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+.myaddresses {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.myaddresses .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myaddresses .all .firstp {
+  font-family: var(--neueultra);
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+}
+
+.myaddresses .all .addressdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myaddresses .all .addressdiv .addressinozu {
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu {
+  border: 0.8px solid black;
+  background-color: white;
+  height: 300px;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .top {
+  border-bottom: 0.8px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .top span {
+  font-family: var(--neuebold);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  padding: 0 20px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .top span:nth-child(1) {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .top span:nth-child(2) {
+  padding-bottom: 15px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .bottom span {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 114%;
+  font-family: var(--neueregular);
+  letter-spacing: 0.08em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .bottom span span {
+  padding-bottom: 10px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .bottom span span:nth-child(2) {
+  font-family: var(--neuebold);
+  font-size: 14px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .deleteaddress {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .makemain {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .makemain a {
+  text-decoration: underline;
+  font-size: 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .makemain a:hover {
+  color: var(--yellow);
+}
+
+.myaddresses .all .addressdiv .addressinozu .addressozu .ismain {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: var(--yellow);
+}
+
+.myaddresses .all .addressdiv .addressform {
+  padding: 0 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.myaddresses .all .addressdiv .addressform .clicktoaddnewaddress {
+  font-size: 30px;
+  font-family: var(--neueultra);
+  opacity: 0.6;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 14;
+}
+
+.myaddresses .all .addressdiv .addressform .clicktoaddnewaddress:hover {
+  opacity: 1;
+}
+
+.myaddresses .all .addressdiv .addressform .again_allcontent {
+  border: 0.8px solid black;
+  height: 300px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myaddresses .all .addressdiv .addressform .again_allcontent .allcontent {
+  display: none;
+}
+
+.myaddresses .all .addressdiv .addressform .again_allcontent .allcontent .addressozu {
+  background-color: white;
+  color: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myaddresses .all .addressdiv .addressform .again_allcontent .allcontent .addressozu button {
+  margin-top: 10px;
+  background-color: black;
+  text-align: center;
+  padding: 5px 0;
+  color: white;
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+}
+
+.myaddresses .all .addressdiv .addressform .again_allcontent .allcontent .addressozu input {
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
