@@ -1031,7 +1031,19 @@ $(document).ready(function () {
 
     //#endregion add new address
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region  order page toggle menu
+
+    //--------------------------------- order page toggle menu
+
+    $(document).on('click', '.faqtoggle', function (e) {
+
+        $($(this).children()[0]).next().slideToggle(200);
+
+    });
+
+    //#endregion order page toggle menu
 
 
 
