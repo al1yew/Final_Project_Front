@@ -16885,6 +16885,8 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     border-bottom: 1px solid black;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 20px 0;
   }
   .ordersection .all .orders .order .bottom .orderitem:nth-child(1) {
@@ -16930,6 +16932,8 @@ a:hover {
     display: flex;
     margin-bottom: 15px;
     padding-left: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop span {
     font-weight: 700;

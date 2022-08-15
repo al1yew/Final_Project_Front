@@ -233,6 +233,7 @@ a {
                             justify-content: space-between;
                             align-items: center;
                             border-bottom: 1px solid black;
+                            flex-wrap: wrap;
                             padding: 20px 0;
 
                             &:nth-child(1) {
@@ -276,6 +277,7 @@ a {
                                     display: flex;
                                     margin-bottom: 15px;
                                     padding-left: 20px;
+                                    flex-wrap: wrap;
 
                                     span {
                                         font-weight: 700;
