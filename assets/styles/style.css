@@ -16924,14 +16924,14 @@ a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .top {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
     padding-left: 20px;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .top span {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop span {
     font-weight: 700;
     font-size: 15px;
     line-height: 114%;
@@ -16940,7 +16940,7 @@ a:hover {
     padding-left: 10px;
     font-family: var(--neueultra);
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .top p:nth-child(1) {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop p:nth-child(1) {
     margin-bottom: 11px;
     font-family: var(--neueregular);
     font-weight: 400;
@@ -16948,21 +16948,21 @@ a:hover {
     line-height: 18px;
     letter-spacing: 0.08em;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .top p:nth-child(3) {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop p:nth-child(3) {
     font-family: var(--neueregular);
     font-weight: 400;
     font-size: 13px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .top p:nth-child(3) span {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop p:nth-child(3) span {
     font-weight: 700;
     font-size: 13px;
     line-height: 114%;
     font-family: var(--neuebold);
     letter-spacing: 0.08em;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16974,7 +16974,7 @@ a:hover {
     margin-bottom: 10px;
     padding-left: 20px;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16985,20 +16985,20 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div:nth-child(2), .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div:nth-child(4) {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(2), .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(4) {
     padding-left: 20px;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div:nth-child(1), .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div:nth-child(2) {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(1), .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(2) {
     margin-bottom: 15px;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div span:nth-child(1) {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div span:nth-child(1) {
     font-family: var(--neueregular);
     font-weight: 400;
     font-size: 13px;
     line-height: 114%;
     letter-spacing: 0.08em;
   }
-  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottom div span:nth-child(2) {
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div span:nth-child(2) {
     font-weight: 700;
     font-size: 13px;
     line-height: 114%;
@@ -17069,6 +17069,346 @@ a:hover {
 .where {
   opacity: 0;
   margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .ordersection {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .ordersection .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ordersection .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .ordersection .all .head_categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    padding: 12px 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: var(--neueregular);
+    position: relative;
+  }
+  .ordersection .all .head_categories li {
+    padding: 5px 5px;
+  }
+  .ordersection .all .head_categories li a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+  }
+  .ordersection .all .head_categories li .activespan {
+    padding: 3px 8px;
+    background-color: var(--yellow);
+    text-decoration: underline;
+  }
+  .ordersection .all .ordersearchkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 0;
+  }
+  .ordersection .all .ordersearchkeeper .search_input_order {
+    width: 90%;
+    font-family: var(--neuelight);
+    letter-spacing: 0.08em;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  .ordersection .all .ordersearchkeeper .search_input_order::-webkit-input-placeholder {
+    color: black;
+  }
+  .ordersection .all .ordersearchkeeper .search_input_order:-ms-input-placeholder {
+    color: black;
+  }
+  .ordersection .all .ordersearchkeeper .search_input_order::-ms-input-placeholder {
+    color: black;
+  }
+  .ordersection .all .ordersearchkeeper .search_input_order::placeholder {
+    color: black;
+  }
+  .ordersection .all .ordersearchkeeper .search_input_order:focus {
+    color: black;
+  }
+  .ordersection .all .ordersearchkeeper .search_icon_order {
+    color: var(--white);
+    color: black;
+    font-size: 22px;
+    vertical-align: bottom;
+    padding-bottom: 2px;
+  }
+  .ordersection .all .orders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ordersection .all .orders .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    border-top: 1px solid var(--yellow);
+    border-bottom: 1px solid var(--yellow);
+  }
+  .ordersection .all .orders .order .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ordersection .all .orders .order .top div {
+    margin-bottom: 18px;
+  }
+  .ordersection .all .orders .order .top div:nth-child(1), .ordersection .all .orders .order .top div:nth-child(2), .ordersection .all .orders .order .top div:nth-child(3), .ordersection .all .orders .order .top div:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ordersection .all .orders .order .top div:nth-child(1) span:nth-child(1), .ordersection .all .orders .order .top div:nth-child(2) span:nth-child(1), .ordersection .all .orders .order .top div:nth-child(3) span:nth-child(1), .ordersection .all .orders .order .top div:nth-child(4) span:nth-child(1) {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 7px;
+  }
+  .ordersection .all .orders .order .top div:nth-child(1) span:nth-child(2), .ordersection .all .orders .order .top div:nth-child(2) span:nth-child(2), .ordersection .all .orders .order .top div:nth-child(3) span:nth-child(2), .ordersection .all .orders .order .top div:nth-child(4) span:nth-child(2) {
+    font-family: var(--neueultra);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .ordersection .all .orders .order .top div:nth-child(5) {
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ordersection .all .orders .order .top div:nth-child(5) span:nth-child(1) {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: start;
+    letter-spacing: 0.08em;
+    font-family: var(--neuebold);
+  }
+  .ordersection .all .orders .order .top div:nth-child(5) span:nth-child(2) {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: end;
+    color: var(--yellow);
+    letter-spacing: 0.08em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    font-family: var(--neueultra);
+    cursor: pointer;
+  }
+  .ordersection .all .orders .order .top div:nth-child(2) span, .ordersection .all .orders .order .top div:nth-child(4) span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ordersection .all .orders .order .bottom {
+    display: none;
+  }
+  .ordersection .all .orders .order .bottom .orderitem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+  }
+  .ordersection .all .orders .order .bottom .orderitem:nth-child(1) {
+    border-top: 1px solid black;
+    margin-top: 15px;
+  }
+  .ordersection .all .orders .order .bottom .orderitem:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .first {
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 7px;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .first svg {
+    margin-left: 10px;
+    padding-bottom: 3px;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .second {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 114%;
+    margin-bottom: 9px;
+    letter-spacing: 0.08em;
+    padding-left: 10px;
+    font-family: var(--neueultra);
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop p:nth-child(1) {
+    margin-bottom: 11px;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop p:nth-child(3) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .toptop p:nth-child(3) span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(2), .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(4) {
+    padding-left: 20px;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(1), .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div:nth-child(2) {
+    margin-bottom: 15px;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div span:nth-child(1) {
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .ordersection .all .orders .order .bottom .orderitem .orderinfo .bottombottom div span:nth-child(2) {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+  }
 }
 
 * {
