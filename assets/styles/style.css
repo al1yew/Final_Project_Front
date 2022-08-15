@@ -17155,7 +17155,7 @@ a:hover {
   margin-top: 20px;
 }
 
-.mycards .all .carddiv .cardinozu span {
+.mycards .all .carddiv .cardinozu .headword {
   font-weight: 700;
   font-size: 12px;
   line-height: 114%;
@@ -17181,6 +17181,7 @@ a:hover {
   letter-spacing: 0.08em;
   color: black;
   background-color: white;
+  margin-bottom: 10px;
   position: absolute;
 }
 
@@ -17206,6 +17207,38 @@ a:hover {
   position: absolute;
   bottom: 0%;
   left: 10px;
+}
+
+.mycards .all .carddiv .cardinozu .cardozu span:nth-child(5) {
+  position: absolute;
+  top: 27%;
+  right: 10px;
+}
+
+.mycards .all .carddiv .cardinozu .cardozu span:nth-child(6) {
+  position: absolute;
+  bottom: 0%;
+  right: 10px;
+}
+
+.mycards .all .carddiv .cardinozu .cardozu span:nth-child(6) a {
+  text-decoration: underline;
+  font-size: 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mycards .all .carddiv .cardinozu .cardozu span:nth-child(6) a:hover {
+  color: var(--yellow);
+}
+
+.mycards .all .carddiv .cardinozu .cardozu .ismain {
+  position: absolute;
+  bottom: 10%;
+  text-decoration: underline;
+  font-size: 13px;
+  left: 10px;
+  color: var(--yellow);
 }
 
 .mycards .all .carddiv .cardform {
