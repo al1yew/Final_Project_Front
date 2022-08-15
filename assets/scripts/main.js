@@ -908,6 +908,83 @@ $(document).ready(function () {
 
     //#endregion checkout forms
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region  order page toggle menu
+
+    //--------------------------------- order page toggle menu
+
+    $(document).on('click', '.orders .order .top', function (e) {
+
+        $($(this).next()).slideToggle(200);
+
+    });
+
+    //#endregion order page toggle menu
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region  add new card
+
+    //--------------------------------- add new card
+
+    $(document).on('click', '.clicktoaddnewcard', function (e) {
+
+        $($(this).next().children()[0]).fadeIn(200);
+
+        $(this).hide();
+
+    });
+
+    $(document).on('click', '.cancelnewcard', function (e) {
+
+        $(this).parent().parent().hide();
+
+        $(this).parent().parent().parent().prev().fadeIn(200);
+
+    });
+
+    $(document).on('submit', '#addnewcardform', function (e) {
+        e.preventDefault();
+
+        const form = document.getElementById('addnewcardform');
+        const formData = new FormData(form);
+
+        let cardno = formData.get('cardno').trim()
+        let cardname = formData.get('cardname').trim()
+        let cardsurname = formData.get('cardsurname').trim()
+        let expire = formData.get('expire').trim()
+        let cvv = formData.get('cvv').trim()
+
+        alert($(document.activeElement).val());
+
+        //vessalam valuesini burda if ile yoxlayib controllere true false gondereceyik, 
+        //tipa esli save, to pust budet false, esli make main to true, parametr da
+        //olsun bool main tipa esli main true to saveni kak main esli net to naoborot
+
+        $(this).parent().hide();
+        $(this).parent().parent().prev().fadeIn(200);
+
+        $('.cvv').val('')
+        $('.expire').val('')
+        $('.cardno').val('')
+        $('.cardname').val('')
+        $('.cardsurname').val('')
+
+        // alert(`${cardno},${cardname},${cardsurname},${expire},${cvv}`)
+
+    });
+
+    //#endregion add new card
+
+
+
+
+
+
+
+
+
 
 
 
