@@ -210,7 +210,12 @@
                     padding: 0;
                     padding-left: 3px;
 
+                    .search_icon {
+                        margin-bottom: 1px;
+                    }
+
                     .searchmenu {
+                        display: none;
                         width: 90%;
                         max-height: 260px;
                         background-color: white;
@@ -289,6 +294,7 @@
                         background-color: transparent;
                         outline: none;
                         border: none;
+                        color: white;
 
                         &::placeholder {
                             color: var(--white);
@@ -1849,6 +1855,10 @@
                     padding-left: 3px;
                     position: relative;
 
+                    .search_icon {
+                        margin-bottom: 1px;
+                    }
+
                     a {
                         transition: 0s;
                         font-weight: 400;
@@ -1866,6 +1876,7 @@
                     .searchmenu {
                         width: 150%;
                         max-height: 230px;
+                        display: none;
                         background-color: white;
                         overflow-y: scroll;
                         position: absolute;
@@ -1941,6 +1952,7 @@
                         background-color: transparent;
                         outline: none;
                         border: none;
+                        color: white;
 
                         &::placeholder {
                             color: var(--white);
@@ -3654,7 +3666,12 @@
                         }
                     }
 
+                    .search_icon {
+                        margin-bottom: 1px;
+                    }
+
                     .searchmenu {
+                        display: none;
                         width: 150%;
                         max-height: 230px;
                         background-color: white;
@@ -3732,6 +3749,7 @@
                         background-color: transparent;
                         outline: none;
                         border: none;
+                        color: white;
 
                         &::placeholder {
                             color: var(--white);

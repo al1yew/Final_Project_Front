@@ -185,8 +185,13 @@ a {
                     padding-left: 3px;
                     position: relative;
 
+                    .search_icon {
+                        margin-bottom: 1px;
+                    }
+
                     .searchmenu {
                         width: 150%;
+                        display: none;
                         max-height: 230px;
                         background-color: white;
                         overflow-y: scroll;
@@ -262,6 +267,7 @@ a {
                         letter-spacing: 0.08em;
                         background-color: transparent;
                         outline: none;
+                        color: white;
                         border: none;
 
                         &::placeholder {

@@ -272,7 +272,11 @@ p {
     padding: 0;
     padding-left: 3px;
   }
+  .header .mobile .navigation .search .search_icon {
+    margin-bottom: 1px;
+  }
   .header .mobile .navigation .search .searchmenu {
+    display: none;
     width: 90%;
     max-height: 260px;
     background-color: white;
@@ -358,6 +362,7 @@ p {
     background-color: transparent;
     outline: none;
     border: none;
+    color: white;
   }
   .header .mobile .navigation .search .search_input::-webkit-input-placeholder {
     color: var(--white);
@@ -2032,6 +2037,9 @@ p {
     padding-left: 3px;
     position: relative;
   }
+  .header .computer .navigation .search .search_icon {
+    margin-bottom: 1px;
+  }
   .header .computer .navigation .search a {
     -webkit-transition: 0s;
     transition: 0s;
@@ -2049,6 +2057,7 @@ p {
   .header .computer .navigation .search .searchmenu {
     width: 150%;
     max-height: 230px;
+    display: none;
     background-color: white;
     overflow-y: scroll;
     position: absolute;
@@ -2130,6 +2139,7 @@ p {
     background-color: transparent;
     outline: none;
     border: none;
+    color: white;
   }
   .header .computer .navigation .search .search_input::-webkit-input-placeholder {
     color: var(--white);
@@ -3929,7 +3939,11 @@ p {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  .header .computer .navigation .search .search_icon {
+    margin-bottom: 1px;
+  }
   .header .computer .navigation .search .searchmenu {
+    display: none;
     width: 150%;
     max-height: 230px;
     background-color: white;
@@ -4013,6 +4027,7 @@ p {
     background-color: transparent;
     outline: none;
     border: none;
+    color: white;
   }
   .header .computer .navigation .search .search_input::-webkit-input-placeholder {
     color: var(--white);
@@ -18943,8 +18958,12 @@ a:hover {
     padding-left: 3px;
     position: relative;
   }
+  .header .computer .navigation .search .search_icon {
+    margin-bottom: 1px;
+  }
   .header .computer .navigation .search .searchmenu {
     width: 150%;
+    display: none;
     max-height: 230px;
     background-color: white;
     overflow-y: scroll;
@@ -19026,6 +19045,7 @@ a:hover {
     letter-spacing: 0.08em;
     background-color: transparent;
     outline: none;
+    color: white;
     border: none;
   }
   .header .computer .navigation .search .search_input::-webkit-input-placeholder {

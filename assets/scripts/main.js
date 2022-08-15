@@ -1045,6 +1045,43 @@ $(document).ready(function () {
 
     //#endregion order page toggle menu
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region headersearch
+
+    $(document).on('keyup', '.search_input', function (e) {
+
+        $(this).next().next().show();
+        $($(this).next().children()[0]).attr('name', 'close-outline')
+        $($(this).next().children()[0]).addClass('closesearchheader')
+
+        if ($(this).val() == '') {
+
+            $(this).next().next().hide();
+            $($(this).next().children()[0]).attr('name', 'search-outline')
+            $($(this).next().children()[0]).removeClass('closesearchheader')
+
+        }
+
+    });
+
+    $(document).on('click', '.closesearchheader', function (e) {
+
+        $(this).attr('name', 'search-outline')
+
+        $(this).parent().prev().attr('value', '')
+
+        $(this).parent().next().hide();
+
+    });
+
+    $(document).on('click', '.headersearchhref', function (e) {
+
+        e.preventDefault();
+
+    });
+
+    //#endregion headersearch
 
 
 
