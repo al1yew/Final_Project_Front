@@ -1057,7 +1057,6 @@ p {
     display: none !important;
   }
   #third {
-    height: 45vh;
     margin-top: 40px;
     overflow: hidden;
     position: relative;
@@ -1168,7 +1167,7 @@ p {
             transform: translateX(-50%) rotate(-28deg);
   }
   #third .newprodcs {
-    height: 50vh;
+    height: 33vh;
     margin: 0 auto;
     margin-top: 30px;
     display: -webkit-box;
@@ -1650,34 +1649,21 @@ p {
     position: absolute;
     padding: 15px 0;
     color: var(--yellow);
-    width: 450%;
+    width: 2000%;
     top: 0;
-    left: 0%;
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 13px;
     line-height: 114%;
-    text-align: center;
     letter-spacing: 0.08em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation-name: join_newsletter;
-            animation-name: join_newsletter;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
   }
   #eighth form {
     margin: 0 auto;
@@ -2742,9 +2728,9 @@ p {
   }
   #secondthird {
     margin-top: 70px;
-    height: 80vh;
     position: relative;
     overflow: visible;
+    margin-bottom: 50px;
     width: 100%;
   }
   #secondthird .mainpart {
@@ -2857,7 +2843,6 @@ p {
     margin-bottom: -1px;
   }
   #third {
-    height: 85vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -3078,7 +3063,7 @@ p {
   }
   #fourth {
     margin-top: 30px;
-    height: 90vh;
+    margin-bottom: 50px;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -3193,8 +3178,8 @@ p {
     margin-bottom: -1px;
   }
   #fifth {
-    height: 80vh;
     margin-top: 30px;
+    margin-bottom: 50px;
     position: relative;
     width: 100%;
   }
@@ -3329,8 +3314,8 @@ p {
     letter-spacing: 0.08em;
   }
   #sixth {
+    height: 80vh;
     overflow: hidden;
-    height: 96vh;
     font-family: var(--neuebold);
     background-image: url(../images/main_Page/just_launched.jpg);
     background-attachment: fixed;
@@ -3405,10 +3390,9 @@ p {
     background-color: var(--yellow);
   }
   #seventh {
-    height: 85vh;
     overflow: hidden;
     position: relative;
-    margin: 30px 0;
+    margin: 50px 0;
   }
   #seventh .top_main {
     display: -webkit-box;
@@ -3532,34 +3516,21 @@ p {
     position: absolute;
     padding: 15px 0;
     color: var(--yellow);
-    width: 450%;
-    top: 0;
-    left: 0%;
+    width: 2000%;
+    top: 10%;
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 35px;
     line-height: 114%;
-    text-align: center;
     letter-spacing: 0.08em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation-name: join_newsletter;
-            animation-name: join_newsletter;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
   }
   #eighth form {
     margin: 0 auto;
@@ -4631,7 +4602,7 @@ p {
   }
   #secondthird {
     margin-top: 70px;
-    height: 85vh;
+    margin-bottom: 50px;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -4746,7 +4717,6 @@ p {
     margin-top: 10px;
   }
   #third {
-    height: 90vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -4966,8 +4936,8 @@ p {
             transform: scale(1.1) rotate(10deg);
   }
   #fourth {
-    margin-top: 30px;
-    height: 91vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -5079,8 +5049,8 @@ p {
     margin-top: 10px;
   }
   #fifth {
-    height: 87vh;
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     position: relative;
     width: 100%;
   }
@@ -5291,7 +5261,6 @@ p {
     background-color: var(--yellow);
   }
   #seventh {
-    height: 80vh;
     overflow: hidden;
     position: relative;
     margin: 50px 0;
@@ -5418,34 +5387,21 @@ p {
     position: absolute;
     padding: 15px 0;
     color: var(--yellow);
-    width: 400%;
-    top: 0;
-    left: 0%;
+    width: 2000%;
+    top: 10%;
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 35px;
     line-height: 114%;
-    text-align: center;
     letter-spacing: 0.08em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation-name: join_newsletter;
-            animation-name: join_newsletter;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
   }
   #eighth form {
     margin: 0 auto;
@@ -14915,6 +14871,57 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.registersection .all form .genderdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.registersection .all form .genderdiv p {
+  font-family: var(--neueregular);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 127%;
+  letter-spacing: 0.08em;
+}
+
+.registersection .all form .genderdiv label {
+  font-family: var(--neueregular);
+  font-weight: 300;
+  font-size: 13.5px;
+  line-height: 127%;
+  letter-spacing: 0.08em;
+}
+
+.registersection .all form .genderdiv div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registersection .all form .genderdiv input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
 .registersection .all form input {
   width: 100%;
   border: 1px solid black;
@@ -17005,6 +17012,8 @@ a:hover {
             justify-content: space-between;
     border-bottom: 1px solid black;
     padding: 0;
+    margin-left: 12px;
+    padding-left: 12px;
   }
   .ordersection .all .ordersearchkeeper .search_input_order {
     width: 90%;
@@ -17051,6 +17060,7 @@ a:hover {
             align-items: center;
     font-family: var(--neueregular);
     position: relative;
+    padding-right: 12px;
   }
   .ordersection .all ul li a {
     font-weight: 400;
@@ -17194,6 +17204,14 @@ a:hover {
     line-height: 114%;
     letter-spacing: 0.08em;
     font-family: var(--neuemedium);
+  }
+  .ordersection .all .orders .order .bottom .orderitem .third {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    margin-top: 15px;
   }
   .ordersection .all .orders .order .bottom .orderitem .orderinfo {
     display: -webkit-box;
@@ -17603,6 +17621,14 @@ a:hover {
     line-height: 114%;
     letter-spacing: 0.08em;
     font-family: var(--neuemedium);
+  }
+  .ordersection .all .orders .order .bottom .orderitem .third {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    margin-top: 7px;
   }
   .ordersection .all .orders .order .bottom .orderitem .orderinfo {
     display: -webkit-box;
@@ -18387,12 +18413,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.accountinfo {
+.accountinfoall {
   width: 100%;
   margin-bottom: 35px;
 }
 
-.accountinfo .all {
+.accountinfoall .all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18406,7 +18432,7 @@ a:hover {
       flex-wrap: wrap;
 }
 
-.accountinfo .all .firstp {
+.accountinfoall .all .firstp {
   font-family: var(--neueultra);
   font-size: 40px;
   line-height: 60px;
@@ -18415,7 +18441,7 @@ a:hover {
   color: var(--yellow);
 }
 
-.accountinfo .all form {
+.accountinfoall .all form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18426,7 +18452,7 @@ a:hover {
       flex-wrap: wrap;
 }
 
-.accountinfo .all form .left {
+.accountinfoall .all form .left {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18438,7 +18464,7 @@ a:hover {
           justify-content: space-between;
 }
 
-.accountinfo .all form .left .head {
+.accountinfoall .all form .left .head {
   font-family: var(--neuebold);
   font-weight: 700;
   font-size: 18px;
@@ -18447,7 +18473,7 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.accountinfo .all form .left label {
+.accountinfoall .all form .left label {
   font-family: var(--neuelight);
   font-weight: 300;
   font-size: 12px;
@@ -18455,7 +18481,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .left button {
+.accountinfoall .all form .left button {
   margin-top: 20px;
   width: 100%;
   background-color: black;
@@ -18469,7 +18495,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .left input {
+.accountinfoall .all form .left input {
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
@@ -18484,7 +18510,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .left .genderdiv {
+.accountinfoall .all form .left .genderdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18497,7 +18523,7 @@ a:hover {
   padding-top: 40px;
 }
 
-.accountinfo .all form .left .genderdiv label {
+.accountinfoall .all form .left .genderdiv label {
   font-family: var(--neueregular);
   font-weight: 300;
   font-size: 13.5px;
@@ -18505,7 +18531,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .left .genderdiv div {
+.accountinfoall .all form .left .genderdiv div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18517,7 +18543,7 @@ a:hover {
           align-items: center;
 }
 
-.accountinfo .all form .left .genderdiv input {
+.accountinfoall .all form .left .genderdiv input {
   border: none;
   outline: none;
   border-radius: 0;
@@ -18529,7 +18555,7 @@ a:hover {
   margin-left: 10px;
 }
 
-.accountinfo .all form .right {
+.accountinfoall .all form .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18541,7 +18567,7 @@ a:hover {
   margin-top: 40px;
 }
 
-.accountinfo .all form .right .head {
+.accountinfoall .all form .right .head {
   font-family: var(--neuebold);
   font-weight: 700;
   font-size: 18px;
@@ -18550,7 +18576,7 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.accountinfo .all form .right label {
+.accountinfoall .all form .right label {
   font-family: var(--neuelight);
   font-weight: 300;
   font-size: 12px;
@@ -18558,7 +18584,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .right button {
+.accountinfoall .all form .right button {
   margin-top: 20px;
   width: 100%;
   background-color: black;
@@ -18572,7 +18598,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .right input {
+.accountinfoall .all form .right input {
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
@@ -18587,7 +18613,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .right .genderdiv {
+.accountinfoall .all form .right .genderdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18600,7 +18626,7 @@ a:hover {
   padding-top: 40px;
 }
 
-.accountinfo .all form .right .genderdiv label {
+.accountinfoall .all form .right .genderdiv label {
   font-family: var(--neueregular);
   font-weight: 300;
   font-size: 15px;
@@ -18608,7 +18634,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.accountinfo .all form .right .genderdiv div {
+.accountinfoall .all form .right .genderdiv div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18620,7 +18646,7 @@ a:hover {
           align-items: center;
 }
 
-.accountinfo .all form .right .genderdiv input {
+.accountinfoall .all form .right .genderdiv input {
   border: none;
   outline: none;
   border-radius: 0;
@@ -18803,6 +18829,231 @@ a:hover {
   color: var(--yellow);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+.aboutkeeper {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.aboutkeeper .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutkeeper .all .firstp {
+  font-family: var(--neueultra);
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+  margin-bottom: 30px;
+}
+
+.aboutkeeper .all .firstabout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutkeeper .all .firstabout .mission {
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+  font-family: var(--neuebold);
+  margin-bottom: 25px;
+}
+
+.aboutkeeper .all .firstabout .mission span {
+  font-style: italic;
+}
+
+.aboutkeeper .all .firstabout .missiontext {
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+  font-family: var(--neueregular);
+  margin-bottom: 25px;
+}
+
+.karusel {
+  position: relative;
+  margin: 25px 0;
+  background-color: black;
+  overflow: hidden;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.karusel .carouselmaindivabout {
+  background-color: black;
+  color: var(--yellow);
+  position: absolute;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2000%;
+}
+
+.karusel .carouselmaindivabout span {
+  font-family: var(--neuemedium);
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+}
+
 @font-face {
   font-family: NeuePowerLight;
   src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
@@ -18843,6 +19094,28 @@ a:hover {
   }
   to {
     left: 0%;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 5));
+            transform: translateX(calc(-250px * 5));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 5));
+            transform: translateX(calc(-250px * 5));
   }
 }
 
@@ -19650,8 +19923,8 @@ a:hover {
     background-color: var(--yellow);
   }
   #secondthird {
-    margin-top: 30px;
-    height: 90vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -19763,7 +20036,6 @@ a:hover {
     cursor: pointer;
   }
   #third {
-    height: 100vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -19983,8 +20255,8 @@ a:hover {
             transform: scale(1.1) rotate(10deg);
   }
   #fourth {
-    margin-top: 30px;
-    height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
     position: relative;
     overflow: visible;
     width: 100%;
@@ -20100,8 +20372,8 @@ a:hover {
     margin-bottom: -1px;
   }
   #fifth {
-    height: 100vh;
-    margin-top: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     position: relative;
     width: 100%;
   }
@@ -20244,7 +20516,7 @@ a:hover {
     background-size: cover;
     max-width: 100%;
     position: relative;
-    margin: 50px 0;
+    margin: 40px 0;
   }
   #sixth .just_launched {
     font-family: var(--neuemedium);
@@ -20312,10 +20584,9 @@ a:hover {
     background-color: var(--yellow);
   }
   #seventh {
-    height: 90vh;
     overflow: hidden;
     position: relative;
-    margin: 30px 0;
+    margin: 40px 0;
   }
   #seventh .top_main {
     display: -webkit-box;
@@ -20439,34 +20710,21 @@ a:hover {
     position: absolute;
     padding: 15px 0;
     color: var(--yellow);
-    width: 400%;
+    width: 2000%;
     top: 0;
-    left: 0%;
     font-family: var(--neuemedium);
     font-weight: 500;
     font-size: 35px;
     line-height: 114%;
-    text-align: center;
     letter-spacing: 0.08em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation-name: join_newsletter;
-            animation-name: join_newsletter;
-    -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
   }
   #eighth form {
     margin: 0 auto;

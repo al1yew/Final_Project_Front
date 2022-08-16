@@ -765,13 +765,13 @@ $(document).ready(function () {
     //--------------------------------- product register eye icon
 
     $(document).on('click', '.seepass', function () {
-        $(this).prev().attr('type', 'text');
+        $(this).prev().prev().attr('type', 'text');
         $(this).hide();
         $(this).next().show();
     });
 
     $(document).on('click', '.closepass', function () {
-        $(this).prev().prev().attr('type', 'password');
+        $(this).prev().prev().prev().attr('type', 'password');
         $(this).hide();
         $(this).prev().show();
     });

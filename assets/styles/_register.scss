@@ -178,6 +178,45 @@ a {
                 }
             }
 
+            .genderdiv {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                p {
+                    font-family: var(--neueregular);
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 127%;
+                    letter-spacing: 0.08em;
+                }
+
+                label {
+                    font-family: var(--neueregular);
+                    font-weight: 300;
+                    font-size: 13.5px;
+                    line-height: 127%;
+                    letter-spacing: 0.08em;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                input {
+                    border: none;
+                    outline: none;
+                    border-radius: 0;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    box-shadow: none;
+                    padding: 0;
+                    margin-left: 10px;
+                }
+            }
+
             input {
                 width: 100%;
                 border: 1px solid black;

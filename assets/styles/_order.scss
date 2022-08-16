@@ -87,6 +87,8 @@ a {
                 justify-content: space-between;
                 border-bottom: 1px solid black;
                 padding: 0;
+                margin-left: 12px;
+                padding-left: 12px;
 
                 .search_input_order {
                     width: 90%;
@@ -123,6 +125,7 @@ a {
                 align-items: center;
                 font-family: var(--neueregular);
                 position: relative;
+                padding-right: 12px;
 
                 li {
                     a {
@@ -266,6 +269,16 @@ a {
                                 line-height: 114%;
                                 letter-spacing: 0.08em;
                                 font-family: var(--neuemedium);
+                            }
+
+                            .third {
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                font-family: var(--neuemedium);
+                                margin-top: 15px;
+
                             }
 
                             .orderinfo {

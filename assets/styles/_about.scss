@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: NeuePowerLight;
+    src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerMedium;
+    src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerRegular;
+    src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerUltra;
+    src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+    font-family: NeuePowerBold;
+    src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.where {
+    opacity: 0;
+    margin-top: 30px;
+}
+
+.aboutkeeper {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .firstp {
+            font-family: var(--neueultra);
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.08em;
+            color: var(--yellow);
+            margin-bottom: 30px;
+        }
+
+        .firstabout {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .mission {
+                font-weight: 500;
+                font-size: 65px;
+                line-height: 114%;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+                font-family: var(--neuebold);
+                margin-bottom: 25px;
+
+                span {
+                    font-style: italic;
+                }
+            }
+
+            .missiontext {
+                font-weight: 300;
+                font-size: 23px;
+                line-height: 130%;
+                letter-spacing: 0.08em;
+                font-family: var(--neueregular);
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+}
+
+
+.karusel {
+    position: relative;
+    margin: 25px 0;
+    background-color: black;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carouselmaindivabout {
+        background-color: black;
+        color: var(--yellow);
+        position: absolute;
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: 2000%;
+
+        span {
+            font-family: var(--neuemedium);
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+        }
+    }
+}

@@ -279,6 +279,15 @@ a {
                                 font-family: var(--neuemedium);
                             }
 
+                            .third {
+                                font-weight: 500;
+                                font-size: 8px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                font-family: var(--neuemedium);
+                                margin-top: 7px;
+                            }
+
                             .orderinfo {
                                 display: flex;
                                 justify-content: space-between;

@@ -45,6 +45,11 @@ p {
 
 @import 'faq';
 
+@import 'contact';
+
+@import 'about';
+
+
 //fonts
 @font-face {
     font-family: NeuePowerLight;
@@ -80,6 +85,16 @@ p {
 
     to {
         left: 0%;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 5));
     }
 }
 
@@ -886,8 +901,8 @@ a {
     }
 
     #secondthird {
-        margin-top: 30px;
-        height: 90vh;
+        margin-top: 40px;
+        margin-bottom: 40px;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -1007,7 +1022,6 @@ a {
     }
 
     #third {
-        height: 100vh;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -1206,8 +1220,8 @@ a {
     }
 
     #fourth {
-        margin-top: 30px;
-        height: 100vh;
+        margin-top: 40px;
+        margin-bottom: 40px;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -1332,8 +1346,8 @@ a {
     }
 
     #fifth {
-        height: 100vh;
-        margin-top: 70px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         position: relative;
         width: 100%;
 
@@ -1470,7 +1484,7 @@ a {
         background-size: cover;
         max-width: 100%;
         position: relative;
-        margin: 50px 0;
+        margin: 40px 0;
 
         .just_launched {
             font-family: var(--neuemedium);
@@ -1538,10 +1552,9 @@ a {
     }
 
     #seventh {
-        height: 90vh;
         overflow: hidden;
         position: relative;
-        margin: 30px 0;
+        margin: 40px 0;
 
         .top_main {
             display: flex;
@@ -1666,23 +1679,16 @@ a {
             position: absolute;
             padding: 15px 0;
             color: var(--yellow);
-            width: 400%;
+            width: 2000%;
             top: 0;
-            left: 0%;
             font-family: var(--neuemedium);
             font-weight: 500;
             font-size: 35px;
             line-height: 114%;
-            text-align: center;
             letter-spacing: 0.08em;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            animation-name: join_newsletter;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-timing-function: linear;
+            animation: scroll 40s linear infinite;
         }
 
         form {

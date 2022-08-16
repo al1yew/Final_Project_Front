@@ -808,7 +808,6 @@
 
     #second {
         overflow: hidden;
-        // height: 47vh;
         height: 370px;
         position: relative;
         font-family: var(--neuebold);
@@ -1003,7 +1002,7 @@
     }
 
     #third {
-        height: 45vh;
+        // height: 45vh;
         margin-top: 40px;
         overflow: hidden;
         position: relative;
@@ -1089,7 +1088,7 @@
         }
 
         .newprodcs {
-            height: 50vh;
+            height: 33vh;
             margin: 0 auto;
             margin-top: 30px;
             display: flex;
@@ -1566,23 +1565,16 @@
             position: absolute;
             padding: 15px 0;
             color: var(--yellow);
-            width: 450%;
+            width: 2000%;
             top: 0;
-            left: 0%;
             font-family: var(--neuemedium);
             font-weight: 500;
             font-size: 13px;
             line-height: 114%;
-            text-align: center;
             letter-spacing: 0.08em;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            animation-name: join_newsletter;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-timing-function: linear;
+            animation: scroll 40s linear infinite;
         }
 
         form {
@@ -2569,9 +2561,9 @@
 
     #secondthird {
         margin-top: 70px;
-        height: 80vh;
         position: relative;
         overflow: visible;
+        margin-bottom: 50px;
         width: 100%;
 
         .mainpart {
@@ -2693,7 +2685,6 @@
     }
 
     #third {
-        height: 85vh;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -2893,7 +2884,7 @@
 
     #fourth {
         margin-top: 30px;
-        height: 90vh;
+        margin-bottom: 50px;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -3017,8 +3008,8 @@
     }
 
     #fifth {
-        height: 80vh;
         margin-top: 30px;
+        margin-bottom: 50px;
         position: relative;
         width: 100%;
 
@@ -3147,8 +3138,8 @@
     }
 
     #sixth {
+        height: 80vh;
         overflow: hidden;
-        height: 96vh;
         font-family: var(--neuebold);
         background-image: url(../images/main_Page/just_launched.jpg);
         background-attachment: fixed;
@@ -3223,10 +3214,10 @@
     }
 
     #seventh {
-        height: 85vh;
+        // height: 100vh;
         overflow: hidden;
         position: relative;
-        margin: 30px 0;
+        margin: 50px 0;
 
         .top_main {
             display: flex;
@@ -3351,23 +3342,16 @@
             position: absolute;
             padding: 15px 0;
             color: var(--yellow);
-            width: 450%;
-            top: 0;
-            left: 0%;
+            width: 2000%;
+            top: 10%;
             font-family: var(--neuemedium);
             font-weight: 500;
             font-size: 35px;
             line-height: 114%;
-            text-align: center;
             letter-spacing: 0.08em;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            animation-name: join_newsletter;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-timing-function: linear;
+            animation: scroll 40s linear infinite;
         }
 
         form {
@@ -4367,7 +4351,7 @@
 
     #secondthird {
         margin-top: 70px;
-        height: 85vh;
+        margin-bottom: 50px;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -4491,7 +4475,6 @@
     }
 
     #third {
-        height: 90vh;
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -4690,8 +4673,8 @@
     }
 
     #fourth {
-        margin-top: 30px;
-        height: 91vh;
+        margin-top: 40px;
+        margin-bottom: 40px;
         position: relative;
         overflow: visible;
         width: 100%;
@@ -4811,8 +4794,8 @@
     }
 
     #fifth {
-        height: 87vh;
-        margin-top: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
         position: relative;
         width: 100%;
 
@@ -5017,7 +5000,6 @@
     }
 
     #seventh {
-        height: 80vh;
         overflow: hidden;
         position: relative;
         margin: 50px 0;
@@ -5146,23 +5128,16 @@
             position: absolute;
             padding: 15px 0;
             color: var(--yellow);
-            width: 400%;
-            top: 0;
-            left: 0%;
+            width: 2000%;
+            top: 10%;
             font-family: var(--neuemedium);
             font-weight: 500;
             font-size: 35px;
             line-height: 114%;
-            text-align: center;
             letter-spacing: 0.08em;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            animation-name: join_newsletter;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-timing-function: linear;
+            animation: scroll 40s linear infinite;
         }
 
         form {
