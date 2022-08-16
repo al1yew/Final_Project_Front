@@ -19019,7 +19019,7 @@ a:hover {
 
 .karusel {
   position: relative;
-  margin: 25px 0;
+  margin: 40px 0;
   background-color: black;
   overflow: hidden;
   height: 60px;
@@ -19051,6 +19051,278 @@ a:hover {
   font-weight: 500;
   font-size: 35px;
   line-height: 114%;
+  letter-spacing: 0.08em;
+}
+
+.years {
+  margin-bottom: 50px;
+}
+
+.years .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.years .all div:nth-child(even) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.years .all div:nth-child(even) span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.years .all div:nth-child(even) span:nth-child(1) {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--neueultra);
+  text-align: right;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.years .all div:nth-child(even) span:nth-child(2) {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 131%;
+  font-family: var(--neuelight);
+  text-align: right;
+  letter-spacing: 0.08em;
+}
+
+.years .all div:nth-child(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.years .all div:nth-child(odd) span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.years .all div:nth-child(odd) span:nth-child(1) {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--neueultra);
+  text-align: left;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.years .all div:nth-child(odd) span:nth-child(2) {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 131%;
+  font-family: var(--neuelight);
+  text-align: left;
+  letter-spacing: 0.08em;
+}
+
+.bigphoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.bigphoto .imgkeeperabout {
+  width: 100%;
+  position: relative;
+}
+
+.bigphoto .imgkeeperabout .forabs {
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: var(--yellow);
+}
+
+.bigphoto .imgkeeperabout .textleft {
+  background-color: white;
+  padding: 20px 40px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  font-family: var(--neueultra);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+
+.bigphoto .imgkeeperabout .textright {
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  font-family: var(--neueultra);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+
+.ofisi .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ofisi .all .secondpaout {
+  font-family: var(--neueultra);
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+  margin-bottom: 30px;
+}
+
+.ofisi .all .keepefirstr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ofisi .all .keepefirstr div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.ofisi .all .keepefirstr div span {
+  text-align: center;
+}
+
+.ofisi .all .keepefirstr div span:nth-child(1) {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  font-family: var(--neueultra);
+}
+
+.ofisi .all .keepefirstr div span:nth-child(2) {
+  font-family: var(--neuelight);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 131%;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.ofisi .all .keepersecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ofisi .all .keepersecond div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.ofisi .all .keepersecond div span {
+  text-align: center;
+}
+
+.ofisi .all .keepersecond div span:nth-child(1) {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  font-family: var(--neueregular);
+}
+
+.ofisi .all .keepersecond div span:nth-child(2) {
+  font-family: var(--neuelight);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 131%;
+  text-align: center;
   letter-spacing: 0.08em;
 }
 
