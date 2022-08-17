@@ -18895,7 +18895,6 @@ a:hover {
 
 .contact {
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .contact .all {
@@ -18908,6 +18907,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact .all .firstp {
@@ -18932,7 +18933,6 @@ a:hover {
 }
 
 .contact .all form input {
-  width: 100%;
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
@@ -18948,7 +18948,6 @@ a:hover {
 }
 
 .contact .all form textarea {
-  width: 100%;
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
@@ -18965,7 +18964,6 @@ a:hover {
 
 .contact .all form button {
   margin-top: 20px;
-  width: 100%;
   background-color: black;
   text-align: center;
   padding: 10px 0;

@@ -63,12 +63,12 @@ a {
 
 .contact {
     margin-bottom: 30px;
-    width: 100%;
 
     .all {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
         .firstp {
             font-family: var(--neueultra);
@@ -86,7 +86,6 @@ a {
             flex-wrap: wrap;
 
             input {
-                width: 100%;
                 border: 1px solid black;
                 outline: none;
                 border-radius: 3px;
@@ -101,7 +100,6 @@ a {
             }
 
             textarea {
-                width: 100%;
                 border: 1px solid black;
                 outline: none;
                 border-radius: 3px;
@@ -117,7 +115,6 @@ a {
 
             button {
                 margin-top: 20px;
-                width: 100%;
                 background-color: black;
                 text-align: center;
                 padding: 10px 0;
