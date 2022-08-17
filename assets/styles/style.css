@@ -18959,7 +18959,7 @@ a:hover {
 
 .aboutkeeper {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .aboutkeeper .all {
@@ -19055,7 +19055,7 @@ a:hover {
 }
 
 .years {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .years .all {
@@ -19240,6 +19240,7 @@ a:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .ofisi .all .keepefirstr div {
@@ -19255,7 +19256,6 @@ a:hover {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 .ofisi .all .keepefirstr div span {
@@ -19314,7 +19314,8 @@ a:hover {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.08em;
-  font-family: var(--neueregular);
+  font-family: var(--neuemedium);
+  margin-bottom: 10px;
 }
 
 .ofisi .all .keepersecond div span:nth-child(2) {
@@ -19324,6 +19325,782 @@ a:hover {
   line-height: 131%;
   text-align: center;
   letter-spacing: 0.08em;
+}
+
+.rabotaysnami {
+  margin-top: 40px;
+}
+
+.rabotaysnami .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rabotaysnami .all .thirdpabout {
+  font-family: var(--neueultra);
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+}
+
+.rabotaysnami .all .allthen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rabotaysnami .all .allthen .left,
+.rabotaysnami .all .allthen .right {
+  padding: 20px;
+}
+
+.rabotaysnami .all .allthen .left {
+  position: relative;
+  overflow: hidden;
+}
+
+.rabotaysnami .all .allthen .left .firstcar {
+  position: absolute;
+  top: -0.5%;
+  left: 0.3%;
+  width: 95%;
+  overflow: hidden;
+}
+
+.rabotaysnami .all .allthen .left .firstcar .carouselkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1600%;
+}
+
+.rabotaysnami .all .allthen .left .firstcar .carouselkeeper .karuselitem {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+
+.rabotaysnami .all .allthen .left .secondcar {
+  position: absolute;
+  top: 46%;
+  left: 43.5%;
+  width: 109.5%;
+  overflow: hidden;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.rabotaysnami .all .allthen .left .secondcar .carouselkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1600%;
+}
+
+.rabotaysnami .all .allthen .left .secondcar .carouselkeeper .karuselitem {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+
+.rabotaysnami .all .allthen .left .thirdcar {
+  position: absolute;
+  top: 49.5%;
+  left: -53%;
+  width: 109.5%;
+  overflow: hidden;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.rabotaysnami .all .allthen .left .thirdcar .carouselkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1600%;
+}
+
+.rabotaysnami .all .allthen .left .thirdcar .carouselkeeper .karuselitem {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+
+.rabotaysnami .all .allthen .left .forthcar {
+  position: absolute;
+  bottom: -0.5%;
+  right: 0.4%;
+  width: 95%;
+  overflow: hidden;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.rabotaysnami .all .allthen .left .forthcar .carouselkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1600%;
+}
+
+.rabotaysnami .all .allthen .left .forthcar .carouselkeeper .karuselitem {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+
+.rabotaysnami .all .allthen .right p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 131%;
+  letter-spacing: 0.08em;
+  font-family: var(--neueregular);
+  margin-bottom: 15px;
+}
+
+.rabotaysnami .all .allthen .right a {
+  font-family: var(--neueultra);
+  margin-bottom: 0;
+  font-size: 23px;
+  line-height: 131%;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NeuePowerLight;
+  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerMedium;
+  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerRegular;
+  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerUltra;
+  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: NeuePowerBold;
+  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
+}
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .aboutkeeper {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .aboutkeeper .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutkeeper .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  .aboutkeeper .all .firstabout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutkeeper .all .firstabout .mission {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    font-family: var(--neuebold);
+    margin-bottom: 25px;
+  }
+  .aboutkeeper .all .firstabout .mission span {
+    font-style: italic;
+  }
+  .aboutkeeper .all .firstabout .missiontext {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+    margin-bottom: 25px;
+  }
+  .karusel {
+    position: relative;
+    margin: 20px 0;
+    background-color: black;
+    overflow: hidden;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .karusel .carouselmaindivabout {
+    background-color: black;
+    color: var(--yellow);
+    position: absolute;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 2000%;
+  }
+  .karusel .carouselmaindivabout span {
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .years {
+    margin-bottom: 20px;
+  }
+  .years .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .years .all div:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .years .all div:nth-child(even) span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .years .all div:nth-child(even) span:nth-child(1) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    text-align: right;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+  .years .all div:nth-child(even) span:nth-child(2) {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 131%;
+    font-family: var(--neuelight);
+    text-align: right;
+    letter-spacing: 0.08em;
+  }
+  .years .all div:nth-child(odd) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .years .all div:nth-child(odd) span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .years .all div:nth-child(odd) span:nth-child(1) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueultra);
+    text-align: left;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+  .years .all div:nth-child(odd) span:nth-child(2) {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 131%;
+    font-family: var(--neuelight);
+    text-align: left;
+    letter-spacing: 0.08em;
+  }
+  .bigphoto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  .bigphoto .imgkeeperabout {
+    width: 100%;
+    position: relative;
+  }
+  .bigphoto .imgkeeperabout .forabs {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: var(--yellow);
+  }
+  .bigphoto .imgkeeperabout .textleft {
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    font-family: var(--neueregular);
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 0.08em;
+  }
+  .bigphoto .imgkeeperabout .textright {
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-family: var(--neueregular);
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 0.08em;
+  }
+  .ofisi .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ofisi .all .secondpaout {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 20px;
+  }
+  .ofisi .all .keepefirstr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .ofisi .all .keepefirstr div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ofisi .all .keepefirstr div span {
+    text-align: center;
+  }
+  .ofisi .all .keepefirstr div span:nth-child(1) {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    font-family: var(--neueultra);
+  }
+  .ofisi .all .keepefirstr div span:nth-child(2) {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 131%;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .ofisi .all .keepersecond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ofisi .all .keepersecond div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .ofisi .all .keepersecond div span {
+    text-align: center;
+  }
+  .ofisi .all .keepersecond div span:nth-child(1) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    margin-bottom: 10px;
+  }
+  .ofisi .all .keepersecond div span:nth-child(2) {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 131%;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .rabotaysnami {
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .rabotaysnami .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rabotaysnami .all .thirdpabout {
+    font-family: var(--neueultra);
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+  }
+  .rabotaysnami .all .allthen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 20px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rabotaysnami .all .allthen .left,
+  .rabotaysnami .all .allthen .right {
+    padding: 10 px;
+  }
+  .rabotaysnami .all .allthen .left {
+    position: relative;
+    overflow: hidden;
+  }
+  .rabotaysnami .all .allthen .left .firstcar {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 91%;
+    overflow: hidden;
+  }
+  .rabotaysnami .all .allthen .left .firstcar .carouselkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1600%;
+  }
+  .rabotaysnami .all .allthen .left .firstcar .carouselkeeper .karuselitem {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+  }
+  .rabotaysnami .all .allthen .left .secondcar {
+    position: absolute;
+    top: 47.5%;
+    left: 43%;
+    width: 106%;
+    overflow: hidden;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .rabotaysnami .all .allthen .left .secondcar .carouselkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1600%;
+  }
+  .rabotaysnami .all .allthen .left .secondcar .carouselkeeper .karuselitem {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+  }
+  .rabotaysnami .all .allthen .left .thirdcar {
+    position: absolute;
+    top: 50%;
+    left: -49%;
+    width: 106%;
+    overflow: hidden;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .rabotaysnami .all .allthen .left .thirdcar .carouselkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1600%;
+  }
+  .rabotaysnami .all .allthen .left .thirdcar .carouselkeeper .karuselitem {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+  }
+  .rabotaysnami .all .allthen .left .forthcar {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    width: 91%;
+    overflow: hidden;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .rabotaysnami .all .allthen .left .forthcar .carouselkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1600%;
+  }
+  .rabotaysnami .all .allthen .left .forthcar .carouselkeeper .karuselitem {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neuemedium);
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+  }
+  .rabotaysnami .all .allthen .right {
+    padding: 10px;
+  }
+  .rabotaysnami .all .allthen .right p {
+    padding: 0;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 131%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+    margin-bottom: 15px;
+  }
+  .rabotaysnami .all .allthen .right a {
+    padding: 0;
+    font-family: var(--neueultra);
+    margin-bottom: 0;
+    font-size: 11px;
+    line-height: 131%;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+  }
 }
 
 @font-face {
@@ -19375,8 +20152,8 @@ a:hover {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 5));
-            transform: translateX(calc(-250px * 5));
+    -webkit-transform: translateX(calc(-250px * 4));
+            transform: translateX(calc(-250px * 4));
   }
 }
 
@@ -19386,8 +20163,8 @@ a:hover {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 5));
-            transform: translateX(calc(-250px * 5));
+    -webkit-transform: translateX(calc(-250px * 4));
+            transform: translateX(calc(-250px * 4));
   }
 }
 

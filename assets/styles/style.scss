@@ -49,6 +49,8 @@ p {
 
 @import 'about';
 
+@import 'aboutmedia';
+
 
 //fonts
 @font-face {
@@ -94,7 +96,7 @@ p {
     }
 
     100% {
-        transform: translateX(calc(-250px * 5));
+        transform: translateX(calc(-250px * 4));
     }
 }
 

@@ -63,7 +63,7 @@ a {
 
 .aboutkeeper {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     .all {
         display: flex;
@@ -141,7 +141,7 @@ a {
 }
 
 .years {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     .all {
         display: flex;
@@ -288,13 +288,13 @@ a {
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            margin-bottom: 20px;
 
             div {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 flex-wrap: wrap;
-                margin-bottom: 20px;
 
                 span {
                     text-align: center;
@@ -341,7 +341,8 @@ a {
                         line-height: 24px;
                         text-align: center;
                         letter-spacing: 0.08em;
-                        font-family: var(--neueregular);
+                        font-family: var(--neuemedium);
+                        margin-bottom: 10px;
                     }
 
                     &:nth-child(2) {
@@ -352,6 +353,162 @@ a {
                         text-align: center;
                         letter-spacing: 0.08em;
                     }
+                }
+            }
+        }
+    }
+}
+
+.rabotaysnami {
+    margin-top: 40px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .thirdpabout {
+            font-family: var(--neueultra);
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.08em;
+            color: var(--yellow);
+        }
+
+        .allthen {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+            align-items: center;
+
+            .left,
+            .right {
+                padding: 20px;
+            }
+
+            .left {
+                position: relative;
+                overflow: hidden;
+
+                .firstcar {
+                    position: absolute;
+                    top: -0.5%;
+                    left: 0.3%;
+                    width: 95%;
+                    overflow: hidden;
+
+                    .carouselkeeper {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        width: 1600%;
+
+                        .karuselitem {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 114%;
+                            letter-spacing: 0.08em;
+                            font-family: var(--neuemedium);
+                            animation: scroll 40s linear infinite;
+                        }
+                    }
+                }
+
+                .secondcar {
+                    position: absolute;
+                    top: 46%;
+                    left: 43.5%;
+                    width: 109.5%;
+                    overflow: hidden;
+                    transform: rotate(90deg);
+
+                    .carouselkeeper {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        width: 1600%;
+
+                        .karuselitem {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 114%;
+                            letter-spacing: 0.08em;
+                            font-family: var(--neuemedium);
+                            animation: scroll 40s linear infinite;
+                        }
+                    }
+                }
+
+                .thirdcar {
+                    position: absolute;
+                    top: 49.5%;
+                    left: -53%;
+                    width: 109.5%;
+                    overflow: hidden;
+                    transform: rotate(-90deg);
+
+                    .carouselkeeper {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        width: 1600%;
+
+                        .karuselitem {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 114%;
+                            letter-spacing: 0.08em;
+                            font-family: var(--neuemedium);
+                            animation: scroll 40s linear infinite;
+                        }
+                    }
+                }
+
+                .forthcar {
+                    position: absolute;
+                    bottom: -0.5%;
+                    right: 0.4%;
+                    width: 95%;
+                    overflow: hidden;
+                    transform: rotate(180deg);
+
+                    .carouselkeeper {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        width: 1600%;
+
+                        .karuselitem {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 114%;
+                            letter-spacing: 0.08em;
+                            font-family: var(--neuemedium);
+                            animation: scroll 40s linear infinite;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                p {
+                    font-weight: 300;
+                    font-size: 21px;
+                    line-height: 131%;
+                    letter-spacing: 0.08em;
+                    font-family: var(--neueregular);
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    font-family: var(--neueultra);
+                    margin-bottom: 0;
+                    font-size: 23px;
+                    line-height: 131%;
+                    font-weight: 300;
+                    letter-spacing: 0.08em;
                 }
             }
         }
