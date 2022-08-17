@@ -1083,9 +1083,18 @@ $(document).ready(function () {
 
     //#endregion headersearch
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region close toggle windows by clicking outside
 
+    $('body').click(function (event) {
+        if (!$(event.target).closest('#filterdiv').length && !$(event.target).is('#filderdiv')) {
+            $(".filterul").hide();
+        }
+    });
+    //vrode bi rabotaet tam est svg zad nado vse eto vpisat suda
 
+    //#endregion close toggle windows by clicking outside
 
 
 
