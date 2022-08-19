@@ -78,6 +78,7 @@ a {
             text-align: center;
             letter-spacing: 0.08em;
             color: var(--yellow);
+            margin-bottom: 30px;
         }
 
         .carddiv {
@@ -90,14 +91,6 @@ a {
                 padding: 0 10px;
                 margin-top: 20px;
 
-                .headword {
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 114%;
-                    font-family: var(--neuebold);
-                    letter-spacing: 0.08em;
-                    margin-bottom: 10px;
-                }
 
                 .cardozu {
                     border: 0.8px solid black;
@@ -147,6 +140,18 @@ a {
                             top: 27%;
                             right: 10px;
                         }
+                    }
+
+                    .headword {
+                        position: absolute;
+                        bottom: 14%;
+                        left: 10px;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 114%;
+                        font-family: var(--neuebold);
+                        letter-spacing: 0.08em;
+                        width: 40%;
                     }
 
                     .makemain {

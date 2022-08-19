@@ -17808,6 +17808,7 @@ a:hover {
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--yellow);
+  margin-bottom: 30px;
 }
 
 .mycards .all .carddiv {
@@ -17825,15 +17826,6 @@ a:hover {
 .mycards .all .carddiv .cardinozu {
   padding: 0 10px;
   margin-top: 20px;
-}
-
-.mycards .all .carddiv .cardinozu .headword {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 114%;
-  font-family: var(--neuebold);
-  letter-spacing: 0.08em;
-  margin-bottom: 10px;
 }
 
 .mycards .all .carddiv .cardinozu .cardozu {
@@ -17885,6 +17877,18 @@ a:hover {
   position: absolute;
   top: 27%;
   right: 10px;
+}
+
+.mycards .all .carddiv .cardinozu .cardozu .headword {
+  position: absolute;
+  bottom: 14%;
+  left: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 114%;
+  font-family: var(--neuebold);
+  letter-spacing: 0.08em;
+  width: 40%;
 }
 
 .mycards .all .carddiv .cardinozu .cardozu .makemain {
@@ -18092,6 +18096,7 @@ a:hover {
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--yellow);
+  margin-bottom: 30px;
 }
 
 .myaddresses .all .addressdiv {

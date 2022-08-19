@@ -130,7 +130,7 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region  form products page
+    //#region  form shop page
 
     //---------------------------------products stranica form dla zakaza produkta submit na button
 
@@ -177,7 +177,7 @@ $(document).ready(function () {
         $(this).siblings('label').text('')
     });
 
-    //#endregion form products page
+    //#endregion form shop page
 
     //---------------------------------------------------------------------------------------------------------------
 
@@ -1175,9 +1175,29 @@ $(document).ready(function () {
         }
     });
 
+    //------------ product deatil page two custom select options close on click on document
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.forclosecolor')
+            || $(e.target).is('.forclosecolor li'))) {
+
+            $('.buyulcolor').hide();
+        }
+    });
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.forclosesize')
+            || $(e.target).is('.forclosesize li'))) {
+
+            $('.buyulsize').hide();
+        }
+    });
+
     //#endregion close toggle windows by clicking outside
 
-    //---------------------------------------------------------------------------------------------------------------
+
 
 
 
