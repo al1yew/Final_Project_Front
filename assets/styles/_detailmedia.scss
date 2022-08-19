@@ -472,7 +472,7 @@ a {
                     }
                 }
 
-                a {
+                .openmodalreview {
                     font-weight: 700;
                     font-size: 11px;
                     letter-spacing: 0.08em;
@@ -1352,13 +1352,14 @@ a {
                         display: none;
                     }
 
-                    a {
+                    .openmodalreview {
                         font-weight: 700;
                         font-size: 12px;
                         line-height: 14px;
                         letter-spacing: 0.08em;
                         text-decoration-line: underline;
                         font-family: var(--neuebold);
+                        cursor: pointer;
                     }
 
                     div {
@@ -2269,12 +2270,13 @@ a {
                         display: none;
                     }
 
-                    a {
+                    .openmodalreview {
                         font-weight: 700;
                         font-size: 11px;
                         line-height: 14px;
                         letter-spacing: 0.08em;
                         text-decoration-line: underline;
+                        cursor: pointer;
                         font-family: var(--neuebold);
                     }
 

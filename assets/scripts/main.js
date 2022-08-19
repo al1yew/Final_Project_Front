@@ -1197,11 +1197,75 @@ $(document).ready(function () {
 
     //#endregion close toggle windows by clicking outside
 
+    //---------------------------------------------------------------------------------------------------------------
 
+    //#region ope close product detail page modal
 
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
+    $(document).on('click', '.openmodalreview', function () {
+
+        $('.modalmoy').fadeIn(150);
+
     })
+
+    $(document).on('click', '.closemodal', function () {
+
+        $('.modalmoy').fadeOut(150);
+
+    })
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.modalmoy')
+            || $(e.target).is('.overlaymodall')
+            || $(e.target).is('.dontclose')
+            || $(e.target).is('.dontclose *')
+            || $(e.target).is('.modalall'))) {
+
+            $('.modalmoy').fadeOut(150);
+        }
+
+    })
+
+    //#endregion ope close product detail page modal
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region clear modal textarea on click
+
+    $(document).on('keyup', '.reviewarea', function () {
+
+        $('.clearreview').show();
+
+        if (!$(this).val()) {
+            $('.clearreview').hide();
+        }
+    });
+
+    $(document).on('click', '.clearreview', function () {
+
+        $('.reviewarea').val('');
+
+        $(this).hide();
+
+    });
+
+    var stars = new StarRating('.star_rating', {
+        classNames: {
+            active: 'gl-active',
+            base: 'gl-star-rating',
+            selected: 'gl-selected',
+        },
+        clearable: true,
+        maxStars: 10,
+        prebuilt: false,
+        stars: null,
+        tooltip: false,
+    });
+
+    stars.rebuild();
+    //gl-selectedin attr kotoriy data-value chetotam nado budet vzat i fetchanut kak value
+
+    //#endregion clear modal textarea on click
 
 
 
