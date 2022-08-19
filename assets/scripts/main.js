@@ -1049,7 +1049,7 @@ $(document).ready(function () {
 
     //#region headersearch
 
-    $(document).on('keyup', '.search_input', function (e) {
+    $(document).on('keyup click', '.search_input', function (e) {
 
         $(this).next().next().show();
         $($(this).next().children()[0]).attr('name', 'close-outline')
@@ -1062,7 +1062,6 @@ $(document).ready(function () {
             $($(this).next().children()[0]).removeClass('closesearchheader')
 
         }
-
     });
 
     $(document).on('click', '.closesearchheader', function (e) {
@@ -1087,14 +1086,105 @@ $(document).ready(function () {
 
     //#region close toggle windows by clicking outside
 
-    $('body').click(function (event) {
-        if (!$(event.target).closest('#filterdiv').length && !$(event.target).is('#filderdiv')) {
-            $(".filterul").hide();
+    //------------ shop page sortirovka menu close on click on document 
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.filterdiv')
+            || $(e.target).is('.filterul')
+            || $(e.target).is('.sorttype')
+            || $(e.target).is('.filterul li')
+            || $(e.target).is('.filterdiv .svgkeeper')
+            || $(e.target).is('.filterdiv .svgkeeper svg'))) {
+
+            $('.filterul').hide();
+
+            $(this).find(".svgkeeper").removeClass('roundarrow');
+
         }
     });
-    //vrode bi rabotaet tam est svg zad nado vse eto vpisat suda
+
+    //------------ header search menu close on click on document 
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.search')
+            || $(e.target).is('.search_input')
+            || $(e.target).is('.headersearchhref')
+            || $(e.target).is('.search_icon')
+            || $(e.target).is('.searchmenu')
+            || $(e.target).is('.searchelements')
+            || $(e.target).is('.searchul')
+            || $(e.target).is('.searchul li'))) {
+
+            $('.searchmenu').hide();
+
+            $('.closesearchheader').attr('name', 'search-outline');
+        }
+    });
+
+    //------------ header search menu close on click on document 
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.search')
+            || $(e.target).is('.search_input')
+            || $(e.target).is('.headersearchhref')
+            || $(e.target).is('.search_icon')
+            || $(e.target).is('.searchmenu')
+            || $(e.target).is('.searchelements')
+            || $(e.target).is('.searchul')
+            || $(e.target).is('.searchul li'))) {
+
+            $('.searchmenu').hide();
+
+            $('.closesearchheader').attr('name', 'search-outline');
+        }
+    });
+
+    //------------ header my account menu and basket menu
+
+    $(document).on('click', function (e) {
+
+        if ($(window).width() < 576) {
+            if (!($(e.target).is('.forclosebasket')
+                || $(e.target).is('.forclosebasket li')
+                || $(e.target).is('.forclosebasket li span')
+                || $(e.target).is('.forclosebasket a')
+                || $(e.target).is('.forclosebasket div'))) {
+
+                $('.minibasket').fadeOut(200);
+            }
+        }
+    });
+
+    $(document).on('click', function (e) {
+
+        if ($(window).width() < 576) {
+            if (!($(e.target).is('.forcloseaccount')
+                || $(e.target).is('.forcloseaccount li')
+                || $(e.target).is('.forcloseaccount li span')
+                || $(e.target).is('.forcloseaccount li a')
+                || $(e.target).is('.forcloseaccount li div')
+                || $(e.target).is('.forcloseaccount li div span')
+                || $(e.target).is('.forcloseaccount li a span')
+                || $(e.target).is('.forcloseaccount li a span svg'))) {
+
+                $('.accountinfo').fadeOut(200);
+            }
+        }
+    });
 
     //#endregion close toggle windows by clicking outside
+
+    //---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
