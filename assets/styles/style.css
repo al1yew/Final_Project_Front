@@ -17105,6 +17105,7 @@ a:hover {
     padding: 20px 0;
     border-top: 1px solid var(--yellow);
     border-bottom: 1px solid var(--yellow);
+    cursor: pointer;
   }
   .ordersection .all .orders .order .top {
     display: -webkit-box;
@@ -17504,6 +17505,7 @@ a:hover {
     padding: 20px 0;
     border-top: 1px solid var(--yellow);
     border-bottom: 1px solid var(--yellow);
+    cursor: pointer;
   }
   .ordersection .all .orders .order .top {
     display: -webkit-box;
@@ -17595,6 +17597,7 @@ a:hover {
         flex-wrap: wrap;
     border-bottom: 1px solid black;
     padding: 20px 0;
+    cursor: pointer;
   }
   .ordersection .all .orders .order .bottom .orderitem:nth-child(1) {
     border-top: 1px solid black;

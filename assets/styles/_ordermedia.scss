@@ -161,6 +161,7 @@ a {
                     padding: 20px 0;
                     border-top: 1px solid var(--yellow);
                     border-bottom: 1px solid var(--yellow);
+                    cursor: pointer;
 
                     .top {
                         display: flex;
@@ -246,6 +247,7 @@ a {
                             flex-wrap: wrap;
                             border-bottom: 1px solid black;
                             padding: 20px 0;
+                            cursor: pointer;
 
                             &:nth-child(1) {
                                 border-top: 1px solid black;
