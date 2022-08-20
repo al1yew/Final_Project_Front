@@ -1273,7 +1273,7 @@ $(document).ready(function () {
 
     $('.photoslider1').slick({
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 300,
         arrows: false,
         slidesToShow: 1,
@@ -1285,7 +1285,7 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
-                    infinite: true,
+                    infinite: false,
                     dots: false
                 }
             },
@@ -1294,7 +1294,7 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
-                    infinite: true,
+                    infinite: false,
                     dots: false,
                     slidesToScroll: 1
                 }
@@ -1303,7 +1303,7 @@ $(document).ready(function () {
                 breakpoint: 576,
                 settings: {
                     arrows: false,
-                    infinite: true,
+                    infinite: false,
                     slidesToShow: 1,
                     dots: false,
                     slidesToScroll: 1
@@ -1328,21 +1328,25 @@ $(document).ready(function () {
 
         $($(this).parent().find('img')).each(function () {
 
-            console.log($(this).attr('src'))
-
             let src = $(this).attr('src')
 
+            // console.log(src)
+
             $('.sliderimageozu').each(function () {
+
                 $(this).attr('src', src)
-                src = ''
-            })
 
-            // $('.photoslider1').append(
-            //     `<div class="col-lg-12 col-12 sliderimgkeeper dontclose">
-            //         <img class="img-fluid" src="${$(this).attr('src')}" alt="">
-            //      </div>`
-            // )
+                console.log($(this))
 
+                // console.log($(this).attr('src'))
+
+                //luchshe koneshno budet esli eto ne poluchitsa slider sdelat 
+                //foreach sliderimage iz Table gde xranatsa vse eti reviewimages,
+                // esli tipa ix 54 shtuki naprimer hamsini salsin slaydera, i esli kak v 
+                //trendyole vnizu pod kajdoy fotkoy v slaydere napishem komment celoveka
+                //kotoriy eto opublikoval 
+
+            });
         })
 
     });
