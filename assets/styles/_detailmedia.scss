@@ -1359,6 +1359,19 @@ a {
                         align-items: center;
                         flex-wrap: wrap;
                         height: 100%;
+                        position: relative;
+
+                        .clearreview {
+                            position: absolute;
+                            top: 10px;
+                            right: 0px;
+                            display: none;
+                            cursor: pointer;
+
+                            .clearreviewicon {
+                                font-size: 18px;
+                            }
+                        }
 
                         textarea {
                             border: 0.5px solid black;
@@ -1428,17 +1441,7 @@ a {
                                 margin-top: 5px;
                             }
 
-                            .clearreview {
-                                position: absolute;
-                                top: 2px;
-                                right: 200px;
-                                display: none;
-                                cursor: pointer;
 
-                                .clearreviewicon {
-                                    font-size: 18px;
-                                }
-                            }
                         }
                     }
                 }
@@ -2595,7 +2598,20 @@ a {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        position: relative;
                         flex-wrap: wrap;
+
+                        .clearreview {
+                            position: absolute;
+                            top: 6%;
+                            right: 19%;
+                            display: none;
+                            cursor: pointer;
+
+                            .clearreviewicon {
+                                font-size: 18px;
+                            }
+                        }
 
                         .lastdiv {
                             display: flex;
@@ -2658,18 +2674,6 @@ a {
                                 line-height: 114%;
                                 letter-spacing: 0.08em;
                                 margin-bottom: 10px;
-                            }
-
-                            .clearreview {
-                                position: absolute;
-                                top: 2px;
-                                right: 200px;
-                                display: none;
-                                cursor: pointer;
-
-                                .clearreviewicon {
-                                    font-size: 18px;
-                                }
                             }
                         }
                     }
@@ -3829,6 +3833,19 @@ a {
                         justify-content: space-between;
                         align-items: center;
                         flex-wrap: wrap;
+                        position: relative;
+
+                        .clearreview {
+                            position: absolute;
+                            top: 6%;
+                            right: 19%;
+                            display: none;
+                            cursor: pointer;
+
+                            .clearreviewicon {
+                                font-size: 18px;
+                            }
+                        }
 
                         .lastdiv {
                             display: flex;
@@ -3891,18 +3908,6 @@ a {
                                 line-height: 114%;
                                 letter-spacing: 0.08em;
                                 margin-bottom: 10px;
-                            }
-
-                            .clearreview {
-                                position: absolute;
-                                top: 2px;
-                                right: 200px;
-                                display: none;
-                                cursor: pointer;
-
-                                .clearreviewicon {
-                                    font-size: 18px;
-                                }
                             }
                         }
                     }

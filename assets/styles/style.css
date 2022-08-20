@@ -9216,6 +9216,17 @@ a:hover {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview {
+    position: absolute;
+    top: 6%;
+    right: 19%;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
+    font-size: 18px;
   }
   .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
     display: -webkit-box;
@@ -9295,16 +9306,6 @@ a:hover {
     line-height: 114%;
     letter-spacing: 0.08em;
     margin-bottom: 10px;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
-    position: absolute;
-    top: 2px;
-    right: 200px;
-    display: none;
-    cursor: pointer;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
-    font-size: 18px;
   }
 }
 
@@ -10827,6 +10828,17 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 100%;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
+    font-size: 18px;
   }
   .modalmoy .overlaymodall .modalall .writereview form textarea {
     border: 0.5px solid black;
@@ -10916,16 +10928,6 @@ a {
     line-height: 114%;
     letter-spacing: 0.08em;
     margin-top: 5px;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
-    position: absolute;
-    top: 2px;
-    right: 200px;
-    display: none;
-    cursor: pointer;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
-    font-size: 18px;
   }
 }
 
@@ -12200,8 +12202,19 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview {
+    position: absolute;
+    top: 6%;
+    right: 19%;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
+    font-size: 18px;
   }
   .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
     display: -webkit-box;
@@ -12281,16 +12294,6 @@ a {
     line-height: 114%;
     letter-spacing: 0.08em;
     margin-bottom: 10px;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
-    position: absolute;
-    top: 2px;
-    right: 200px;
-    display: none;
-    cursor: pointer;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
-    font-size: 18px;
   }
 }
 
@@ -13564,6 +13567,17 @@ a {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview {
+    position: absolute;
+    top: 6%;
+    right: 19%;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
+    font-size: 18px;
   }
   .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
     display: -webkit-box;
@@ -13643,16 +13657,6 @@ a {
     line-height: 114%;
     letter-spacing: 0.08em;
     margin-bottom: 10px;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
-    position: absolute;
-    top: 2px;
-    right: 200px;
-    display: none;
-    cursor: pointer;
-  }
-  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
-    font-size: 18px;
   }
 }
 
