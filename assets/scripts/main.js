@@ -99,7 +99,15 @@ $(document).ready(function () {
 
     //--------------------------------- header scroll
 
+    if ($('.where').text()) {
+        $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)");
+        $(".mobile").css("padding", "15px 10px");
+        $(".header").css("background-color", "rgba(0, 0, 0, 0.2)");
+        $(".computer").css("padding", "30px 0");
+    }
+
     $(document).on('scroll', function () {
+
         if (!$('.where').text()) {
             if ($(window).width() < 576) {
                 if ($(window).scrollTop() > (($(window).height() / 2) - 50)) {
@@ -115,12 +123,10 @@ $(document).ready(function () {
                 if ($(window).scrollTop() > ($(window).height() - 50)) {
                     $(".header").css("background-color", "rgba(0, 0, 0, 0.2)");
                     $(".computer").css("padding", "13px 0");
-                    // $('.cart').css("padding", "13px 0")
                 }
                 else {
                     $(".header").css("background-color", "rgba(0, 0, 0, 0)");
                     $(".computer").css("padding", "30px 0");
-                    // $(".cart").css("padding", "30px 0");
                 }
             }
         }
