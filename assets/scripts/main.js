@@ -1110,6 +1110,24 @@ $(document).ready(function () {
         }
     });
 
+    //------------ shop page categories ul li close siblings
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.headcategoryli')
+            || $(e.target).is('.headcategoryli *'))) {
+
+            $('.categorymenu').hide();
+
+            $('.headcategoryli').each(function () {
+                $(this).find('a').removeClass('activespan');
+            });
+
+            $('.cloli').find('a').addClass('activespan');
+
+        }
+    });
+
     //------------ shop page custom select options hiding on click on another select 
 
     $(document).on('click', '.filterdiv', function () {
