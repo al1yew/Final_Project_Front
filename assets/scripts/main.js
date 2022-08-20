@@ -1328,9 +1328,14 @@ $(document).ready(function () {
 
         $($(this).parent().find('img')).each(function () {
 
-
             console.log($(this).attr('src'))
 
+            let src = $(this).attr('src')
+
+            $('.sliderimageozu').each(function () {
+                $(this).attr('src', src)
+                src = ''
+            })
 
             // $('.photoslider1').append(
             //     `<div class="col-lg-12 col-12 sliderimgkeeper dontclose">
