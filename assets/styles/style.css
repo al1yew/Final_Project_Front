@@ -8908,443 +8908,403 @@ a:hover {
   .all .modal .content img {
     height: 90%;
   }
-}
-
-.modalmoy {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 95%;
-  height: 96vh;
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-  z-index: 432531532523523523;
-  background-color: white;
-  padding: 20px 30px;
-  display: none;
-}
-
-.modalmoy .overlaymodall {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.modalmoy .overlaymodall .modalall {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-  height: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.modalmoy .overlaymodall .modalall .closemodal {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 40px;
-  cursor: pointer;
-}
-
-.modalmoy .overlaymodall .modalall .firstp {
-  font-family: var(--neueultra);
-  font-size: 30px;
-  color: var(--yellow);
-  text-align: center;
-  letter-spacing: 0.08em;
-  height: 7.5%;
-}
-
-.modalmoy .overlaymodall .modalall .rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 7.5%;
-}
-
-.modalmoy .overlaymodall .modalall .rating .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modalmoy .overlaymodall .modalall .rating .left .avgrating {
-  font-family: var(--neuebold);
-  font-size: 22px;
-  letter-spacing: 0.08em;
-}
-
-.modalmoy .overlaymodall .modalall .rating .left .stardiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 30px;
-}
-
-.modalmoy .overlaymodall .modalall .rating .left .stardiv .staricon {
-  margin-left: 3px;
-  font-size: 20px;
-}
-
-.modalmoy .overlaymodall .modalall .rating .left .stardiv .yellow {
-  color: var(--yellow);
-}
-
-.modalmoy .overlaymodall .modalall .rating .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modalmoy .overlaymodall .modalall .rating .right .reviewcount {
-  font-size: 14px;
-  font-family: var(--neueregular);
-  letter-spacing: 0.08em;
-  padding-right: 30px;
-}
-
-.modalmoy .overlaymodall .modalall .rating .right .commentcount {
-  font-size: 14px;
-  font-family: var(--neueregular);
-  letter-spacing: 0.08em;
-}
-
-.modalmoy .overlaymodall .modalall .reviews {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 20px;
-  height: 60%;
-  overflow-y: scroll;
-}
-
-.modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-thumb {
-  background: white;
-  background-color: white;
-  color: white;
-}
-
-.modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-button {
-  background: white;
-  background-color: white;
-  color: white;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  border-bottom: 1px solid var(--yellow);
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review:nth-child(1) {
-  padding-top: 0;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
-  margin-left: 3px;
-  font-size: 16px;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .yellow {
-  color: var(--yellow);
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top p {
-  font-family: var(--neueregular);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 144%;
-  letter-spacing: 0.08em;
-  padding-right: 20px;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos .photokeeper {
-  padding: 5px;
-  cursor: pointer;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  margin-top: 20px;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom .name {
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  font-family: var(--neueregular);
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom .reviewdate {
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  font-family: var(--neueregular);
-  padding-left: 10px;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom .layk {
-  position: absolute;
-  bottom: -5px;
-  right: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover {
-  fill: var(--yellow);
-  stroke: var(--yellow);
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover path {
-  fill: var(--yellow);
-  stroke: var(--yellow);
-}
-
-.modalmoy .overlaymodall .modalall .reviews .review .bottom .likescount {
-  position: absolute;
-  bottom: 0;
-  right: 4%;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  font-family: var(--neueregular);
-}
-
-.modalmoy .overlaymodall .modalall .writereview {
-  height: 25%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form .lastdiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form textarea {
-  border: 1px solid black;
-  outline: none;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding: 10px 10px;
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 0.08em;
-  resize: none;
-  height: 77px;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div input {
-  border: 1px solid black;
-  outline: none;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding: 5px 10px;
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 0.08em;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div input:nth-child(1) {
-  margin-bottom: 10px;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div .gl-star-rating--stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div button {
-  background-color: black;
-  text-align: center;
-  padding: 8px 0;
-  color: white;
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  margin-bottom: 10px;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div .clearreview {
-  position: absolute;
-  top: 2px;
-  right: 200px;
-  display: none;
-  cursor: pointer;
-}
-
-.modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
-  font-size: 18px;
+  .modalmoy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 96vh;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    z-index: 432531532523523523;
+    background-color: white;
+    padding: 20px 30px;
+    display: none;
+  }
+  .modalmoy .overlaymodall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modalmoy .overlaymodall .modalall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .modalmoy .overlaymodall .modalall .closemodal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .firstp {
+    font-family: var(--neueultra);
+    font-size: 30px;
+    color: var(--yellow);
+    text-align: center;
+    letter-spacing: 0.08em;
+    height: 7.5%;
+  }
+  .modalmoy .overlaymodall .modalall .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 7.5%;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .avgrating {
+    font-family: var(--neuebold);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .rating .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
+    font-size: 14px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    padding-right: 30px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .commentcount {
+    font-size: 14px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .reviews {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 20px;
+    height: 60%;
+    overflow-y: scroll;
+  }
+  .modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-thumb {
+    background: white;
+    background-color: white;
+    color: white;
+  }
+  .modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-button {
+    background: white;
+    background-color: white;
+    color: white;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review:nth-child(1) {
+    padding-top: 0;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 16px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top p {
+    font-family: var(--neueregular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 144%;
+    letter-spacing: 0.08em;
+    padding-right: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos .photokeeper {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .name {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .reviewdate {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+    padding-left: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk svg {
+    width: 25px;
+    height: 27px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .likescount {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .writereview {
+    height: 25%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form textarea {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    resize: none;
+    height: 77px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .gl-star-rating--stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div button {
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
+    position: absolute;
+    top: 2px;
+    right: 200px;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
+    font-size: 18px;
+  }
 }
 
 * {
@@ -10564,6 +10524,406 @@ a {
     line-height: 114%;
     letter-spacing: 0.08em;
   }
+  .modalmoy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 85vh;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    z-index: 432531532523523523;
+    background-color: white;
+    padding: 10px 14px;
+  }
+  .modalmoy .overlaymodall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modalmoy .overlaymodall .modalall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .modalmoy .overlaymodall .modalall .closemodal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .firstp {
+    font-family: var(--neueultra);
+    font-size: 20px;
+    color: var(--yellow);
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .avgrating {
+    font-family: var(--neuebold);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 15px;
+    padding-bottom: 3px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 12px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .rating .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
+    font-size: 10px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    padding-right: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .commentcount {
+    font-size: 10px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .reviews {
+    margin-top: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 14px;
+    height: 60%;
+    overflow-y: scroll;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 7px;
+    padding-top: 14px;
+    border-bottom: 0.7px solid var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review:nth-child(1) {
+    padding-top: 0;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 14px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon:nth-child(1) {
+    margin-left: 0;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top p {
+    font-family: var(--neueregular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 144%;
+    letter-spacing: 0.08em;
+    padding-right: 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos .photokeeper {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .name {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .reviewdate {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+    padding-left: 15px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk svg {
+    width: 20px;
+    height: 22px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .likescount {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .writereview {
+    height: 25%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form textarea {
+    border: 0.5px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    font-family: var(--neuelight);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    resize: none;
+    height: 47%;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .lastdiv .star_rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input {
+    border: 0.5px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .gl-star-rating--stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div button {
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-top: 5px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
+    position: absolute;
+    top: 2px;
+    right: 200px;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -11536,6 +11896,399 @@ a {
   .breadcrumb a:nth-child(1) {
     padding-left: 5px;
   }
+  .modalmoy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 96vh;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    z-index: 432531532523523523;
+    background-color: white;
+    padding: 20px 30px;
+    display: none;
+  }
+  .modalmoy .overlaymodall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modalmoy .overlaymodall .modalall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .modalmoy .overlaymodall .modalall .closemodal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .firstp {
+    font-family: var(--neueultra);
+    font-size: 30px;
+    color: var(--yellow);
+    text-align: center;
+    letter-spacing: 0.08em;
+    height: 7.5%;
+  }
+  .modalmoy .overlaymodall .modalall .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 7.5%;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .avgrating {
+    font-family: var(--neuebold);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .rating .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
+    font-size: 14px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    padding-right: 30px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .commentcount {
+    font-size: 14px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .reviews {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 20px;
+    height: 60%;
+    overflow-y: scroll;
+  }
+  .modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-thumb {
+    background: white;
+    background-color: white;
+    color: white;
+  }
+  .modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-button {
+    background: white;
+    background-color: white;
+    color: white;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review:nth-child(1) {
+    padding-top: 0;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 16px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top p {
+    font-family: var(--neueregular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 144%;
+    letter-spacing: 0.08em;
+    padding-right: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos .photokeeper {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .name {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .reviewdate {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+    padding-left: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .likescount {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .writereview {
+    height: 25%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form textarea {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    resize: none;
+    height: 77px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .gl-star-rating--stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div button {
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
+    position: absolute;
+    top: 2px;
+    right: 200px;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1350px) {
@@ -12504,6 +13257,399 @@ a {
   }
   .all .modal .content img {
     height: 90%;
+  }
+  .modalmoy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 96vh;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    z-index: 432531532523523523;
+    background-color: white;
+    padding: 20px 30px;
+    display: none;
+  }
+  .modalmoy .overlaymodall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modalmoy .overlaymodall .modalall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .modalmoy .overlaymodall .modalall .closemodal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .firstp {
+    font-family: var(--neueultra);
+    font-size: 30px;
+    color: var(--yellow);
+    text-align: center;
+    letter-spacing: 0.08em;
+    height: 7.5%;
+  }
+  .modalmoy .overlaymodall .modalall .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 7.5%;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .avgrating {
+    font-family: var(--neuebold);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .left .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .rating .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
+    font-size: 14px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    padding-right: 30px;
+  }
+  .modalmoy .overlaymodall .modalall .rating .right .commentcount {
+    font-size: 14px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .reviews {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 20px;
+    height: 60%;
+    overflow-y: scroll;
+  }
+  .modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-thumb {
+    background: white;
+    background-color: white;
+    color: white;
+  }
+  .modalmoy .overlaymodall .modalall .reviews::-webkit-scrollbar-button {
+    background: white;
+    background-color: white;
+    color: white;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review:nth-child(1) {
+    padding-top: 0;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
+    margin-left: 3px;
+    font-size: 16px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .yellow {
+    color: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top p {
+    font-family: var(--neueregular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 144%;
+    letter-spacing: 0.08em;
+    padding-right: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos .photokeeper {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .name {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .reviewdate {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+    padding-left: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover path {
+    fill: var(--yellow);
+    stroke: var(--yellow);
+  }
+  .modalmoy .overlaymodall .modalall .reviews .review .bottom .likescount {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    font-family: var(--neueregular);
+  }
+  .modalmoy .overlaymodall .modalall .writereview {
+    height: 25%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form textarea {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    resize: none;
+    height: 77px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div input:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .gl-star-rating--stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div button {
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview {
+    position: absolute;
+    top: 2px;
+    right: 200px;
+    display: none;
+    cursor: pointer;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form div .clearreview .clearreviewicon {
+    font-size: 18px;
   }
 }
 

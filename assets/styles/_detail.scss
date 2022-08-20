@@ -966,326 +966,330 @@ a {
             }
         }
     }
-}
 
+    .modalmoy {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        height: 96vh;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+        z-index: 432531532523523523;
+        background-color: white;
+        padding: 20px 30px;
+        display: none;
 
-.modalmoy {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    height: 96vh;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-    z-index: 432531532523523523;
-    background-color: white;
-    padding: 20px 30px;
-    display: none;
-
-    .overlaymodall {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: start;
-        align-items: flex-start;
-
-        .modalall {
+        .overlaymodall {
             display: flex;
-            flex-wrap: wrap;
-            position: relative;
             height: 100%;
+            width: 100%;
             justify-content: start;
+            align-items: flex-start;
 
-            .closemodal {
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 40px;
-                cursor: pointer;
-            }
-
-            .firstp {
-                font-family: var(--neueultra);
-                font-size: 30px;
-                color: var(--yellow);
-                text-align: center;
-                letter-spacing: 0.08em;
-                height: 7.5%;
-            }
-
-            .rating {
+            .modalall {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 7.5%;
-
-                .left {
-                    display: flex;
-                    justify-content: start;
-                    align-items: center;
-
-                    .avgrating {
-                        font-family: var(--neuebold);
-                        font-size: 22px;
-                        letter-spacing: 0.08em;
-                    }
-
-                    .stardiv {
-                        display: flex;
-                        justify-content: start;
-                        align-items: center;
-                        padding-left: 30px;
-
-                        .staricon {
-                            margin-left: 3px;
-                            font-size: 20px;
-                        }
-
-                        .yellow {
-                            color: var(--yellow);
-                        }
-                    }
-                }
-
-                .right {
-                    display: flex;
-                    justify-content: end;
-                    align-items: center;
-
-                    .reviewcount {
-                        font-size: 14px;
-                        font-family: var(--neueregular);
-                        letter-spacing: 0.08em;
-                        padding-right: 30px;
-                    }
-
-                    .commentcount {
-                        font-size: 14px;
-                        font-family: var(--neueregular);
-                        letter-spacing: 0.08em;
-                    }
-                }
-            }
-
-            .reviews {
-                margin-top: 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 flex-wrap: wrap;
-                padding-bottom: 20px;
-                height: 60%;
-                overflow-y: scroll;
+                position: relative;
+                height: 100%;
+                justify-content: start;
 
-                &::-webkit-scrollbar-thumb {
-                    background: white;
-                    background-color: white;
-                    color: white;
+                .closemodal {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 40px;
+                    cursor: pointer;
                 }
 
-                &::-webkit-scrollbar-button {
-                    background: white;
-                    background-color: white;
-                    color: white;
+                .firstp {
+                    font-family: var(--neueultra);
+                    font-size: 30px;
+                    color: var(--yellow);
+                    text-align: center;
+                    letter-spacing: 0.08em;
+                    height: 7.5%;
                 }
 
-                .review {
+                .rating {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    flex-wrap: wrap;
-                    padding-bottom: 10px;
-                    padding-top: 20px;
-                    border-bottom: 1px solid var(--yellow);
+                    height: 7.5%;
 
-                    &:nth-child(1) {
-                        padding-top: 0;
-                    }
-
-                    .top {
+                    .left {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: start;
                         align-items: center;
-                        flex-wrap: wrap;
+
+                        .avgrating {
+                            font-family: var(--neuebold);
+                            font-size: 22px;
+                            letter-spacing: 0.08em;
+                        }
 
                         .stardiv {
                             display: flex;
                             justify-content: start;
                             align-items: center;
+                            padding-left: 30px;
 
                             .staricon {
                                 margin-left: 3px;
-                                font-size: 16px;
+                                font-size: 20px;
                             }
 
                             .yellow {
                                 color: var(--yellow);
                             }
                         }
-
-                        p {
-                            font-family: var(--neueregular);
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 144%;
-                            letter-spacing: 0.08em;
-                            padding-right: 20px;
-                        }
-
-                        .reviewphotos {
-                            display: flex;
-                            justify-content: end;
-                            align-items: center;
-                            flex-wrap: wrap;
-
-                            .photokeeper {
-                                padding: 5px;
-                                cursor: pointer;
-                            }
-                        }
                     }
 
-                    .bottom {
+                    .right {
                         display: flex;
+                        justify-content: end;
                         align-items: center;
-                        position: relative;
-                        margin-top: 20px;
 
-                        .name {
-                            font-weight: 300;
-                            font-size: 13px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            font-family: var(--neueregular);
-                        }
-
-                        .reviewdate {
-                            font-weight: 300;
-                            font-size: 13px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            font-family: var(--neueregular);
-                            padding-left: 10px;
-                        }
-
-                        .layk {
-                            position: absolute;
-                            bottom: -5px;
-                            right: 0;
-                            transition: 0.3s;
-
-                            &:hover {
-                                fill: var(--yellow);
-                                stroke: var(--yellow);
-
-                                path {
-                                    fill: var(--yellow);
-                                    stroke: var(--yellow);
-                                }
-                            }
-                        }
-
-                        .likescount {
-                            position: absolute;
-                            bottom: 0;
-                            right: 4%;
-                            font-weight: 300;
+                        .reviewcount {
                             font-size: 14px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
                             font-family: var(--neueregular);
+                            letter-spacing: 0.08em;
+                            padding-right: 30px;
+                        }
+
+                        .commentcount {
+                            font-size: 14px;
+                            font-family: var(--neueregular);
+                            letter-spacing: 0.08em;
                         }
                     }
                 }
-            }
 
-            .writereview {
-                height: 25%;
-                padding: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-
-                form {
+                .reviews {
+                    margin-top: 20px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+                    padding-bottom: 20px;
+                    height: 60%;
+                    overflow-y: scroll;
 
-                    .lastdiv {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-items: center;
+                    &::-webkit-scrollbar-thumb {
+                        background: white;
+                        background-color: white;
+                        color: white;
                     }
 
-                    textarea {
-                        border: 1px solid black;
-                        outline: none;
-                        border-radius: 3px;
-                        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-                        padding: 10px 10px;
-                        font-family: var(--neuelight);
-                        font-weight: 300;
-                        font-size: 15px;
-                        letter-spacing: 0.08em;
-                        resize: none;
-                        height: 77px;
+                    &::-webkit-scrollbar-button {
+                        background: white;
+                        background-color: white;
+                        color: white;
                     }
 
-                    div {
+                    .review {
                         display: flex;
-                        flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
-                        position: relative;
+                        flex-wrap: wrap;
+                        padding-bottom: 10px;
+                        padding-top: 20px;
+                        border-bottom: 1px solid var(--yellow);
 
-                        input {
-                            border: 1px solid black;
-                            outline: none;
-                            border-radius: 3px;
-                            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-                            padding: 5px 10px;
-                            font-family: var(--neuelight);
-                            font-weight: 300;
-                            font-size: 15px;
-                            letter-spacing: 0.08em;
+                        &:nth-child(1) {
+                            padding-top: 0;
+                        }
 
-                            &:nth-child(1) {
-                                margin-bottom: 10px;
+                        .top {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-wrap: wrap;
+
+                            .stardiv {
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+
+                                .staricon {
+                                    margin-left: 3px;
+                                    font-size: 16px;
+                                }
+
+                                .yellow {
+                                    color: var(--yellow);
+                                }
+                            }
+
+                            p {
+                                font-family: var(--neueregular);
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 144%;
+                                letter-spacing: 0.08em;
+                                padding-right: 20px;
+                            }
+
+                            .reviewphotos {
+                                display: flex;
+                                justify-content: end;
+                                align-items: center;
+                                flex-wrap: wrap;
+
+                                .photokeeper {
+                                    padding: 5px;
+                                    cursor: pointer;
+                                }
                             }
                         }
 
-                        .gl-star-rating--stars {
+                        .bottom {
                             display: flex;
+                            align-items: center;
+                            position: relative;
+                            margin-top: 20px;
+
+                            .name {
+                                font-weight: 300;
+                                font-size: 13px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                font-family: var(--neueregular);
+                            }
+
+                            .reviewdate {
+                                font-weight: 300;
+                                font-size: 13px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                font-family: var(--neueregular);
+                                padding-left: 10px;
+                            }
+
+                            .layk {
+                                position: absolute;
+                                bottom: -5px;
+                                right: 0;
+                                transition: 0.3s;
+
+                                svg {
+                                    width: 25px;
+                                    height: 27px;
+                                }
+
+                                &:hover {
+                                    fill: var(--yellow);
+                                    stroke: var(--yellow);
+
+                                    path {
+                                        fill: var(--yellow);
+                                        stroke: var(--yellow);
+                                    }
+                                }
+                            }
+
+                            .likescount {
+                                position: absolute;
+                                bottom: 0;
+                                right: 4%;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                font-family: var(--neueregular);
+                            }
+                        }
+                    }
+                }
+
+                .writereview {
+                    height: 25%;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    form {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .lastdiv {
+                            display: flex;
+                            flex-wrap: wrap;
                             justify-content: center;
                             align-items: center;
                         }
 
-                        button {
-                            background-color: black;
-                            text-align: center;
-                            padding: 8px 0;
-                            color: white;
-                            font-family: var(--neueregular);
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 114%;
+                        textarea {
+                            border: 1px solid black;
+                            outline: none;
+                            border-radius: 3px;
+                            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                            padding: 10px 10px;
+                            font-family: var(--neuelight);
+                            font-weight: 300;
+                            font-size: 15px;
                             letter-spacing: 0.08em;
-                            margin-bottom: 10px;
+                            resize: none;
+                            height: 77px;
                         }
 
-                        .clearreview {
-                            position: absolute;
-                            top: 2px;
-                            right: 200px;
-                            display: none;
-                            cursor: pointer;
+                        div {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: relative;
 
-                            .clearreviewicon {
-                                font-size: 18px;
+                            input {
+                                border: 1px solid black;
+                                outline: none;
+                                border-radius: 3px;
+                                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                                padding: 5px 10px;
+                                font-family: var(--neuelight);
+                                font-weight: 300;
+                                font-size: 15px;
+                                letter-spacing: 0.08em;
+
+                                &:nth-child(1) {
+                                    margin-bottom: 10px;
+                                }
+                            }
+
+                            .gl-star-rating--stars {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            button {
+                                background-color: black;
+                                text-align: center;
+                                padding: 8px 0;
+                                color: white;
+                                font-family: var(--neueregular);
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 114%;
+                                letter-spacing: 0.08em;
+                                margin-bottom: 10px;
+                            }
+
+                            .clearreview {
+                                position: absolute;
+                                top: 2px;
+                                right: 200px;
+                                display: none;
+                                cursor: pointer;
+
+                                .clearreviewicon {
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
