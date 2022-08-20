@@ -1267,6 +1267,108 @@ $(document).ready(function () {
 
     //#endregion clear modal textarea on click
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region product detail page modal photo slider
+
+    $('.photoslider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    infinite: true,
+                    dots: false,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    dots: false,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    //#endregion product detail page modal photo slider
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region open close review photo modal in review modal in product detail page 
+
+    $(document).on('click', '.photomodal', function () {
+
+        $('.photoslider').fadeIn(150);
+
+        $('.photoslider').addClass('slideropen');
+
+        console.log($(this).parent().find('img'))
+
+        $($(this).parent().find('img')).each(function () {
+
+
+            console.log($(this).attr('src'))
+
+
+            // $('.photoslider1').append(
+            //     `<div class="col-lg-12 col-12 sliderimgkeeper dontclose">
+            //         <img class="img-fluid" src="${$(this).attr('src')}" alt="">
+            //      </div>`
+            // )
+
+        })
+
+    });
+
+    $(document).on('click', '.closemodalphoto', function () {
+
+        $('.photoslider').fadeOut(150);
+
+        $('.photoslider').removeClass('slideropen');
+
+    });
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.dontclose')
+            || $(e.target).is('.dontclose *'))) {
+
+            $('.photoslider').removeClass('slideropen');
+            $('.photoslider').fadeOut(150);
+        }
+
+    });
+
+    //#endregion open close review photo modal in review modal in product detail page 
+
+
+
+
+
+
+
 
 
 

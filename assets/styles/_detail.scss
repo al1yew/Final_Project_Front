@@ -1300,3 +1300,59 @@ a {
         }
     }
 }
+
+.slideropen {
+    height: 90vh !important;
+    overflow-y: visible !important;
+}
+
+.photoslider {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 432531532523523523432;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 0px;
+    overflow-y: hidden;
+
+    .modalslider {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 10px;
+
+        .closemodalphoto {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 40px;
+            cursor: pointer;
+            z-index: 999999999999999999999999999999999999;
+        }
+
+        .photoslider1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .sliderimgkeeper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 100%;
+                margin: 0 auto;
+
+                img {
+                    margin: 0 auto;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
