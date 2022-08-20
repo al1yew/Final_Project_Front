@@ -1205,6 +1205,8 @@ $(document).ready(function () {
 
         $('.modalmoy').fadeIn(150);
 
+        $('#body').attr('style', 'overflow: hidden;');
+
     })
 
     $(document).on('click', '.closemodal', function () {
@@ -1273,19 +1275,23 @@ $(document).ready(function () {
 
     $('.photoslider1').slick({
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 300,
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        prevArrow: $('.detailmodalprev'),
+        nextArrow: $('.detailmodalnext'),
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
-                    infinite: false,
+                    arrows: true,
+                    prevArrow: $('.detailmodalprev'),
+                    nextArrow: $('.detailmodalnext'),
+                    infinite: true,
                     dots: false
                 }
             },
@@ -1293,8 +1299,10 @@ $(document).ready(function () {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
-                    infinite: false,
+                    prevArrow: $('.detailmodalprev'),
+                    nextArrow: $('.detailmodalnext'),
+                    arrows: true,
+                    infinite: true,
                     dots: false,
                     slidesToScroll: 1
                 }
@@ -1302,8 +1310,10 @@ $(document).ready(function () {
             {
                 breakpoint: 576,
                 settings: {
-                    arrows: false,
-                    infinite: false,
+                    arrows: true,
+                    prevArrow: $('.detailmodalprev'),
+                    nextArrow: $('.detailmodalnext'),
+                    infinite: true,
                     slidesToShow: 1,
                     dots: false,
                     slidesToScroll: 1
@@ -1324,30 +1334,7 @@ $(document).ready(function () {
 
         $('.photoslider').addClass('slideropen');
 
-        console.log($(this).parent().find('img'))
-
-        $($(this).parent().find('img')).each(function () {
-
-            let src = $(this).attr('src')
-
-            // console.log(src)
-
-            $('.sliderimageozu').each(function () {
-
-                $(this).attr('src', src)
-
-                console.log($(this))
-
-                // console.log($(this).attr('src'))
-
-                //luchshe koneshno budet esli eto ne poluchitsa slider sdelat 
-                //foreach sliderimage iz Table gde xranatsa vse eti reviewimages,
-                // esli tipa ix 54 shtuki naprimer hamsini salsin slaydera, i esli kak v 
-                //trendyole vnizu pod kajdoy fotkoy v slaydere napishem komment celoveka
-                //kotoriy eto opublikoval 
-
-            });
-        })
+        $('#body').attr('style', 'overflow: hidden;');
 
     });
 
