@@ -10537,6 +10537,7 @@ a {
     z-index: 432531532523523523;
     background-color: white;
     padding: 10px 14px;
+    display: none;
   }
   .modalmoy .overlaymodall {
     display: -webkit-box;
