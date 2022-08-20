@@ -103,7 +103,7 @@ $(document).ready(function () {
         $(".mobile").css("background-color", "rgba(0, 0, 0, 0.2)");
         $(".mobile").css("padding", "15px 10px");
         $(".header").css("background-color", "rgba(0, 0, 0, 0.2)");
-        $(".computer").css("padding", "30px 0");
+        $(".computer").css("padding", "13px 0");
     }
 
     $(document).on('scroll', function () {
@@ -1108,6 +1108,16 @@ $(document).ready(function () {
             $(this).find(".svgkeeper").removeClass('roundarrow');
 
         }
+    });
+
+    //------------ shop page custom select options hiding on click on another select 
+
+    $(document).on('click', '.filterdiv', function () {
+
+        $($(this).siblings('.filterdiv').find('ul')).each(function () {
+            $(this).hide();
+            $(this).next().removeClass('roundarrow');
+        })
     });
 
     //------------ header search menu close on click on document 

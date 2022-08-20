@@ -305,6 +305,21 @@ p {
                         transform: rotate(180deg) !important;
                     }
 
+                    .sortbycount,
+                    .sortbybodyfit {
+                        left: 0%;
+                    }
+
+                    .sortbyorder {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                    .sortbycolor,
+                    .sortbysize {
+                        right: 0%;
+                    }
+
                     ul {
                         list-style: none;
                         display: none;
@@ -314,7 +329,6 @@ p {
                         width: 150%;
                         position: absolute;
                         top: 100%;
-                        left: 0%;
                         border: 1px solid black;
                         z-index: 43432;
 

@@ -6880,6 +6880,19 @@ p {
     -webkit-transform: rotate(180deg) !important;
             transform: rotate(180deg) !important;
   }
+  #clothing .all .filternew .filterdiv .sortbycount,
+  #clothing .all .filternew .filterdiv .sortbybodyfit {
+    left: 0%;
+  }
+  #clothing .all .filternew .filterdiv .sortbyorder {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #clothing .all .filternew .filterdiv .sortbycolor,
+  #clothing .all .filternew .filterdiv .sortbysize {
+    right: 0%;
+  }
   #clothing .all .filternew .filterdiv ul {
     list-style: none;
     display: none;
@@ -6889,7 +6902,6 @@ p {
     width: 150%;
     position: absolute;
     top: 100%;
-    left: 0%;
     border: 1px solid black;
     z-index: 43432;
   }
