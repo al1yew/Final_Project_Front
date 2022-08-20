@@ -1205,7 +1205,7 @@ $(document).ready(function () {
 
         $('.modalmoy').fadeIn(150);
 
-        $('#body').attr('style', 'overflow: hidden;');
+        // $('#body').attr('style', 'overflow: hidden;');
 
     })
 
@@ -1334,7 +1334,7 @@ $(document).ready(function () {
 
         $('.photoslider').addClass('slideropen');
 
-        $('#body').attr('style', 'overflow: hidden;');
+        // $('#body').attr('style', 'overflow: hidden;');
 
     });
 
