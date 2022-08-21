@@ -440,6 +440,25 @@ a {
                     }
                 }
             }
+
+            .basketboshdu {
+                margin: 60px 0;
+
+                .bskp {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    p {
+                        text-align: center;
+                        font-family: var(--neuebold);
+                        font-size: 28px;
+                        letter-spacing: 0.1em;
+                        color: var(--yellow);
+                    }
+                }
+            }
         }
     }
 

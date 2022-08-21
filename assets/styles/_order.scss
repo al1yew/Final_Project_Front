@@ -376,6 +376,21 @@ a {
                         }
                     }
                 }
+
+                .noordersyet {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 50px 0;
+
+                    p {
+                        font-family: var(--neuebold);
+                        font-size: 28px;
+                        color: var(--yellow);
+                        letter-spacing: 0.1em;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
