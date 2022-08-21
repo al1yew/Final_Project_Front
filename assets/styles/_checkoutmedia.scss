@@ -120,6 +120,7 @@ a {
                             flex-wrap: wrap;
                             justify-content: space-between;
                             align-items: center;
+                            position: relative;
 
                             span {
                                 &:nth-child(1) {
@@ -139,6 +140,19 @@ a {
                                     text-decoration: underline;
                                     text-align: end;
                                 }
+
+                                &:nth-child(3) {
+                                    position: absolute;
+                                    top: 0px;
+                                    right: 80px;
+                                    font-weight: 800;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    font-family: var(--neueregular);
+                                    letter-spacing: 0.08em;
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
                             }
                         }
 
@@ -149,6 +163,63 @@ a {
                             font-size: 15px;
                             line-height: 114%;
                             font-family: var(--neueregular);
+                            letter-spacing: 0.08em;
+                        }
+                    }
+
+                    .addaddressform {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .checkoutcity {
+                            display: flex;
+                            flex-direction: column;
+                            padding-right: 5px;
+                        }
+
+                        .checkoutcountry {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 5px;
+                        }
+
+                        label {
+                            font-family: var(--neuelight);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 127%;
+                            letter-spacing: 0.08em;
+
+                            span {
+                                color: red;
+                            }
+                        }
+
+                        button {
+                            background-color: black;
+                            text-align: center;
+                            padding: 4px 0;
+                            color: white;
+                            font-family: var(--neueregular);
+                            font-weight: 400;
+                            font-size: 14px;
+                            margin-bottom: 5px;
+                            letter-spacing: 0.08em;
+                        }
+
+                        input {
+                            border: 1px solid black;
+                            outline: none;
+                            border-radius: 3px;
+                            margin-top: 5px;
+                            margin-bottom: 10px;
+                            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                            padding: 5px 10px;
+                            font-family: var(--neuelight);
+                            font-weight: 300;
+                            font-size: 15px;
                             letter-spacing: 0.08em;
                         }
                     }
@@ -175,6 +246,7 @@ a {
                         flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
+                        position: relative;
 
                         span {
                             &:nth-child(1) {
@@ -193,6 +265,19 @@ a {
                                 letter-spacing: 0.08em;
                                 text-decoration: underline;
                                 text-align: end;
+                            }
+
+                            &:nth-child(3) {
+                                position: absolute;
+                                top: 0px;
+                                right: 80px;
+                                font-weight: 800;
+                                font-size: 14px;
+                                line-height: 24px;
+                                font-family: var(--neueregular);
+                                letter-spacing: 0.08em;
+                                text-decoration: underline;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -267,6 +352,61 @@ a {
                                 position: absolute;
                                 bottom: 0%;
                                 left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .cardform {
+                    position: relative;
+
+                    .again_allcontent {
+                        border: 0.8px solid black;
+                        border-radius: 10px;
+                        height: 200px;
+                        color: black;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .allcontent {
+
+                            .cardozu {
+                                background-color: white;
+                                color: black;
+                                position: relative;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: wrap;
+
+                                button {
+                                    margin-top: 10px;
+                                    background-color: black;
+                                    text-align: center;
+                                    padding: 5px 0;
+                                    color: white;
+                                    font-family: var(--neueregular);
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 114%;
+                                    letter-spacing: 0.08em;
+                                }
+
+                                input {
+                                    border: 1px solid black;
+                                    outline: none;
+                                    border-radius: 3px;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+                                    padding: 5px 8px;
+                                    font-family: var(--neuelight);
+                                    font-weight: 300;
+                                    font-size: 13px;
+                                    letter-spacing: 0.08em;
+                                }
                             }
                         }
                     }
@@ -709,6 +849,263 @@ a {
                         position: absolute;
                         top: 3%;
                         right: 5%;
+                    }
+                }
+            }
+        }
+    }
+
+    .cardmodal {
+        position: fixed;
+        width: 90%;
+        height: 85vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        z-index: 987654;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 3px var(--yellow);
+        overflow-y: scroll;
+        display: none;
+
+        .closekeeper {
+            position: relative;
+            width: 100%;
+
+            .closecardmodal {
+                position: absolute;
+                top: 0px;
+                cursor: pointer;
+                right: 0px;
+                font-size: 35px;
+                z-index: 21432432;
+            }
+        }
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+
+            .firstp {
+                font-family: var(--neueultra);
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+                margin-bottom: 15px;
+            }
+
+            .carddiv {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+                align-items: center;
+
+                .cardinozu {
+                    padding: 0 10px;
+                    margin-top: 20px;
+                    cursor: pointer;
+
+                    .cardozu {
+                        border: 0.8px solid black;
+                        border-radius: 10px;
+                        background-color: white;
+                        height: 150px;
+                        color: black;
+                        position: relative;
+
+                        span {
+                            font-weight: 700;
+                            font-size: 10px;
+                            line-height: 114%;
+                            font-family: var(--neuebold);
+                            letter-spacing: 0.08em;
+                            color: black;
+                            background-color: white;
+                            margin-bottom: 10px;
+                            position: absolute;
+
+                            &:nth-child(1) {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                            }
+
+                            &:nth-child(2) {
+                                position: absolute;
+                                top: 4%;
+                                left: 10px;
+                            }
+
+                            &:nth-child(3) {
+                                position: absolute;
+                                top: 14%;
+                                left: 10px;
+                            }
+
+                            &:nth-child(4) {
+                                position: absolute;
+                                bottom: 0%;
+                                left: 10px;
+                            }
+
+                            &:nth-child(5) {
+                                position: absolute;
+                                top: 27%;
+                                right: 10px;
+                            }
+                        }
+
+                        .headword {
+                            position: absolute;
+                            bottom: 14%;
+                            left: 10px;
+                            font-weight: 700;
+                            font-size: 9px;
+                            line-height: 114%;
+                            font-family: var(--neuebold);
+                            letter-spacing: 0.08em;
+                            width: 40%;
+                        }
+
+                        .ismain {
+                            position: absolute;
+                            right: 10px;
+                            bottom: 0%;
+                            text-decoration: underline;
+                            font-size: 10px;
+                            color: var(--yellow);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .addressmodal {
+        position: fixed;
+        width: 90%;
+        height: 80vh;
+        overflow-y: scroll;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        z-index: 987654;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 3px var(--yellow);
+        display: none;
+
+        .closekeeper {
+            position: relative;
+            width: 100%;
+
+            .closeaddressmodal {
+                position: absolute;
+                top: 0px;
+                cursor: pointer;
+                right: 0px;
+                font-size: 35px;
+                z-index: 21432432;
+            }
+        }
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .firstp {
+                font-family: var(--neueultra);
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: var(--yellow);
+                margin-bottom: 15px;
+            }
+
+            .addressdiv {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 15px;
+                align-items: center;
+
+                .addressinozu {
+                    padding: 0 10px;
+                    margin-top: 15px;
+                    cursor: pointer;
+
+                    .addressozu {
+                        border: 0.8px solid black;
+                        background-color: white;
+                        height: 200px;
+                        color: black;
+                        border-radius: 10px;
+                        position: relative;
+
+                        .top {
+                            border-bottom: 0.8px solid black;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+
+                            span {
+                                font-family: var(--neuebold);
+                                font-size: 10px;
+                                letter-spacing: 0.08em;
+                                padding: 0 15px;
+
+                                &:nth-child(1) {
+                                    padding-bottom: 10px;
+                                    padding-top: 10px;
+                                }
+
+                                &:nth-child(2) {
+                                    padding-bottom: 10px;
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            padding: 15px;
+
+                            span {
+                                font-weight: 300;
+                                font-size: 9px;
+                                line-height: 114%;
+                                font-family: var(--neueregular);
+                                letter-spacing: 0.08em;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: wrap;
+
+                                span {
+                                    padding-bottom: 10px;
+
+                                    &:nth-child(2) {
+                                        font-family: var(--neuebold);
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .ismain {
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
+                            color: var(--yellow);
+                        }
                     }
                 }
             }

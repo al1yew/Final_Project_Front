@@ -10,6 +10,96 @@ p {
   padding: 0;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  -webkit-animation: preloader-rotate 2s infinite linear;
+          animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: var(--yellow);
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  -webkit-animation: preloader-bounce 2s infinite ease-in-out;
+          animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+@-webkit-keyframes preloader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes preloader-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -17813,6 +17903,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(1),
   .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(1) {
@@ -17833,6 +17924,19 @@ a:hover {
     cursor: pointer;
     text-align: end;
   }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(3),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .checkoutsection .all .leftcheckout .top div:nth-child(2), .checkoutsection .all .leftcheckout .top div:nth-child(3), .checkoutsection .all .leftcheckout .top div:nth-child(4),
   .checkoutsection .all .leftcheckout .bottom div:nth-child(2),
   .checkoutsection .all .leftcheckout .bottom div:nth-child(3),
@@ -17841,6 +17945,81 @@ a:hover {
     font-size: 15px;
     line-height: 114%;
     font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform .checkoutcity,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform .checkoutcity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform .checkoutcountry,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform .checkoutcountry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform label,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform label span,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform label span {
+    color: red;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform button,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform button {
+    background-color: black;
+    text-align: center;
+    padding: 4px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform input,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
     letter-spacing: 0.08em;
   }
   .checkoutsection .all .leftcheckout .carddiv {
@@ -17878,6 +18057,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     color: black;
+    position: relative;
   }
   .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(1) {
     font-weight: 800;
@@ -17894,6 +18074,18 @@ a:hover {
     letter-spacing: 0.08em;
     text-decoration: underline;
     text-align: end;
+    cursor: pointer;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
     cursor: pointer;
   }
   .checkoutsection .all .leftcheckout .carddiv .cardozu {
@@ -17956,6 +18148,67 @@ a:hover {
     position: absolute;
     bottom: 0%;
     left: 10px;
+  }
+  .checkoutsection .all .leftcheckout .cardform {
+    position: relative;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent {
+    border: 0.8px solid black;
+    border-radius: 10px;
+    height: 200px;
+    color: black;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent .allcontent .cardozu {
+    background-color: white;
+    color: black;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent .allcontent .cardozu button {
+    margin-top: 10px;
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent .allcontent .cardozu input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 8px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.08em;
   }
   .checkoutsection .all .rightcheckout {
     display: -webkit-box;
@@ -18426,6 +18679,268 @@ a:hover {
     top: 3%;
     right: 5%;
   }
+  .cardmodal {
+    position: fixed;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 987654;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 3px var(--yellow);
+            box-shadow: 0px 0px 5px 3px var(--yellow);
+    display: none;
+  }
+  .cardmodal .closekeeper {
+    position: relative;
+    width: 100%;
+  }
+  .cardmodal .closekeeper .closecardmodal {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
+    font-size: 25px;
+  }
+  .cardmodal .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .cardmodal .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 20px;
+  }
+  .cardmodal .all .carddiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardmodal .all .carddiv .cardinozu {
+    padding: 0 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu {
+    border: 0.8px solid black;
+    border-radius: 10px;
+    background-color: white;
+    height: 200px;
+    color: black;
+    position: relative;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(2) {
+    position: absolute;
+    top: 4%;
+    left: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(3) {
+    position: absolute;
+    top: 14%;
+    left: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(4) {
+    position: absolute;
+    bottom: 0%;
+    left: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(5) {
+    position: absolute;
+    top: 27%;
+    right: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu .headword {
+    position: absolute;
+    bottom: 14%;
+    left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    width: 40%;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu .ismain {
+    position: absolute;
+    right: 10px;
+    bottom: 0%;
+    text-decoration: underline;
+    font-size: 12px;
+    color: var(--yellow);
+  }
+  .addressmodal {
+    position: fixed;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 987654;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 3px var(--yellow);
+            box-shadow: 0px 0px 5px 3px var(--yellow);
+    display: none;
+  }
+  .addressmodal .closekeeper {
+    position: relative;
+    width: 100%;
+  }
+  .addressmodal .closekeeper .closeaddressmodal {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
+    font-size: 25px;
+  }
+  .addressmodal .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .addressmodal .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 20px;
+  }
+  .addressmodal .all .addressdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .addressmodal .all .addressdiv .addressinozu {
+    padding: 0 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu {
+    border: 0.8px solid black;
+    background-color: white;
+    height: 300px;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top {
+    border-bottom: 0.8px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top span {
+    font-family: var(--neuebold);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    padding: 0 20px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top span:nth-child(1) {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top span:nth-child(2) {
+    padding-bottom: 15px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom span {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom span span {
+    padding-bottom: 10px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom span span:nth-child(2) {
+    font-family: var(--neuebold);
+    font-size: 14px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .ismain {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--yellow);
+  }
 }
 
 * {
@@ -18578,6 +19093,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(1),
   .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(1) {
@@ -18597,6 +19113,19 @@ a:hover {
     text-decoration: underline;
     text-align: end;
   }
+  .checkoutsection .all .leftcheckout .top div:nth-child(1) span:nth-child(3),
+  .checkoutsection .all .leftcheckout .bottom div:nth-child(1) span:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .checkoutsection .all .leftcheckout .top div:nth-child(2), .checkoutsection .all .leftcheckout .top div:nth-child(3), .checkoutsection .all .leftcheckout .top div:nth-child(4),
   .checkoutsection .all .leftcheckout .bottom div:nth-child(2),
   .checkoutsection .all .leftcheckout .bottom div:nth-child(3),
@@ -18605,6 +19134,81 @@ a:hover {
     font-size: 15px;
     line-height: 114%;
     font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform .checkoutcity,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform .checkoutcity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 5px;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform .checkoutcountry,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform .checkoutcountry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5px;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform label,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform label {
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform label span,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform label span {
+    color: red;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform button,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform button {
+    background-color: black;
+    text-align: center;
+    padding: 4px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .top .addaddressform input,
+  .checkoutsection .all .leftcheckout .bottom .addaddressform input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 15px;
     letter-spacing: 0.08em;
   }
   .checkoutsection .all .leftcheckout .carddiv {
@@ -18641,6 +19245,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(1) {
     font-weight: 800;
@@ -18657,6 +19262,18 @@ a:hover {
     letter-spacing: 0.08em;
     text-decoration: underline;
     text-align: end;
+  }
+  .checkoutsection .all .leftcheckout .carddiv .bashliq span:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    cursor: pointer;
   }
   .checkoutsection .all .leftcheckout .carddiv .cardozu {
     border: 0.8px solid black;
@@ -18718,6 +19335,67 @@ a:hover {
     position: absolute;
     bottom: 0%;
     left: 10px;
+  }
+  .checkoutsection .all .leftcheckout .cardform {
+    position: relative;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent {
+    border: 0.8px solid black;
+    border-radius: 10px;
+    height: 200px;
+    color: black;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent .allcontent .cardozu {
+    background-color: white;
+    color: black;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent .allcontent .cardozu button {
+    margin-top: 10px;
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+  }
+  .checkoutsection .all .leftcheckout .cardform .again_allcontent .allcontent .cardozu input {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 8px;
+    font-family: var(--neuelight);
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.08em;
   }
   .checkoutsection .all .rightcheckout {
     display: -webkit-box;
@@ -19212,6 +19890,270 @@ a:hover {
     position: absolute;
     top: 3%;
     right: 5%;
+  }
+  .cardmodal {
+    position: fixed;
+    width: 90%;
+    height: 85vh;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 987654;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 3px var(--yellow);
+            box-shadow: 0px 0px 5px 3px var(--yellow);
+    overflow-y: scroll;
+    display: none;
+  }
+  .cardmodal .closekeeper {
+    position: relative;
+    width: 100%;
+  }
+  .cardmodal .closekeeper .closecardmodal {
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    right: 0px;
+    font-size: 35px;
+    z-index: 21432432;
+  }
+  .cardmodal .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .cardmodal .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 15px;
+  }
+  .cardmodal .all .carddiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardmodal .all .carddiv .cardinozu {
+    padding: 0 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu {
+    border: 0.8px solid black;
+    border-radius: 10px;
+    background-color: white;
+    height: 150px;
+    color: black;
+    position: relative;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(2) {
+    position: absolute;
+    top: 4%;
+    left: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(3) {
+    position: absolute;
+    top: 14%;
+    left: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(4) {
+    position: absolute;
+    bottom: 0%;
+    left: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu span:nth-child(5) {
+    position: absolute;
+    top: 27%;
+    right: 10px;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu .headword {
+    position: absolute;
+    bottom: 14%;
+    left: 10px;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 114%;
+    font-family: var(--neuebold);
+    letter-spacing: 0.08em;
+    width: 40%;
+  }
+  .cardmodal .all .carddiv .cardinozu .cardozu .ismain {
+    position: absolute;
+    right: 10px;
+    bottom: 0%;
+    text-decoration: underline;
+    font-size: 10px;
+    color: var(--yellow);
+  }
+  .addressmodal {
+    position: fixed;
+    width: 90%;
+    height: 80vh;
+    overflow-y: scroll;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 987654;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 3px var(--yellow);
+            box-shadow: 0px 0px 5px 3px var(--yellow);
+    display: none;
+  }
+  .addressmodal .closekeeper {
+    position: relative;
+    width: 100%;
+  }
+  .addressmodal .closekeeper .closeaddressmodal {
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    right: 0px;
+    font-size: 35px;
+    z-index: 21432432;
+  }
+  .addressmodal .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .addressmodal .all .firstp {
+    font-family: var(--neueultra);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--yellow);
+    margin-bottom: 15px;
+  }
+  .addressmodal .all .addressdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .addressmodal .all .addressdiv .addressinozu {
+    padding: 0 10px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu {
+    border: 0.8px solid black;
+    background-color: white;
+    height: 200px;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top {
+    border-bottom: 0.8px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top span {
+    font-family: var(--neuebold);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    padding: 0 15px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top span:nth-child(1) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .top span:nth-child(2) {
+    padding-bottom: 10px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom span {
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 114%;
+    font-family: var(--neueregular);
+    letter-spacing: 0.08em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom span span {
+    padding-bottom: 10px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .bottom span span:nth-child(2) {
+    font-family: var(--neuebold);
+    font-size: 11px;
+  }
+  .addressmodal .all .addressdiv .addressinozu .addressozu .ismain {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--yellow);
   }
 }
 

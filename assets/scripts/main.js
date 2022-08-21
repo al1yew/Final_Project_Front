@@ -1,4 +1,16 @@
 
+//#region preloader
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+}
+
+//#endregion preloader
+
 $(document).ready(function () {
 
     //#region slayderi
@@ -1233,7 +1245,7 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region ope close product detail page modal
+    //#region open close product detail page modal
 
     $(document).on('click', '.openmodalreview', function () {
 
@@ -1262,11 +1274,11 @@ $(document).ready(function () {
 
     })
 
-    //#endregion ope close product detail page modal
+    //#endregion open close product detail page modal
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region clear modal textarea on click
+    //#region clear modal textarea on click ---- star rating
 
     $(document).on('keyup', '.reviewarea', function () {
 
@@ -1285,23 +1297,26 @@ $(document).ready(function () {
 
     });
 
-    var stars = new StarRating('.star_rating', {
-        classNames: {
-            active: 'gl-active',
-            base: 'gl-star-rating',
-            selected: 'gl-selected',
-        },
-        clearable: true,
-        maxStars: 10,
-        prebuilt: false,
-        stars: null,
-        tooltip: false,
-    });
+    if ($(".where:contains('1')").length > 0) {
 
-    stars.rebuild();
+        var stars = new StarRating('.star_rating', {
+            classNames: {
+                active: 'gl-active',
+                base: 'gl-star-rating',
+                selected: 'gl-selected',
+            },
+            clearable: true,
+            maxStars: 10,
+            prebuilt: false,
+            stars: null,
+            tooltip: false,
+        });
+
+        stars.rebuild();
+    }
     //gl-selectedin attr kotoriy data-value chetotam nado budet vzat i fetchanut kak value
 
-    //#endregion clear modal textarea on click
+    //#endregion clear modal textarea on click ---- star rating
 
     //---------------------------------------------------------------------------------------------------------------
 
@@ -1393,6 +1408,79 @@ $(document).ready(function () {
 
     //#endregion open close review photo modal in review modal in product detail page 
 
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region open close checkout page modals
+
+    $(document).on('click', '.openaddressmodal', function () {
+
+        $('.addressmodal').fadeIn(150);
+
+    });
+
+    $(document).on('click', '.opencardmodal', function () {
+
+        $('.cardmodal').fadeIn(150);
+
+    });
+
+    $(document).on('click', '.closeaddressmodal', function () {
+
+        $('.addressmodal').fadeOut(150);
+
+    });
+
+    $(document).on('click', '.closecardmodal', function () {
+
+        $('.cardmodal').fadeOut(150);
+
+    });
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.addressmodal')
+            || $(e.target).is('.dontclose')
+            || $(e.target).is('.dontclose *'))) {
+
+            $('.addressmodal').fadeOut(150);
+        }
+
+        if ($(e.target).is('.addressinozu *')) {
+            $('.addressmodal').fadeOut(150);
+        }
+    });
+
+    $(document).on('click', function (e) {
+
+        if (!($(e.target).is('.cardmodal')
+            || $(e.target).is('.dontclose')
+            || $(e.target).is('.dontclose *'))) {
+
+            $('.cardmodal').fadeOut(150);
+        }
+
+        if ($(e.target).is('.cardinozu *')) {
+            $('.cardmodal').fadeOut(150);
+        }
+    });
+
+    $(document).on('click', '.addressinozu', function () {
+
+        $('#addressorder').attr('value', `${$(this).find('.address1value').text().trim()}, ${$(this).find('.address2value').text().trim().length > 0 ? $(this).find('.address2value').text().trim() + ', ' : ''}${$(this).find('.zipcodevalue').text().trim()}`)
+        $('#citycountryorder').attr('value', `${$(this).find('.cityvalue').text().trim()}, ${$(this).find('.countryvalue').text().trim()}`)
+
+    });
+
+    $(document).on('click', '.cardinozu', function () {
+
+        $('#cardnoorder').attr('value', `${$('.cardno').text().trim()}`)
+        $('#cardexpireorder').attr('value', `${$('.cardexpire').text().trim()}`)
+        $('#cardholderorder').attr('value', `${$('.cardholder').text().trim()}`)
+
+    });
+
+    //#endregion open close checkout page modals
+
 
 
 
@@ -1407,6 +1495,14 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+
+
+
+
 
 // $('.forzoom').zoom();
 

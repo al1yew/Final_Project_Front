@@ -25,6 +25,14 @@
 
 <body>
 
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
+
     <header class="header">
         <div class="container">
             <div class="computer">
@@ -950,7 +958,6 @@
     </header>
 
 
-
     <main>
         <section class="whereareyou">
             <div class="where">.</div>
@@ -981,20 +988,46 @@
                             <input id="phoneorder" class="col-lg-12 col-12" type="text" disabled value="+994511212116">
                             <input id="emailorder" class="col-lg-12 col-12" type="text" disabled value="va@code.edu.az">
                         </div>
+
                         <div class="bottom col-lg-12 col-12">
                             <div class="col-lg-12 col-12">
                                 <span class="col-lg-8 col-8">DELIVERY</span>
                                 <span class="col-lg-4 col-4 changeaddress">CHANGE</span>
+                                <span class="openaddressmodal dontclose">SELECT</span>
                             </div>
                             <input id="addressorder" class="col-lg-12 col-12" type="text" disabled
-                                value="Bulbul pr 23, Yasamal AZE1000">
+                                value="Bulbul pr 23, Yasamal AZ1000">
                             <input id="citycountryorder" class="col-lg-12 col-12" type="text" disabled
                                 value="Baku, Azerbaijan">
+
+                            <div class="col-lg-12 col-12 addaddressform d-none">
+                                <input name="address1" class="col-12 col-lg-12" id="address1" type="text" required
+                                    placeholder="Address 1">
+
+                                <input name="address2" class="col-12 col-lg-12" id="address2" type="text"
+                                    placeholder="Address 2">
+
+                                <input name="country" id="country" class="col-5-8 col-lg-5-8" type="text" required
+                                    placeholder="Country">
+
+                                <input name="city" id="city" class="col-5-8 col-lg-5-8" type="text" required
+                                    placeholder="City">
+
+                                <input name="zipcode" id="zipcode" class="col-5-8 col-lg-5-8" type="text" required
+                                    placeholder="ZIP code" max="10" maxlength="10"
+                                    title="ZIP code must be at most 10 characters!">
+
+                                <button form="changeaddressform" type="submit"
+                                    class="col-5-8 col-lg-5-8 addresschangebtn " value="save">ADD</button>
+
+                            </div>
                         </div>
+
                         <div class="carddiv col-lg-12 col-12">
                             <div class="col-lg-12 col-12 bashliq">
                                 <span class="col-lg-8 col-8">MY CARD</span>
                                 <span class="col-lg-4 col-4 changecard">CHANGE</span>
+                                <span class="opencardmodal dontclose">SELECT</span>
                             </div>
                             <span class="col-lg-12 col-12">International card</span>
                             <div class="cardozu col-lg-10 col-12">
@@ -1006,6 +1039,46 @@
                                 <input id="cardholderorder" type="text" disabled value="SHIRMEMMEDAGA AXUNDOV">
                             </div>
                         </div>
+
+                        <div class="cardform col-lg-10 col-12 d-none">
+                            <div class="again_allcontent">
+                                <div class="allcontent col-lg-12 col-12">
+
+                                    <div class="cardozu col-lg-12 col-12 ">
+
+                                        <input name="cardno" id="cardno" class="col-8 col-lg-8 cardno" type="text"
+                                            required placeholder="0000 0000 0000 0000" maxlength="16">
+
+                                        <span class="col-lg-1-2 col-1-5">
+                                            <img class="img-fluid" src="./assets/images/settings/mastercard.jpg" alt="">
+                                        </span>
+
+                                        <span class="col-lg-1-2 col-1-5">
+                                            <img class="img-fluid" src="./assets/images/settings/visa.jpg" alt="">
+                                        </span>
+
+                                        <input name="cardname" id="cardname" class="col-5-8 col-lg-5-8 cardname"
+                                            type="text" required placeholder="NAME"
+                                            title="Name must be contain only letters!">
+
+                                        <input name="cardsurname" id="cardsurname"
+                                            class="col-5-8 col-lg-5-8 cardsurname" type="text" placeholder="SURNAME"
+                                            required title="Surname must be contain only letters!">
+
+                                        <input name="expire" id="expire" class="col-5-8 col-lg-5-8 expire" type="text"
+                                            required placeholder="MM/YYYY" pattern="\d{2}\/\d{4}" maxlength="7">
+
+                                        <input name="cvv" id="cvv" class="col-5-8 col-lg-5-8 cvv" type="text" required
+                                            placeholder="CVV CODE" pattern="^[0-9]{3,4}$" maxlength="4">
+
+                                        <button form="orderform" type="submit" class=" col-lg-5-8 col-5-8"
+                                            value="save">ADD</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
 
                     <div class="rightcheckout col-lg-5 col-12">
@@ -1284,14 +1357,156 @@
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <section class="cardmodal ">
+            <div class="closekeeper ">
+                <ion-icon name="close-circle-outline" class="closecardmodal"></ion-icon>
+                <div class="container dontclose">
+                    <div class="row all">
+                        <p class="firstp col-lg-12 col-12">MY CARDS</p>
+                        <div class="carddiv col-lg-12 col-12">
 
+                            <div class="cardinozu col-lg-4 col-12">
+                                <div class="cardozu col-lg-12 col-12">
+                                    <span class="col-lg-1-5 col-1-5">
+                                        <img class="img-fluid" src="./assets/images/settings/mastercard.jpg" alt="">
+                                    </span>
+                                    <span class="cardno">
+                                        5467 89** **** 1290
+                                    </span>
+                                    <span class="cardexpire">
+                                        02/2025
+                                    </span>
+                                    <span class="cardholder">
+                                        QAQASH QAQASHOV
+                                    </span>
+                                    <span class=" headword">International card</span>
+                                    <span class="ismain">Main Card</span>
+                                </div>
+                            </div>
 
+                            <div class="cardinozu col-lg-4 col-12">
+                                <div class="cardozu col-lg-12 col-12">
+                                    <span class="col-lg-1-5 col-1-5">
+                                        <img class="img-fluid" src="./assets/images/settings/mastercard.jpg" alt="">
+                                    </span>
+                                    <span class="cardno">
+                                        5467 89** **** 1290
+                                    </span>
+                                    <span class="cardexpire">
+                                        02/2025
+                                    </span>
+                                    <span class="cardholder">
+                                        QAQASH QAQASHOV
+                                    </span>
+                                    <span class=" headword">International card</span>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="addressmodal">
+            <div class="closekeeper">
+                <ion-icon name="close-circle-outline" class="closeaddressmodal"></ion-icon>
+                <div class="container dontclose">
+                    <div class="row all">
+                        <p class="firstp col-lg-12 col-12">MY ADDRESSES</p>
+                        <div class="addressdiv col-lg-12 col-12">
+
+                            <div class="addressinozu col-lg-4 col-12">
+                                <div class="addressozu col-lg-12 col-12">
+
+                                    <div class="top">
+                                        <span class="cityname col-lg-12 col-12">
+                                            City: <span class="cityvalue">BAKU</span>
+                                        </span>
+                                        <span class="countryname col-lg-12 col-12">
+                                            Country: <span class="countryvalue">AZERBAIJAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="address1name col-lg-12 col-12">
+                                            <span class="col-lg-12 col-12">
+                                                Address1:
+                                            </span>
+                                            <span class="col-lg-12 address1value">
+                                                Tabriz str. 999, ap. 61
+                                            </span>
+                                        </span>
+                                        <span class="address2name col-lg-12 col-12">
+                                            <span class="col-lg-12 col-12">
+                                                Address2:
+                                            </span>
+                                            <span class="col-lg-12 col-12 address2value">
+                                                Narimanov dis.
+                                            </span>
+                                        </span>
+                                        <span class="zipcodename col-lg-12 col-12">
+                                            <span class="col-lg-12 col-12">
+                                                ZIP code:
+                                            </span>
+                                            <span class="col-lg-12 col-12 zipcodevalue">
+                                                AZ1000
+                                            </span>
+                                        </span>
+                                        <span class=" ismain">Main Address</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="addressinozu col-lg-4 col-12">
+                                <div class="addressozu col-lg-12 col-12">
+
+                                    <div class="top">
+                                        <span class="cityname col-lg-12 col-12">
+                                            City: <span class="cityvalue">BAKU</span>
+                                        </span>
+                                        <span class="countryname col-lg-12 col-12">
+                                            Country: <span class="countryvalue">AZERBAIJAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="address1name col-lg-12 col-12">
+                                            <span class="col-lg-12 col-12">
+                                                Address1:
+                                            </span>
+                                            <span class="col-lg-12 address1value">
+                                                Tabriz str. 999, ap. 61
+                                            </span>
+                                        </span>
+                                        <span class="address2name col-lg-12 col-12">
+                                            <span class="col-lg-12 col-12">
+                                                Address2:
+                                            </span>
+                                            <span class="col-lg-12 col-12 address2value">
+
+                                            </span>
+                                        </span>
+                                        <span class="zipcodename col-lg-12 col-12">
+                                            <span class="col-lg-12 col-12">
+                                                ZIP code:
+                                            </span>
+                                            <span class="col-lg-12 col-12 zipcodevalue">
+                                                AZ1000
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
