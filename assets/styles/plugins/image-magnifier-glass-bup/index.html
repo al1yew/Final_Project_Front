@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>jQuery BUP.js: Image Magnifier Glass Example</title>
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/flatly/bootstrap.min.css">
+		<style>
+			body { background-color: #fafafa; }
+			.container { margin: 150px auto; }
+		</style>
+	</head>
+	<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/zoom/image-magnifier-glass-bup.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+		<div class="container">
+			<h1 class="text-center">jQuery BUP.js: Image Magnifier Glass Example</h1>
+			<p class="lead text-center">Hover Over The Image To See The Magic. This example shows how to magnify two images at a time.</p>
+		<div style="text-align: center; margin: 10px">
+			<button onclick="oneX()" class="btn btn-primary">1x</button>
+			<button onclick="twoX()" class="btn btn-primary">2x</button>
+			<button onclick="threeX()" class="btn btn-primary">3x</button>
+		</div>
+		<div class="wrap" style="display: flex; justify-content: center">
+			<div class="left" style="margin-right: 50px">
+				<img src="img/a1.png" width="400" class="laftImg" />
+			</div>
+			<div class="right">
+				<img src="img/a2.png" width="400" class="rightImg" />
+			</div>
+		</div>
+	</div>
+	</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="./js/BUP.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.laftImg').BUP('rightImg', 1)
+			$('.rightImg').BUP('laftImg', 1)
+    })
+
+		function oneX() {
+			$('.laftImg').BUP('rightImg', 1)
+			$('.rightImg').BUP('laftImg', 1)
+		}
+		function twoX() {
+			$('.laftImg').BUP('rightImg', 0.5)
+			$('.rightImg').BUP('laftImg', 0.5)
+		}
+		function threeX() {
+			$('.laftImg').BUP('rightImg', 1.5)
+			$('.rightImg').BUP('laftImg', 1.5)
+		}
+	</script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</html>

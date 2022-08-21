@@ -1,0 +1,21 @@
+figure.containerZoom {
+  background-position: 50% 50%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  margin: 0;
+}
+
+figure.containerZoom img {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  display: block;
+  width: 100%;
+}
+
+figure.containerZoom.active img {
+  opacity: 0;
+}
+/*# sourceMappingURL=image-zoom.css.map */

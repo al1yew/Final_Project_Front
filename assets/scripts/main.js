@@ -13,6 +13,8 @@ window.onload = function () {
 
 $(document).ready(function () {
 
+
+
     //#region slayderi
 
     //---------------------------------main page first slider 
@@ -607,15 +609,26 @@ $(document).ready(function () {
 
         $('.modal').addClass('modalotkroysa');
 
-        let a = $(($(this).children()[0])).attr('src')
+        let a = $(($(this).children()[0])).attr('src');
 
-        $('.modalphoto').attr('src', a)
+        $('.modalphoto').attr('src', a);
+
     });
 
     $(document).on('click', '.closemodal', function () {
 
         $('.modal').removeClass('modalotkroysa');
     });
+
+    $(document).on('click', '.forzoom', function () {
+
+        if ($(window).width() > 576) {
+            $(this).find('img').imageZoom({
+                zoom: 200
+            });
+        }
+
+    })
 
 
     //#endregion product detail page modal
@@ -786,12 +799,14 @@ $(document).ready(function () {
         $(this).prev().prev().attr('type', 'text');
         $(this).hide();
         $(this).next().show();
+        $(this).prev().prev().focus();
     });
 
     $(document).on('click', '.closepass', function () {
         $(this).prev().prev().prev().attr('type', 'password');
         $(this).hide();
         $(this).prev().show();
+        $(this).prev().prev().prev().focus();
     });
 
     //#endregion register eye icon
@@ -1384,6 +1399,8 @@ $(document).ready(function () {
         $('.photoslider').addClass('slideropen');
 
         // $('#body').attr('style', 'overflow: hidden;');
+
+
 
     });
 

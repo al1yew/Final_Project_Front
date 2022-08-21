@@ -2,6 +2,7 @@
   "dependencies": {
     "bootstrap-select": "^1.13.18",
     "jquery-zoom": "^1.7.21",
+    "js-image-zoom": "^0.7.0",
     "star-rating.js": "^4.3.0"
   }
 }
