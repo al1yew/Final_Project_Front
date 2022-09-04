@@ -13,8 +13,6 @@ window.onload = function () {
 
 $(document).ready(function () {
 
-
-
     //#region slayderi
 
     //---------------------------------main page first slider 
@@ -152,6 +150,23 @@ $(document).ready(function () {
 
     //#region  form shop page
 
+    //---------------------------------products stranica make input selected
+
+    $(document).on('mousedown', '.addingtobasketinshoppage .colorlabel', function (e) {
+
+        if ($(this).html() == '') {
+            $(this).append('<ion-icon name="checkmark-outline" class="markicon"></ion-icon>');
+        }
+        else {
+            $(this).text('');
+        }
+
+        $(this).siblings('input').prop('checked', 'false');
+        $(this).siblings('.colorlabel').text('');
+
+        $(this).prev().prop('checked', 'true');
+    });
+
     //---------------------------------products stranica form dla zakaza produkta submit na button
 
     $(document).on('submit', '.addingtobasketinshoppage', function (e) {
@@ -162,39 +177,29 @@ $(document).ready(function () {
 
         let select = $(this).find('option:selected');
 
-        console.log($(this).find('input:checked'))
-
-        console.log(input.val());
-
-        console.log(select.val());
-
         let colorname = ''
 
-        fetch(`https://api.color.pizza/v1/${input.val().slice(1)}`)
-            .then(res => res.json())
-            .then(data => {
-                colorname = data.paletteTitle
-                console.log(colorname)
-                alert(`${input.val()} color selected HEX, --${colorname}-- returned from fetch, ${select.val()} size`)
-            })
+        console.log(select.val())
+        console.log(input.val())
 
-        //nado vspomnit kak otpravlali ID produkta, kjc forma asp-route-id verecem,
-        //bubirsi fetchin icinde fetch yazacam, linki custom edecem, hamsini gonderecem
-        //eto ili fetch s custom url nado sdelat ili je otpravit kak obyekt zad ya xz
-    });
+        if (input.val() != undefined && select.val() != 0) {
 
-    //---------------------------------products stranica form dla zakaza produkta submit na button
+            //misalcun prosto fetch
 
-    $(document).on('mousedown', '.addingtobasketinshoppage .down label', function (e) {
+            fetch(`https://api.color.pizza/v1/${input.val().slice(1)}`)
+                .then(res => res.json())
+                .then(data => {
+                    colorname = data.paletteTitle
+                    alert(`${input.val()} HEXcolor selected, --${colorname}-- returned from fetch, ${select.val()} is size`)
+                });
 
-        if ($(this).html() == '') {
-            $(this).append('<ion-icon name="checkmark-outline" class="markicon"></ion-icon>')
-        }
-        else {
-            $(this).text('')
+            //fetch edirik basketviewmodel
         }
 
-        $(this).siblings('label').text('')
+        $(this).find('input:checked').prop('checked', false);
+        $(this).find('.markicon').remove();
+        $(this).find('select').val('0')
+
     });
 
     //#endregion form shop page
@@ -214,9 +219,6 @@ $(document).ready(function () {
         $($(this).children()[0]).addClass("activespan");
 
         $(this).siblings('li').find('a').removeClass('activespan')
-
-        //burda da fetch yazacam, ya da ki mvc de yazdigimiz header 
-        //tabmenu kimi yazacam gedsimm
 
     });
 
@@ -315,7 +317,7 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region moya custom sortirovka, ostalnoe ya reshu v MVC
+    //#region moya custom sortirovka
     $(document).on('click', '.filterdiv', function () {
 
         $($(this).find('ul')).toggle();
@@ -337,7 +339,7 @@ $(document).ready(function () {
         //index, i vse oni budut vot tak zapisivatsa v moy fetchovskiy url
         //te kotorie user ne vibral, ne otpravlayutsa, ostayutsa pustimi
     });
-    //#endregion moya custom sortirovka, ostalnoe ya reshu v MVC
+    //#endregion moya custom sortirovka
 
     //---------------------------------------------------------------------------------------------------------------
 
@@ -563,7 +565,6 @@ $(document).ready(function () {
         $($(this).find('ul')).toggle();
 
         $(this).find(".svgkeeper").toggleClass('roundarrow');
-
     });
 
     $(document).on('click', '.buyul li', function () {
@@ -571,16 +572,49 @@ $(document).ready(function () {
         $(this).parent().parent().children()[0].innerHTML = $(this).text();
 
         $(this).addClass("yellowli selected");
-        //yellow li ile selected klassi da atim bura ki form on submit olanda 
-        //goture bilim id-sini
 
         $(this).siblings("li").removeClass('yellowli');
-
-        //https://github.com/al1yew?tab=repositories&q=&type=public&language=&sort=name,
-        //znacit nado pridumat kakim budet fetch. Ya budu otpravlat dofiqa variables v 
-        //index, i vse oni budut vot tak zapisivatsa v moy fetchovskiy url
-        //te kotorie user ne vibral, ne otpravlayutsa, ostayutsa pustimi
     });
+
+    $(document).on('click', '.buyulsize li', function () {
+
+        $(this).parent().find('input').prop('checked', false);
+        $(this).find('input').prop('checked', true);
+    });
+
+    $(document).on('click', '.buyulcolor li', function () {
+
+        $(this).parent().find('input').prop('checked', false);
+        $(this).find('input').prop('checked', true);
+    });
+
+    $(document).on('submit', '.detailform', function (e) {
+        e.preventDefault();
+
+        let size = $(this).find('.sizeinp:checked').val();
+
+        let color = $(this).find('.colorinp:checked').val();
+
+        if (size != undefined && color != undefined) {
+            console.log(size)
+            console.log(color)
+            //misalcun prosto fetch
+
+            fetch(`https://api.color.pizza/v1/${color.slice(1)}`)
+                .then(res => res.json())
+                .then(data => {
+                    colorname = data.paletteTitle
+                    alert(`${color} HEXcolor selected, --${colorname}-- returned from fetch, ${size} is size, thanks for order!`)
+                });
+            //fetch edirik basketviewmodel
+        }
+
+        $(this).find('input').prop('checked', false);
+
+        $('.colorvalue').text('COLOR');
+        $('.sizevalue').text('SIZE');
+    });
+
     //#endregion product detail page form
 
     //---------------------------------------------------------------------------------------------------------------
@@ -603,7 +637,7 @@ $(document).ready(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region product detail page modal
+    //#region product detail page modal and image zoom
 
     $(document).on('click', '.imgofprod', function () {
 
@@ -620,16 +654,33 @@ $(document).ready(function () {
         $('.modal').removeClass('modalotkroysa');
     });
 
-    $(document).on('click', '.forzoom', function () {
+    // $(document).on('click', '.forzoom', function () {
 
+    //     if ($(window).width() > 576) {
+    //         $(this).find('img').imageZoom({
+    //             zoom: 200
+    //         });
+    //     }
+    // })
+
+    $(document).on('mousemove mouseover', '.forzoom', function (e) {
         if ($(window).width() > 576) {
-            $(this).find('img').imageZoom({
-                zoom: 200
-            });
+            let img = $(this).children()[0];
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetTop / 55;
+            img.style.transformOrigin = `${x}px ${y}px`;
+            img.style.transform = "scale(2.2)";
         }
+    });
 
-    })
+    $(document).on('mouseleave', '.forzoom', function (e) {
+        if ($(window).width() > 576) {
+            let img = $(this).children()[0];
 
+            img.style.transformOrigin = `center center`;
+            img.style.transform = "scale(1)";
+        }
+    });
 
     //#endregion product detail page modal
 
@@ -1141,17 +1192,19 @@ $(document).ready(function () {
 
     $(document).on('click', function (e) {
 
-        if (!($(e.target).is('.headcategoryli')
-            || $(e.target).is('.headcategoryli *'))) {
+        if ($(window).width() < 576) {
+            if (!($(e.target).is('.headcategoryli')
+                || $(e.target).is('.headcategoryli *'))) {
 
-            $('.categorymenu').hide();
+                $('.categorymenu').hide();
 
-            $('.headcategoryli').each(function () {
-                $(this).find('a').removeClass('activespan');
-            });
+                $('.headcategoryli').each(function () {
+                    $(this).find('a').removeClass('activespan');
+                });
 
-            $('.cloli').find('a').addClass('activespan');
+                $('.cloli').find('a').addClass('activespan');
 
+            }
         }
     });
 
@@ -1399,9 +1452,6 @@ $(document).ready(function () {
         $('.photoslider').addClass('slideropen');
 
         // $('#body').attr('style', 'overflow: hidden;');
-
-
-
     });
 
     $(document).on('click', '.closemodalphoto', function () {
@@ -1498,137 +1548,5 @@ $(document).ready(function () {
 
     //#endregion open close checkout page modals
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
-
-
-
-
-
-
-
-
-// $('.forzoom').zoom();
-
-
-/*
-            let url = $('.updateForm').attr('action');
-
-            let key = $(this).prev().attr('name');
-            let value = $(this).prev().val();
-            console.log(key)
-            console.log(value)
-
-            let bodyObj = {
-                key: key,
-                value: value
-            }
-
-            fetch(url, {
-            method: 'Post',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept':'application/json'
-            },
-            body: JSON.stringify(bodyObj)
-            })
-            .then(res => res.text())
-            .then(data => {
-                $('.settingContainer').html(data)
-            })
-
-            [HttpPost]
-            public async Task<IActionResult> Update([FromBody] SettingVM settingVM)
-            {
-                List<Setting> settings = await _context.Settings.ToListAsync();
-
-                if (!settings.Any(x=>x.Key == settingVM.key))
-                {
-                    return BadRequest();
-                }
-
-                settings.FirstOrDefault(x => x.Key == settingVM.key).Value = settingVM.value;
-
-                await _context.SaveChangesAsync();
-
-                return PartialView("_SettingIndexPartial",settings.ToDictionary(x=>x.Key, x=>x.Value));
-            }
-
-            public class SettingVM
-            {
-                public string key { get; set; }
-                public string value { get; set; }
-            }
-*/
-
-
-
-/*
-
-            
-
-// Ajax mail js
-$(function () {
-
-    // Get the form.
-    var form = $('#contact-form');
-
-    // Get the messages div.
-    var formMessages = $('.form-messege');
-
-    // Set up an event listener for the contact form.
-    $(form).submit(function (e) {
-        // Stop the browser from submitting the form.
-        e.preventDefault();
-
-        // Serialize the form data.
-        var formData = $(form).serialize();
-
-        // Submit the form using AJAX.
-        $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
-        })
-            .done(function (response) {
-                // Make sure that the formMessages div has the 'success' class.
-                $(formMessages).removeClass('error');
-                $(formMessages).addClass('success');
-
-                // Set the message text.
-                $(formMessages).text(response);
-
-                // Clear the form.
-                $('#contact-form input,#contact-form textarea').val('');
-            })
-            .fail(function (data) {
-                // Make sure that the formMessages div has the 'error' class.
-                $(formMessages).removeClass('success');
-                $(formMessages).addClass('error');
-
-                // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
-                }
-            });
-    });
-
-});
-
-
-*/

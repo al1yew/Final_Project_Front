@@ -503,12 +503,40 @@ a {
                             flex-direction: column;
                             position: relative;
 
-                            .producttop {
+                            &:hover {
+                                .top {
+                                    .wishlist {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+                                }
+
+                                .bottom {
+                                    .basket {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+
+                                    .bobotleft {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+
+                                    .bobotright {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+                                }
+                            }
+
+                            .top {
                                 position: relative;
 
                                 .wishlist {
+                                    visibility: hidden;
+                                    opacity: 0;
                                     position: absolute;
-                                    top: 6%;
+                                    top: 5.8%;
                                     right: 5%;
                                     transition: 0.3s;
                                     cursor: pointer;
@@ -548,51 +576,49 @@ a {
                                 }
                             }
 
-                            .productbottom {
+                            .bottom {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-top: 15px;
-                                padding-bottom: 5px;
+                                flex-wrap: wrap;
+                                margin-top: 8px;
 
-                                .productleft {
+                                .botop {
                                     display: flex;
                                     justify-content: space-between;
-                                    flex-direction: column;
+                                    align-items: center;
+                                    flex-wrap: wrap;
 
-                                    .up {
-                                        font-weight: 300;
+                                    .botopleft {
+                                        padding-left: 10px;
                                         font-size: 15px;
-                                        line-height: 114%;
                                         font-family: var(--neuelight);
                                         letter-spacing: 0.08em;
                                     }
 
-                                    .down {
-                                        margin-top: 10px;
+                                    .botopright {
                                         font-family: var(--neuebold);
-                                        font-weight: 700;
-                                        line-height: 114%;
                                         letter-spacing: 0.08em;
 
-                                        .prevprice {
-                                            font-size: 19px;
-                                            text-decoration: line-through;
-                                        }
-
                                         .discprice {
+                                            text-align: end;
                                             font-size: 19px;
                                             text-decoration: none !important;
                                         }
                                     }
                                 }
 
-                                .productright {
+                                .bobottom {
                                     display: flex;
                                     justify-content: space-between;
-                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    margin-top: 8px;
+
 
                                     .basket {
+                                        opacity: 0;
+                                        visibility: hidden;
                                         position: absolute;
                                         top: 5%;
                                         left: 5%;
@@ -619,7 +645,12 @@ a {
                                         }
                                     }
 
-                                    .up {
+                                    .bobotleft {
+                                        opacity: 0;
+                                        transition: 0.3s;
+                                        visibility: hidden;
+                                        padding-left: 10px;
+
                                         select {
                                             width: 100%;
                                             outline: none;
@@ -631,25 +662,28 @@ a {
                                         }
                                     }
 
-                                    .down {
+                                    .bobotright {
+                                        opacity: 0;
+                                        transition: 0.3s;
+                                        visibility: hidden;
                                         margin: 0 auto;
                                         display: flex;
-                                        justify-content: space-between;
+                                        justify-content: end;
                                         align-items: center;
-                                        width: 80%;
-                                        margin-top: 12px;
 
                                         input {
                                             display: none;
                                         }
 
-                                        label {
+                                        label,
+                                        .color_box {
                                             height: 15px;
                                             width: 15px;
                                             cursor: pointer;
                                             border: 0.3px solid white;
                                             outline: 0.3px solid black;
                                             position: relative;
+                                            margin-left: 8px;
 
                                             .markicon {
                                                 font-size: 20px;
@@ -709,12 +743,40 @@ a {
                             flex-direction: column;
                             position: relative;
 
-                            .producttop {
+                            &:hover {
+                                .top {
+                                    .wishlist {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+                                }
+
+                                .bottom {
+                                    .basket {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+
+                                    .bobotleft {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+
+                                    .bobotright {
+                                        visibility: visible !important;
+                                        opacity: 1 !important;
+                                    }
+                                }
+                            }
+
+                            .top {
                                 position: relative;
 
                                 .wishlist {
+                                    visibility: hidden;
+                                    opacity: 0;
                                     position: absolute;
-                                    top: 6%;
+                                    top: 5.8%;
                                     right: 5%;
                                     transition: 0.3s;
                                     cursor: pointer;
@@ -754,51 +816,49 @@ a {
                                 }
                             }
 
-                            .productbottom {
+                            .bottom {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-top: 15px;
-                                padding-bottom: 5px;
+                                flex-wrap: wrap;
+                                margin-top: 8px;
 
-                                .productleft {
+                                .botop {
                                     display: flex;
                                     justify-content: space-between;
-                                    flex-direction: column;
+                                    align-items: center;
+                                    flex-wrap: wrap;
 
-                                    .up {
-                                        font-weight: 300;
+                                    .botopleft {
+                                        padding-left: 10px;
                                         font-size: 15px;
-                                        line-height: 114%;
                                         font-family: var(--neuelight);
                                         letter-spacing: 0.08em;
                                     }
 
-                                    .down {
-                                        margin-top: 10px;
+                                    .botopright {
                                         font-family: var(--neuebold);
-                                        font-weight: 700;
-                                        line-height: 114%;
                                         letter-spacing: 0.08em;
 
-                                        .prevprice {
-                                            font-size: 19px;
-                                            text-decoration: line-through;
-                                        }
-
                                         .discprice {
+                                            text-align: end;
                                             font-size: 19px;
                                             text-decoration: none !important;
                                         }
                                     }
                                 }
 
-                                .productright {
+                                .bobottom {
                                     display: flex;
                                     justify-content: space-between;
-                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    margin-top: 8px;
+
 
                                     .basket {
+                                        opacity: 0;
+                                        visibility: hidden;
                                         position: absolute;
                                         top: 5%;
                                         left: 5%;
@@ -825,7 +885,12 @@ a {
                                         }
                                     }
 
-                                    .up {
+                                    .bobotleft {
+                                        opacity: 0;
+                                        transition: 0.3s;
+                                        visibility: hidden;
+                                        padding-left: 10px;
+
                                         select {
                                             width: 100%;
                                             outline: none;
@@ -837,25 +902,28 @@ a {
                                         }
                                     }
 
-                                    .down {
+                                    .bobotright {
+                                        opacity: 0;
+                                        transition: 0.3s;
+                                        visibility: hidden;
                                         margin: 0 auto;
                                         display: flex;
-                                        justify-content: space-between;
+                                        justify-content: end;
                                         align-items: center;
-                                        width: 80%;
-                                        margin-top: 12px;
 
                                         input {
                                             display: none;
                                         }
 
-                                        label {
+                                        label,
+                                        .color_box {
                                             height: 15px;
                                             width: 15px;
                                             cursor: pointer;
                                             border: 0.3px solid white;
                                             outline: 0.3px solid black;
                                             position: relative;
+                                            margin-left: 8px;
 
                                             .markicon {
                                                 font-size: 20px;
