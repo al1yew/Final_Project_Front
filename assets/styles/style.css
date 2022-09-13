@@ -23654,7 +23654,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 2000%;
+    width: 2200%;
   }
   .karusel .carouselmaindivabout span {
     font-family: var(--neuemedium);
@@ -24231,7 +24231,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 2000%;
+    width: 2200%;
   }
   .karusel .carouselmaindivabout span {
     font-family: var(--neuemedium);
@@ -24520,7 +24520,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left,
   .rabotaysnami .all .allthen .right {
-    padding: 10 px;
+    padding: 20px;
   }
   .rabotaysnami .all .allthen .left {
     position: relative;
@@ -24746,7 +24746,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 2000%;
+    width: 2200%;
   }
   .karusel .carouselmaindivabout span {
     font-family: var(--neuemedium);
@@ -25207,6 +25207,31 @@ a:hover {
       flex-wrap: wrap;
 }
 
+#wishlist .all .wishlistboshdu {
+  margin: 60px 0;
+}
+
+#wishlist .all .wishlistboshdu .wishlistbosh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#wishlist .all .wishlistboshdu .wishlistbosh p {
+  text-align: center;
+  font-family: var(--neuebold);
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  color: var(--yellow);
+}
+
 #wishlist .all .wishlistitem {
   position: relative;
   display: -webkit-box;
@@ -25277,6 +25302,28 @@ a:hover {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #wishlist .all .wishlistboshdu {
+    margin: 60px 0;
+  }
+  #wishlist .all .wishlistboshdu .wishlistbosh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #wishlist .all .wishlistboshdu .wishlistbosh p {
+    text-align: center;
+    font-family: var(--neuebold);
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    color: var(--yellow);
   }
   #wishlist .all .wishlistitem {
     position: relative;
