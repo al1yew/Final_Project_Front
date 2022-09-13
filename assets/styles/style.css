@@ -25180,6 +25180,153 @@ a:hover {
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wishlist {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#wishlist .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#wishlist .all .wishlistitem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: var(--neuemedium);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+}
+
+#wishlist .all .wishlistitem span {
+  margin-top: 15px;
+}
+
+#wishlist .all .wishlistitem span:nth-child(3) {
+  font-size: 18px;
+}
+
+#wishlist .all .wishlistitem .discpercent {
+  position: absolute;
+  right: 6%;
+  bottom: 10%;
+  font-size: 12px;
+  color: black;
+  background-color: var(--yellow);
+  padding: 2px 3px;
+}
+
+#wishlist .all .wishlistitem .removefromwishlist {
+  position: absolute;
+  font-size: 30px;
+  color: var(--yellow);
+  right: 6%;
+  top: 3%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#wishlist .all .wishlistitem .removefromwishlist:hover {
+  color: black;
+}
+
+@media (max-width: 576px) {
+  #wishlist {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  #wishlist .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #wishlist .all .wishlistitem {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: var(--neuemedium);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+  #wishlist .all .wishlistitem span {
+    margin-top: 10px;
+  }
+  #wishlist .all .wishlistitem span:nth-child(3) {
+    font-size: 12px;
+  }
+  #wishlist .all .wishlistitem .discpercent {
+    position: absolute;
+    right: 8%;
+    bottom: 18%;
+    font-size: 10px;
+    color: black;
+    background-color: var(--yellow);
+    padding: 2px 3px;
+  }
+  #wishlist .all .wishlistitem .removefromwishlist {
+    position: absolute;
+    font-size: 30px;
+    color: var(--yellow);
+    right: 6%;
+    top: 3%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #wishlist .all .wishlistitem .removefromwishlist:hover {
+    color: black;
+  }
+}
+
 @font-face {
   font-family: NeuePowerLight;
   src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
