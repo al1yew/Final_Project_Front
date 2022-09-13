@@ -125,6 +125,12 @@ p {
 
 @import 'wishlist';
 
+.validation-summary-errors{
+    ul{
+        padding: 0 !important;
+    }
+}
+
 //fonts
 @font-face {
     font-family: NeuePowerLight;
