@@ -1322,7 +1322,7 @@ p {
     text-align: center;
     width: 100%;
     font-weight: 500;
-    color: black;
+    color: var(--yellow);
     font-size: 10px;
     line-height: 114%;
     letter-spacing: 0.08em;
@@ -10553,12 +10553,16 @@ a:hover {
   .modalmoy .overlaymodall .modalall .writereview form .clearreview {
     position: absolute;
     top: 6%;
-    right: 19%;
+    right: 25.5%;
     display: none;
     cursor: pointer;
   }
   .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .uploadimg .ionik {
+    font-size: 35px;
+    cursor: pointer;
   }
   .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
     display: -webkit-box;
@@ -10724,6 +10728,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper {
     display: -webkit-box;
@@ -10738,12 +10743,11 @@ a:hover {
     width: 80%;
     height: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: auto auto;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper img {
     margin: 0 auto;
-    height: 500px;
-    width: 500px;
+    width: 400px;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo {
     position: absolute;
@@ -10755,7 +10759,7 @@ a:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(30%, rgba(0, 0, 0, 0.5)), to(black));
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 30%, black 100%);
     color: white;
-    width: 500px;
+    width: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12115,6 +12119,14 @@ a {
   .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
     font-size: 18px;
   }
+  .modalmoy .overlaymodall .modalall .writereview form .uploadimg {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+  }
+  .modalmoy .overlaymodall .modalall .writereview form .uploadimg .ionik {
+    font-size: 20px;
+  }
   .modalmoy .overlaymodall .modalall .writereview form textarea {
     border: 0.5px solid black;
     outline: none;
@@ -12289,6 +12301,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper {
     display: -webkit-box;
@@ -12307,7 +12320,6 @@ a {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper img {
     margin: 0 auto;
-    height: 340px;
     width: 340px;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo {
@@ -13697,7 +13709,7 @@ a {
     cursor: pointer;
   }
   .modalmoy .overlaymodall .modalall .writereview form .clearreview .clearreviewicon {
-    font-size: 18px;
+    font-size: 23px;
   }
   .modalmoy .overlaymodall .modalall .writereview form .lastdiv {
     display: -webkit-box;
@@ -13863,6 +13875,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper {
     display: -webkit-box;
@@ -13881,7 +13894,6 @@ a {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper img {
     margin: 0 auto;
-    height: 500px;
     width: 500px;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo {
@@ -15434,6 +15446,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper {
     display: -webkit-box;
@@ -15452,7 +15465,6 @@ a {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper img {
     margin: 0 auto;
-    height: 500px;
     width: 500px;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo {
