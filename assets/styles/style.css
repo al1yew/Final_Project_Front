@@ -6728,13 +6728,19 @@ a:hover {
   }
   #clothing .all .pagination ul li {
     background-color: black;
-    width: 10%;
-    padding-top: 1px;
+    width: 7%;
+    padding: 2px;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #clothing .all .pagination ul li:hover {
+    background-color: var(--yellow);
+    padding: 3px;
   }
   #clothing .all .pagination ul .activepagination {
     background-color: var(--yellow);
-    padding: 1.5px 0;
+    padding: 3px 0;
   }
   #clothing .all .loadmore {
     display: -webkit-box;
@@ -7474,13 +7480,19 @@ p {
   }
   #clothing .all .pagination ul li {
     background-color: black;
-    width: 10%;
-    padding-top: 1px;
+    width: 7%;
+    padding: 2px;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #clothing .all .pagination ul li:hover {
+    background-color: var(--yellow);
+    padding: 3px;
   }
   #clothing .all .pagination ul .activepagination {
     background-color: var(--yellow);
-    padding: 1.5px 0;
+    padding: 3px 0;
   }
   #clothing .all .loadmore {
     display: -webkit-box;
@@ -8027,13 +8039,19 @@ p {
   }
   #clothing .all .pagination ul li {
     background-color: black;
-    width: 10%;
-    padding-top: 1px;
+    width: 7%;
+    padding: 2px;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #clothing .all .pagination ul li:hover {
+    background-color: var(--yellow);
+    padding: 3px;
   }
   #clothing .all .pagination ul .activepagination {
     background-color: var(--yellow);
-    padding: 1.5px 0;
+    padding: 3px 0;
   }
   #clothing .all .loadmore {
     display: -webkit-box;
@@ -8866,13 +8884,19 @@ p {
   }
   #clothing .all .pagination ul li {
     background-color: black;
-    width: 10%;
-    padding-top: 1px;
+    width: 7%;
+    padding: 2px;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #clothing .all .pagination ul li:hover {
+    background-color: var(--yellow);
+    padding: 3px;
   }
   #clothing .all .pagination ul .activepagination {
     background-color: var(--yellow);
-    padding: 1.5px 0;
+    padding: 3px 0;
   }
   #clothing .all .loadmore {
     display: -webkit-box;
