@@ -125,6 +125,14 @@ p {
 
 @import 'wishlist';
 
+@import 'forgotpassword';
+
+@import 'resetpassword';
+
+@import 'changedpassword';
+
+
+
 .validation-summary-errors{
     ul{
         padding: 0 !important;
