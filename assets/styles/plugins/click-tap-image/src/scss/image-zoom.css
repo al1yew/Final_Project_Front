@@ -3,19 +3,14 @@ figure.containerZoom {
   position: relative;
   width: 100%;
   overflow: hidden;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
   margin: 0;
 }
-
 figure.containerZoom img {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   display: block;
   width: 100%;
 }
-
 figure.containerZoom.active img {
   opacity: 0;
-}
-/*# sourceMappingURL=image-zoom.css.map */
+}/*# sourceMappingURL=image-zoom.css.map */
