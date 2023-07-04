@@ -110,7 +110,10 @@
 @media (max-width: 576px) {
     .firstmain {
         background-image: url(../images/main_Page/tel_background.jpg);
-
+        background-attachment: fixed;
+        background-size: cover;
+        max-width: 100%;
+        
         .overlay {
             height: 100vh;
         }
