@@ -1,0 +1,175 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+}
+
+.secondmain {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    font-family: var(--neuebold);
+    margin-bottom: 70px;
+
+    .mission {
+        width: 45%;
+        font-weight: 500;
+        font-size: 65px;
+        line-height: 114%;
+        letter-spacing: 0.08em;
+        color: var(--yellow);
+        position: absolute;
+        left: 10%;
+        top: 5%;
+
+        span {
+            font-style: italic;
+        }
+    }
+
+    .image1 {
+        position: absolute;
+        top: 8%;
+        right: 30%;
+        width: 19%;
+        z-index: 8;
+    }
+
+    .keeper {
+        position: absolute;
+        width: 30%;
+        bottom: 5%;
+        left: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .image2 {
+            width: 80%;
+        }
+
+        p {
+            padding-left: 18px;
+            font-family: var(--neueregular);
+            font-weight: 300;
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: 0.08em;
+        }
+    }
+
+    .image3 {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        width: 25%;
+        z-index: 6;
+    }
+
+    .seemore {
+        font-family: var(--neueregular);
+        border: 1px solid #000000;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 95px;
+        background-color: var(--white);
+        letter-spacing: 0.08em;
+        color: black;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: var(--yellow);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .secondmain {
+        overflow: hidden;
+        height: 370px;
+        position: relative;
+        font-family: var(--neuebold);
+        padding: 0 20px;
+
+        .mission {
+            width: 45%;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 114%;
+            letter-spacing: 0.08em;
+            color: var(--yellow);
+            position: absolute;
+            left: 20px;
+            top: 5%;
+
+            span {
+                font-style: italic;
+            }
+        }
+
+        .image1 {
+            position: absolute;
+            top: 10%;
+            right: 20px;
+            width: 28%;
+            z-index: 8;
+        }
+
+        .keeper {
+            position: absolute;
+            width: 35%;
+            top: 33%;
+            left: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .image2 {
+                width: 100%;
+            }
+
+            p {
+                padding-left: 12px;
+                font-family: var(--neueregular);
+                font-weight: 300;
+                font-size: 12px;
+                letter-spacing: 0.08em;
+            }
+        }
+
+        .image3 {
+            position: absolute;
+            bottom: 8%;
+            right: 20px;
+            width: 28%;
+            z-index: 6;
+        }
+
+        .seemore {
+            font-family: var(--neueregular);
+            border: 1px solid #000000;
+            position: absolute;
+            display: block;
+            bottom: 8%;
+            left: 20px;
+            padding: 5px 12px;
+            background-color: var(--white);
+            letter-spacing: 0.08em;
+            line-height: 114%;
+
+            color: black;
+            animation-name: mercaniye;
+            font-size: 12px;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
