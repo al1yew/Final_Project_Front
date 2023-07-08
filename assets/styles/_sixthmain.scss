@@ -1,0 +1,202 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+}
+
+.sixthmain {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+
+    .right {
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        transition: 0.3s;
+        letter-spacing: 0.08em;
+
+        &:hover .left_up_for_border {
+            height: 100%;
+        }
+
+        &:hover .left_down_for_border {
+            width: 100%;
+        }
+
+        &:hover .right_up_for_border {
+            width: 100%;
+        }
+
+        &:hover .right_down_for_border {
+            height: 100%;
+        }
+
+        .borderblogger {
+            height: 0px;
+            width: 2px;
+            position: absolute;
+            background-color: var(--yellow);
+            transition: 0.5s;
+        }
+
+        .left_up_for_border {
+            left: 0;
+            top: 0;
+            height: 0px;
+            width: 2px;
+        }
+
+        .left_down_for_border {
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0px;
+        }
+
+        .right_up_for_border {
+            right: 0;
+            top: 0;
+            height: 2px;
+            width: 0px;
+        }
+
+        .right_down_for_border {
+            right: 0;
+            bottom: 0;
+            height: 0px;
+            width: 2px;
+        }
+
+        .first {
+            text-align: center;
+            font-family: var(--neueregular);
+            font-size: 25px;
+            text-align: center;
+        }
+
+        img {
+            width: 60%;
+            margin: 25px auto;
+        }
+
+        .linktobloggerclothes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            margin-bottom: 25px;
+            transition: 0.2s;
+
+            &:hover {
+                color: var(--yellow);
+                transform: scale(1.05);
+            }
+
+            .second {
+                font-family: var(--neueultra);
+                font-size: 11px;
+            }
+
+            svg {
+                transition: 0.3s;
+            }
+
+            &:hover svg {
+                transform: translateX(20%);
+                fill: var(--yellow);
+                stroke: var(--yellow);
+            }
+        }
+
+        .third {
+            text-align: center;
+            font-family: var(--neueregular);
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .sixthmain {
+        padding: 0 10px;
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            .left_up_for_border {
+                display: none !important;
+            }
+
+            .left_down_for_border {
+                display: none !important;
+            }
+
+            .right_up_for_border {
+                display: none !important;
+            }
+
+            .right_down_for_border {
+                display: none !important;
+            }
+
+            .first {
+                display: none !important;
+            }
+
+            .notformobile {
+                display: none !important;
+            }
+
+            img {
+                width: 60%;
+                margin: 25px auto;
+            }
+
+            .linktobloggerclothes {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 25px;
+
+                .second {
+                    font-family: var(--neueultra);
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 114%;
+                    letter-spacing: 0.08em;
+                    transition: 0.2s;
+                }
+            }
+
+            .third {
+                display: none !important;
+            }
+
+            .formobile {
+                text-align: center;
+                font-family: var(--neueregular);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 114%;
+                text-align: center;
+                width: 100%;
+                letter-spacing: 0.08em;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

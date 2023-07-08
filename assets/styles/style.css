@@ -2819,6 +2819,178 @@ body {
   --neuebold: NeuePowerBold;
 }
 
+.sixthmain {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+.sixthmain .right {
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: 0.3s;
+  letter-spacing: 0.08em;
+}
+.sixthmain .right:hover .left_up_for_border {
+  height: 100%;
+}
+.sixthmain .right:hover .left_down_for_border {
+  width: 100%;
+}
+.sixthmain .right:hover .right_up_for_border {
+  width: 100%;
+}
+.sixthmain .right:hover .right_down_for_border {
+  height: 100%;
+}
+.sixthmain .right .borderblogger {
+  height: 0px;
+  width: 2px;
+  position: absolute;
+  background-color: var(--yellow);
+  transition: 0.5s;
+}
+.sixthmain .right .left_up_for_border {
+  left: 0;
+  top: 0;
+  height: 0px;
+  width: 2px;
+}
+.sixthmain .right .left_down_for_border {
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0px;
+}
+.sixthmain .right .right_up_for_border {
+  right: 0;
+  top: 0;
+  height: 2px;
+  width: 0px;
+}
+.sixthmain .right .right_down_for_border {
+  right: 0;
+  bottom: 0;
+  height: 0px;
+  width: 2px;
+}
+.sixthmain .right .first {
+  text-align: center;
+  font-family: var(--neueregular);
+  font-size: 25px;
+  text-align: center;
+}
+.sixthmain .right img {
+  width: 60%;
+  margin: 25px auto;
+}
+.sixthmain .right .linktobloggerclothes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 25px;
+  transition: 0.2s;
+}
+.sixthmain .right .linktobloggerclothes:hover {
+  color: var(--yellow);
+  transform: scale(1.05);
+}
+.sixthmain .right .linktobloggerclothes .second {
+  font-family: var(--neueultra);
+  font-size: 11px;
+}
+.sixthmain .right .linktobloggerclothes svg {
+  transition: 0.3s;
+}
+.sixthmain .right .linktobloggerclothes:hover svg {
+  transform: translateX(20%);
+  fill: var(--yellow);
+  stroke: var(--yellow);
+}
+.sixthmain .right .third {
+  text-align: center;
+  font-family: var(--neueregular);
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .sixthmain {
+    padding: 0 10px;
+  }
+  .sixthmain .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .sixthmain .right .left_up_for_border {
+    display: none !important;
+  }
+  .sixthmain .right .left_down_for_border {
+    display: none !important;
+  }
+  .sixthmain .right .right_up_for_border {
+    display: none !important;
+  }
+  .sixthmain .right .right_down_for_border {
+    display: none !important;
+  }
+  .sixthmain .right .first {
+    display: none !important;
+  }
+  .sixthmain .right .notformobile {
+    display: none !important;
+  }
+  .sixthmain .right img {
+    width: 60%;
+    margin: 25px auto;
+  }
+  .sixthmain .right .linktobloggerclothes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .sixthmain .right .linktobloggerclothes .second {
+    font-family: var(--neueultra);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 114%;
+    letter-spacing: 0.08em;
+    transition: 0.2s;
+  }
+  .sixthmain .right .third {
+    display: none !important;
+  }
+  .sixthmain .right .formobile {
+    text-align: center;
+    font-family: var(--neueregular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.08em;
+    margin-bottom: 50px;
+  }
+}
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+}
+
 @keyframes mercaniye {
   from {
     background-color: var(--yellow);
@@ -2830,70 +3002,6 @@ body {
   }
 }
 @media (max-width: 576px) {
-  #fifth {
-    margin-top: 30px;
-    position: relative;
-    width: 100%;
-    padding: 0 10px;
-  }
-  #fifth .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-  }
-  #fifth .right .left_up_for_border {
-    display: none !important;
-  }
-  #fifth .right .left_down_for_border {
-    display: none !important;
-  }
-  #fifth .right .right_up_for_border {
-    display: none !important;
-  }
-  #fifth .right .right_down_for_border {
-    display: none !important;
-  }
-  #fifth .right .first {
-    display: none !important;
-  }
-  #fifth .right .notformobile {
-    display: none !important;
-  }
-  #fifth .right img {
-    width: 60%;
-    margin: 25px auto;
-  }
-  #fifth .right .linktobloggerclothes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  #fifth .right .linktobloggerclothes .second {
-    font-family: var(--neueultra);
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    transition: 0.2s;
-  }
-  #fifth .right .third {
-    display: none !important;
-  }
-  #fifth .right .formobile {
-    text-align: center;
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 114%;
-    text-align: center;
-    width: 100%;
-    letter-spacing: 0.08em;
-    margin-bottom: 50px;
-  }
   #sixth {
     overflow: hidden;
     height: 40vh;
@@ -22137,119 +22245,6 @@ input::-webkit-inner-spin-button {
 
 .formobile {
   display: none;
-}
-
-#fifth {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  position: relative;
-  width: 100%;
-}
-#fifth .right {
-  padding: 0 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  transition: 0.5s;
-}
-#fifth .right:hover .left_up_for_border {
-  height: 100%;
-}
-#fifth .right:hover .left_down_for_border {
-  width: 100%;
-}
-#fifth .right:hover .right_up_for_border {
-  width: 100%;
-}
-#fifth .right:hover .right_down_for_border {
-  height: 100%;
-}
-#fifth .right .left_up_for_border {
-  height: 0px;
-  width: 2px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: var(--yellow);
-  transition: 0.5s;
-}
-#fifth .right .left_down_for_border {
-  height: 2px;
-  width: 0px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--yellow);
-  transition: 0.5s;
-}
-#fifth .right .right_up_for_border {
-  width: 0px;
-  height: 2px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: var(--yellow);
-  transition: 0.5s;
-}
-#fifth .right .right_down_for_border {
-  height: 0px;
-  width: 2px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: var(--yellow);
-  transition: 0.5s;
-}
-#fifth .right .first {
-  text-align: center;
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 114%;
-  text-align: center;
-  letter-spacing: 0.08em;
-}
-#fifth .right img {
-  width: 60%;
-  margin: 25px auto;
-}
-#fifth .right .linktobloggerclothes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
-  margin-bottom: 25px;
-  transition: 0.2s;
-}
-#fifth .right .linktobloggerclothes:hover {
-  color: var(--yellow);
-  transform: scale(1.15);
-}
-#fifth .right .linktobloggerclothes .second {
-  font-family: var(--neueultra);
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-}
-#fifth .right .linktobloggerclothes svg {
-  transition: 0.3s;
-}
-#fifth .right .linktobloggerclothes:hover svg {
-  transform: translateX(20%);
-  fill: var(--yellow);
-  stroke: var(--yellow);
-}
-#fifth .right .third {
-  text-align: center;
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 114%;
-  text-align: center;
-  letter-spacing: 0.08em;
 }
 
 #sixth {
