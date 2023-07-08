@@ -10,35 +10,24 @@ $(document).ready(function () {
         infinite: true,
         speed: 400,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
         adaptiveHeight: true,
         prevArrow: $(".prevfirst"),
         nextArrow: $(".nextfirst"),
         autoplay: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 2,
-                    infinite: true,
+                    slidesToShow: 3,
                     adaptiveHeight: true,
-                    dots: true,
+                    slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 2,
-                    adaptiveHeight: true,
-                    slidesToScroll: 2,
-                },
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 2,
-                    //ili je 1 dene
                     slidesToScroll: 1,
                     adaptiveHeight: true,
                     dots: false,
@@ -49,40 +38,29 @@ $(document).ready(function () {
 
     //---------------------------------main page second slider
 
-    $(".slider").slick({
+    $(".slidersecond").slick({
         dots: true,
         infinite: true,
         speed: 400,
         slidesToShow: 4,
         slidesToScroll: 4,
         adaptiveHeight: true,
-        prevArrow: $(".prev"),
-        nextArrow: $(".next"),
+        prevArrow: $(".prevsecond"),
+        nextArrow: $(".nextsecond"),
         autoplay: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 2,
-                    infinite: true,
+                    slidesToShow: 3,
                     adaptiveHeight: true,
-                    dots: true,
+                    slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 2,
-                    adaptiveHeight: true,
-                    slidesToScroll: 2,
-                },
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 2,
-                    //ili je 1 dene
                     slidesToScroll: 1,
                     adaptiveHeight: true,
                     dots: false,

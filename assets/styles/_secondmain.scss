@@ -72,10 +72,11 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        padding: 20px 95px;
+        padding: 20px 60px;
         background-color: var(--white);
         color: black;
         transition: 0.2s;
+        font-size: 18px;
 
         &:hover {
             background-color: var(--yellow);
@@ -89,7 +90,7 @@
 
         .mission {
             width: 100%;
-            font-size: 30px;
+            font-size: 25px;
             left: 4%;
             top: 5%;
         }
@@ -173,8 +174,8 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 10px 30px;
+            font-size: 15px;
         }
     }
 }
@@ -221,7 +222,7 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            padding: 10px 20px;
+            padding: 15px 40px;
             font-size: 16px;
         }
     }
@@ -233,7 +234,7 @@
 
         .mission {
             width: 100%;
-            font-size: 45px;
+            font-size: 55px;
             left: 4%;
             top: 5%;
         }
@@ -269,8 +270,8 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 50px;
+            font-size: 17px;
         }
     }
 }

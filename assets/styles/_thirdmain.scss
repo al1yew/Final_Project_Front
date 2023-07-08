@@ -1,0 +1,215 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+}
+
+@keyframes mercaniye {
+    from {
+        background-color: var(--yellow);
+        color: black;
+    }
+
+    to {
+        background-color: white;
+        color: white;
+    }
+}
+
+.thirdmain {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+
+    .mainpart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        letter-spacing: 0.08em;
+
+        .preorder_prods {
+            font-family: var(--neuemedium);
+            font-size: 65px;
+            width: max-content;
+            color: var(--yellow);
+        }
+
+        .seemore {
+            font-family: var(--neueregular);
+            border: 1px solid #000000;
+            display: block;
+            padding: 20px 60px;
+            background-color: var(--white);
+            color: black;
+            transition: 0.2s;
+            font-size: 18px;
+
+            &:hover {
+                background-color: var(--yellow);
+            }
+        }
+    }
+
+    .sliderfirst {
+        margin: 0;
+        padding: 0;
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        .slider_element {
+            letter-spacing: 0.08em;
+            font-family: var(--neuebold);
+
+            .imagekeeper {
+                position: relative;
+
+                .wishlist {
+                    position: absolute;
+                    top: 5%;
+                    right: 5%;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        svg {
+                            fill: var(--yellow);
+                        }
+                    }
+                }
+            }
+
+            .preorder {
+                margin-top: 5px;
+                font-size: 13px;
+            }
+
+            .name {
+                font-family: var(--neueregular);
+                margin-top: 5px;
+                font-size: 15px;
+            }
+
+            .price {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .slick-dots {
+        width: 50%;
+        right: 0;
+        bottom: -46px !important;
+        display: flex;
+        justify-content: end;
+    }
+
+    .arrows {
+        margin-top: 15px;
+        cursor: pointer;
+
+        .nextfirst {
+            margin-top: 2px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .thirdmain {
+
+        .mainpart {
+            margin-bottom: 15px;
+
+            .preorder_prods {
+                font-size: 25px;
+            }
+
+            .seemore {
+                padding: 10px 20px;
+                background-color: var(--white);
+                animation-name: mercaniye;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                font-size: 14px;
+            }
+        }
+
+        .arrows {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .slick-dots {
+            display: none !important;
+        }
+    }
+}
+
+@media(min-width: 576px) and (max-width:768px) {
+    .thirdmain {
+
+        .mainpart {
+
+            .preorder_prods {
+                font-size: 35px;
+            }
+
+            .seemore {
+                padding: 10px 30px;
+                background-color: var(--white);
+                animation-name: mercaniye;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width:992px) {
+    .thirdmain {
+
+        .mainpart {
+
+            .preorder_prods {
+                font-size: 45px;
+            }
+
+            .seemore {
+                padding: 15px 40px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width:1200px) {
+    .thirdmain {
+
+        .mainpart {
+
+            .preorder_prods {
+                font-size: 55px;
+            }
+
+            .seemore {
+                padding: 15px 50px;
+                font-size: 17px;
+            }
+        }
+    }
+}
