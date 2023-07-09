@@ -1,0 +1,136 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+}
+
+@keyframes mercaniye {
+    from {
+        background-color: var(--yellow);
+        color: black;
+    }
+
+    to {
+        background-color: white;
+        color: white;
+    }
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.ninthmain {
+    height: 400px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 100px;
+    letter-spacing: 0.08em;
+
+    .top {
+        position: absolute;
+        padding: 15px 0;
+        overflow: hidden;
+        color: var(--yellow);
+        width: 800%;
+        top: 0;
+        font-family: var(--neuemedium);
+        font-size: 35px;
+
+        span {
+            animation: carousel 18s linear infinite;
+            display: inline-block;
+            white-space: nowrap;
+        }
+    }
+
+    form {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+
+        .forminside {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 75%;
+            border-bottom: 1px solid black;
+
+            input {
+                padding: 14px;
+                width: 95%;
+                border: none;
+                font-family: var(--neuelight);
+                outline: none;
+
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        button {
+            width: 23%;
+            background-color: black;
+            padding: 14px 40px;
+            color: white;
+            transition: 0.25s;
+            outline: none;
+            border: none;
+
+            &:hover {
+                background-color: var(--yellow);
+                color: black;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .ninthmain {
+        padding-top: 100px;
+    
+        .top {
+            padding: 15px 0;
+            width: 800%;
+            font-size: 14px;
+        }
+    
+        form {
+            margin-top: 30px;
+    
+            .forminside {
+                width: 100%;
+    
+                input {
+                    padding: 14px;
+                    width: 95%;
+    
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+            }
+    
+            button {
+                width: 23%;
+                padding: 14px 40px;
+            }
+        }
+    }
+}

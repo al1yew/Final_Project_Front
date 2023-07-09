@@ -1,0 +1,213 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+}
+
+@keyframes mercaniye {
+    from {
+        background-color: var(--yellow);
+        color: black;
+    }
+
+    to {
+        background-color: white;
+        color: white;
+    }
+}
+
+.seventhmain {
+    overflow: hidden;
+    margin-top: 40px;
+    height: 96vh;
+    font-family: var(--neuebold);
+    background-image: url(../images/main_Page/just_launched.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    letter-spacing: 0.08em;
+
+    .just_launched {
+        font-family: var(--neuemedium);
+        font-size: 18px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 3px 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+
+    .shipping {
+        width: 70%;
+        font-size: 86px;
+        font-family: var(--neuemedium);
+        text-align: center;
+        color: var(--yellow);
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section_keeper {
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--neuebold);
+        font-size: 14px;
+
+        a {
+            font-family: var(--neueregular);
+            border: 1px solid #000000;
+            display: block;
+            padding: 15px 50px;
+            background-color: var(--white);
+            color: black;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: var(--yellow);
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .seventhmain {
+        height: 50vh;
+        background-attachment: unset;
+        position: relative;
+        background-position: 0% 0%;
+
+        .just_launched {
+            display: none;
+        }
+
+        .shipping {
+            width: 100%;
+            font-size: 35px;
+            top: 30%;
+            line-height: 1;
+        }
+
+        .section_keeper {
+            padding: 5px;
+            bottom: 3%;
+            font-size: 12px;
+
+            a {
+                font-size: 12px;
+                padding: 10px 20px;
+                width: max-content;
+                animation-name: mercaniye;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .seventhmain {
+        height: 60vh;
+        background-attachment: unset;
+
+        .just_launched {
+            font-size: 14px;
+        }
+
+        .shipping {
+            width: 100%;
+            font-size: 45px;
+            top: 20%;
+        }
+
+        .section_keeper {
+            padding: 10px;
+            left: 0;
+            bottom: 5%;
+            font-size: 14px;
+
+            a {
+                padding: 10px 30px;
+                width: max-content;
+                animation-name: mercaniye;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .seventhmain {
+        height: 80vh;
+        background-attachment: unset;
+
+        .just_launched {
+            font-size: 15px;
+        }
+
+        .shipping {
+            width: 100%;
+            font-size: 55px;
+            top: 25%;
+        }
+
+        .section_keeper {
+            padding: 10px;
+            left: 0;
+            bottom: 5%;
+            font-size: 15px;
+
+            a {
+                padding: 10px 30px;
+                width: max-content;
+                animation-name: mercaniye;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .seventhmain {
+        height: 90vh;
+
+        .just_launched {
+            font-size: 16px;
+            top: 5%;
+            padding: 3px 17px;
+        }
+
+        .shipping {
+            width: 100%;
+            font-size: 65px;
+        }
+
+        .section_keeper {
+            font-size: 14px;
+
+            a {
+                padding: 15px 40px;
+            }
+        }
+    }
+}
