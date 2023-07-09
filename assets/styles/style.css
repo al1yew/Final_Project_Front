@@ -1792,12 +1792,12 @@ body {
   .firstmain .section_keeper .trynew {
     width: 100%;
     font-size: 24px;
-    bottom: 22%;
+    bottom: 25%;
   }
   .firstmain .section_keeper a {
     width: 100%;
     font-size: 14px;
-    bottom: 16%;
+    bottom: 21%;
   }
   .firstmain .section_keeper .discount {
     width: -moz-max-content;
@@ -1805,7 +1805,7 @@ body {
     text-align: center;
     padding: 3px;
     font-size: 14px;
-    bottom: 10%;
+    bottom: 15%;
     transform: translateX(-50%);
     left: 50%;
   }
@@ -1913,54 +1913,56 @@ body {
 
 .secondmain {
   overflow: hidden;
-  height: 600px;
-  position: relative;
-  font-family: var(--neuebold);
-  letter-spacing: 0.08em;
 }
-.secondmain .mission {
+.secondmain .all {
+  position: relative;
+  letter-spacing: 0.08em;
+  font-family: var(--neuebold);
+  height: 600px;
+}
+.secondmain .all .mission {
   width: 45%;
   font-size: 65px;
   color: var(--yellow);
   position: absolute;
-  left: 10%;
+  left: 0%;
   top: 5%;
 }
-.secondmain .mission span {
+.secondmain .all .mission span {
   font-style: italic;
 }
-.secondmain .image1 {
+.secondmain .all .image1 {
   position: absolute;
   top: 8%;
-  right: 26%;
+  right: 22%;
   width: 18%;
   z-index: 8;
 }
-.secondmain .keeper {
+.secondmain .all .keeper {
   position: absolute;
   width: 40%;
   top: 40%;
-  left: 10%;
+  left: 0%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.secondmain .keeper .image2 {
+.secondmain .all .keeper .image2 {
   width: 70%;
 }
-.secondmain .keeper p {
+.secondmain .all .keeper p {
   padding-left: 18px;
   font-family: var(--neueregular);
   font-size: 20px;
 }
-.secondmain .image3 {
+.secondmain .all .image3 {
   position: absolute;
   top: 36%;
-  right: 7%;
+  right: 0%;
   width: 24%;
   z-index: 6;
 }
-.secondmain .seemore {
+.secondmain .all .seemore {
   font-family: var(--neueregular);
   border: 1px solid #000000;
   position: absolute;
@@ -1974,43 +1976,43 @@ body {
   transition: 0.2s;
   font-size: 18px;
 }
-.secondmain .seemore:hover {
+.secondmain .all .seemore:hover {
   background-color: var(--yellow);
 }
 
 @media (max-width: 576px) {
-  .secondmain {
+  .secondmain .all {
     height: 380px;
   }
-  .secondmain .mission {
+  .secondmain .all .mission {
     width: 100%;
     font-size: 25px;
-    left: 4%;
+    left: 0%;
     top: 5%;
   }
-  .secondmain .image1 {
+  .secondmain .all .image1 {
     top: 5%;
-    right: 4%;
+    right: 0%;
     width: 26%;
   }
-  .secondmain .keeper {
+  .secondmain .all .keeper {
     width: 60%;
     top: 33%;
-    left: 4%;
+    left: 0%;
   }
-  .secondmain .keeper .image2 {
+  .secondmain .all .keeper .image2 {
     width: 50%;
   }
-  .secondmain .keeper p {
+  .secondmain .all .keeper p {
     padding-left: 10px;
     font-size: 14px;
   }
-  .secondmain .image3 {
+  .secondmain .all .image3 {
     top: 56%;
-    right: 4%;
+    right: 0%;
     width: 26%;
   }
-  .secondmain .seemore {
+  .secondmain .all .seemore {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -2019,38 +2021,38 @@ body {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .secondmain {
+  .secondmain .all {
     height: 500px;
   }
-  .secondmain .mission {
+  .secondmain .all .mission {
     width: 100%;
     font-size: 35px;
-    left: 4%;
+    left: 0%;
     top: 5%;
   }
-  .secondmain .image1 {
+  .secondmain .all .image1 {
     top: 10%;
-    right: 20%;
+    right: 16%;
     width: 24%;
   }
-  .secondmain .keeper {
+  .secondmain .all .keeper {
     width: 45%;
     top: 33%;
-    left: 4%;
+    left: 0%;
   }
-  .secondmain .keeper .image2 {
+  .secondmain .all .keeper .image2 {
     width: 65%;
   }
-  .secondmain .keeper p {
+  .secondmain .all .keeper p {
     padding-left: 10px;
     font-size: 18px;
   }
-  .secondmain .image3 {
+  .secondmain .all .image3 {
     top: 50%;
-    right: 4%;
+    right: 0%;
     width: 25%;
   }
-  .secondmain .seemore {
+  .secondmain .all .seemore {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -2059,38 +2061,38 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .secondmain {
+  .secondmain .all {
     height: 500px;
   }
-  .secondmain .mission {
+  .secondmain .all .mission {
     width: 100%;
     font-size: 45px;
-    left: 4%;
+    left: 0%;
     top: 5%;
   }
-  .secondmain .image1 {
+  .secondmain .all .image1 {
     top: 5%;
-    right: 20%;
+    right: 16%;
     width: 22%;
   }
-  .secondmain .keeper {
+  .secondmain .all .keeper {
     width: 50%;
     top: 33%;
-    left: 4%;
+    left: 0%;
   }
-  .secondmain .keeper .image2 {
+  .secondmain .all .keeper .image2 {
     width: 65%;
   }
-  .secondmain .keeper p {
+  .secondmain .all .keeper p {
     padding-left: 10px;
     font-size: 20px;
   }
-  .secondmain .image3 {
+  .secondmain .all .image3 {
     top: 50%;
-    right: 4%;
+    right: 0%;
     width: 25%;
   }
-  .secondmain .seemore {
+  .secondmain .all .seemore {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -2099,38 +2101,38 @@ body {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .secondmain {
+  .secondmain .all {
     height: 550px;
   }
-  .secondmain .mission {
+  .secondmain .all .mission {
     width: 100%;
     font-size: 55px;
-    left: 4%;
+    left: 0%;
     top: 5%;
   }
-  .secondmain .image1 {
+  .secondmain .all .image1 {
     top: 5%;
-    right: 20%;
+    right: 16%;
     width: 20%;
   }
-  .secondmain .keeper {
+  .secondmain .all .keeper {
     width: 50%;
     top: 33%;
-    left: 4%;
+    left: 0%;
   }
-  .secondmain .keeper .image2 {
+  .secondmain .all .keeper .image2 {
     width: 65%;
   }
-  .secondmain .keeper p {
+  .secondmain .all .keeper p {
     padding-left: 10px;
-    font-size: 25px;
+    font-size: 22px;
   }
-  .secondmain .image3 {
+  .secondmain .all .image3 {
     top: 50%;
-    right: 4%;
+    right: 0%;
     width: 22%;
   }
-  .secondmain .seemore {
+  .secondmain .all .seemore {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -2263,6 +2265,15 @@ body {
     animation-iteration-count: infinite;
     font-size: 14px;
   }
+  .thirdmain .sliderfirst .slider_element .preorder {
+    font-size: 11px;
+  }
+  .thirdmain .sliderfirst .slider_element .name {
+    font-size: 13px;
+  }
+  .thirdmain .sliderfirst .slider_element .price {
+    font-size: 13px;
+  }
   .thirdmain .arrows {
     margin-left: 10px;
     margin-top: 10px;
@@ -2284,6 +2295,15 @@ body {
     animation-iteration-count: infinite;
     font-size: 15px;
   }
+  .thirdmain .sliderfirst .slider_element .preorder {
+    font-size: 12px;
+  }
+  .thirdmain .sliderfirst .slider_element .name {
+    font-size: 14px;
+  }
+  .thirdmain .sliderfirst .slider_element .price {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .thirdmain .mainpart .preorder_prods {
@@ -2293,6 +2313,15 @@ body {
     padding: 15px 40px;
     font-size: 16px;
   }
+  .thirdmain .sliderfirst .slider_element .preorder {
+    font-size: 13px;
+  }
+  .thirdmain .sliderfirst .slider_element .name {
+    font-size: 15px;
+  }
+  .thirdmain .sliderfirst .slider_element .price {
+    font-size: 15px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .thirdmain .mainpart .preorder_prods {
@@ -2301,6 +2330,15 @@ body {
   .thirdmain .mainpart .seemore {
     padding: 15px 50px;
     font-size: 17px;
+  }
+  .thirdmain .sliderfirst .slider_element .preorder {
+    font-size: 14px;
+  }
+  .thirdmain .sliderfirst .slider_element .name {
+    font-size: 16px;
+  }
+  .thirdmain .sliderfirst .slider_element .price {
+    font-size: 16px;
   }
 }
 :root {
@@ -2769,6 +2807,15 @@ body {
     animation-iteration-count: infinite;
     font-size: 14px;
   }
+  .fifthmain .slidersecond .slider_element .preorder {
+    font-size: 11px;
+  }
+  .fifthmain .slidersecond .slider_element .name {
+    font-size: 13px;
+  }
+  .fifthmain .slidersecond .slider_element .price {
+    font-size: 13px;
+  }
   .fifthmain .arrows {
     margin-left: 10px;
     margin-top: 10px;
@@ -2790,6 +2837,15 @@ body {
     animation-iteration-count: infinite;
     font-size: 15px;
   }
+  .fifthmain .slidersecond .slider_element .preorder {
+    font-size: 12px;
+  }
+  .fifthmain .slidersecond .slider_element .name {
+    font-size: 14px;
+  }
+  .fifthmain .slidersecond .slider_element .price {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .fifthmain .mainpart .preorder_prods {
@@ -2799,6 +2855,15 @@ body {
     padding: 15px 40px;
     font-size: 16px;
   }
+  .fifthmain .slidersecond .slider_element .preorder {
+    font-size: 13px;
+  }
+  .fifthmain .slidersecond .slider_element .name {
+    font-size: 15px;
+  }
+  .fifthmain .slidersecond .slider_element .price {
+    font-size: 15px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .fifthmain .mainpart .preorder_prods {
@@ -2807,6 +2872,15 @@ body {
   .fifthmain .mainpart .seemore {
     padding: 15px 50px;
     font-size: 17px;
+  }
+  .fifthmain .slidersecond .slider_element .preorder {
+    font-size: 14px;
+  }
+  .fifthmain .slidersecond .slider_element .name {
+    font-size: 16px;
+  }
+  .fifthmain .slidersecond .slider_element .price {
+    font-size: 16px;
   }
 }
 :root {
@@ -2820,165 +2894,209 @@ body {
 }
 
 .sixthmain {
-  margin-top: 40px;
   position: relative;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
 }
-.sixthmain .right {
-  padding: 0 40px;
+.sixthmain .all {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.sixthmain .all .left {
+  height: 540px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.sixthmain .all .right {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   position: relative;
   transition: 0.3s;
   letter-spacing: 0.08em;
+  height: 540px;
+  padding-left: 20px;
 }
-.sixthmain .right:hover .left_up_for_border {
+.sixthmain .all .right:hover .left_up_for_border {
   height: 100%;
 }
-.sixthmain .right:hover .left_down_for_border {
+.sixthmain .all .right:hover .left_down_for_border {
   width: 100%;
 }
-.sixthmain .right:hover .right_up_for_border {
+.sixthmain .all .right:hover .right_up_for_border {
   width: 100%;
 }
-.sixthmain .right:hover .right_down_for_border {
+.sixthmain .all .right:hover .right_down_for_border {
   height: 100%;
 }
-.sixthmain .right .borderblogger {
+.sixthmain .all .right .borderblogger {
   height: 0px;
   width: 2px;
   position: absolute;
   background-color: var(--yellow);
   transition: 0.5s;
 }
-.sixthmain .right .left_up_for_border {
+.sixthmain .all .right .left_up_for_border {
   left: 0;
   top: 0;
   height: 0px;
   width: 2px;
 }
-.sixthmain .right .left_down_for_border {
+.sixthmain .all .right .left_down_for_border {
   left: 0;
   bottom: 0;
   height: 2px;
   width: 0px;
 }
-.sixthmain .right .right_up_for_border {
+.sixthmain .all .right .right_up_for_border {
   right: 0;
   top: 0;
   height: 2px;
   width: 0px;
 }
-.sixthmain .right .right_down_for_border {
+.sixthmain .all .right .right_down_for_border {
   right: 0;
   bottom: 0;
   height: 0px;
   width: 2px;
 }
-.sixthmain .right .first {
-  text-align: center;
-  font-family: var(--neueregular);
-  font-size: 25px;
-  text-align: center;
+.sixthmain .all .right img {
+  height: 70%;
+  width: auto;
 }
-.sixthmain .right img {
-  width: 60%;
-  margin: 25px auto;
+.sixthmain .all .right .text {
+  font-size: 18px;
+  font-family: var(--neuemedium);
 }
-.sixthmain .right .linktobloggerclothes {
+.sixthmain .all .right .linktobloggerclothes {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-  margin-bottom: 25px;
   transition: 0.2s;
 }
-.sixthmain .right .linktobloggerclothes:hover {
+.sixthmain .all .right .linktobloggerclothes:hover {
   color: var(--yellow);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
-.sixthmain .right .linktobloggerclothes .second {
+.sixthmain .all .right .linktobloggerclothes .second {
   font-family: var(--neueultra);
-  font-size: 11px;
+  font-size: 14px;
 }
-.sixthmain .right .linktobloggerclothes svg {
+.sixthmain .all .right .linktobloggerclothes svg {
   transition: 0.3s;
+  margin-left: 8px;
 }
-.sixthmain .right .linktobloggerclothes:hover svg {
-  transform: translateX(20%);
+.sixthmain .all .right .linktobloggerclothes:hover svg {
   fill: var(--yellow);
   stroke: var(--yellow);
 }
-.sixthmain .right .third {
-  text-align: center;
-  font-family: var(--neueregular);
-  font-size: 25px;
-  text-align: center;
-}
 
 @media (max-width: 576px) {
-  .sixthmain {
-    padding: 0 10px;
-  }
-  .sixthmain .right {
-    display: flex;
-    justify-content: space-between;
+  .sixthmain .all {
     align-items: center;
-    flex-direction: column;
-    position: relative;
   }
-  .sixthmain .right .left_up_for_border {
-    display: none !important;
+  .sixthmain .all .left {
+    height: unset;
   }
-  .sixthmain .right .left_down_for_border {
-    display: none !important;
+  .sixthmain .all .right {
+    height: unset;
+    padding-left: 10px;
   }
-  .sixthmain .right .right_up_for_border {
-    display: none !important;
+  .sixthmain .all .right img {
+    display: none;
   }
-  .sixthmain .right .right_down_for_border {
-    display: none !important;
-  }
-  .sixthmain .right .first {
-    display: none !important;
-  }
-  .sixthmain .right .notformobile {
-    display: none !important;
-  }
-  .sixthmain .right img {
-    width: 60%;
-    margin: 25px auto;
-  }
-  .sixthmain .right .linktobloggerclothes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .sixthmain .right .linktobloggerclothes .second {
-    font-family: var(--neueultra);
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    transition: 0.2s;
-  }
-  .sixthmain .right .third {
-    display: none !important;
-  }
-  .sixthmain .right .formobile {
+  .sixthmain .all .right .text {
+    font-size: 12px;
     text-align: center;
-    font-family: var(--neueregular);
-    font-weight: 400;
+  }
+  .sixthmain .all .right .linktobloggerclothes .second {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    margin-top: 20px;
+  }
+  .sixthmain .all .right .linktobloggerclothes svg {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .sixthmain .all {
+    align-items: center;
+  }
+  .sixthmain .all .left {
+    height: unset;
+  }
+  .sixthmain .all .right {
+    height: unset;
+    padding-left: 10px;
+  }
+  .sixthmain .all .right img {
+    display: none;
+  }
+  .sixthmain .all .right .text {
     font-size: 14px;
-    line-height: 114%;
     text-align: center;
-    width: 100%;
-    letter-spacing: 0.08em;
-    margin-bottom: 50px;
+  }
+  .sixthmain .all .right .linktobloggerclothes .second {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    margin-top: 20px;
+  }
+  .sixthmain .all .right .linktobloggerclothes svg {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .sixthmain .all .left {
+    height: 365px;
+  }
+  .sixthmain .all .right {
+    height: 365px;
+  }
+  .sixthmain .all .right img {
+    height: 70%;
+    width: auto;
+  }
+  .sixthmain .all .right .text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .sixthmain .all .right .linktobloggerclothes .second {
+    text-align: center;
+    font-size: 15px;
+  }
+  .sixthmain .all .right .linktobloggerclothes svg {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .sixthmain .all .left {
+    height: 490px;
+  }
+  .sixthmain .all .right {
+    height: 490px;
+    padding-left: 20px;
+  }
+  .sixthmain .all .right .text {
+    text-align: center;
+  }
+  .sixthmain .all .right .linktobloggerclothes .second {
+    font-size: 16px;
+    text-align: center;
+  }
+  .sixthmain .all .right .linktobloggerclothes svg {
+    display: none;
   }
 }
 :root {
