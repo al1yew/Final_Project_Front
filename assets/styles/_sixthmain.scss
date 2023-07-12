@@ -30,7 +30,7 @@
 
         .right {
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -39,7 +39,6 @@
             transition: 0.3s;
             letter-spacing: 0.08em;
             height: 540px;
-            padding-left: 20px;
 
             //#region zirt
             &:hover .left_up_for_border {
@@ -148,8 +147,8 @@
 
             .right {
                 height: unset;
+                padding: 0;
                 padding-left: 10px;
-
                 img {
                     display: none;
                 }
@@ -189,6 +188,7 @@
 
             .right {
                 height: unset;
+                padding: 0;
                 padding-left: 10px;
 
                 img {
@@ -228,6 +228,7 @@
             }
 
             .right {
+                padding: 15px;
                 height: 365px;
 
                 img {
@@ -265,7 +266,6 @@
 
             .right {
                 height: 490px;
-                padding-left: 20px;
 
                 .text {
                     text-align: center;

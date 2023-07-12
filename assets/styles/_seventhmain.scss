@@ -69,6 +69,10 @@
         font-family: var(--neuebold);
         font-size: 14px;
 
+        p {
+            margin-left: 20px
+        }
+
         a {
             font-family: var(--neueregular);
             border: 1px solid #000000;
@@ -77,6 +81,9 @@
             background-color: var(--white);
             color: black;
             transition: 0.2s;
+            margin-right: 20px;
+            white-space: nowrap;
+            margin-left: 10px;
 
             &:hover {
                 background-color: var(--yellow);
@@ -108,6 +115,10 @@
             bottom: 3%;
             font-size: 12px;
 
+            p {
+                margin: 0;
+            }
+
             a {
                 font-size: 12px;
                 padding: 10px 20px;
@@ -116,6 +127,7 @@
                 animation-timing-function: linear;
                 animation-duration: 1s;
                 animation-iteration-count: infinite;
+                margin: 0;
             }
         }
     }
