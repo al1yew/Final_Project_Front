@@ -790,7 +790,7 @@ body {
 }
 .header .all .search .searchmenu .searchelements ul li a .osnovnayainfa .strelka {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .header .all .search .searchmenu .searchelements ul li:hover {
@@ -996,7 +996,7 @@ body {
   height: 60%;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
 .header .all .menus .cart .minibasket .basketbottombtns .bottom a {
   font-family: var(--neuebold);
@@ -1772,7 +1772,7 @@ body {
   -moz-column-gap: 15px;
        column-gap: 15px;
   grid-template-columns: auto auto auto auto;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .footer .bye .all div:nth-child(1) a {
   position: relative;
@@ -1792,7 +1792,7 @@ body {
   -moz-column-gap: 15px;
        column-gap: 15px;
   grid-template-columns: auto auto auto auto;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .footer .bye .all div:nth-child(2) a {
   position: relative;
@@ -1837,7 +1837,7 @@ body {
   }
   .footer .all .parent_div:nth-child(odd) {
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     display: flex;
   }
   .footer .all .parent_div .footer_header {
@@ -1904,7 +1904,7 @@ body {
   }
   .footer .all .parent_div:nth-child(odd) {
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     display: flex;
   }
   .footer .all .parent_div .footer_header {
@@ -2538,7 +2538,7 @@ body {
   right: 0;
   bottom: -46px !important;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .mainthird .arrows {
   margin-top: 15px;
@@ -3080,7 +3080,7 @@ body {
   right: 0;
   bottom: -46px !important;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .mainfifth .arrows {
   margin-top: 15px;
@@ -3684,7 +3684,7 @@ body {
 .maineighth .bottom_main {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   flex-wrap: wrap;
   letter-spacing: 0.08em;
   padding: 0;
@@ -4009,6 +4009,11 @@ body {
     text-align: center;
   }
 }
+.where {
+  opacity: 0;
+  margin-top: 30px;
+}
+
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -4022,756 +4027,243 @@ body {
   --select-arrow: var(--select-border);
 }
 
-.where {
+.shopcategories {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.shopcategories .head_categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--neueregular);
+  position: relative;
+}
+.shopcategories .head_categories li {
+  padding: 15px 0;
+}
+.shopcategories .head_categories li:hover .categorymenu {
+  opacity: 1;
+  visibility: visible;
+}
+.shopcategories .head_categories li a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+}
+.shopcategories .head_categories li a:hover {
+  text-decoration: underline;
+}
+.shopcategories .head_categories li .activespan {
+  padding: 2px 8px;
+  background-color: var(--yellow);
+  text-decoration: underline;
+}
+.shopcategories .head_categories li .categorymenu {
+  height: 511px;
   opacity: 0;
-  margin-top: 30px;
+  visibility: hidden;
+  transition: 0.3s;
+  background-color: white;
+  box-shadow: 0px 0px 5px var(--yellow);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 25px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 101%;
+  z-index: 32;
 }
-
-@media (min-width: 1100px) {
-  .seeall {
-    display: none;
-  }
+.shopcategories .head_categories li .categorymenu .all {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-@media (min-width: 1100px) and (min-width: 577px) {
-  .price-input-mobile {
-    display: none !important;
-  }
+.shopcategories .head_categories li .categorymenu .left {
+  height: 100%;
+  overflow-y: scroll;
 }
-@media (min-width: 1100px) {
-  #categories {
-    width: 100%;
-    background-color: white;
-    color: black;
-    border-bottom: 1px solid black;
-  }
-  #categories .head_categories {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding: 0 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--neueregular);
-    position: relative;
-  }
-  #categories .head_categories li {
-    padding: 15px 0;
-  }
-  #categories .head_categories li:hover .categorymenu {
-    opacity: 1;
-    visibility: visible;
-  }
-  #categories .head_categories li a {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-  }
-  #categories .head_categories li a:hover {
-    text-decoration: underline;
-  }
-  #categories .head_categories li .activespan {
-    padding: 2px 8px;
-    background-color: var(--yellow);
-    text-decoration: underline;
-  }
-  #categories .head_categories li .categorymenu {
-    height: 511px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    background-color: white;
-    box-shadow: 0px 0px 5px var(--yellow);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 25px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 101%;
-    z-index: 32;
-  }
-  #categories .head_categories li .categorymenu .all {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  #categories .head_categories li .categorymenu .left {
-    height: 100%;
-    overflow-y: scroll;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-track {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left span {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-    text-decoration-line: underline;
-    margin-bottom: 15px;
-  }
-  #categories .head_categories li .categorymenu .left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #categories .head_categories li .categorymenu .left ul li {
-    padding: 6px 0;
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-  }
-  #categories .head_categories li .categorymenu .left ul li:first-child {
-    padding-top: 25px;
-  }
-  #categories .head_categories li .categorymenu .middle {
-    padding: 0 10px;
-    overflow-y: scroll;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 10px;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-track {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle .mainspan {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .namecate {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-    text-align: center;
-    margin-top: 10px;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper {
-    width: 90%;
-    padding: 10px;
-    border-radius: 100%;
-    border: 1px solid var(--yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper img {
-    border-radius: 100%;
-  }
-  #categories .head_categories li .categorymenu .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 10px;
-  }
-  #categories .head_categories li .categorymenu .right .mainspan {
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    margin-bottom: 25px;
-    padding-left: 36px;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: relative;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto img {
-    width: 90%;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
-  }
-  #categories .head_categories li .categorymenu .right .topphoto .nazvanie {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-family: var(--neuemedium);
-    transform: translateX(-40%);
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: relative;
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto img {
-    width: 90%;
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto .nazvanie {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-family: var(--neuemedium);
-    transform: translateX(-40%);
-  }
+.shopcategories .head_categories li .categorymenu .left::-webkit-scrollbar-track {
+  background: white;
 }
-@media (min-width: 1100px) {
-  #shoptext {
-    padding: 20px 0;
-    border-bottom: 1px solid black;
-  }
-  #shoptext p {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: 0.08em;
-  }
-  #shoptext p span:first-child {
-    color: var(--yellow);
-    font-family: var(--neuebold);
-  }
-  #shoptext p span:last-child {
-    font-style: italic;
-  }
+.shopcategories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb {
+  background: white;
 }
-@media (min-width: 1100px) {
-  .breadcrumb {
-    padding: 20px 0;
-    margin: 0;
-  }
-  .breadcrumb .keeper {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 0;
-  }
-  .breadcrumb .keeper div {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .breadcrumb .keeper a {
-    font-family: var(--neueregular);
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-  }
-  .breadcrumb .keeper a:hover {
-    text-decoration: underline;
-  }
+.shopcategories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb:hover {
+  background: white;
 }
-@media (min-width: 1100px) {
-  #clothing .all .top {
-    text-align: center;
-    font-family: var(--neueultra);
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    color: var(--yellow);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-  }
-  #clothing .all .filter select {
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-    padding-bottom: 3px;
-    cursor: pointer;
-  }
-  #clothing .all .filternew {
-    display: flex;
-    margin-top: 50px;
-    padding: 0 12px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #clothing .all .filternew .filterdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-    padding-bottom: 3px;
-    position: relative;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-    padding: 6px 0;
-  }
-  #clothing .all .filternew .filterdiv svg {
-    transition: 0.5s;
-    width: 100%;
-  }
-  #clothing .all .filternew .filterdiv .svgkeeper {
-    transition: 0.1s;
-  }
-  #clothing .all .filternew .filterdiv span {
-    padding-left: 2px;
-  }
-  #clothing .all .filternew .filterdiv .roundarrow {
-    transform: rotate(180deg) !important;
-  }
-  #clothing .all .filternew .filterdiv ul {
-    list-style: none;
-    display: none;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border: 1px solid black;
-    z-index: 43432;
-  }
-  #clothing .all .filternew .filterdiv ul .yellowli {
-    background-color: var(--yellow);
-  }
-  #clothing .all .filternew .filterdiv ul li {
-    padding: 5px;
-  }
-  #clothing .all .filternew .filterdiv ul li:hover {
-    background-color: var(--yellow);
-  }
-  #clothing .all .pricerange {
-    display: flex;
-    padding: 0 12px;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-  #clothing .all .pricerange .price-input {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    justify-content: center;
-    border-bottom: 1px solid black;
-  }
-  #clothing .all .pricerange .price-input .inputspan {
-    margin: 0 10px;
-  }
-  #clothing .all .pricerange .price-input .axirincnispan {
-    margin-right: 10px;
-  }
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-            appearance: none;
-  }
-  #clothing .all .pricerange input {
-    width: 30%;
-    font-size: 16px;
-    font-family: var(--neueregular);
-    border: none;
-    outline: none;
-    text-align: center;
-  }
-  #clothing .all .pricerange ::-moz-selection {
-    color: #fff;
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  #clothing .all .pricerange ::selection {
-    color: #fff;
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  #clothing .all .pricerange input[type=number]::-webkit-outer-spin-button,
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  #clothing .all .pricerange .slider1 {
-    height: 0.8px;
-    right: 12px;
-    top: 76%;
-    width: 84%;
-    position: absolute;
-    border-radius: 5px;
-    background: black;
-  }
-  #clothing .all .pricerange .range-input {
-    position: relative;
-    width: 83%;
-    margin-top: 17px;
-    height: 0px;
-  }
-  #clothing .all .pricerange .range-input input {
-    position: absolute;
-    cursor: pointer;
-    width: 100%;
-    height: 5px;
-    top: 48%;
-    background: none;
-    pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  #clothing .all .pricerange input[type=range]::-webkit-slider-thumb {
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
-    background: var(--yellow);
-    outline: 1px solid black;
-    padding: 10px;
-    pointer-events: auto;
-    -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  #clothing .all .pricerange input[type=range]::-moz-range-thumb {
-    height: 17px;
-    width: 17px;
-    border: none;
-    border-radius: 50%;
-    background: var(--yellow);
-    pointer-events: auto;
-    -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  #clothing .all .products {
-    margin: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #clothing .all .products .product {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 20px 0;
-    position: relative;
-  }
-  #clothing .all .products .product:hover .top .wishlist {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .basket {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .bobotleft {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .bobotright {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product .top {
-    position: relative;
-  }
-  #clothing .all .products .product .top .wishlist {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0%;
-    right: 5%;
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  #clothing .all .products .product .top .wishlist svg {
-    transition: 0.3s;
-  }
-  #clothing .all .products .product .top .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  #clothing .all .products .product .top .wishlist:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: -2%;
-    right: 2%;
-  }
-  #clothing .all .products .product .top .discount_percent span {
-    font-size: 12px;
-    padding: 5px 10px;
-    background-color: var(--yellow);
-    color: black;
-    font-family: var(--neueregular);
-  }
-  #clothing .all .products .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  #clothing .all .products .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #clothing .all .products .product .bottom .botop .botopleft {
-    padding-left: 10px;
-    font-size: 15px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  #clothing .all .products .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    transition: 0.3s;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotleft {
-    opacity: 0;
-    transition: 0.3s;
-    visibility: hidden;
-    padding-left: 10px;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright {
-    opacity: 0;
-    transition: 0.3s;
-    visibility: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright label,
-  #clothing .all .products .product .bottom .bobottom .bobotright .color_box {
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border: 0.3px solid white;
-    outline: 0.3px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright label .markicon,
-  #clothing .all .products .product .bottom .bobottom .bobotright .color_box .markicon {
-    font-size: 20px;
-    position: absolute;
-    bottom: -30%;
-    left: -25%;
-  }
-  #clothing .all .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-  #clothing .all .pagination ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  #clothing .all .pagination ul li {
-    background-color: black;
-    width: 7%;
-    padding: 2px;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  #clothing .all .pagination ul li:hover {
-    background-color: var(--yellow);
-    padding: 3px;
-  }
-  #clothing .all .pagination ul .activepagination {
-    background-color: var(--yellow);
-    padding: 3px 0;
-  }
-  #clothing .all .loadmore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  #clothing .all .loadmore a {
-    padding: 20px 90px;
-    color: black;
-    border: 1px solid black;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-  }
+.shopcategories .head_categories li .categorymenu .left span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--neuebold);
+  letter-spacing: 0.08em;
+  text-decoration-line: underline;
+  margin-bottom: 15px;
 }
-* {
-  margin: 0;
+.shopcategories .head_categories li .categorymenu .left ul {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
-}
-
-p {
   margin: 0;
-  padding: 0;
+}
+.shopcategories .head_categories li .categorymenu .left ul li {
+  padding: 6px 0;
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+}
+.shopcategories .head_categories li .categorymenu .left ul li:first-child {
+  padding-top: 25px;
+}
+.shopcategories .head_categories li .categorymenu .middle {
+  padding: 0 10px;
+  overflow-y: scroll;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+.shopcategories .head_categories li .categorymenu .middle::-webkit-scrollbar-track {
+  background: white;
+}
+.shopcategories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb {
+  background: white;
+}
+.shopcategories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+.shopcategories .head_categories li .categorymenu .middle .mainspan {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  font-family: var(--neuebold);
+}
+.shopcategories .head_categories li .categorymenu .middle .bodyfits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.shopcategories .head_categories li .categorymenu .middle .bodyfits .maindiv {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shopcategories .head_categories li .categorymenu .middle .bodyfits .maindiv .namecate {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  font-family: var(--neueregular);
+  text-align: center;
+  margin-top: 10px;
+}
+.shopcategories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper {
+  width: 90%;
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopcategories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper img {
+  border-radius: 100%;
+}
+.shopcategories .head_categories li .categorymenu .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.shopcategories .head_categories li .categorymenu .right .mainspan {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  font-family: var(--neuebold);
+  margin-bottom: 25px;
+  padding-left: 36px;
+}
+.shopcategories .head_categories li .categorymenu .right .topphoto {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.shopcategories .head_categories li .categorymenu .right .topphoto img {
+  width: 90%;
+}
+.shopcategories .head_categories li .categorymenu .right .topphoto .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
+}
+.shopcategories .head_categories li .categorymenu .right .topphoto .nazvanie {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-family: var(--neuemedium);
+  transform: translateX(-40%);
+}
+.shopcategories .head_categories li .categorymenu .right .bottomphoto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.shopcategories .head_categories li .categorymenu .right .bottomphoto img {
+  width: 90%;
+}
+.shopcategories .head_categories li .categorymenu .right .bottomphoto .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
+}
+.shopcategories .head_categories li .categorymenu .right .bottomphoto .nazvanie {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-family: var(--neuemedium);
+  transform: translateX(-40%);
 }
 
-@font-face {
-  font-family: NeuePowerLight;
-  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
-}
-@font-face {
-  font-family: NeuePowerMedium;
-  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
-}
-@font-face {
-  font-family: NeuePowerRegular;
-  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
-}
-@font-face {
-  font-family: NeuePowerUltra;
-  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
-}
-@font-face {
-  font-family: NeuePowerBold;
-  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
-}
 @media (max-width: 576px) {
-  :root {
-    --white: #FFFFFF;
-    --yellow: #EDF109;
-    --neueregular: NeuePowerRegular;
-    --neuemedium: NeuePowerMedium;
-    --neuelight: NeuePowerLight;
-    --neueultra: NeuePowerUltra;
-    --neuebold: NeuePowerBold;
-    --select-border: #777;
-    --select-focus: blue;
-    --select-arrow: var(--select-border);
-  }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  .where {
-    opacity: 0;
-    margin-top: 30px;
-  }
-  #categories {
+  .shopcategories {
     width: 100%;
     background-color: white;
     color: black;
     border-bottom: 1px solid black;
   }
-  #categories .head_categories {
+  .shopcategories .head_categories {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -4783,21 +4275,21 @@ p {
     font-family: var(--neueregular);
     position: relative;
   }
-  #categories .head_categories li {
+  .shopcategories .head_categories li {
     padding: 5px 5px;
   }
-  #categories .head_categories li a {
+  .shopcategories .head_categories li a {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.1em;
   }
-  #categories .head_categories li .activespan {
+  .shopcategories .head_categories li .activespan {
     padding: 3px 8px;
     background-color: var(--yellow);
     text-decoration: underline;
   }
-  #categories .head_categories li .categorymenu {
+  .shopcategories .head_categories li .categorymenu {
     display: none;
     height: 300px;
     background-color: white;
@@ -4811,18 +4303,18 @@ p {
     top: 100%;
     z-index: 32;
   }
-  #categories .head_categories li .categorymenu .all {
+  .shopcategories .head_categories li .categorymenu .all {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
   }
-  #categories .head_categories li .categorymenu .left {
+  .shopcategories .head_categories li .categorymenu .left {
     height: 100%;
     overflow-y: scroll;
     position: relative;
   }
-  #categories .head_categories li .categorymenu .left span {
+  .shopcategories .head_categories li .categorymenu .left span {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -4831,7 +4323,7 @@ p {
     text-decoration-line: underline;
     margin-bottom: 15px;
   }
-  #categories .head_categories li .categorymenu .left .seeall {
+  .shopcategories .head_categories li .categorymenu .left .seeall {
     position: absolute;
     top: 4px;
     right: 0;
@@ -4840,12 +4332,12 @@ p {
     color: var(--yellow);
     text-decoration: none;
   }
-  #categories .head_categories li .categorymenu .left ul {
+  .shopcategories .head_categories li .categorymenu .left ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  #categories .head_categories li .categorymenu .left ul li {
+  .shopcategories .head_categories li .categorymenu .left ul li {
     padding: 6px 0;
     font-family: var(--neueregular);
     font-weight: 400;
@@ -4853,21 +4345,56 @@ p {
     line-height: 14px;
     letter-spacing: 0.08em;
   }
-  #categories .head_categories li .categorymenu .left ul li:first-child {
+  .shopcategories .head_categories li .categorymenu .left ul li:first-child {
     padding-top: 25px;
   }
-  #categories .head_categories li .categorymenu .middle {
+  .shopcategories .head_categories li .categorymenu .middle {
     display: none;
   }
-  #categories .head_categories li .categorymenu .right {
+  .shopcategories .head_categories li .categorymenu .right {
     display: none;
   }
-  #shoptext {
+}
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.shoptext {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+.shoptext p {
+  font-family: var(--neueregular);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+.shoptext p span:first-child {
+  color: var(--yellow);
+  font-family: var(--neuebold);
+}
+.shoptext p span:last-child {
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .shoptext {
     padding: 20px 0;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
   }
-  #shoptext p {
+  .shoptext p {
     font-family: var(--neueregular);
     font-weight: 400;
     font-size: 20px;
@@ -4875,20 +4402,63 @@ p {
     text-align: center;
     letter-spacing: 0.08em;
   }
-  #shoptext p span:first-child {
+  .shoptext p span:first-child {
     color: var(--yellow);
     font-family: var(--neuebold);
   }
-  #shoptext p span:last-child {
+  .shoptext p span:last-child {
     font-style: italic;
   }
+}
+:root {
+  --white: #FFFFFF;
+  --yellow: #EDF109;
+  --neueregular: NeuePowerRegular;
+  --neuemedium: NeuePowerMedium;
+  --neuelight: NeuePowerLight;
+  --neueultra: NeuePowerUltra;
+  --neuebold: NeuePowerBold;
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.shopbreadcrumb {
+  padding: 20px 0;
+  margin: 0;
+}
+.shopbreadcrumb .keeper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+.shopbreadcrumb .keeper div {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--neuelight);
+  letter-spacing: 0.08em;
+}
+.shopbreadcrumb .keeper a {
+  font-family: var(--neueregular);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+}
+.shopbreadcrumb .keeper a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
   .breadcrumb {
     padding: 5px 0px;
     margin: 0;
   }
   .breadcrumb .keeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
   }
@@ -4906,7 +4476,404 @@ p {
     line-height: 18px;
     letter-spacing: 0.08em;
   }
-  #clothing .all .top {
+}
+.shopclothes .all .top {
+  text-align: center;
+  font-family: var(--neueultra);
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--yellow);
+  letter-spacing: 0.08em;
+}
+.shopclothes .all .filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.shopclothes .all .filter select {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--neueregular);
+  letter-spacing: 0.08em;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+.shopclothes .all .filternew {
+  display: flex;
+  margin-top: 50px;
+  padding: 0 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopclothes .all .filternew .filterdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--neueregular);
+  letter-spacing: 0.08em;
+  padding-bottom: 3px;
+  position: relative;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  padding: 6px 0;
+}
+.shopclothes .all .filternew .filterdiv svg {
+  transition: 0.5s;
+  width: 100%;
+}
+.shopclothes .all .filternew .filterdiv .svgkeeper {
+  transition: 0.1s;
+}
+.shopclothes .all .filternew .filterdiv span {
+  padding-left: 2px;
+}
+.shopclothes .all .filternew .filterdiv .roundarrow {
+  transform: rotate(180deg) !important;
+}
+.shopclothes .all .filternew .filterdiv ul {
+  list-style: none;
+  display: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid black;
+  z-index: 43432;
+}
+.shopclothes .all .filternew .filterdiv ul .yellowli {
+  background-color: var(--yellow);
+}
+.shopclothes .all .filternew .filterdiv ul li {
+  padding: 5px;
+}
+.shopclothes .all .filternew .filterdiv ul li:hover {
+  background-color: var(--yellow);
+}
+.shopclothes .all .pricerange {
+  display: flex;
+  padding: 0 12px;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.shopclothes .all .pricerange .price-input {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.shopclothes .all .pricerange .price-input .inputspan {
+  margin: 0 10px;
+}
+.shopclothes .all .pricerange .price-input .axirincnispan {
+  margin-right: 10px;
+}
+.shopclothes .all .pricerange input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.shopclothes .all .pricerange input {
+  width: 30%;
+  font-size: 16px;
+  font-family: var(--neueregular);
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.shopclothes .all .pricerange ::-moz-selection {
+  color: #fff;
+  background: var(--yellow);
+  cursor: pointer;
+}
+.shopclothes .all .pricerange ::selection {
+  color: #fff;
+  background: var(--yellow);
+  cursor: pointer;
+}
+.shopclothes .all .pricerange input[type=number]::-webkit-outer-spin-button,
+.shopclothes .all .pricerange input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.shopclothes .all .pricerange .slider1 {
+  height: 0.8px;
+  right: 12px;
+  top: 76%;
+  width: 84%;
+  position: absolute;
+  border-radius: 5px;
+  background: black;
+}
+.shopclothes .all .pricerange .range-input {
+  position: relative;
+  width: 83%;
+  margin-top: 17px;
+  height: 0px;
+}
+.shopclothes .all .pricerange .range-input input {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 5px;
+  top: 48%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.shopclothes .all .pricerange input[type=range]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: var(--yellow);
+  outline: 1px solid black;
+  padding: 10px;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.shopclothes .all .pricerange input[type=range]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: var(--yellow);
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.shopclothes .all .products {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shopclothes .all .products .product {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px 0;
+  position: relative;
+}
+.shopclothes .all .products .product:hover .top .wishlist {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.shopclothes .all .products .product:hover .bottom .basket {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.shopclothes .all .products .product:hover .bottom .bobotleft {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.shopclothes .all .products .product:hover .bottom .bobotright {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.shopclothes .all .products .product .top {
+  position: relative;
+}
+.shopclothes .all .products .product .top .wishlist {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.shopclothes .all .products .product .top .wishlist svg {
+  transition: 0.3s;
+}
+.shopclothes .all .products .product .top .wishlist:hover svg {
+  fill: var(--yellow);
+}
+.shopclothes .all .products .product .top .wishlist:hover svg path {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+}
+.shopclothes .all .products .product .top .discount_percent {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -2%;
+  right: 2%;
+}
+.shopclothes .all .products .product .top .discount_percent span {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: var(--yellow);
+  color: black;
+  font-family: var(--neueregular);
+}
+.shopclothes .all .products .product .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.shopclothes .all .products .product .bottom .botop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shopclothes .all .products .product .bottom .botop .botopleft {
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: var(--neuelight);
+  letter-spacing: 0.08em;
+}
+.shopclothes .all .products .product .bottom .botop .botopright {
+  font-family: var(--neuebold);
+  letter-spacing: 0.08em;
+}
+.shopclothes .all .products .product .bottom .botop .botopright .discprice {
+  text-align: end;
+  font-size: 19px;
+  text-decoration: none !important;
+}
+.shopclothes .all .products .product .bottom .bobottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 8px;
+}
+.shopclothes .all .products .product .bottom .bobottom .basket {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.shopclothes .all .products .product .bottom .bobottom .basket svg {
+  transition: 0.3s;
+}
+.shopclothes .all .products .product .bottom .bobottom .basket:hover svg {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+}
+.shopclothes .all .products .product .bottom .bobottom .basket:hover svg path {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+}
+.shopclothes .all .products .product .bottom .bobottom .bobotleft {
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  padding-left: 10px;
+}
+.shopclothes .all .products .product .bottom .bobottom .bobotleft select {
+  width: 100%;
+  outline: none;
+  font-family: var(--neueregular);
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+.shopclothes .all .products .product .bottom .bobottom .bobotright {
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.shopclothes .all .products .product .bottom .bobottom .bobotright input {
+  display: none;
+}
+.shopclothes .all .products .product .bottom .bobottom .bobotright label,
+.shopclothes .all .products .product .bottom .bobottom .bobotright .color_box {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border: 0.3px solid white;
+  outline: 0.3px solid black;
+  position: relative;
+  margin-left: 8px;
+}
+.shopclothes .all .products .product .bottom .bobottom .bobotright label .markicon,
+.shopclothes .all .products .product .bottom .bobottom .bobotright .color_box .markicon {
+  font-size: 20px;
+  position: absolute;
+  bottom: -30%;
+  left: -25%;
+}
+.shopclothes .all .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.shopclothes .all .pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.shopclothes .all .pagination ul li {
+  background-color: black;
+  width: 7%;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.shopclothes .all .pagination ul li:hover {
+  background-color: var(--yellow);
+  padding: 3px;
+}
+.shopclothes .all .pagination ul .activepagination {
+  background-color: var(--yellow);
+  padding: 3px 0;
+}
+.shopclothes .all .loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.shopclothes .all .loadmore a {
+  padding: 20px 90px;
+  color: black;
+  border: 1px solid black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  font-family: var(--neueregular);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 576px) {
+  .shopclothes .all .top {
     text-align: center;
     font-family: var(--neueultra);
     font-weight: 800;
@@ -4916,13 +4883,13 @@ p {
     color: var(--yellow);
     letter-spacing: 0.08em;
   }
-  #clothing .all .filter {
+  .shopclothes .all .filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
   }
-  #clothing .all .filter select {
+  .shopclothes .all .filter select {
     border: none;
     border-bottom: 1px solid black;
     outline: none;
@@ -4934,7 +4901,7 @@ p {
     padding-bottom: 3px;
     cursor: pointer;
   }
-  #clothing .all .filternew {
+  .shopclothes .all .filternew {
     display: flex;
     margin-top: 30px;
     padding: 0 12px;
@@ -4944,7 +4911,7 @@ p {
     width: 100%;
     position: relative;
   }
-  #clothing .all .filternew .filterdiv {
+  .shopclothes .all .filternew .filterdiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -4957,15 +4924,15 @@ p {
     width: 30%;
     margin-bottom: 10px;
   }
-  #clothing .all .filternew .filterdiv svg {
+  .shopclothes .all .filternew .filterdiv svg {
     transition: 0.5s;
     width: 100%;
   }
-  #clothing .all .filternew .filterdiv .svgkeeper {
+  .shopclothes .all .filternew .filterdiv .svgkeeper {
     transition: 0.1s;
     width: 10%;
   }
-  #clothing .all .filternew .filterdiv .sorttype {
+  .shopclothes .all .filternew .filterdiv .sorttype {
     padding-left: 2px;
     width: 90% !important;
     font-weight: 400;
@@ -4974,22 +4941,22 @@ p {
     font-family: var(--neueregular);
     letter-spacing: 0.08em;
   }
-  #clothing .all .filternew .filterdiv .roundarrow {
+  .shopclothes .all .filternew .filterdiv .roundarrow {
     transform: rotate(180deg) !important;
   }
-  #clothing .all .filternew .filterdiv .sortbycount,
-  #clothing .all .filternew .filterdiv .sortbybodyfit {
+  .shopclothes .all .filternew .filterdiv .sortbycount,
+  .shopclothes .all .filternew .filterdiv .sortbybodyfit {
     left: 0%;
   }
-  #clothing .all .filternew .filterdiv .sortbyorder {
+  .shopclothes .all .filternew .filterdiv .sortbyorder {
     left: 50%;
     transform: translateX(-50%);
   }
-  #clothing .all .filternew .filterdiv .sortbycolor,
-  #clothing .all .filternew .filterdiv .sortbysize {
+  .shopclothes .all .filternew .filterdiv .sortbycolor,
+  .shopclothes .all .filternew .filterdiv .sortbysize {
     right: 0%;
   }
-  #clothing .all .filternew .filterdiv ul {
+  .shopclothes .all .filternew .filterdiv ul {
     list-style: none;
     display: none;
     background-color: white;
@@ -5001,17 +4968,17 @@ p {
     border: 1px solid black;
     z-index: 43432;
   }
-  #clothing .all .filternew .filterdiv ul .yellowli {
+  .shopclothes .all .filternew .filterdiv ul .yellowli {
     background-color: var(--yellow);
   }
-  #clothing .all .filternew .filterdiv ul li {
+  .shopclothes .all .filternew .filterdiv ul li {
     padding: 6px;
     letter-spacing: 0.1em;
   }
-  #clothing .all .filternew .filterdiv ul li:hover {
+  .shopclothes .all .filternew .filterdiv ul li:hover {
     background-color: var(--yellow);
   }
-  #clothing .all .filternew .price-input-mobile {
+  .shopclothes .all .filternew .price-input-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5020,22 +4987,22 @@ p {
     font-family: var(--neueregular);
     margin-bottom: 4px;
   }
-  #clothing .all .filternew .price-input-mobile input::-webkit-outer-spin-button,
-  #clothing .all .filternew .price-input-mobile input::-webkit-inner-spin-button {
+  .shopclothes .all .filternew .price-input-mobile input::-webkit-outer-spin-button,
+  .shopclothes .all .filternew .price-input-mobile input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-  #clothing .all .filternew .price-input-mobile .inputspan {
+  .shopclothes .all .filternew .price-input-mobile .inputspan {
     font-size: 12px;
     font-family: var(--neueregular);
     font-size: 15px;
     letter-spacing: 0.08em;
     margin-right: 4px;
   }
-  #clothing .all .filternew .price-input-mobile .axirincnispan {
+  .shopclothes .all .filternew .price-input-mobile .axirincnispan {
     margin-right: 4px;
   }
-  #clothing .all .filternew .price-input-mobile .input-max {
+  .shopclothes .all .filternew .price-input-mobile .input-max {
     width: 40%;
     outline: none;
     border: none;
@@ -5045,7 +5012,7 @@ p {
     text-align: center;
     letter-spacing: 0.1em;
   }
-  #clothing .all .filternew .price-input-mobile .input-min {
+  .shopclothes .all .filternew .price-input-mobile .input-min {
     width: 40%;
     outline: none;
     padding-left: 0px;
@@ -5056,7 +5023,7 @@ p {
     text-align: center;
     letter-spacing: 0.1em;
   }
-  #clothing .all .pricerange {
+  .shopclothes .all .pricerange {
     display: flex;
     padding: 0 12px;
     justify-content: space-between;
@@ -5066,28 +5033,28 @@ p {
     position: relative;
     overflow: hidden;
   }
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
+  .shopclothes .all .pricerange input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
             appearance: none;
   }
-  #clothing .all .pricerange .price-input {
+  .shopclothes .all .pricerange .price-input {
     display: none !important;
   }
-  #clothing .all .pricerange ::-moz-selection {
+  .shopclothes .all .pricerange ::-moz-selection {
     color: #fff;
     background: var(--yellow);
     cursor: pointer;
   }
-  #clothing .all .pricerange ::selection {
+  .shopclothes .all .pricerange ::selection {
     color: #fff;
     background: var(--yellow);
     cursor: pointer;
   }
-  #clothing .all .pricerange input[type=number]::-webkit-outer-spin-button,
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
+  .shopclothes .all .pricerange input[type=number]::-webkit-outer-spin-button,
+  .shopclothes .all .pricerange input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
-  #clothing .all .pricerange .slider1 {
+  .shopclothes .all .pricerange .slider1 {
     height: 0.8px;
     left: 50%;
     transform: translateX(-50%);
@@ -5097,13 +5064,13 @@ p {
     border-radius: 5px;
     background: black;
   }
-  #clothing .all .pricerange .range-input {
+  .shopclothes .all .pricerange .range-input {
     position: relative;
     width: 90%;
     margin-bottom: 15px;
     height: 0px;
   }
-  #clothing .all .pricerange .range-input input {
+  .shopclothes .all .pricerange .range-input input {
     position: absolute;
     cursor: pointer;
     width: 110%;
@@ -5115,7 +5082,7 @@ p {
     -webkit-appearance: none;
     -moz-appearance: none;
   }
-  #clothing .all .pricerange input[type=range]::-webkit-slider-thumb {
+  .shopclothes .all .pricerange input[type=range]::-webkit-slider-thumb {
     height: 23px;
     width: 23px;
     background: var(--yellow);
@@ -5127,7 +5094,7 @@ p {
     border-radius: 100%;
     -webkit-appearance: none;
   }
-  #clothing .all .pricerange input[type=range]::-moz-range-thumb {
+  .shopclothes .all .pricerange input[type=range]::-moz-range-thumb {
     height: 23px;
     width: 23px;
     border: none;
@@ -5137,7 +5104,7 @@ p {
     -moz-appearance: none;
     box-shadow: 0px 0px 0px 0px;
   }
-  #clothing .all .products {
+  .shopclothes .all .products {
     margin: 40px 0;
     display: flex;
     padding: 0 12px;
@@ -5145,17 +5112,17 @@ p {
     align-items: center;
     flex-wrap: wrap;
   }
-  #clothing .all .products .product {
+  .shopclothes .all .products .product {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin: 20px 0;
     position: relative;
   }
-  #clothing .all .products .product .top {
+  .shopclothes .all .products .product .top {
     position: relative;
   }
-  #clothing .all .products .product .top .wishlist {
+  .shopclothes .all .products .product .top .wishlist {
     position: absolute;
     top: 0%;
     right: 5%;
@@ -5163,66 +5130,66 @@ p {
     cursor: pointer;
     background-color: transparent;
   }
-  #clothing .all .products .product .top .wishlist svg {
+  .shopclothes .all .products .product .top .wishlist svg {
     transition: 0.3s;
   }
-  #clothing .all .products .product .top .wishlist:focus svg {
+  .shopclothes .all .products .product .top .wishlist:focus svg {
     fill: var(--yellow);
   }
-  #clothing .all .products .product .top .wishlist:focus svg path {
+  .shopclothes .all .products .product .top .wishlist:focus svg path {
     fill: var(--yellow);
     stroke: var(--yellow);
   }
-  #clothing .all .products .product .top .discount_percent {
+  .shopclothes .all .products .product .top .discount_percent {
     margin: 0;
     padding: 0;
     position: absolute;
     bottom: -2%;
     right: 2%;
   }
-  #clothing .all .products .product .top .discount_percent span {
+  .shopclothes .all .products .product .top .discount_percent span {
     font-size: 11px;
     padding: 3px 7px;
     background-color: var(--yellow);
     color: black;
     font-family: var(--neueregular);
   }
-  #clothing .all .products .product .bottom {
+  .shopclothes .all .products .product .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 10px;
   }
-  #clothing .all .products .product .bottom .botop {
+  .shopclothes .all .products .product .bottom .botop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
-  #clothing .all .products .product .bottom .botop .botopleft {
+  .shopclothes .all .products .product .bottom .botop .botopleft {
     padding-left: 8px;
     font-size: 13px;
     font-family: var(--neuelight);
     letter-spacing: 0.08em;
   }
-  #clothing .all .products .product .bottom .botop .botopright {
+  .shopclothes .all .products .product .bottom .botop .botopright {
     font-family: var(--neuebold);
     letter-spacing: 0.08em;
   }
-  #clothing .all .products .product .bottom .botop .botopright .discprice {
+  .shopclothes .all .products .product .bottom .botop .botopright .discprice {
     text-align: end;
     font-size: 19px;
     text-decoration: none !important;
   }
-  #clothing .all .products .product .bottom .bobottom {
+  .shopclothes .all .products .product .bottom .bobottom {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 8px;
   }
-  #clothing .all .products .product .bottom .bobottom .basket {
+  .shopclothes .all .products .product .bottom .bobottom .basket {
     position: absolute;
     top: 4%;
     left: 5%;
@@ -5232,21 +5199,21 @@ p {
     outline: none;
     background-color: transparent;
   }
-  #clothing .all .products .product .bottom .bobottom .basket svg {
+  .shopclothes .all .products .product .bottom .bobottom .basket svg {
     transition: 0.3s;
   }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg {
+  .shopclothes .all .products .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
     stroke: var(--yellow);
   }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg path {
+  .shopclothes .all .products .product .bottom .bobottom .basket:hover svg path {
     fill: var(--yellow);
     stroke: var(--yellow);
   }
-  #clothing .all .products .product .bottom .bobottom .bobotleft {
+  .shopclothes .all .products .product .bottom .bobottom .bobotleft {
     padding-left: 10px;
   }
-  #clothing .all .products .product .bottom .bobottom .bobotleft select {
+  .shopclothes .all .products .product .bottom .bobottom .bobotleft select {
     width: 100%;
     outline: none;
     font-family: var(--neueregular);
@@ -5261,20 +5228,20 @@ p {
     border-radius: 2px;
     letter-spacing: 0.08em;
   }
-  #clothing .all .products .product .bottom .bobottom .bobotleft select option {
+  .shopclothes .all .products .product .bottom .bobottom .bobotleft select option {
     background-color: white;
   }
-  #clothing .all .products .product .bottom .bobottom .bobotright {
+  .shopclothes .all .products .product .bottom .bobottom .bobotright {
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
-  #clothing .all .products .product .bottom .bobottom .bobotright input {
+  .shopclothes .all .products .product .bottom .bobottom .bobotright input {
     display: none;
   }
-  #clothing .all .products .product .bottom .bobottom .bobotright label,
-  #clothing .all .products .product .bottom .bobottom .bobotright .color_box {
+  .shopclothes .all .products .product .bottom .bobottom .bobotright label,
+  .shopclothes .all .products .product .bottom .bobottom .bobotright .color_box {
     height: 20px;
     width: 20px;
     max-width: 19px;
@@ -5284,20 +5251,20 @@ p {
     position: relative;
     margin-left: 8px;
   }
-  #clothing .all .products .product .bottom .bobottom .bobotright label .markicon,
-  #clothing .all .products .product .bottom .bobottom .bobotright .color_box .markicon {
+  .shopclothes .all .products .product .bottom .bobottom .bobotright label .markicon,
+  .shopclothes .all .products .product .bottom .bobottom .bobotright .color_box .markicon {
     font-size: 25px;
     position: absolute;
     bottom: -10%;
     left: -10%;
   }
-  #clothing .all .pagination {
+  .shopclothes .all .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
   }
-  #clothing .all .pagination ul {
+  .shopclothes .all .pagination ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -5306,29 +5273,29 @@ p {
     padding: 0;
     margin: 0;
   }
-  #clothing .all .pagination ul li {
+  .shopclothes .all .pagination ul li {
     background-color: black;
     width: 10%;
     padding: 2px;
     cursor: pointer;
     transition: 0.2s;
   }
-  #clothing .all .pagination ul li:hover {
+  .shopclothes .all .pagination ul li:hover {
     background-color: var(--yellow);
     padding: 3px;
   }
-  #clothing .all .pagination ul .activepagination {
+  .shopclothes .all .pagination ul .activepagination {
     background-color: var(--yellow);
     padding: 3px 0;
   }
-  #clothing .all .loadmore {
+  .shopclothes .all .loadmore {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 50px;
   }
-  #clothing .all .loadmore a {
+  .shopclothes .all .loadmore a {
     padding: 20px 90px;
     color: black;
     border: 1px solid black;
@@ -5339,1366 +5306,14 @@ p {
     letter-spacing: 0.08em;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (min-width: 1100px) {
   .seeall {
     display: none;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) and (min-width: 577px) {
+@media (min-width: 1100px) and (min-width: 577px) {
   .price-input-mobile {
     display: none !important;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  #shoptext {
-    padding: 20px 0;
-    border-bottom: 1px solid black;
-  }
-  #shoptext p {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: 0.08em;
-  }
-  #shoptext p span:first-child {
-    color: var(--yellow);
-    font-family: var(--neuebold);
-  }
-  #shoptext p span:last-child {
-    font-style: italic;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .breadcrumb {
-    padding: 20px 0;
-    margin: 0;
-  }
-  .breadcrumb .keeper {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 0;
-  }
-  .breadcrumb .keeper div {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .breadcrumb .keeper a {
-    font-family: var(--neueregular);
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-  }
-  .breadcrumb .keeper a:hover {
-    text-decoration: underline;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  #clothing .all .top {
-    text-align: center;
-    font-family: var(--neueultra);
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    color: var(--yellow);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-  }
-  #clothing .all .filter select {
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-    padding-bottom: 3px;
-    cursor: pointer;
-  }
-  #clothing .all .filternew {
-    display: flex;
-    margin-top: 50px;
-    padding: 0 12px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #clothing .all .filternew .filterdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-    padding-bottom: 3px;
-    position: relative;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-    padding: 6px 0;
-  }
-  #clothing .all .filternew .filterdiv svg {
-    transition: 0.5s;
-    width: 100%;
-  }
-  #clothing .all .filternew .filterdiv .svgkeeper {
-    transition: 0.1s;
-  }
-  #clothing .all .filternew .filterdiv span {
-    padding-left: 2px;
-  }
-  #clothing .all .filternew .filterdiv .roundarrow {
-    transform: rotate(180deg) !important;
-  }
-  #clothing .all .filternew .filterdiv ul {
-    list-style: none;
-    display: none;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border: 1px solid black;
-    z-index: 43432;
-  }
-  #clothing .all .filternew .filterdiv ul .yellowli {
-    background-color: var(--yellow);
-  }
-  #clothing .all .filternew .filterdiv ul li {
-    padding: 5px;
-  }
-  #clothing .all .filternew .filterdiv ul li:hover {
-    background-color: var(--yellow);
-  }
-  #clothing .all .pricerange {
-    display: flex;
-    padding: 0 12px;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-  #clothing .all .pricerange .price-input {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    justify-content: center;
-    border-bottom: 1px solid black;
-  }
-  #clothing .all .pricerange .price-input .inputspan {
-    margin: 0 10px;
-  }
-  #clothing .all .pricerange .price-input .axirincnispan {
-    margin-right: 10px;
-  }
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-            appearance: none;
-  }
-  #clothing .all .pricerange input {
-    width: 30%;
-    font-size: 16px;
-    font-family: var(--neueregular);
-    border: none;
-    outline: none;
-    text-align: center;
-  }
-  #clothing .all .pricerange ::-moz-selection {
-    color: #fff;
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  #clothing .all .pricerange ::selection {
-    color: #fff;
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  #clothing .all .pricerange input[type=number]::-webkit-outer-spin-button,
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  #clothing .all .pricerange .slider1 {
-    height: 0.8px;
-    right: 12px;
-    top: 76%;
-    width: 84%;
-    position: absolute;
-    border-radius: 5px;
-    background: black;
-  }
-  #clothing .all .pricerange .range-input {
-    position: relative;
-    width: 83%;
-    margin-top: 17px;
-    height: 0px;
-  }
-  #clothing .all .pricerange .range-input input {
-    position: absolute;
-    cursor: pointer;
-    width: 100%;
-    height: 5px;
-    top: 48%;
-    background: none;
-    pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  #clothing .all .pricerange input[type=range]::-webkit-slider-thumb {
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
-    background: var(--yellow);
-    outline: 1px solid black;
-    padding: 10px;
-    pointer-events: auto;
-    -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  #clothing .all .pricerange input[type=range]::-moz-range-thumb {
-    height: 17px;
-    width: 17px;
-    border: none;
-    border-radius: 50%;
-    background: var(--yellow);
-    pointer-events: auto;
-    -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  #clothing .all .products {
-    margin: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #clothing .all .products .product {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 20px 0;
-    position: relative;
-  }
-  #clothing .all .products .product:hover .top .wishlist {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .basket {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .bobotleft {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .bobotright {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product .top {
-    position: relative;
-  }
-  #clothing .all .products .product .top .wishlist {
-    position: absolute;
-    top: 0%;
-    visibility: hidden;
-    opacity: 0;
-    right: 5%;
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  #clothing .all .products .product .top .wishlist svg {
-    transition: 0.3s;
-  }
-  #clothing .all .products .product .top .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  #clothing .all .products .product .top .wishlist:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: -2%;
-    right: 2%;
-  }
-  #clothing .all .products .product .top .discount_percent span {
-    font-size: 12px;
-    padding: 5px 10px;
-    background-color: var(--yellow);
-    color: black;
-    font-family: var(--neueregular);
-  }
-  #clothing .all .products .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  #clothing .all .products .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #clothing .all .products .product .bottom .botop .botopleft {
-    padding-left: 10px;
-    font-size: 15px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  #clothing .all .products .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    transition: 0.3s;
-    cursor: pointer;
-    border: none;
-    opacity: 0;
-    visibility: hidden;
-    outline: none;
-    background-color: transparent;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotleft {
-    opacity: 0;
-    transition: 0.3s;
-    visibility: hidden;
-    padding-left: 10px;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright {
-    opacity: 0;
-    transition: 0.3s;
-    visibility: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright label .color_box {
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border: 0.3px solid white;
-    outline: 0.3px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright label .color_box .markicon {
-    font-size: 20px;
-    position: absolute;
-    bottom: -30%;
-    left: -25%;
-  }
-  #clothing .all .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-  #clothing .all .pagination ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  #clothing .all .pagination ul li {
-    background-color: black;
-    width: 7%;
-    padding: 2px;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  #clothing .all .pagination ul li:hover {
-    background-color: var(--yellow);
-    padding: 3px;
-  }
-  #clothing .all .pagination ul .activepagination {
-    background-color: var(--yellow);
-    padding: 3px 0;
-  }
-  #clothing .all .loadmore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  #clothing .all .loadmore a {
-    padding: 20px 90px;
-    color: black;
-    border: 1px solid black;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  #categories {
-    width: 100%;
-    background-color: white;
-    color: black;
-    border-bottom: 1px solid black;
-  }
-  #categories .head_categories {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding: 0 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--neueregular);
-    position: relative;
-  }
-  #categories .head_categories li {
-    padding: 15px 0;
-  }
-  #categories .head_categories li:hover .categorymenu {
-    opacity: 1;
-    visibility: visible;
-  }
-  #categories .head_categories li a {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-  }
-  #categories .head_categories li a:hover {
-    text-decoration: underline;
-  }
-  #categories .head_categories li .activespan {
-    padding: 2px 8px;
-    background-color: var(--yellow);
-    text-decoration: underline;
-  }
-  #categories .head_categories li .categorymenu {
-    height: 470px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    background-color: white;
-    box-shadow: 0px 0px 5px var(--yellow);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 101%;
-    z-index: 32;
-  }
-  #categories .head_categories li .categorymenu .left {
-    height: 100%;
-    overflow-y: scroll;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-track {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left span {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-    text-decoration-line: underline;
-    margin-bottom: 15px;
-  }
-  #categories .head_categories li .categorymenu .left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #categories .head_categories li .categorymenu .left ul li {
-    padding: 6px 0;
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-  }
-  #categories .head_categories li .categorymenu .left ul li:first-child {
-    padding-top: 25px;
-  }
-  #categories .head_categories li .categorymenu .middle {
-    padding: 0 10px;
-    overflow-y: scroll;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 10px;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-track {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle .mainspan {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .namecate {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-    text-align: center;
-    margin-top: 10px;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper {
-    width: 90%;
-    padding: 10px;
-    border-radius: 100%;
-    border: 1px solid var(--yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper img {
-    border-radius: 100%;
-  }
-  #categories .head_categories li .categorymenu .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 10px;
-  }
-  #categories .head_categories li .categorymenu .right .mainspan {
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    margin-bottom: 15px;
-    padding-left: 36px;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: relative;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto img {
-    width: 90%;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
-  }
-  #categories .head_categories li .categorymenu .right .topphoto .nazvanie {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-family: var(--neuemedium);
-    transform: translateX(-40%);
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: relative;
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto img {
-    width: 90%;
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto .nazvanie {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-family: var(--neuemedium);
-    transform: translateX(-40%);
-  }
-}
-@media (min-width: 1200px) and (max-width: 1350px) {
-  .seeall {
-    display: none;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1350px) and (min-width: 577px) {
-  .price-input-mobile {
-    display: none !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1350px) {
-  #shoptext {
-    padding: 20px 0;
-    border-bottom: 1px solid black;
-  }
-  #shoptext p {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: 0.08em;
-  }
-  #shoptext p span:first-child {
-    color: var(--yellow);
-    font-family: var(--neuebold);
-  }
-  #shoptext p span:last-child {
-    font-style: italic;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1350px) {
-  .breadcrumb {
-    padding: 20px 0;
-    margin: 0;
-  }
-  .breadcrumb .keeper {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 0;
-  }
-  .breadcrumb .keeper div {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .breadcrumb .keeper a {
-    font-family: var(--neueregular);
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-  }
-  .breadcrumb .keeper a:hover {
-    text-decoration: underline;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1350px) {
-  #clothing .all .top {
-    text-align: center;
-    font-family: var(--neueultra);
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    color: var(--yellow);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-  }
-  #clothing .all .filter select {
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-    padding-bottom: 3px;
-    cursor: pointer;
-  }
-  #clothing .all .filternew {
-    display: flex;
-    margin-top: 50px;
-    padding: 0 12px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #clothing .all .filternew .filterdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-    padding-bottom: 3px;
-    position: relative;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-    padding: 6px 0;
-  }
-  #clothing .all .filternew .filterdiv svg {
-    transition: 0.5s;
-    width: 100%;
-  }
-  #clothing .all .filternew .filterdiv .svgkeeper {
-    transition: 0.1s;
-  }
-  #clothing .all .filternew .filterdiv span {
-    padding-left: 2px;
-  }
-  #clothing .all .filternew .filterdiv .roundarrow {
-    transform: rotate(180deg) !important;
-  }
-  #clothing .all .filternew .filterdiv ul {
-    list-style: none;
-    display: none;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border: 1px solid black;
-    z-index: 43432;
-  }
-  #clothing .all .filternew .filterdiv ul .yellowli {
-    background-color: var(--yellow);
-  }
-  #clothing .all .filternew .filterdiv ul li {
-    padding: 5px;
-  }
-  #clothing .all .filternew .filterdiv ul li:hover {
-    background-color: var(--yellow);
-  }
-  #clothing .all .pricerange {
-    display: flex;
-    padding: 0 12px;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-  #clothing .all .pricerange .price-input {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    justify-content: center;
-    border-bottom: 1px solid black;
-  }
-  #clothing .all .pricerange .price-input .inputspan {
-    margin: 0 10px;
-  }
-  #clothing .all .pricerange .price-input .axirincnispan {
-    margin-right: 10px;
-  }
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-            appearance: none;
-  }
-  #clothing .all .pricerange input {
-    width: 30%;
-    font-size: 16px;
-    font-family: var(--neueregular);
-    border: none;
-    outline: none;
-    text-align: center;
-  }
-  #clothing .all .pricerange ::-moz-selection {
-    color: #fff;
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  #clothing .all .pricerange ::selection {
-    color: #fff;
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  #clothing .all .pricerange input[type=number]::-webkit-outer-spin-button,
-  #clothing .all .pricerange input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  #clothing .all .pricerange .slider1 {
-    height: 0.8px;
-    right: 12px;
-    top: 76%;
-    width: 84%;
-    position: absolute;
-    border-radius: 5px;
-    background: black;
-  }
-  #clothing .all .pricerange .range-input {
-    position: relative;
-    width: 83%;
-    margin-top: 17px;
-    height: 0px;
-  }
-  #clothing .all .pricerange .range-input input {
-    position: absolute;
-    cursor: pointer;
-    width: 100%;
-    height: 5px;
-    top: 48%;
-    background: none;
-    pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  #clothing .all .pricerange input[type=range]::-webkit-slider-thumb {
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
-    background: var(--yellow);
-    outline: 1px solid black;
-    padding: 10px;
-    pointer-events: auto;
-    -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  #clothing .all .pricerange input[type=range]::-moz-range-thumb {
-    height: 17px;
-    width: 17px;
-    border: none;
-    border-radius: 50%;
-    background: var(--yellow);
-    pointer-events: auto;
-    -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  #clothing .all .products {
-    margin: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #clothing .all .products .product {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 20px 0;
-    position: relative;
-  }
-  #clothing .all .products .product:hover .top .wishlist {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .basket {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .bobotleft {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product:hover .bottom .bobotright {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  #clothing .all .products .product .top {
-    position: relative;
-  }
-  #clothing .all .products .product .top .wishlist {
-    position: absolute;
-    top: 0%;
-    right: 5%;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  #clothing .all .products .product .top .wishlist svg {
-    transition: 0.3s;
-  }
-  #clothing .all .products .product .top .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  #clothing .all .products .product .top .wishlist:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: -2%;
-    right: 2%;
-  }
-  #clothing .all .products .product .top .discount_percent span {
-    font-size: 12px;
-    padding: 5px 10px;
-    background-color: var(--yellow);
-    color: black;
-    font-family: var(--neueregular);
-  }
-  #clothing .all .products .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  #clothing .all .products .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #clothing .all .products .product .bottom .botop .botopleft {
-    padding-left: 10px;
-    font-size: 15px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  #clothing .all .products .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket {
-    position: absolute;
-    top: 5%;
-    opacity: 0;
-    visibility: hidden;
-    left: 5%;
-    transition: 0.3s;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
-  }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotleft {
-    opacity: 0;
-    transition: 0.3s;
-    visibility: hidden;
-    padding-left: 10px;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright {
-    opacity: 0;
-    transition: 0.3s;
-    visibility: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright label,
-  #clothing .all .products .product .bottom .bobottom .bobotright .color_box {
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border: 0.3px solid white;
-    outline: 0.3px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  #clothing .all .products .product .bottom .bobottom .bobotright label .markicon,
-  #clothing .all .products .product .bottom .bobottom .bobotright .color_box .markicon {
-    font-size: 20px;
-    position: absolute;
-    bottom: -30%;
-    left: -25%;
-  }
-  #clothing .all .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-  #clothing .all .pagination ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  #clothing .all .pagination ul li {
-    background-color: black;
-    width: 7%;
-    padding: 2px;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  #clothing .all .pagination ul li:hover {
-    background-color: var(--yellow);
-    padding: 3px;
-  }
-  #clothing .all .pagination ul .activepagination {
-    background-color: var(--yellow);
-    padding: 3px 0;
-  }
-  #clothing .all .loadmore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  #clothing .all .loadmore a {
-    padding: 20px 90px;
-    color: black;
-    border: 1px solid black;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    font-family: var(--neueregular);
-    letter-spacing: 0.08em;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1350px) {
-  #categories {
-    width: 100%;
-    background-color: white;
-    color: black;
-    border-bottom: 1px solid black;
-  }
-  #categories .head_categories {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding: 0 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--neueregular);
-    position: relative;
-  }
-  #categories .head_categories li {
-    padding: 15px 0;
-  }
-  #categories .head_categories li:hover .categorymenu {
-    opacity: 1;
-    visibility: visible;
-  }
-  #categories .head_categories li a {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-  }
-  #categories .head_categories li a:hover {
-    text-decoration: underline;
-  }
-  #categories .head_categories li .activespan {
-    padding: 2px 8px;
-    background-color: var(--yellow);
-    text-decoration: underline;
-  }
-  #categories .head_categories li .categorymenu {
-    height: 515px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    background-color: white;
-    box-shadow: 0px 0px 5px var(--yellow);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 101%;
-    z-index: 32;
-  }
-  #categories .head_categories li .categorymenu .left {
-    height: 100%;
-    overflow-y: scroll;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-track {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .left span {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-    text-decoration-line: underline;
-    margin-bottom: 15px;
-  }
-  #categories .head_categories li .categorymenu .left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #categories .head_categories li .categorymenu .left ul li {
-    padding: 6px 0;
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-  }
-  #categories .head_categories li .categorymenu .left ul li:first-child {
-    padding-top: 25px;
-  }
-  #categories .head_categories li .categorymenu .middle {
-    padding: 0 10px;
-    overflow-y: scroll;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 10px;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-track {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  #categories .head_categories li .categorymenu .middle .mainspan {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .namecate {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-    text-align: center;
-    margin-top: 10px;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper {
-    width: 90%;
-    padding: 10px;
-    border-radius: 100%;
-    border: 1px solid var(--yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #categories .head_categories li .categorymenu .middle .bodyfits .maindiv .imgkeeper img {
-    border-radius: 100%;
-  }
-  #categories .head_categories li .categorymenu .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 10px;
-  }
-  #categories .head_categories li .categorymenu .right .mainspan {
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    margin-bottom: 15px;
-    padding-left: 36px;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: relative;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto img {
-    width: 90%;
-  }
-  #categories .head_categories li .categorymenu .right .topphoto .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
-  }
-  #categories .head_categories li .categorymenu .right .topphoto .nazvanie {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-family: var(--neuemedium);
-    transform: translateX(-40%);
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: relative;
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto img {
-    width: 90%;
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 100%);
-  }
-  #categories .head_categories li .categorymenu .right .bottomphoto .nazvanie {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    font-family: var(--neuemedium);
-    transform: translateX(-40%);
   }
 }
 * {
@@ -6797,7 +5412,7 @@ a:hover {
 @media (min-width: 1100px) {
   .all .leftmain .productinfo {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 30px 5px;
   }
@@ -6959,7 +5574,7 @@ a:hover {
   }
   .all .rightmain .top .feedbackdiv div {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .all .rightmain .top .feedbackdiv div .staricon {
@@ -7273,7 +5888,7 @@ a:hover {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright input {
@@ -7466,7 +6081,7 @@ a:hover {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright input {
@@ -7576,7 +6191,7 @@ a:hover {
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .modalmoy .overlaymodall .modalall {
@@ -7584,7 +6199,7 @@ a:hover {
     flex-wrap: wrap;
     position: relative;
     height: 100%;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .modalmoy .overlaymodall .modalall .closemodal {
     position: absolute;
@@ -7609,7 +6224,7 @@ a:hover {
   }
   .modalmoy .overlaymodall .modalall .rating .left {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .left .avgrating {
@@ -7619,7 +6234,7 @@ a:hover {
   }
   .modalmoy .overlaymodall .modalall .rating .left .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
   }
@@ -7632,7 +6247,7 @@ a:hover {
   }
   .modalmoy .overlaymodall .modalall .rating .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
@@ -7686,7 +6301,7 @@ a:hover {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
@@ -7707,7 +6322,7 @@ a:hover {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -7957,7 +6572,7 @@ a:hover {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv .staricon {
@@ -8064,7 +6679,7 @@ a {
   }
   .leftmain .productinfo {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 25px 5px;
   }
@@ -8249,7 +6864,7 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
     padding-left: 10px;
   }
@@ -8553,7 +7168,7 @@ a {
   .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright {
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright input {
@@ -8733,7 +7348,7 @@ a {
   .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright {
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright input {
@@ -8793,7 +7408,7 @@ a {
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .modalmoy .overlaymodall .modalall {
@@ -8801,7 +7416,7 @@ a {
     flex-wrap: wrap;
     position: relative;
     height: 100%;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .modalmoy .overlaymodall .modalall .closemodal {
     position: absolute;
@@ -8825,7 +7440,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .left {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .left .avgrating {
@@ -8835,7 +7450,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .left .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
     padding-bottom: 3px;
@@ -8849,7 +7464,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
@@ -8893,7 +7508,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     order: 1;
   }
@@ -8921,7 +7536,7 @@ a {
   .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
     order: 2;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -9167,7 +7782,7 @@ a {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv .staricon {
@@ -9237,7 +7852,7 @@ a {
   }
   .all .leftmain .productinfo {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 30px 5px;
   }
@@ -9393,7 +8008,7 @@ a {
   }
   .all .rightmain .top .feedbackdiv div {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 10px;
   }
@@ -9712,7 +8327,7 @@ a {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright input {
@@ -9903,7 +8518,7 @@ a {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright input {
@@ -10010,7 +8625,7 @@ a {
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .modalmoy .overlaymodall .modalall {
@@ -10018,7 +8633,7 @@ a {
     flex-wrap: wrap;
     position: relative;
     height: 100%;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .modalmoy .overlaymodall .modalall .closemodal {
     position: absolute;
@@ -10043,7 +8658,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .left {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .left .avgrating {
@@ -10053,7 +8668,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .left .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
   }
@@ -10066,7 +8681,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
@@ -10120,7 +8735,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
@@ -10141,7 +8756,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -10379,7 +8994,7 @@ a {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv .staricon {
@@ -10452,7 +9067,7 @@ a {
   }
   .all .leftmain .productinfo {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 30px 5px;
   }
@@ -10613,7 +9228,7 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
     padding-left: 16px;
   }
@@ -10930,7 +9545,7 @@ a {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright input {
@@ -11121,7 +9736,7 @@ a {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright input {
@@ -11222,7 +9837,7 @@ a {
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .modalmoy .overlaymodall .modalall {
@@ -11230,7 +9845,7 @@ a {
     flex-wrap: wrap;
     position: relative;
     height: 100%;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .modalmoy .overlaymodall .modalall .closemodal {
     position: absolute;
@@ -11255,7 +9870,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .left {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .left .avgrating {
@@ -11265,7 +9880,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .left .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
   }
@@ -11278,7 +9893,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .rating .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .rating .right .reviewcount {
@@ -11332,7 +9947,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .stardiv .staricon {
@@ -11353,7 +9968,7 @@ a {
   }
   .modalmoy .overlaymodall .modalall .reviews .review .top .reviewphotos {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -11591,7 +10206,7 @@ a {
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .photoslider .modalslider .photoslider1 .sliderimgkeeper .sliderinfo .stardiv .staricon {
@@ -12168,7 +10783,7 @@ a:hover {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright input {
@@ -12358,7 +10973,7 @@ a:hover {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright input {
@@ -12896,7 +11511,7 @@ a:hover {
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright {
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright input {
@@ -13076,7 +11691,7 @@ a:hover {
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright {
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright input {
@@ -13600,7 +12215,7 @@ a:hover {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright input {
@@ -13790,7 +12405,7 @@ a:hover {
     visibility: hidden;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright input {
@@ -13895,7 +12510,7 @@ a:hover {
 }
 .breadcrumbregsiter .keeper {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
 }
@@ -14106,7 +12721,7 @@ a:hover {
 }
 .breadcrumblogin .keeper {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
 }
@@ -15016,7 +13631,7 @@ a:hover {
   }
   .checkoutsection .all .formcardkeeper .bash .left {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     font-style: normal;
     font-weight: 400;
@@ -15039,11 +13654,11 @@ a:hover {
   }
   .checkoutsection .all .formcardkeeper .bash .right span {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .checkoutsection .all .formcardkeeper .bash .right span:nth-child(2) {
-    justify-content: start;
+    justify-content: flex-start;
     padding-left: 5px;
   }
   .checkoutsection .all .formcardkeeper .changecardform {
@@ -15984,7 +14599,7 @@ a:hover {
   }
   .checkoutsection .all .formcardkeeper .bash .left {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     font-style: normal;
     font-weight: 400;
@@ -16007,11 +14622,11 @@ a:hover {
   }
   .checkoutsection .all .formcardkeeper .bash .right span {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .checkoutsection .all .formcardkeeper .bash .right span:nth-child(2) {
-    justify-content: start;
+    justify-content: flex-start;
     padding-left: 5px;
   }
   .checkoutsection .all .formcardkeeper .changecardform {
@@ -16855,7 +15470,7 @@ a:hover {
   }
   .ordersection .all .orders .order .top div:nth-child(2) span, .ordersection .all .orders .order .top div:nth-child(4) span {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .ordersection .all .orders .order .bottom {
@@ -17513,7 +16128,7 @@ a:hover {
 }
 .breadcrumbregsiter .keeper {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
 }
@@ -17774,7 +16389,7 @@ a:hover {
 }
 .breadcrumbregsiter .keeper {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
 }
@@ -18105,12 +16720,12 @@ a:hover {
   }
   .years .all div:nth-child(even) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
   .years .all div:nth-child(even) span {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .years .all div:nth-child(even) span:nth-child(1) {
     font-weight: 800;
@@ -18131,12 +16746,12 @@ a:hover {
   }
   .years .all div:nth-child(odd) {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .years .all div:nth-child(odd) span {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .years .all div:nth-child(odd) span:nth-child(1) {
     font-weight: 800;
@@ -18321,7 +16936,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .firstcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18343,7 +16958,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .secondcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18365,7 +16980,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .thirdcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18387,7 +17002,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .forthcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18552,12 +17167,12 @@ a:hover {
   }
   .years .all div:nth-child(even) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
   .years .all div:nth-child(even) span {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .years .all div:nth-child(even) span:nth-child(1) {
     font-weight: 800;
@@ -18578,12 +17193,12 @@ a:hover {
   }
   .years .all div:nth-child(odd) {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .years .all div:nth-child(odd) span {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .years .all div:nth-child(odd) span:nth-child(1) {
     font-weight: 800;
@@ -18765,7 +17380,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .firstcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18787,7 +17402,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .secondcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18809,7 +17424,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .thirdcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18831,7 +17446,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .forthcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -18944,12 +17559,12 @@ a:hover {
   }
   .years .all div:nth-child(even) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
   .years .all div:nth-child(even) span {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .years .all div:nth-child(even) span:nth-child(1) {
     font-weight: 800;
@@ -18970,12 +17585,12 @@ a:hover {
   }
   .years .all div:nth-child(odd) {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .years .all div:nth-child(odd) span {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .years .all div:nth-child(odd) span:nth-child(1) {
     font-weight: 800;
@@ -19160,7 +17775,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .firstcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1700%;
   }
@@ -19182,7 +17797,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .secondcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -19204,7 +17819,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .thirdcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1600%;
   }
@@ -19226,7 +17841,7 @@ a:hover {
   }
   .rabotaysnami .all .allthen .left .forthcar .carouselkeeper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 1700%;
   }

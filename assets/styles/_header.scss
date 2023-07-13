@@ -221,7 +221,7 @@
 
                                     .strelka {
                                         display: flex;
-                                        justify-content: end;
+                                        justify-content: flex-end;
                                         align-items: center;
                                     }
                                 }
@@ -470,7 +470,7 @@
                             height: 60%;
                             display: flex;
                             justify-content: space-between;
-                            align-items: end;
+                            align-items: flex-end;
 
                             a {
                                 font-family: var(--neuebold);

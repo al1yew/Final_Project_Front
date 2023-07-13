@@ -153,12 +153,12 @@ a {
             div {
                 &:nth-child(even) {
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
                     flex-wrap: wrap;
 
                     span {
                         display: flex;
-                        justify-content: end;
+                        justify-content: flex-end;
 
                         &:nth-child(1) {
                             font-weight: 800;
@@ -183,12 +183,12 @@ a {
 
                 &:nth-child(odd) {
                     display: flex;
-                    justify-content: start;
+                    justify-content: flex-start;
                     flex-wrap: wrap;
 
                     span {
                         display: flex;
-                        justify-content: start;
+                        justify-content: flex-start;
 
                         &:nth-child(1) {
                             font-weight: 800;
@@ -403,7 +403,7 @@ a {
 
                         .carouselkeeper {
                             display: flex;
-                            justify-content: start;
+                            justify-content: flex-start;
                             align-items: center;
                             width: 1600%;
 
@@ -428,7 +428,7 @@ a {
 
                         .carouselkeeper {
                             display: flex;
-                            justify-content: start;
+                            justify-content: flex-start;
                             align-items: center;
                             width: 1600%;
 
@@ -453,7 +453,7 @@ a {
 
                         .carouselkeeper {
                             display: flex;
-                            justify-content: start;
+                            justify-content: flex-start;
                             align-items: center;
                             width: 1600%;
 
@@ -478,7 +478,7 @@ a {
 
                         .carouselkeeper {
                             display: flex;
-                            justify-content: start;
+                            justify-content: flex-start;
                             align-items: center;
                             width: 1600%;
 

@@ -111,7 +111,7 @@
                     display: grid;
                     column-gap: 15px;
                     grid-template-columns: auto auto auto auto;
-                    justify-content: start;
+                    justify-content: flex-start;
 
                     a {
                         position: relative;
@@ -136,7 +136,7 @@
                     display: grid;
                     column-gap: 15px;
                     grid-template-columns: auto auto auto auto;
-                    justify-content: end;
+                    justify-content: flex-end;
 
                     a {
                         position: relative;
@@ -197,7 +197,7 @@
 
                 &:nth-child(odd) {
                     flex-direction: column;
-                    justify-content: end;
+                    justify-content: flex-end;
                     display: flex;
                 }
 
@@ -289,7 +289,7 @@
 
                 &:nth-child(odd) {
                     flex-direction: column;
-                    justify-content: end;
+                    justify-content: flex-end;
                     display: flex;
                 }
 

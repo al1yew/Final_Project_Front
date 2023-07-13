@@ -132,7 +132,7 @@ a {
 
             .productinfo {
                 display: flex;
-                justify-content: start;
+                justify-content: flex-start;
                 align-items: center;
                 padding: 30px 5px;
 
@@ -324,7 +324,7 @@ a {
 
                     div {
                         display: flex;
-                        justify-content: start;
+                        justify-content: flex-start;
                         align-items: center;
 
                         .staricon {
@@ -705,7 +705,7 @@ a {
                                     visibility: hidden;
                                     margin: 0 auto;
                                     display: flex;
-                                    justify-content: end;
+                                    justify-content: flex-end;
                                     align-items: center;
 
                                     input {
@@ -942,7 +942,7 @@ a {
                                     visibility: hidden;
                                     margin: 0 auto;
                                     display: flex;
-                                    justify-content: end;
+                                    justify-content: flex-end;
                                     align-items: center;
 
                                     input {
@@ -1061,7 +1061,7 @@ a {
             display: flex;
             height: 100%;
             width: 100%;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: flex-start;
 
             .modalall {
@@ -1069,7 +1069,7 @@ a {
                 flex-wrap: wrap;
                 position: relative;
                 height: 100%;
-                justify-content: start;
+                justify-content: flex-start;
 
                 .closemodal {
                     position: absolute;
@@ -1096,7 +1096,7 @@ a {
 
                     .left {
                         display: flex;
-                        justify-content: start;
+                        justify-content: flex-start;
                         align-items: center;
 
                         .avgrating {
@@ -1107,7 +1107,7 @@ a {
 
                         .stardiv {
                             display: flex;
-                            justify-content: start;
+                            justify-content: flex-start;
                             align-items: center;
                             padding-left: 30px;
 
@@ -1124,7 +1124,7 @@ a {
 
                     .right {
                         display: flex;
-                        justify-content: end;
+                        justify-content: flex-end;
                         align-items: center;
 
                         .reviewcount {
@@ -1185,7 +1185,7 @@ a {
 
                             .stardiv {
                                 display: flex;
-                                justify-content: start;
+                                justify-content: flex-start;
                                 align-items: center;
 
                                 .staricon {
@@ -1210,7 +1210,7 @@ a {
 
                             .reviewphotos {
                                 display: flex;
-                                justify-content: end;
+                                justify-content: flex-end;
                                 align-items: center;
                                 flex-wrap: wrap;
 
@@ -1496,7 +1496,7 @@ a {
 
                         .stardiv {
                             display: flex;
-                            justify-content: start;
+                            justify-content: flex-start;
                             align-items: center;
 
                             .staricon {

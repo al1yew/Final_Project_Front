@@ -1,0 +1,66 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+
+.shoptext {
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+
+    p {
+        font-family: var(--neueregular);
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.08em;
+
+        span {
+            &:first-child {
+                color: var(--yellow);
+                font-family: var(--neuebold);
+            }
+
+            &:last-child {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .shoptext {
+        padding: 20px 0;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+
+        p {
+            font-family: var(--neueregular);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.08em;
+
+            span {
+                &:first-child {
+                    color: var(--yellow);
+                    font-family: var(--neuebold);
+                }
+
+                &:last-child {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

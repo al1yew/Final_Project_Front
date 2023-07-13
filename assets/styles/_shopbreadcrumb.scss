@@ -1,0 +1,74 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.shopbreadcrumb {
+    padding: 20px 0;
+    margin: 0;
+
+    .keeper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+
+        div {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            font-family: var(--neuelight);
+            letter-spacing: 0.08em;
+        }
+
+        a {
+            font-family: var(--neueregular);
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.08em;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .breadcrumb {
+        padding: 5px 0px;
+        margin: 0;
+
+        .keeper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 0;
+
+            div {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+                font-family: var(--neuelight);
+                letter-spacing: 0.08em;
+            }
+
+            a {
+                font-family: var(--neueregular);
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.08em;
+            }
+        }
+    }
+}
