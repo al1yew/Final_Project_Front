@@ -8,7 +8,7 @@
     --neuebold: NeuePowerBold;
 }
 
-.sixthmain {
+.mainsixth {
     position: relative;
     width: 100%;
     margin: 0;
@@ -136,7 +136,7 @@
 }
 
 @media (max-width:576px) {
-    .sixthmain {
+    .mainsixth {
 
         .all {
             align-items: center;
@@ -177,7 +177,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .sixthmain {
+    .mainsixth {
 
         .all {
             align-items: center;
@@ -219,7 +219,7 @@
 }
 
 @media(min-width: 768px) and (max-width: 992px) {
-    .sixthmain {
+    .mainsixth {
 
         .all {
 
@@ -258,7 +258,7 @@
 }
 
 @media(min-width: 992px) and (max-width: 1200px) {
-    .sixthmain {
+    .mainsixth {
         .all {
             .left {
                 height: 490px;

@@ -20,7 +20,7 @@
     }
 }
 
-.thirdmain {
+.mainthird {
     position: relative;
     overflow: visible;
     width: 100%;
@@ -127,7 +127,7 @@
 }
 
 @media (max-width: 576px) {
-    .thirdmain {
+    .mainthird {
 
         .mainpart {
             margin-bottom: 15px;
@@ -176,7 +176,7 @@
 }
 
 @media(min-width: 576px) and (max-width:768px) {
-    .thirdmain {
+    .mainthird {
 
         .mainpart {
 
@@ -215,7 +215,7 @@
 }
 
 @media(min-width: 768px) and (max-width:992px) {
-    .thirdmain {
+    .mainthird {
 
         .mainpart {
 
@@ -249,7 +249,7 @@
 }
 
 @media(min-width: 992px) and (max-width:1200px) {
-    .thirdmain {
+    .mainthird {
 
         .mainpart {
 

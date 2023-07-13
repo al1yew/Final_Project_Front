@@ -20,7 +20,7 @@
     }
 }
 
-.seventhmain {
+.mainseventh {
     overflow: hidden;
     margin-top: 40px;
     height: 96vh;
@@ -93,7 +93,7 @@
 }
 
 @media(max-width:576px) {
-    .seventhmain {
+    .mainseventh {
         height: 50vh;
         background-attachment: unset;
         position: relative;
@@ -134,7 +134,7 @@
 }
 
 @media (min-width: 576px) and (max-width:768px) {
-    .seventhmain {
+    .mainseventh {
         height: 60vh;
         background-attachment: unset;
 
@@ -167,7 +167,7 @@
 }
 
 @media (min-width: 768px) and (max-width:992px) {
-    .seventhmain {
+    .mainseventh {
         height: 80vh;
         background-attachment: unset;
 
@@ -200,7 +200,7 @@
 }
 
 @media (min-width:992px) and (max-width:1200px) {
-    .seventhmain {
+    .mainseventh {
         height: 90vh;
 
         .just_launched {

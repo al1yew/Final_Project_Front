@@ -8,7 +8,7 @@
     --neuebold: NeuePowerBold;
 }
 
-.secondmain {
+.mainsecond {
     overflow: hidden;
 
     .all {
@@ -88,7 +88,7 @@
 }
 
 @media (max-width: 576px) {
-    .secondmain {
+    .mainsecond {
 
         .all {
             height: 380px;
@@ -139,7 +139,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .secondmain {
+    .mainsecond {
         .all {
             height: 500px;
 
@@ -189,7 +189,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-    .secondmain {
+    .mainsecond {
         .all {
             height: 500px;
 
@@ -239,7 +239,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    .secondmain {
+    .mainsecond {
         .all {
             height: 550px;
 
