@@ -29,8 +29,13 @@
         position: relative;
         letter-spacing: 0.08em;
 
+        .activeli {
+            background-color: var(--yellow);
+            text-decoration: underline;
+        }
+
         li {
-            padding: 15px 0;
+            padding: 12px 10px;
 
             &:hover .categorymenu {
                 opacity: 1;
@@ -44,12 +49,6 @@
                 &:hover {
                     text-decoration: underline;
                 }
-            }
-
-            .activespan {
-                padding: 2px 8px;
-                background-color: var(--yellow);
-                text-decoration: underline;
             }
 
             .categorymenu {
@@ -273,6 +272,7 @@
     .shopcategories {
 
         .head_categories {
+
             li {
                 text-align: center;
                 padding: 5px;
@@ -284,10 +284,6 @@
                 &:hover .categorymenu {
                     opacity: unset;
                     visibility: unset;
-                }
-
-                .activespan {
-                    padding: 3px 8px;
                 }
 
                 .categorymenu {
@@ -329,8 +325,12 @@
                             padding: 0;
                             margin: 0;
 
+                            .activeli {
+                                padding: 6px 8px;
+                            }
+
                             li {
-                                padding: 6px 0;
+                                padding: 6px 8px;
                                 font-family: var(--neuemedium);
                                 font-size: 14px;
                             }
@@ -361,10 +361,6 @@
                 &:hover .categorymenu {
                     opacity: unset;
                     visibility: unset;
-                }
-
-                .activespan {
-                    padding: 3px 8px;
                 }
 
                 .categorymenu {
@@ -407,7 +403,7 @@
                             margin: 0;
 
                             li {
-                                padding: 8px 0;
+                                padding: 8px 10px;
                                 font-family: var(--neuemedium);
                                 font-size: 15px;
                             }
@@ -433,7 +429,7 @@
         .head_categories {
 
             li {
-                padding: 10px 0;
+                padding: 10px;
 
                 &:last-child {
                     margin: 0 auto;
@@ -458,7 +454,6 @@
         .head_categories {
 
             li {
-                padding: 12px 0;
 
                 .categorymenu {
                     width: 100%;

@@ -1,0 +1,349 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.shopfilter {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin: 20px 0;
+
+    .all {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        letter-spacing: 0.08em;
+
+        .price-input-mobile {
+            display: none;
+        }
+
+        .filterdiv {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            font-size: 15px;
+            font-family: var(--neueregular);
+            padding-bottom: 3px;
+            position: relative;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+            padding: 6px 2px;
+
+            .svgkeeper {
+                transition: 0.2s;
+            }
+
+            .roundarrow {
+                transform: rotate(180deg) !important;
+            }
+
+            ul {
+                list-style: none;
+                display: none;
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                border: 1px solid black;
+                z-index: 200;
+
+                .yellowli {
+                    background-color: var(--yellow);
+                }
+
+                li {
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: var(--yellow);
+                    }
+                }
+            }
+        }
+    }
+
+    .pricerange {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        font-family: var(--neuemedium);
+
+        .price-input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            border-bottom: 1px solid black;
+
+            .inputspan {
+                margin: 0 5px;
+            }
+
+            span {
+                font-size: 17px;
+            }
+        }
+
+        input[type=number]::-webkit-inner-spin-button {
+            appearance: none;
+        }
+
+        input {
+            width: 50px;
+            font-size: 15px;
+            font-family: var(--neueregular);
+            border: none;
+            outline: none;
+            letter-spacing: 2px;
+            text-align: start;
+        }
+
+        ::selection {
+            color: #fff;
+            background: var(--yellow);
+            cursor: pointer;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+        .slider1 {
+            height: 1px;
+            right: 0;
+            top: 78%;
+            width: 85%;
+            position: absolute;
+            border-radius: 5px;
+            background: black;
+
+            @media(min-width: 1200px) and (max-width:1300px) {
+                top: 76.8%;
+            }
+
+            @media(min-width: 1100px) and (max-width:1200px) {
+                top: 77.2%;
+            }
+
+            @media(min-width: 1000px) and (max-width:1100px) {
+                top: 76.8%;
+            }
+        }
+
+        .range-input {
+            position: relative;
+            width: 84%;
+            margin-top: 17px;
+            height: 0px;
+        }
+
+        .range-input input {
+            position: absolute;
+            cursor: pointer;
+            width: 100%;
+            height: 5px;
+            top: 48%;
+            background: none;
+            pointer-events: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            background: var(--yellow);
+            outline: 1px solid black;
+            padding: 10px;
+            pointer-events: auto;
+            -webkit-appearance: none;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            height: 17px;
+            width: 17px;
+            border: none;
+            border-radius: 50%;
+            background: var(--yellow);
+            pointer-events: auto;
+            -moz-appearance: none;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .shopfilter {
+        .all {
+            .filterdiv {
+                font-size: 14px;
+                padding: 6px 2px;
+                margin-bottom: 10px;
+
+                ul {
+                    li {
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .price-input-mobile {
+                font-family: var(--neuemedium);
+                margin: 0;
+                padding: 4.5px 2px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid black;
+
+                input {
+                    width: 41px;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    letter-spacing: 1.2px;
+                    text-align: start;
+                }
+
+                .inputspan {
+                    font-size: 10px;
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .pricerange {
+            margin: 0;
+            padding: 0;
+            padding: 30px 0;
+
+            .price-input {
+                display: none;
+            }
+
+            .slider1 {
+                top: 52%;
+                width: 100%;
+            }
+
+            .range-input {
+                width: 100%;
+                margin-top: 0px;
+            }
+
+            input[type="range"]::-webkit-slider-thumb {
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+            }
+
+            input[type="range"]::-moz-range-thumb {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .shopfilter {
+        .all {
+            .filterdiv {
+                font-size: 15px;
+                padding: 6px 2px;
+                margin-bottom: 10px;
+
+                ul {
+                    li {
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .price-input-mobile {
+                font-family: var(--neuemedium);
+                margin: 0;
+                padding: 4.5px 2px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid black;
+
+                input {
+                    width: 41px;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    letter-spacing: 1.2px;
+                    text-align: start;
+                }
+
+                .inputspan {
+                    font-size: 10px;
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .pricerange {
+            margin: 0;
+            padding: 0;
+            padding: 30px 0;
+
+            .price-input {
+                display: none;
+            }
+
+            .slider1 {
+                top: 52%;
+                width: 100%;
+            }
+
+            .range-input {
+                width: 100%;
+                margin-top: 0px;
+            }
+
+            input[type="range"]::-webkit-slider-thumb {
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+            }
+
+            input[type="range"]::-moz-range-thumb {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}

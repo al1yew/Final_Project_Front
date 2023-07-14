@@ -194,49 +194,36 @@ $(function () {
 
     //#endregion headersearch
 
-
-
-
     //shop page
-
-    //#region shop page tabmenu functionality categories
-
-    $(document).on("click", ".headcategoryli", function (e) {
-        if ($(window).width() < 576) {
-            e.preventDefault();
-        }
-
-        $($(this).children()[0]).addClass("activespan");
-
-        $(this).siblings("li").find("a").removeClass("activespan");
-    });
-
-    //#endregion shop page tabmenu functionality categories
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region open close shop page categories megamenu
+    //#region shop page open close categories megamenu
 
-    $(document).on("click", ".categoryhref", function (e) {
+    //open categories megamenu
+    $(document).on("click", ".headcategoryli", function (e) {
+        e.stopPropagation(); // icindeki a hrefe gore
+
         if ($(window).width() < 768) {
             e.preventDefault();
 
-            $($(this).parent())
-                .siblings("li")
-                .find(".categorymenu")
-                .attr("style", "display: none;");
+            $(this).siblings("li").find(".categorymenu").hide();
 
-            $($(this).next()).fadeToggle(100);
+            $(this).siblings("li").removeClass("activeli");
+            $(this).addClass("activeli");
+
+            $(this).find(".categorymenu").fadeToggle(100);
         }
     });
 
-    //------------ shop page categories ul li close siblings
-
+    //shop page categories close on click outside
     $(document).on("click", function (e) {
-        const isParentClass = $(e.target).parents(".headcategoryli").length > 0;
+        const isParentClass =
+            $(e.target).parents(".headcategoryli").length > 0 ||
+            $(e.target).is(".headcategoryli");
 
         if (isParentClass && $(window).width() < 768) {
-            $(".categorymenu").fadeToggle(200);
+            $(this).find(".categorymenu").fadeToggle(200);
         }
 
         if (!isParentClass && $(window).width() < 768) {
@@ -248,9 +235,138 @@ $(function () {
         e.stopPropagation();
     });
 
-    $(document).on('click', '.closeshopbtn', function() {
-        $(this).parent().parent().hide();
-    })
+    //shop page categories close on click on X
+    $(document).on("click", ".closeshopbtn", function () {
+        $(this).parents(".headcategoryli").find(".categorymenu").hide();
 
-    //#endregion open close shop page categories megamenu
+        //koqda close delaesh odin iz LI ostaetsa s
+        //jeltim backgroundom, nado ponat a kakoy sleduyet ostavlat vse taki.
+    });
+
+    //#endregion shop page open close categories megamenu
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region shop page INPUT RANGE
+
+    const rangeInput = document.querySelectorAll(".range-input input");
+    const priceInputMobile = document.querySelectorAll(
+        ".price-input-mobile input"
+    );
+    const priceInput = document.querySelectorAll(".price-input input");
+    let priceGap = 1;
+
+    priceInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+            let minPrice = parseInt(priceInput[0].value),
+                maxPrice = parseInt(priceInput[1].value);
+
+            if (
+                maxPrice - minPrice >= priceGap &&
+                maxPrice <= rangeInput[1].max
+            ) {
+                if (e.target.className === "input-min") {
+                    rangeInput[0].value = minPrice;
+                } else {
+                    rangeInput[1].value = maxPrice;
+                }
+            }
+        });
+    });
+    priceInputMobile.forEach((input) => {
+        input.addEventListener("input", (e) => {
+            let minPrice = parseInt(priceInputMobile[0].value),
+                maxPrice = parseInt(priceInputMobile[1].value);
+
+            if (
+                maxPrice - minPrice >= priceGap &&
+                maxPrice <= rangeInput[1].max
+            ) {
+                if (e.target.className === "input-min") {
+                    rangeInput[0].value = minPrice;
+                } else {
+                    rangeInput[1].value = maxPrice;
+                }
+            }
+        });
+    });
+    rangeInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+            let minVal = parseInt(rangeInput[0].value),
+                maxVal = parseInt(rangeInput[1].value);
+            if (maxVal - minVal < priceGap) {
+                if (e.target.className === "range-min") {
+                    rangeInput[0].value = maxVal - priceGap;
+                } else {
+                    rangeInput[1].value = minVal + priceGap;
+                }
+            } else {
+                priceInput[0].value = minVal;
+                priceInput[1].value = maxVal;
+                priceInputMobile[0].value = minVal;
+                priceInputMobile[1].value = maxVal;
+            }
+        });
+    });
+
+    $(document).on("pointerup", ".range-max, .range-min", function () {
+        let maxvalue = $(".range-max").val();
+        let minvalue = $(".range-min").val();
+
+        // alert(`${minvalue} min value, ${maxvalue} max value -- information for fetch`);
+    });
+
+    $(document).on("keyup", ".input-min, .input-max", function (e) {
+        if (
+            (e.which >= 48 && e.which <= 57) ||
+            (e.which >= 96 && e.which <= 105) ||
+            e.which == 8
+        ) {
+            let minvalue = parseInt($(".input-min").val());
+            let maxvalue = parseInt($(".input-max").val());
+
+            // alert(`${minvalue} min value, ${maxvalue} max value -- information for fetch`);
+        }
+    });
+
+    //#endregion shop page INPUT RANGE
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region shop page moya custom sortirovka, ves funkcional
+
+    //open
+    $(document).on("click", ".filterdiv", function (e) {
+        e.stopPropagation();
+        $(this).find(".filterul").toggle();
+        $(this).siblings("div").find(".filterul").hide();
+        $(this).find(".svgkeeper").toggleClass("roundarrow");
+    });
+
+    //set
+    $(document).on("click", ".filterul li", function () {
+        $(this).parents(".filterdiv").find(".sorttype").text($(this).text());
+        $(this).addClass("yellowli");
+        $(this).siblings("li").removeClass("yellowli");
+    });
+
+    //close
+    $(document).on("click", function (e) {
+        const isParentClass =
+            $(e.target).parents(".filterdiv").length > 0 ||
+            $(e.target).is(".filterdiv");
+
+        if (isParentClass) {
+            $(this).find(".filterul").fadeToggle(200);
+            console.log("salam");
+        }
+
+        if (!isParentClass) {
+            $(this).find(".filterul").fadeOut(200);
+        }
+    });
+
+    //#endregion shop page moya custom sortirovka, ves funkcional
+
+    //---------------------------------------------------------------------------------------------------------------
 });

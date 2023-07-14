@@ -3,20 +3,25 @@
     margin-top: 30px;
 }
 
+.shopname {
+    .all {
+        .top {
+            text-align: center;
+            font-family: var(--neueultra);
+            font-size: 50px;
+            text-align: center;
+            color: var(--yellow);
+            letter-spacing: 0.08em;
+        }
+    }
+}
+
 @import 'shopcategories';
 
 @import 'shoptext';
 
 @import 'shopbreadcrumb';
 
+@import 'shopfilter';
+
 @import 'shopclothes';
-
-@media (min-width:1100px) {
-
-
-    @media(min-width:577px) {
-        .price-input-mobile {
-            display: none !important;
-        }
-    }
-}
