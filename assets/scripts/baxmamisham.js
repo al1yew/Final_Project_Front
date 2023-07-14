@@ -29,65 +29,6 @@
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region  form shop page
-
-    //---------------------------------products stranica make input selected
-
-    $(document).on(
-        "mousedown",
-        ".addingtobasketinshoppage .colorlabel",
-        function (e) {
-            if ($(this).html() == "") {
-                $(this).append(
-                    '<ion-icon name="checkmark-outline" class="markicon"></ion-icon>'
-                );
-            } else {
-                $(this).text("");
-            }
-
-            $(this).siblings("input").prop("checked", "false");
-            $(this).siblings(".colorlabel").text("");
-
-            $(this).prev().prop("checked", "true");
-        }
-    );
-
-    //---------------------------------products stranica form dla zakaza produkta submit na button
-
-    $(document).on("submit", ".addingtobasketinshoppage", function (e) {
-        e.preventDefault();
-
-        let input = $(this).find("input:checked");
-
-        let select = $(this).find("option:selected");
-
-        let colorname = "";
-
-        console.log(select.val());
-        console.log(input.val());
-
-        if (input.val() != undefined && select.val() != 0) {
-            //misalcun prosto fetch
-
-            fetch(`https://api.color.pizza/v1/${input.val().slice(1)}`)
-                .then((res) => res.json())
-                .then((data) => {
-                    colorname = data.paletteTitle;
-                    alert(
-                        `${input.val()} HEXcolor selected, --${colorname}-- returned from fetch, ${select.val()} is size`
-                    );
-                });
-
-            //fetch edirik basketviewmodel
-        }
-
-        $(this).find("input:checked").prop("checked", false);
-        $(this).find(".markicon").remove();
-        $(this).find("select").val("0");
-    });
-
-    //#endregion form shop page
-
     //---------------------------------------------------------------------------------------------------------------
 
     //#region product detail page slider

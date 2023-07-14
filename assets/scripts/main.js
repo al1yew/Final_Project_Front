@@ -369,4 +369,49 @@ $(function () {
     //#endregion shop page moya custom sortirovka, ves funkcional
 
     //---------------------------------------------------------------------------------------------------------------
+
+    //#region form shop page buy product
+
+    //shop page make input selected
+    $(document).on(
+        "mousedown",
+        ".addingtobasketinshoppage .colorlabel",
+        function (e) {
+            if ($(this).html() == "") {
+                $(this).append(
+                    '<ion-icon name="checkmark-outline" class="markicon"></ion-icon>'
+                );
+            } else {
+                $(this).text("");
+            }
+
+            $(this).siblings("input").prop("checked", "false");
+            $(this).siblings(".colorlabel").text("");
+
+            $(this).prev().prop("checked", "true");
+        }
+    );
+
+    //shop page submit basket button
+    $(document).on("submit", ".addingtobasketinshoppage", function (e) {
+        e.preventDefault();
+
+        let input = $(this).find("input:checked");
+
+        let select = $(this).find("option:selected");
+
+        let colorname = "";
+
+        console.log(select.val());
+        console.log(input.val());
+
+        if (input.val() != undefined && select.val() != 0) {
+        }
+
+        $(this).find("input:checked").prop("checked", false);
+        $(this).find(".markicon").remove();
+        $(this).find("select").val("0");
+    });
+
+    //#endregion form shop page buy product
 });

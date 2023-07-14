@@ -1,0 +1,82 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.shoppagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        li {
+            background-color: black;
+            width: 7%;
+            padding: 2px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: var(--yellow);
+                padding: 3px;
+            }
+        }
+
+        .activepagination {
+            background-color: var(--yellow);
+            padding: 3px 0;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .shoppagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            li {
+                background-color: black;
+                width: 10%;
+                padding: 2px;
+                cursor: pointer;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: var(--yellow);
+                    padding: 3px;
+                }
+            }
+
+            .activepagination {
+                background-color: var(--yellow);
+                padding: 3px 0;
+            }
+        }
+    }
+}
