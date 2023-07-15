@@ -11,7 +11,7 @@
     --select-arrow: var(--select-border);
 }
 
-.shopbreadcrumb {
+.breadcrumb {
     padding: 20px 0;
     margin: 0;
 
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 576px) {
-    .shopbreadcrumb {
+    .breadcrumb {
         padding: 15px 0;
     }
 }

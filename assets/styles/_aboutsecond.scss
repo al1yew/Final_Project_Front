@@ -1,0 +1,66 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+@keyframes carousel2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.aboutsecond {
+    position: relative;
+    margin: 40px 0;
+    background-color: black;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carouselsecond {
+        background-color: black;
+        color: var(--yellow);
+        position: absolute;
+        display: flex;
+        width: 200%;
+
+        span {
+            animation: carousel2 12s linear infinite;
+            display: inline-block;
+            font-size: 35px;
+            font-family: var(--neuemedium);
+            white-space: nowrap;
+            color: var(--yellow);
+            margin-right: 15px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .aboutsecond {
+        margin: 30px 0;
+        height: 40px;
+
+        .carouselsecond {
+
+            span {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

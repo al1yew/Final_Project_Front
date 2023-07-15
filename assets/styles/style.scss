@@ -141,6 +141,11 @@ body {
         width: 48.333333%;
     }
 
+    .col-sm-5-9 {
+        flex: 0 0 auto;
+        width: 49.1666%;
+    }
+
     .col-sm-6 {
         flex: 0 0 auto;
         width: 50%;
@@ -313,6 +318,11 @@ body {
         width: 48.333333%;
     }
 
+    .col-md-5-9 {
+        flex: 0 0 auto;
+        width: 49.1666%;
+    }
+
     .col-md-6 {
         flex: 0 0 auto;
         width: 50%;
@@ -473,6 +483,11 @@ body {
     .col-5-8 {
         flex: 0 0 auto;
         width: 48.333333%;
+    }
+
+    .col-5-9 {
+        flex: 0 0 auto;
+        width: 49.1666%;
     }
 
     .col-6 {
@@ -795,6 +810,8 @@ body {
 
 @import 'shoppage';
 
+@import 'breadcrumb';
+
 @import 'detail';
 
 @import 'detailmedia';
@@ -825,9 +842,7 @@ body {
 
 @import 'contact';
 
-@import 'about';
-
-@import 'aboutmedia';
+@import 'aboutpage';
 
 @import 'wishlist';
 

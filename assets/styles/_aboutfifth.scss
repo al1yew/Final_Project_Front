@@ -1,0 +1,190 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.aboutfifth {
+    margin-bottom: 30px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        letter-spacing: 0.08em;
+        margin: 0;
+        padding: 0;
+
+        .secondpabout {
+            font-family: var(--neueultra);
+            font-size: 50px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: var(--yellow);
+            margin-bottom: 10px;
+        }
+
+        .keeperfirst {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            div {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+
+                .headoff {
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    font-family: var(--neueultra);
+                }
+
+                .adresler {
+                    font-family: var(--neuelight);
+                    margin: 0;
+                    padding: 0;
+                    font-size: 17px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .keepersecond {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+
+            div {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+                margin-top: 25px;
+                letter-spacing: 0.08em;
+
+                .topmainaddress {
+                    text-align: start;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 20px;
+                    font-family: var(--neuemedium);
+                    margin-bottom: 10px;
+                }
+
+                .bottommainaddress {
+                    font-family: var(--neuelight);
+                    margin: 0;
+                    padding: 0;
+                    font-size: 17px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutfifth {
+        margin-bottom: 20px;
+
+        .all {
+
+            .secondpabout {
+                font-size: 30px;
+            }
+
+            .keeperfirst {
+                div {
+
+                    .headoff {
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                    }
+
+                    .adresler {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .keepersecond {
+                div {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+
+                    .topmainaddress {
+                        font-size: 15px;
+                    }
+
+                    .bottommainaddress {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .aboutfifth {
+        margin-bottom: 20px;
+
+        .all {
+
+            .secondpabout {
+                font-size: 40px;
+            }
+
+            .keeperfirst {
+                div {
+                    .headoff {
+                        margin-bottom: 13px;
+                        font-size: 16px;
+                    }
+
+                    .adresler {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .keepersecond {
+                div {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+
+                    .topmainaddress {
+                        font-size: 16px;
+                    }
+
+                    .bottommainaddress {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

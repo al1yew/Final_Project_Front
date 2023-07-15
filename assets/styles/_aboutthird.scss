@@ -1,0 +1,154 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.aboutthird {
+    margin-bottom: 30px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+        div {
+            letter-spacing: 0.08em;
+            margin: 0;
+            padding: 0;
+
+            &:nth-child(even) {
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+
+                span {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    &:nth-child(1) {
+                        font-size: 20px;
+                        font-family: var(--neueultra);
+                        text-align: right;
+                        margin-bottom: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 17px;
+                        font-family: var(--neuemedium);
+                        text-align: right;
+                    }
+                }
+            }
+
+            &:nth-child(odd) {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+
+                span {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    &:nth-child(1) {
+                        font-size: 20px;
+                        font-family: var(--neueultra);
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 17px;
+                        font-family: var(--neuemedium);
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .aboutthird {
+        .all {
+            div {
+                &:nth-child(even) {
+                    span {
+                        &:nth-child(1) {
+                            font-size: 17px;
+                            font-family: var(--neuebold);
+                            margin-bottom: 15px;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    span {
+                        &:nth-child(1) {
+                            font-size: 17px;
+                            font-family: var(--neuebold);
+                            margin-bottom: 15px;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .aboutthird {
+        .all {
+            div {
+                &:nth-child(even) {
+                    span {
+                        &:nth-child(1) {
+                            font-size: 19px;
+                            font-family: var(--neuebold);
+                            margin-bottom: 15px;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    span {
+                        &:nth-child(1) {
+                            font-size: 19px;
+                            font-family: var(--neuebold);
+                            margin-bottom: 15px;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.aboutfourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.08em;
+
+    .imgkeeperabout {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .forabs {
+            font-size: 80px;
+            font-family: var(--neuemedium);
+            position: absolute;
+            top: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--yellow);
+        }
+
+        .textleft {
+            background-color: white;
+            padding: 20px;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            font-family: var(--neuebold);
+            font-size: 20px;
+        }
+
+        .textright {
+            background-color: white;
+            padding: 20px;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            font-family: var(--neuebold);
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutfourth {
+        margin-bottom: 20px;
+
+        .imgkeeperabout {
+            .forabs {
+                display: none;
+            }
+
+            .textleft {
+                display: none;
+            }
+
+            .textright {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .aboutfourth {
+        margin-bottom: 20px;
+
+        .imgkeeperabout {
+            .forabs {
+                font-size: 40px;
+                top: 5%;
+            }
+
+            .textleft {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .textright {
+                padding: 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .aboutfourth {
+        margin-bottom: 25px;
+
+        .imgkeeperabout {
+            .forabs {
+                font-size: 50px;
+                top: 3%;
+            }
+
+            .textleft {
+                padding: 15px;
+                font-size: 18px;
+            }
+
+            .textright {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+}
