@@ -61,7 +61,7 @@
                 flex-wrap: wrap;
                 padding: 0;
                 margin: 0;
-                transition: 0.3s;
+                transition: 0.2s;
                 background-color: white;
                 box-shadow: 0px 0px 2px 0px var(--yellow);
                 border-bottom-left-radius: 5px;
@@ -81,43 +81,6 @@
                 }
 
                 .left {
-                    height: 100%;
-                    overflow-y: scroll;
-
-                    &::-webkit-scrollbar-track {
-                        background: white;
-                    }
-
-                    &::-webkit-scrollbar-thumb {
-                        background: white;
-                    }
-
-                    &::-webkit-scrollbar-thumb:hover {
-                        background: white;
-                    }
-
-                    .mainp {
-                        margin-bottom: 15px;
-                        font-size: 15px;
-                        text-align: start;
-                        font-family: var(--neuebold);
-                        text-decoration: underline;
-                    }
-
-                    ul {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-
-                        li {
-                            padding: 6px 0;
-                            font-family: var(--neuemedium);
-                            font-size: 14px;
-                        }
-                    }
-                }
-
-                .middle {
                     padding: 0 10px;
                     padding-right: 10px;
                     overflow-y: scroll;
@@ -144,15 +107,16 @@
                         text-align: start;
                         font-family: var(--neuebold);
                         text-decoration: underline;
+                        width: 100%;
                     }
 
-                    .bodyfits {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
+                    .categories {
+                        display: grid;
+                        gap: 25px;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
                         width: 100%;
 
-                        .maindiv {
+                        .category {
                             margin: 10px 0;
                             display: flex;
                             align-items: center;
@@ -287,62 +251,99 @@
                 }
 
                 .categorymenu {
-                    height: 280px;
-                    display: none;
+                    height: 300px;
+                    visibility: hidden;
+                    opacity: 0;
+                    overflow-y: scroll;
                     padding: 10px;
-                    transition: unset;
 
                     .seeall {
                         display: inline;
                         position: absolute;
-                        top: 3%;
-                        left: 3%;
-                        font-size: 17px;
-                        font-family: var(--neueregular);
+                        top: 10px;
+                        left: 65%;
+                        font-size: 16px;
+                        font-family: var(--neuebold);
                         color: var(--yellow);
                         text-decoration: none;
                     }
 
-                    .left {
-                        .mainp {
-                            display: none;
-                        }
+                    .closeshopbtn {
+                        display: inline;
+                        position: absolute;
+                        top: 2%;
+                        right: 2%;
+                        color: var(--yellow);
 
-                        .closeshopbtn {
-                            display: inline;
-                            position: absolute;
-                            top: 3%;
-                            right: 3%;
-                            color: var(--yellow);
-
-                            ion-icon {
-                                font-size: 30px;
-                            }
-                        }
-
-                        ul {
-                            list-style: none;
-                            padding: 0;
-                            margin: 0;
-
-                            .activeli {
-                                padding: 6px 8px;
-                            }
-
-                            li {
-                                padding: 6px 8px;
-                                font-family: var(--neuemedium);
-                                font-size: 14px;
-                            }
+                        ion-icon {
+                            font-size: 35px;
                         }
                     }
 
-                    .middle {
-                        display: none;
+                    .left {
+                        overflow-y: unset;
+                        height: max-content;
+
+                        .mainp {
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                        }
+
+                        .categories {
+                            gap: 20px;
+                            grid-template-columns: 1fr 1fr 1fr;
+
+                            .category {
+                                .namecate {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
                     }
 
                     .right {
-                        display: none;
+                        overflow-y: unset;
+                        height: max-content;
+
+                        .mainp {
+                            font-size: 16px;
+                        }
+
+                        .topphoto {
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                            }
+
+                            .nazvanie {
+                                font-size: 14px;
+                                font-family: var(--neuemedium);
+                                transform: translateX(-50%);
+                            }
+                        }
+
+                        .bottomphoto {
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            .nazvanie {
+                                font-size: 15px;
+                                transform: translateX(-50%);
+                            }
+                        }
                     }
                 }
             }
@@ -354,9 +355,14 @@
     .shopcategories {
 
         .head_categories {
+
             li {
                 text-align: center;
-                padding: 8px;
+                padding: 5px;
+
+                &:last-child {
+                    margin: 0 auto;
+                }
 
                 &:hover .categorymenu {
                     opacity: unset;
@@ -364,58 +370,99 @@
                 }
 
                 .categorymenu {
-                    height: 320px;
-                    display: none;
+                    height: 300px;
+                    visibility: hidden;
+                    opacity: 0;
+                    overflow-y: scroll;
                     padding: 10px;
-                    transition: unset;
 
                     .seeall {
                         display: inline;
                         position: absolute;
-                        top: 3%;
-                        left: 3%;
+                        top: 10px;
+                        left: 60%;
                         font-size: 18px;
-                        font-family: var(--neueregular);
+                        font-family: var(--neuebold);
                         color: var(--yellow);
                         text-decoration: none;
                     }
 
-                    .left {
-                        .mainp {
-                            display: none;
-                        }
+                    .closeshopbtn {
+                        display: inline;
+                        position: absolute;
+                        top: 2%;
+                        right: 2%;
+                        color: var(--yellow);
 
-                        .closeshopbtn {
-                            display: inline;
-                            position: absolute;
-                            top: 3%;
-                            right: 3%;
-                            color: var(--yellow);
-
-                            ion-icon {
-                                font-size: 35px;
-                            }
-                        }
-
-                        ul {
-                            list-style: none;
-                            padding: 0;
-                            margin: 0;
-
-                            li {
-                                padding: 8px 10px;
-                                font-family: var(--neuemedium);
-                                font-size: 15px;
-                            }
+                        ion-icon {
+                            font-size: 35px;
                         }
                     }
 
-                    .middle {
-                        display: none;
+                    .left {
+                        overflow-y: unset;
+                        height: max-content;
+
+                        .mainp {
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                        }
+
+                        .categories {
+                            gap: 20px;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                            .category {
+                                .namecate {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
                     }
 
                     .right {
-                        display: none;
+                        overflow-y: unset;
+                        height: max-content;
+
+                        .mainp {
+                            font-size: 16px;
+                        }
+
+                        .topphoto {
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                            }
+
+                            .nazvanie {
+                                font-size: 14px;
+                                font-family: var(--neuemedium);
+                                transform: translateX(-50%);
+                            }
+                        }
+
+                        .bottomphoto {
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            .nazvanie {
+                                font-size: 15px;
+                                transform: translateX(-50%);
+                            }
+                        }
                     }
                 }
             }
@@ -438,9 +485,49 @@
                 .categorymenu {
                     height: 370px;
                     padding: 15px;
+                    visibility: visible;
+                    opacity: 1;
+
+                    .left {
+                        .categories {
+                            gap: 20px;
+                        }
+                    }
 
                     .right {
-                        display: none;
+                        justify-content: flex-start;
+
+                        .topphoto {
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                            }
+
+                            .nazvanie {
+                                transform: translateX(-50%);
+                            }
+                        }
+
+                        .bottomphoto {
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                            }
+
+                            .nazvanie {
+                                transform: translateX(-50%);
+                            }
+                        }
                     }
                 }
             }
@@ -468,9 +555,9 @@
                         display: none;
                     }
 
-                    .middle {
-                        .bodyfits {
-                            .maindiv {
+                    .left {
+                        .categories {
+                            .category {
                                 .namecate {
                                     font-size: 13px;
                                 }
