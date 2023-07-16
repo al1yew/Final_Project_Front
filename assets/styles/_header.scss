@@ -199,7 +199,7 @@
                                 justify-content: space-between;
                                 align-items: center;
                                 flex-wrap: wrap;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 color: black;
 
                                 .osnovnayainfa {
@@ -307,7 +307,7 @@
                     border-bottom-right-radius: 5px;
                     opacity: 0;
                     visibility: hidden;
-                    transition: 0.3s;
+                    transition: 0.2s;
                     position: absolute;
                     top: 100%;
                     right: 0%;
@@ -545,7 +545,7 @@
                     background-color: white;
                     color: black;
                     opacity: 0;
-                    transition: 0.3s;
+                    transition: 0.2s;
                     visibility: hidden;
 
                     ul {
@@ -669,7 +669,7 @@
                 background-color: var(--white);
                 overflow-y: scroll;
                 width: 100%;
-                transition: 0.3s;
+                transition: 0.2s;
 
                 .active-tab {
                     border-bottom: 2px solid black;
@@ -1007,7 +1007,7 @@
                 background-color: var(--white);
                 overflow-y: scroll;
                 width: 100%;
-                transition: 0.3s;
+                transition: 0.2s;
 
                 .active-tab {
                     border-bottom: 2px solid black;

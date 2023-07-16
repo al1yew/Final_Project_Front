@@ -827,7 +827,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  transition: 0.3s;
+  transition: 0.2s;
   color: black;
 }
 .header .all .search .searchmenu .searchelements ul li a .osnovnayainfa {
@@ -918,7 +918,7 @@ body {
   border-bottom-right-radius: 5px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
   position: absolute;
   top: 100%;
   right: 0%;
@@ -1115,7 +1115,7 @@ body {
   background-color: white;
   color: black;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
   visibility: hidden;
 }
 .header .all .menus .account .accountinfo ul {
@@ -1215,7 +1215,7 @@ body {
     background-color: var(--white);
     overflow-y: scroll;
     width: 100%;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .header .all .sidebarmenu .active-tab {
     border-bottom: 2px solid black;
@@ -1465,7 +1465,7 @@ body {
     background-color: var(--white);
     overflow-y: scroll;
     width: 100%;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .header .all .sidebarmenu .active-tab {
     border-bottom: 2px solid black;
@@ -3275,7 +3275,7 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  transition: 0.3s;
+  transition: 0.2s;
   letter-spacing: 0.08em;
   height: 540px;
 }
@@ -3345,7 +3345,7 @@ body {
   font-size: 14px;
 }
 .mainsixth .all .right .linktobloggerclothes svg {
-  transition: 0.3s;
+  transition: 0.2s;
   margin-left: 8px;
 }
 .mainsixth .all .right .linktobloggerclothes:hover svg {
@@ -5903,12 +5903,12 @@ a:hover {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .all .completing_all .completing_div .completing_products .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .completing_all .completing_div .completing_products .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -5973,14 +5973,14 @@ a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -5992,7 +5992,7 @@ a:hover {
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -6007,7 +6007,7 @@ a:hover {
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -6096,12 +6096,12 @@ a:hover {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .all .related_items_all .relateditems_div .related_items .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .related_items_all .relateditems_div .related_items .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -6166,14 +6166,14 @@ a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -6185,7 +6185,7 @@ a:hover {
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -6200,7 +6200,7 @@ a:hover {
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -6258,7 +6258,7 @@ a:hover {
   .all .modal {
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6478,7 +6478,7 @@ a:hover {
     position: absolute;
     bottom: -5px;
     right: 0;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk svg {
     width: 25px;
@@ -7183,12 +7183,12 @@ a {
     position: absolute;
     top: 4.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .completing_all .completing_div .completing_products .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .completing_all .completing_div .completing_products .product .top .wishlist:focus svg {
     fill: var(--yellow);
@@ -7250,14 +7250,14 @@ a {
     position: absolute;
     top: 4%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .completing_all .completing_div .completing_products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .completing_all .completing_div .completing_products .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -7363,12 +7363,12 @@ a {
     position: absolute;
     top: 4.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .related_items_all .relateditems_div .related_items .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .related_items_all .relateditems_div .related_items .product .top .wishlist:focus svg {
     fill: var(--yellow);
@@ -7430,14 +7430,14 @@ a {
     position: absolute;
     top: 4%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -8342,12 +8342,12 @@ a {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .all .completing_all .completing_div .completing_products .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .completing_all .completing_div .completing_products .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -8412,14 +8412,14 @@ a {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -8431,7 +8431,7 @@ a {
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -8446,7 +8446,7 @@ a {
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -8533,12 +8533,12 @@ a {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .all .related_items_all .relateditems_div .related_items .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .related_items_all .relateditems_div .related_items .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -8603,14 +8603,14 @@ a {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -8622,7 +8622,7 @@ a {
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -8637,7 +8637,7 @@ a {
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -8689,7 +8689,7 @@ a {
   .all .modal {
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8912,7 +8912,7 @@ a {
     position: absolute;
     bottom: -5px;
     right: 0;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover {
     fill: var(--yellow);
@@ -9560,12 +9560,12 @@ a {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .all .completing_all .completing_div .completing_products .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .completing_all .completing_div .completing_products .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -9630,14 +9630,14 @@ a {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -9649,7 +9649,7 @@ a {
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -9664,7 +9664,7 @@ a {
   }
   .all .completing_all .completing_div .completing_products .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -9751,12 +9751,12 @@ a {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .all .related_items_all .relateditems_div .related_items .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .related_items_all .relateditems_div .related_items .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -9821,14 +9821,14 @@ a {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -9840,7 +9840,7 @@ a {
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -9855,7 +9855,7 @@ a {
   }
   .all .related_items_all .relateditems_div .related_items .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -9907,7 +9907,7 @@ a {
   .all .modal {
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10124,7 +10124,7 @@ a {
     position: absolute;
     bottom: -5px;
     right: 0;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .modalmoy .overlaymodall .modalall .reviews .review .bottom .layk:hover {
     fill: var(--yellow);
@@ -10798,12 +10798,12 @@ a:hover {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -10868,14 +10868,14 @@ a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -10887,7 +10887,7 @@ a:hover {
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -10902,7 +10902,7 @@ a:hover {
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -10988,12 +10988,12 @@ a:hover {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -11058,14 +11058,14 @@ a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -11077,7 +11077,7 @@ a:hover {
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -11092,7 +11092,7 @@ a:hover {
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -11526,12 +11526,12 @@ a:hover {
     position: absolute;
     top: 4.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:focus svg {
     fill: var(--yellow);
@@ -11593,14 +11593,14 @@ a:hover {
     position: absolute;
     top: 4%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -11706,12 +11706,12 @@ a:hover {
     position: absolute;
     top: 4.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:focus svg {
     fill: var(--yellow);
@@ -11773,14 +11773,14 @@ a:hover {
     position: absolute;
     top: 4%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -12230,12 +12230,12 @@ a:hover {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -12300,14 +12300,14 @@ a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -12319,7 +12319,7 @@ a:hover {
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -12334,7 +12334,7 @@ a:hover {
   }
   .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -12420,12 +12420,12 @@ a:hover {
     position: absolute;
     top: 5.8%;
     right: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     background-color: transparent;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:hover svg {
     fill: var(--yellow);
@@ -12490,14 +12490,14 @@ a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket svg {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg {
     fill: var(--yellow);
@@ -12509,7 +12509,7 @@ a:hover {
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     padding-left: 10px;
   }
@@ -12524,7 +12524,7 @@ a:hover {
   }
   .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     visibility: hidden;
     margin: 0 auto;
     display: flex;
@@ -15875,7 +15875,7 @@ a:hover {
 .mycards .all .carddiv .cardinozu .cardozu .makemain a {
   text-decoration: underline;
   font-size: 13px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .mycards .all .carddiv .cardinozu .cardozu .makemain a:hover {
   color: var(--yellow);
@@ -15903,7 +15903,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.2s;
   z-index: 14;
 }
 .mycards .all .carddiv .cardform .clicktoaddnewcard:hover {
@@ -15957,37 +15957,6 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-@font-face {
-  font-family: NeuePowerLight;
-  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
-}
-@font-face {
-  font-family: NeuePowerMedium;
-  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
-}
-@font-face {
-  font-family: NeuePowerRegular;
-  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
-}
-@font-face {
-  font-family: NeuePowerUltra;
-  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
-}
-@font-face {
-  font-family: NeuePowerBold;
-  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
-}
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -16001,44 +15970,37 @@ p {
   --select-arrow: var(--select-border);
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-}
-
-.where {
-  opacity: 0;
-  margin-top: 30px;
-}
-
 .myaddresses {
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 .myaddresses .all {
   display: flex;
   justify-content: space-between;
+  letter-spacing: 0.08em;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .myaddresses .all .firstp {
   font-family: var(--neueultra);
+  margin: 0;
+  padding: 0;
   font-size: 50px;
-  line-height: 60px;
   text-align: center;
-  letter-spacing: 0.08em;
   color: var(--yellow);
   margin-bottom: 30px;
 }
 .myaddresses .all .addressdiv {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
   align-items: center;
 }
 .myaddresses .all .addressdiv .addressinozu {
+  margin: 0;
+  padding: 0;
   padding: 0 10px;
   margin-top: 20px;
 }
@@ -16046,6 +16008,8 @@ a:hover {
   border: 0.8px solid black;
   background-color: white;
   height: 300px;
+  margin: 0;
+  padding: 0;
   color: black;
   border-radius: 10px;
   position: relative;
@@ -16053,15 +16017,14 @@ a:hover {
 .myaddresses .all .addressdiv .addressinozu .addressozu .top {
   border-bottom: 0.8px solid black;
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .myaddresses .all .addressdiv .addressinozu .addressozu .top span {
   font-family: var(--neuebold);
-  font-weight: 700;
   font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.08em;
   padding: 0 20px;
 }
 .myaddresses .all .addressdiv .addressinozu .addressozu .top span:nth-child(1) {
@@ -16075,14 +16038,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   padding: 20px;
 }
 .myaddresses .all .addressdiv .addressinozu .addressozu .bottom span {
-  font-weight: 300;
   font-size: 13px;
-  line-height: 114%;
   font-family: var(--neueregular);
-  letter-spacing: 0.08em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16108,7 +16070,7 @@ a:hover {
 .myaddresses .all .addressdiv .addressinozu .addressozu .makemain a {
   text-decoration: underline;
   font-size: 13px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .myaddresses .all .addressdiv .addressinozu .addressozu .makemain a:hover {
   color: var(--yellow);
@@ -16134,7 +16096,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.2s;
   z-index: 14;
 }
 .myaddresses .all .addressdiv .addressform .clicktoaddnewaddress:hover {
@@ -16143,6 +16105,8 @@ a:hover {
 .myaddresses .all .addressdiv .addressform .again_allcontent {
   border: 0.8px solid black;
   height: 300px;
+  margin: 0;
+  padding: 0;
   color: black;
   border-radius: 10px;
   padding: 10px;
@@ -16152,12 +16116,16 @@ a:hover {
 }
 .myaddresses .all .addressdiv .addressform .again_allcontent .allcontent {
   display: none;
+  margin: 0;
+  padding: 0;
 }
 .myaddresses .all .addressdiv .addressform .again_allcontent .allcontent .addressozu {
   background-color: white;
   color: black;
   position: relative;
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -17571,7 +17539,7 @@ a:hover {
   color: var(--yellow);
   right: 6%;
   top: 3%;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 #wishlist .all .wishlistitem .removefromwishlist:hover {
   color: black;
@@ -17639,7 +17607,7 @@ a:hover {
     color: var(--yellow);
     right: 6%;
     top: 3%;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   #wishlist .all .wishlistitem .removefromwishlist:hover {
     color: black;

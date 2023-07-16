@@ -358,12 +358,12 @@ p {
                             visibility: hidden;
                             opacity: 0;
                             right: 5%;
-                            transition: 0.3s;
+                            transition: 0.2s;
                             cursor: pointer;
                             background-color: transparent;
 
                             svg {
-                                transition: 0.3s;
+                                transition: 0.2s;
                             }
 
                             &:hover {
@@ -438,7 +438,7 @@ p {
                                 position: absolute;
                                 top: 5%;
                                 left: 5%;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 cursor: pointer;
                                 border: none;
                                 opacity: 0;
@@ -447,7 +447,7 @@ p {
                                 background-color: transparent;
 
                                 svg {
-                                    transition: 0.3s;
+                                    transition: 0.2s;
                                 }
 
                                 &:hover {
@@ -465,7 +465,7 @@ p {
 
                             .bobotleft {
                                 opacity: 0;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 visibility: hidden;
                                 padding-left: 10px;
 
@@ -482,7 +482,7 @@ p {
 
                             .bobotright {
                                 opacity: 0;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 visibility: hidden;
                                 margin: 0 auto;
                                 display: flex;
@@ -616,7 +616,7 @@ p {
                     height: 470px;
                     opacity: 0;
                     visibility: hidden;
-                    transition: 0.3s;
+                    transition: 0.2s;
                     background-color: white;
                     box-shadow: 0px 0px 5px var(--yellow);
                     border-bottom-left-radius: 5px;
@@ -1156,12 +1156,12 @@ p {
                             right: 5%;
                             visibility: hidden;
                             opacity: 0;
-                            transition: 0.3s;
+                            transition: 0.2s;
                             cursor: pointer;
                             background-color: transparent;
 
                             svg {
-                                transition: 0.3s;
+                                transition: 0.2s;
                             }
 
                             &:hover {
@@ -1239,14 +1239,14 @@ p {
                                 opacity: 0;
                                 visibility: hidden;
                                 left: 5%;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 cursor: pointer;
                                 border: none;
                                 outline: none;
                                 background-color: transparent;
 
                                 svg {
-                                    transition: 0.3s;
+                                    transition: 0.2s;
                                 }
 
                                 &:hover {
@@ -1264,7 +1264,7 @@ p {
 
                             .bobotleft {
                                 opacity: 0;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 visibility: hidden;
                                 padding-left: 10px;
 
@@ -1281,7 +1281,7 @@ p {
 
                             .bobotright {
                                 opacity: 0;
-                                transition: 0.3s;
+                                transition: 0.2s;
                                 visibility: hidden;
                                 margin: 0 auto;
                                 display: flex;
@@ -1416,7 +1416,7 @@ p {
                     height: 515px;
                     opacity: 0;
                     visibility: hidden;
-                    transition: 0.3s;
+                    transition: 0.2s;
                     background-color: white;
                     box-shadow: 0px 0px 5px var(--yellow);
                     border-bottom-left-radius: 5px;
