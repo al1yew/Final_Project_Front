@@ -37,7 +37,7 @@ Just add the `image-zoom.css` to the head of your html file and the `image-zoom.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Your title</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/image-zoom.css">
