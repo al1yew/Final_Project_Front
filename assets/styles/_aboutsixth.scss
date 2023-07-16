@@ -11,6 +11,15 @@
     --select-arrow: var(--select-border);
 }
 
+@keyframes carousel3 {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
 
 .aboutsixth {
     margin-bottom: 30px;
@@ -20,125 +29,484 @@
         justify-content: space-between;
         flex-wrap: wrap;
         letter-spacing: 0.08em;
+        margin: 0;
+        padding: 0;
 
         .thirdpabout {
             font-family: var(--neueultra);
             font-size: 50px;
             text-align: center;
+            margin: 0;
+            padding: 0;
             color: var(--yellow);
         }
 
-        .allthen {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 30px 0;
-            align-items: center;
+        .left {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            padding: 20px;
 
-            .left,
-            .right {
-                padding: 20px;
+            img {
+                width: 100%;
+            }
+
+            .firstcar {
+                position: absolute;
+                left: 7px;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                width: 95%;
+                overflow: hidden;
+
+                .keeper {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 220%;
+
+                    .karuselitem {
+                        margin-right: 8px;
+                        font-size: 14px;
+                        animation: carousel3 12s linear infinite;
+                        font-family: var(--neuemedium);
+                    }
+                }
+            }
+
+            .secondcar {
+                position: absolute;
+                left: 43%;
+                top: 47%;
+                margin: 0;
+                padding: 0;
+                width: 110%;
+                overflow: hidden;
+                transform: rotate(90deg);
+
+                .keeper {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 220%;
+
+                    .karuselitem {
+                        margin-right: 8px;
+                        font-size: 14px;
+                        animation: carousel3 12s linear infinite;
+                        font-family: var(--neuemedium);
+                    }
+                }
+            }
+
+            .thirdcar {
+                position: absolute;
+                right: 7px;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+                width: 95%;
+                overflow: hidden;
+                transform: rotate(180deg);
+
+                .keeper {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 220%;
+
+                    .karuselitem {
+                        margin-right: 8px;
+                        font-size: 14px;
+                        animation: carousel3 12s linear infinite;
+                        font-family: var(--neuemedium);
+                    }
+                }
+            }
+
+            .fourthcar {
+                position: absolute;
+                right: 43%;
+                bottom: 47%;
+                margin: 0;
+                padding: 0;
+                width: 110%;
+                overflow: hidden;
+                transform: rotate(-90deg);
+
+                .keeper {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 220%;
+
+                    .karuselitem {
+                        margin-right: 8px;
+                        font-size: 14px;
+                        animation: carousel3 12s linear infinite;
+                        font-family: var(--neuemedium);
+                    }
+                }
+            }
+        }
+
+        .right {
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.08em;
+
+            p {
+                font-size: 22px;
+                font-family: var(--neueregular);
+                margin-bottom: 25px;
+            }
+
+            a {
+                font-family: var(--neueultra);
+                margin-bottom: 0;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutsixth {
+        margin-bottom: 20px;
+
+        .all {
+
+            .thirdpabout {
+                font-size: 30px;
             }
 
             .left {
-                position: relative;
-                overflow: hidden;
+                padding: 15px;
 
                 .firstcar {
-                    position: absolute;
-                    top: -0.5%;
-                    left: 0.3%;
-                    width: 95%;
-                    overflow: hidden;
+                    left: 7px;
+                    top: -2px;
+                    width: 94%;
 
-                    .carouselkeeper {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        width: 1600%;
+                    .keeper {
+                        width: 330%;
 
                         .karuselitem {
-                            font-weight: 500;
-                            font-size: 20px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            font-family: var(--neuemedium);
-                            animation: scroll 40s linear infinite;
+                            margin-right: 5px;
+                            font-size: 12px;
                         }
                     }
                 }
 
                 .secondcar {
-                    position: absolute;
-                    top: 46%;
-                    left: 43.5%;
-                    width: 109.5%;
-                    overflow: hidden;
-                    transform: rotate(90deg);
+                    left: 43%;
+                    top: 46.5%;
+                    width: 110%;
 
-                    .carouselkeeper {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        width: 1600%;
+                    .keeper {
+                        width: 330%;
 
                         .karuselitem {
-                            font-weight: 500;
-                            font-size: 20px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            font-family: var(--neuemedium);
-                            animation: scroll 40s linear infinite;
+                            margin-right: 5px;
+                            font-size: 12px;
                         }
                     }
                 }
 
                 .thirdcar {
-                    position: absolute;
-                    top: 49.5%;
-                    left: -53%;
-                    width: 109.5%;
-                    overflow: hidden;
-                    transform: rotate(-90deg);
+                    right: 7px;
+                    bottom: -2px;
+                    width: 94%;
 
-                    .carouselkeeper {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        width: 1600%;
+                    .keeper {
+                        width: 330%;
 
                         .karuselitem {
-                            font-weight: 500;
-                            font-size: 20px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            font-family: var(--neuemedium);
-                            animation: scroll 40s linear infinite;
+                            margin-right: 5px;
+                            font-size: 12px;
                         }
                     }
                 }
 
-                .forthcar {
-                    position: absolute;
-                    bottom: -0.5%;
-                    right: 0.4%;
-                    width: 95%;
-                    overflow: hidden;
-                    transform: rotate(180deg);
+                .fourthcar {
+                    right: 43%;
+                    bottom: 46.5%;
+                    width: 110%;
 
-                    .carouselkeeper {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        width: 1600%;
+                    .keeper {
+                        width: 330%;
 
                         .karuselitem {
-                            font-weight: 500;
-                            font-size: 20px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            font-family: var(--neuemedium);
-                            animation: scroll 40s linear infinite;
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin-top: 20px;
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .aboutsixth {
+
+        .all {
+
+            .thirdpabout {
+                font-size: 35px;
+            }
+
+            .left {
+                padding: 15px;
+
+                .firstcar {
+                    left: 7px;
+                    top: -2px;
+                    width: 95%;
+
+                    .keeper {
+                        width: 200%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .secondcar {
+                    left: 43%;
+                    top: 47%;
+                    width: 111%;
+
+                    .keeper {
+                        width: 200%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .thirdcar {
+                    right: 7px;
+                    bottom: -2px;
+                    width: 95%;
+
+                    .keeper {
+                        width: 200%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .fourthcar {
+                    right: 43%;
+                    bottom: 47%;
+                    width: 111%;
+
+                    .keeper {
+                        width: 200%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin-top: 20px;
+
+                p {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .aboutsixth {
+        .all {
+            .thirdpabout {
+                font-size: 40px;
+            }
+
+            .left {
+                padding: 15px;
+
+                .firstcar {
+                    left: 4px;
+                    top: -2px;
+                    width: 94%;
+
+                    .keeper {
+                        width: 300%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .secondcar {
+                    left: 44%;
+                    top: 46%;
+                    width: 108%;
+
+                    .keeper {
+                        width: 300%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .thirdcar {
+                    right: 6px;
+                    bottom: -2px;
+                    width: 94%;
+
+                    .keeper {
+                        width: 300%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .fourthcar {
+                    right: 44%;
+                    bottom: 46%;
+                    width: 108%;
+
+                    .keeper {
+                        width: 300%;
+
+                        .karuselitem {
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin-top: 0px;
+
+                p {
+                    font-size: 17px;
+                    margin-bottom: 0px;
+                }
+
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .aboutsixth {
+
+        .all {
+            .thirdpabout {
+                font-size: 45px;
+            }
+
+            .left {
+                .firstcar {
+                    left: 7px;
+                    top: 0;
+                    width: 95%;
+
+                    .keeper {
+                        width: 250%;
+
+                        .karuselitem {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .secondcar {
+                    left: 43%;
+                    top: 47%;
+                    width: 110%;
+
+                    .keeper {
+                        width: 250%;
+
+                        .karuselitem {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .thirdcar {
+                    right: 7px;
+                    bottom: 0;
+                    width: 95%;
+
+                    .keeper {
+                        width: 250%;
+
+                        .karuselitem {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .fourthcar {
+                    right: 43%;
+                    bottom: 47%;
+                    width: 110%;
+
+                    .keeper {
+                        width: 250%;
+
+                        .karuselitem {
+                            margin-right: 8px;
                         }
                     }
                 }
@@ -146,21 +514,12 @@
 
             .right {
                 p {
-                    font-weight: 300;
-                    font-size: 21px;
-                    line-height: 131%;
-                    letter-spacing: 0.08em;
-                    font-family: var(--neueregular);
+                    font-size: 20px;
                     margin-bottom: 15px;
                 }
 
                 a {
-                    font-family: var(--neueultra);
-                    margin-bottom: 0;
-                    font-size: 23px;
-                    line-height: 131%;
-                    font-weight: 300;
-                    letter-spacing: 0.08em;
+                    font-size: 20px;
                 }
             }
         }

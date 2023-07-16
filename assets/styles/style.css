@@ -17243,6 +17243,14 @@ a:hover {
   --select-arrow: var(--select-border);
 }
 
+@keyframes carousel3 {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .aboutsixth {
   margin-bottom: 30px;
 }
@@ -17251,132 +17259,395 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   letter-spacing: 0.08em;
+  margin: 0;
+  padding: 0;
 }
 .aboutsixth .all .thirdpabout {
   font-family: var(--neueultra);
   font-size: 50px;
   text-align: center;
+  margin: 0;
+  padding: 0;
   color: var(--yellow);
 }
-.aboutsixth .all .allthen {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 30px 0;
-  align-items: center;
-}
-.aboutsixth .all .allthen .left,
-.aboutsixth .all .allthen .right {
-  padding: 20px;
-}
-.aboutsixth .all .allthen .left {
+.aboutsixth .all .left {
   position: relative;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
 }
-.aboutsixth .all .allthen .left .firstcar {
+.aboutsixth .all .left img {
+  width: 100%;
+}
+.aboutsixth .all .left .firstcar {
   position: absolute;
-  top: -0.5%;
-  left: 0.3%;
+  left: 7px;
+  top: 0;
+  margin: 0;
+  padding: 0;
   width: 95%;
   overflow: hidden;
 }
-.aboutsixth .all .allthen .left .firstcar .carouselkeeper {
+.aboutsixth .all .left .firstcar .keeper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 1600%;
+  margin: 0;
+  padding: 0;
+  width: 220%;
 }
-.aboutsixth .all .allthen .left .firstcar .carouselkeeper .karuselitem {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
+.aboutsixth .all .left .firstcar .keeper .karuselitem {
+  margin-right: 8px;
+  font-size: 14px;
+  animation: carousel3 12s linear infinite;
   font-family: var(--neuemedium);
-  animation: scroll 40s linear infinite;
 }
-.aboutsixth .all .allthen .left .secondcar {
+.aboutsixth .all .left .secondcar {
   position: absolute;
-  top: 46%;
-  left: 43.5%;
-  width: 109.5%;
+  left: 43%;
+  top: 47%;
+  margin: 0;
+  padding: 0;
+  width: 110%;
   overflow: hidden;
   transform: rotate(90deg);
 }
-.aboutsixth .all .allthen .left .secondcar .carouselkeeper {
+.aboutsixth .all .left .secondcar .keeper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 1600%;
+  margin: 0;
+  padding: 0;
+  width: 220%;
 }
-.aboutsixth .all .allthen .left .secondcar .carouselkeeper .karuselitem {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
+.aboutsixth .all .left .secondcar .keeper .karuselitem {
+  margin-right: 8px;
+  font-size: 14px;
+  animation: carousel3 12s linear infinite;
   font-family: var(--neuemedium);
-  animation: scroll 40s linear infinite;
 }
-.aboutsixth .all .allthen .left .thirdcar {
+.aboutsixth .all .left .thirdcar {
   position: absolute;
-  top: 49.5%;
-  left: -53%;
-  width: 109.5%;
-  overflow: hidden;
-  transform: rotate(-90deg);
-}
-.aboutsixth .all .allthen .left .thirdcar .carouselkeeper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 1600%;
-}
-.aboutsixth .all .allthen .left .thirdcar .carouselkeeper .karuselitem {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  font-family: var(--neuemedium);
-  animation: scroll 40s linear infinite;
-}
-.aboutsixth .all .allthen .left .forthcar {
-  position: absolute;
-  bottom: -0.5%;
-  right: 0.4%;
+  right: 7px;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
   width: 95%;
   overflow: hidden;
   transform: rotate(180deg);
 }
-.aboutsixth .all .allthen .left .forthcar .carouselkeeper {
+.aboutsixth .all .left .thirdcar .keeper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 1600%;
+  margin: 0;
+  padding: 0;
+  width: 220%;
 }
-.aboutsixth .all .allthen .left .forthcar .carouselkeeper .karuselitem {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
+.aboutsixth .all .left .thirdcar .keeper .karuselitem {
+  margin-right: 8px;
+  font-size: 14px;
+  animation: carousel3 12s linear infinite;
   font-family: var(--neuemedium);
-  animation: scroll 40s linear infinite;
 }
-.aboutsixth .all .allthen .right p {
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 131%;
+.aboutsixth .all .left .fourthcar {
+  position: absolute;
+  right: 43%;
+  bottom: 47%;
+  margin: 0;
+  padding: 0;
+  width: 110%;
+  overflow: hidden;
+  transform: rotate(-90deg);
+}
+.aboutsixth .all .left .fourthcar .keeper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 220%;
+}
+.aboutsixth .all .left .fourthcar .keeper .karuselitem {
+  margin-right: 8px;
+  font-size: 14px;
+  animation: carousel3 12s linear infinite;
+  font-family: var(--neuemedium);
+}
+.aboutsixth .all .right {
+  margin: 0;
+  padding: 0;
   letter-spacing: 0.08em;
-  font-family: var(--neueregular);
-  margin-bottom: 15px;
 }
-.aboutsixth .all .allthen .right a {
+.aboutsixth .all .right p {
+  font-size: 22px;
+  font-family: var(--neueregular);
+  margin-bottom: 25px;
+}
+.aboutsixth .all .right a {
   font-family: var(--neueultra);
   margin-bottom: 0;
-  font-size: 23px;
-  line-height: 131%;
-  font-weight: 300;
-  letter-spacing: 0.08em;
+  font-size: 24px;
 }
 
+@media (max-width: 576px) {
+  .aboutsixth {
+    margin-bottom: 20px;
+  }
+  .aboutsixth .all .thirdpabout {
+    font-size: 30px;
+  }
+  .aboutsixth .all .left {
+    padding: 15px;
+  }
+  .aboutsixth .all .left .firstcar {
+    left: 7px;
+    top: -2px;
+    width: 94%;
+  }
+  .aboutsixth .all .left .firstcar .keeper {
+    width: 330%;
+  }
+  .aboutsixth .all .left .firstcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .secondcar {
+    left: 43%;
+    top: 46.5%;
+    width: 110%;
+  }
+  .aboutsixth .all .left .secondcar .keeper {
+    width: 330%;
+  }
+  .aboutsixth .all .left .secondcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .thirdcar {
+    right: 7px;
+    bottom: -2px;
+    width: 94%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper {
+    width: 330%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .fourthcar {
+    right: 43%;
+    bottom: 46.5%;
+    width: 110%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper {
+    width: 330%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .right {
+    margin-top: 20px;
+  }
+  .aboutsixth .all .right p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .aboutsixth .all .right a {
+    font-size: 17px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .aboutsixth .all .thirdpabout {
+    font-size: 35px;
+  }
+  .aboutsixth .all .left {
+    padding: 15px;
+  }
+  .aboutsixth .all .left .firstcar {
+    left: 7px;
+    top: -2px;
+    width: 95%;
+  }
+  .aboutsixth .all .left .firstcar .keeper {
+    width: 200%;
+  }
+  .aboutsixth .all .left .firstcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .secondcar {
+    left: 43%;
+    top: 47%;
+    width: 111%;
+  }
+  .aboutsixth .all .left .secondcar .keeper {
+    width: 200%;
+  }
+  .aboutsixth .all .left .secondcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .thirdcar {
+    right: 7px;
+    bottom: -2px;
+    width: 95%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper {
+    width: 200%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .fourthcar {
+    right: 43%;
+    bottom: 47%;
+    width: 111%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper {
+    width: 200%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .right {
+    margin-top: 20px;
+  }
+  .aboutsixth .all .right p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .aboutsixth .all .right a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .aboutsixth .all .thirdpabout {
+    font-size: 40px;
+  }
+  .aboutsixth .all .left {
+    padding: 15px;
+  }
+  .aboutsixth .all .left .firstcar {
+    left: 4px;
+    top: -2px;
+    width: 94%;
+  }
+  .aboutsixth .all .left .firstcar .keeper {
+    width: 300%;
+  }
+  .aboutsixth .all .left .firstcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .secondcar {
+    left: 44%;
+    top: 46%;
+    width: 108%;
+  }
+  .aboutsixth .all .left .secondcar .keeper {
+    width: 300%;
+  }
+  .aboutsixth .all .left .secondcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .thirdcar {
+    right: 6px;
+    bottom: -2px;
+    width: 94%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper {
+    width: 300%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .left .fourthcar {
+    right: 44%;
+    bottom: 46%;
+    width: 108%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper {
+    width: 300%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper .karuselitem {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .aboutsixth .all .right {
+    margin-top: 0px;
+  }
+  .aboutsixth .all .right p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .aboutsixth .all .right a {
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .aboutsixth .all .thirdpabout {
+    font-size: 45px;
+  }
+  .aboutsixth .all .left .firstcar {
+    left: 7px;
+    top: 0;
+    width: 95%;
+  }
+  .aboutsixth .all .left .firstcar .keeper {
+    width: 250%;
+  }
+  .aboutsixth .all .left .firstcar .keeper .karuselitem {
+    margin-right: 8px;
+  }
+  .aboutsixth .all .left .secondcar {
+    left: 43%;
+    top: 47%;
+    width: 110%;
+  }
+  .aboutsixth .all .left .secondcar .keeper {
+    width: 250%;
+  }
+  .aboutsixth .all .left .secondcar .keeper .karuselitem {
+    margin-right: 8px;
+  }
+  .aboutsixth .all .left .thirdcar {
+    right: 7px;
+    bottom: 0;
+    width: 95%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper {
+    width: 250%;
+  }
+  .aboutsixth .all .left .thirdcar .keeper .karuselitem {
+    margin-right: 8px;
+  }
+  .aboutsixth .all .left .fourthcar {
+    right: 43%;
+    bottom: 47%;
+    width: 110%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper {
+    width: 250%;
+  }
+  .aboutsixth .all .left .fourthcar .keeper .karuselitem {
+    margin-right: 8px;
+  }
+  .aboutsixth .all .right p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .aboutsixth .all .right a {
+    font-size: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
