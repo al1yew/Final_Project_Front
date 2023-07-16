@@ -414,4 +414,19 @@ $(function () {
     });
 
     //#endregion form shop page buy product
+
+    //account info page
+
+    //#region account info page input checked label
+
+    $(document).on("change", ".genderinput", function () {
+        var label = $(this).parent();
+        label.parent().find("label").removeClass("checkedlabel");
+
+        if ($(this).is(":checked")) {
+            label.addClass("checkedlabel");
+        }
+    });
+
+    //#endregion account info page input checked label
 });

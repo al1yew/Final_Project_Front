@@ -16188,37 +16188,6 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-@font-face {
-  font-family: NeuePowerLight;
-  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
-}
-@font-face {
-  font-family: NeuePowerMedium;
-  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
-}
-@font-face {
-  font-family: NeuePowerRegular;
-  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
-}
-@font-face {
-  font-family: NeuePowerUltra;
-  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
-}
-@font-face {
-  font-family: NeuePowerBold;
-  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
-}
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -16232,223 +16201,111 @@ p {
   --select-arrow: var(--select-border);
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-}
-
-.where {
-  opacity: 0;
-  margin-top: 30px;
-}
-
-.breadcrumbregsiter {
-  padding: 10px 0;
-  margin: 0;
-}
-.breadcrumbregsiter .keeper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 0;
-}
-.breadcrumbregsiter .keeper div {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  font-family: var(--neuelight);
-  letter-spacing: 0.08em;
-}
-.breadcrumbregsiter .keeper a {
-  font-family: var(--neueregular);
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.08em;
-}
-.breadcrumbregsiter .keeper a:hover {
-  text-decoration: underline;
-}
-
 .accountinfoall {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .accountinfoall .all {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  letter-spacing: 0.08em;
+  margin: 0;
+  padding: 0;
 }
 .accountinfoall .all .firstp {
   font-family: var(--neueultra);
   font-size: 40px;
-  line-height: 60px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  letter-spacing: 0.08em;
   color: var(--yellow);
 }
 .accountinfoall .all form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.accountinfoall .all form .left {
+  margin: 0;
+  padding: 0;
   margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-.accountinfoall .all form .left .head {
+.accountinfoall .all form .head {
   font-family: var(--neuebold);
-  font-weight: 700;
   font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 0.08em;
+  margin: 0;
+  padding: 0;
   margin-bottom: 15px;
 }
-.accountinfoall .all form .left label {
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
+.accountinfoall .all form label {
+  font-family: var(--neuemedium);
+  font-size: 14px;
 }
-.accountinfoall .all form .left button {
-  margin-top: 20px;
+.accountinfoall .all form button {
   width: 100%;
   background-color: black;
   text-align: center;
   padding: 10px 0;
   color: white;
-  font-family: var(--neueregular);
-  font-weight: 400;
+  font-family: var(--neuemedium);
   font-size: 16px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
+  margin-top: 20px;
 }
-.accountinfoall .all form .left input {
+.accountinfoall .all form input {
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
-  margin-top: 5px;
-  margin-bottom: 10px;
   box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding: 10px 10px;
-  font-family: var(--neuelight);
-  font-weight: 300;
+  padding: 10px;
+  font-family: var(--neuemedium);
   font-size: 15px;
-  letter-spacing: 0.08em;
+}
+.accountinfoall .all form .keeperdiv {
+  margin: 10px 0;
+}
+.accountinfoall .all form .left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .accountinfoall .all form .left .genderdiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-self: flex-end;
   flex-wrap: wrap;
-  padding: 28px 0;
-  padding-top: 40px;
-}
-.accountinfoall .all form .left .genderdiv label {
-  font-family: var(--neueregular);
-  font-weight: 300;
-  font-size: 13.5px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-}
-.accountinfoall .all form .left .genderdiv div {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
+.accountinfoall .all form .left .genderdiv label {
+  font-family: var(--neuemedium);
+  font-size: 14px;
+  transition: 0.2s;
+  padding: 10px;
+}
 .accountinfoall .all form .left .genderdiv input {
-  border: none;
-  outline: none;
-  border-radius: 0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  box-shadow: none;
-  padding: 0;
-  margin-left: 10px;
+  display: none;
+}
+.accountinfoall .all form .left .genderdiv .checkedlabel {
+  border-radius: 3px;
+  border: 1px solid var(--yellow);
 }
 .accountinfoall .all form .right {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
-}
-.accountinfoall .all form .right .head {
-  font-family: var(--neuebold);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 0.08em;
-  margin-bottom: 15px;
-}
-.accountinfoall .all form .right label {
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-}
-.accountinfoall .all form .right button {
-  margin-top: 20px;
-  width: 100%;
-  background-color: black;
-  text-align: center;
-  padding: 10px 0;
-  color: white;
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-}
-.accountinfoall .all form .right input {
-  border: 1px solid black;
-  outline: none;
-  border-radius: 3px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding: 10px 10px;
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 0.08em;
-}
-.accountinfoall .all form .right .genderdiv {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 28px 0;
-  padding-top: 40px;
-}
-.accountinfoall .all form .right .genderdiv label {
-  font-family: var(--neueregular);
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-}
-.accountinfoall .all form .right .genderdiv div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.accountinfoall .all form .right .genderdiv input {
-  border: none;
-  outline: none;
-  border-radius: 0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  box-shadow: none;
-  padding: 0;
-  margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .accountinfoall .all .firstp {
+    font-size: 30px;
+  }
+  .accountinfoall .all form {
+    margin-top: 20px;
+  }
+  .accountinfoall .all form .right {
+    margin-top: 40px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
