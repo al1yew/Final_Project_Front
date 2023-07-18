@@ -431,4 +431,74 @@ $(function () {
     });
 
     //#endregion account info page input checked label
+
+    //addesses and cards page
+
+    //#region add new card
+
+    //--------------------------------- add new card
+
+    $(document).on("click", ".clicktoaddnewcard", function (e) {
+        $(".addcard").fadeIn(200);
+        $(this).hide();
+    });
+
+    $(document).on("click", ".cancelnewcard", function (e) {
+        $(".addcard").hide();
+        $(".clicktoaddnewcard").fadeIn(200);
+    });
+
+    $(document).on("submit", "#addnewcardform", function (e) {
+        e.preventDefault();
+
+        const form = $(this);
+        const formData = form.serializeArray();
+
+        const formValues = {};
+        formData.forEach((field) => {
+            formValues[field.name] = field.value.trim();
+        });
+
+        form.find("input[type='text']").val("");
+
+        //then i will axios
+
+        console.log(formValues);
+    });
+
+    //#endregion add new card
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region add new address
+
+    $(document).on("click", ".clicktoaddnewaddress", function (e) {
+        $(".addaddress").fadeIn(200);
+        $(this).hide();
+    });
+
+    $(document).on("click", ".cancelnewaddress", function (e) {
+        $(".addaddress").hide();
+        $(".clicktoaddnewaddress").fadeIn(200);
+    });
+
+    $(document).on("submit", "#addnewaddressform", function (e) {
+        e.preventDefault();
+
+        const form = $(this);
+        const formData = form.serializeArray();
+
+        const formValues = {};
+        formData.forEach((field) => {
+            formValues[field.name] = field.value.trim();
+        });
+
+        form.find("input[type='text']").val("");
+
+        //then i will axios
+
+        console.log(formValues);
+    });
+
+    //#endregion add new address
 });
