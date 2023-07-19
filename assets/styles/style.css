@@ -3163,9 +3163,6 @@ body {
   margin-top: 15px;
   cursor: pointer;
 }
-.mainfifth .arrows .nextsecond {
-  margin-top: 2px;
-}
 
 @media (max-width: 576px) {
   .mainfifth .mainpart {
