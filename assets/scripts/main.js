@@ -499,4 +499,115 @@ $(function () {
     });
 
     //#endregion add new address
+
+    //basket page
+
+    //#region basket html product quantity
+
+    $(document).on("click", ".plus", function (e) {
+        e.preventDefault();
+
+        let result = Number($(this).prev().val());
+        result++;
+        $(this).prev().val(result);
+    });
+
+    $(document).on("click", ".minus", function (e) {
+        e.preventDefault();
+
+        let result = Number($(this).next().val());
+
+        if (result > 1) {
+            result--;
+            $(this).next().val(result);
+        } else {
+            $(this).next().val("1");
+        }
+    });
+
+    $(document).on("keyup", ".result", function (e) {
+        if (
+            (e.which >= 48 && e.which <= 57) ||
+            (e.which >= 96 && e.which <= 105) ||
+            e.which == 8
+        ) {
+            // $($(this).parent().children()[0]).fadeIn(180);
+            // alert(`${$(this).val()} count of product`);
+        }
+    });
+
+    //#endregion basket html product quantity
+
+    //---------------------------------------------------------------------------------------------------------------
+
+    //#region basket sliders
+
+    $(".youmaylikeitems").slick({
+        dots: true,
+        infinite: true,
+        speed: 400,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+        prevArrow: $(".basketprevfirst"),
+        nextArrow: $(".basketnextfirst"),
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    adaptiveHeight: true,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false,
+                },
+            },
+        ],
+    });
+
+    $(".recentlyvieweditems").slick({
+        dots: true,
+        infinite: true,
+        speed: 400,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+        prevArrow: $(".basketprevsecond"),
+        nextArrow: $(".basketnextsecond"),
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    adaptiveHeight: true,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    dots: false,
+                },
+            },
+        ],
+    });
+
+    //#endregion basket sliders
+
+
+
+
+
 });

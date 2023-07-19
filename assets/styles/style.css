@@ -10382,37 +10382,40 @@ a {
 
 .basketfirst {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .basketfirst .all {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
 .basketfirst .all .keeper {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 .basketfirst .all .keeper .top {
   font-family: var(--neueultra);
-  font-weight: 800;
   font-size: 20px;
-  line-height: 24px;
   text-align: center;
   letter-spacing: 0.08em;
   margin-bottom: 18px;
 }
 .basketfirst .all .keeper .bottom {
-  font-weight: 500;
   font-size: 15px;
-  line-height: 114%;
   text-align: center;
   letter-spacing: 0.08em;
   font-family: var(--neuemedium);
 }
 
+@media (max-width: 768px) {
+  .basketfirst {
+    display: none;
+  }
+}
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -10427,17 +10430,15 @@ a {
 }
 
 .basketsecond {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 .basketsecond .firstp {
   font-family: var(--neueultra);
   font-size: 50px;
-  line-height: 60px;
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--yellow);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .basketsecond ::-webkit-scrollbar-thumb {
   background: rgb(220, 220, 220);
@@ -10460,10 +10461,7 @@ a {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 50px;
-}
-.basketsecond .all .left .basketlement:last-child {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .basketsecond .all .left .basketlement .rightleft {
   display: flex;
@@ -10473,21 +10471,19 @@ a {
 .basketsecond .all .left .basketlement .rightleft .top {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 20px;
 }
 .basketsecond .all .left .basketlement .rightleft .top p {
   font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 18px;
   letter-spacing: 0.08em;
-  margin-bottom: 10px;
 }
-.basketsecond .all .left .basketlement .rightleft .top span {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 114%;
+.basketsecond .all .left .basketlement .rightleft .top .total {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
   letter-spacing: 0.08em;
   font-family: var(--neueultra);
 }
@@ -10495,7 +10491,7 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 20px;
 }
 .basketsecond .all .left .basketlement .rightleft .middle div {
@@ -10503,23 +10499,16 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
-  padding-left: 20px;
-}
 .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(1), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2) {
   margin-bottom: 15px;
 }
 .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 114%;
+  font-family: var(--neuemedium);
+  font-size: 15px;
   letter-spacing: 0.08em;
 }
 .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 114%;
+  font-size: 16px;
   font-family: var(--neuebold);
   letter-spacing: 0.08em;
 }
@@ -10533,21 +10522,20 @@ a {
 }
 .basketsecond .all .left .basketlement .rightleft .bottom .deletefrombasketinbaskethtmlpage {
   position: absolute;
-  top: 0;
+  bottom: 1%;
   right: 0;
   cursor: pointer;
 }
 .basketsecond .all .left .basketlement .rightleft .bottom .compwishlist {
   font-family: var(--neueregular);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 114%;
   letter-spacing: 0.08em;
   text-decoration-line: underline;
 }
 .basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
   display: flex;
-  padding: 5px 10px;
+  padding: 0;
+  margin: 0;
   border: 0.8px solid black;
   justify-content: space-between;
   align-items: center;
@@ -10560,15 +10548,16 @@ a {
   align-items: center;
   font-size: 20px;
 }
+.basketsecond .all .left .basketlement .rightleft .bottom .productquantity ion-icon {
+  font-size: 25px;
+}
 .basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
   width: 20%;
   text-align: center;
   border: none;
   outline: none;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 114%;
   font-family: var(--neueregular);
 }
 .basketsecond .all .right {
@@ -10583,13 +10572,10 @@ a {
   flex-wrap: wrap;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 20px 0;
 }
 .basketsecond .all .right .top span {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 114%;
   letter-spacing: 0.08em;
   font-family: var(--neueregular);
 }
@@ -10605,13 +10591,10 @@ a {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid black;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 20px 0;
 }
 .basketsecond .all .right .middle span {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 114%;
   letter-spacing: 0.08em;
   font-family: var(--neueregular);
 }
@@ -10621,15 +10604,12 @@ a {
 .basketsecond .all .right .bottom {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 20px 0;
   width: 100%;
 }
 .basketsecond .all .right .bottom .checkouthref {
   font-family: var(--neueregular);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 114%;
   letter-spacing: 0.08em;
   width: 100%;
   padding: 20px;
@@ -10637,49 +10617,29 @@ a {
   border: 1px solid black;
   color: black;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .basketsecond .all .right .bottom .paywith {
   border-top: 1px solid black;
   font-family: var(--neuemedium);
-  padding-top: 25px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.basketsecond .all .right .bottom .paywith span:nth-child(1) {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
+.basketsecond .all .right .bottom .paywith p {
   margin-bottom: 10px;
-}
-.basketsecond .all .right .bottom .paywith span:nth-child(2), .basketsecond .all .right .bottom .paywith span:nth-child(3) {
-  margin-bottom: 10px;
-}
-.basketsecond .all .right .bottom .paywith span:nth-child(2) {
-  margin-right: 10px;
-}
-.basketsecond .all .right .bottom .paywith span:nth-child(4) {
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 127%;
+  font-size: 12px;
   letter-spacing: 0.08em;
-  margin-top: 15px;
 }
-.basketsecond .all .right .bottom .paywith span:nth-child(5) {
-  font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 127%;
-  letter-spacing: 0.08em;
-  margin-top: 20px;
-}
-.basketsecond .all .right .bottom .paywith span:nth-child(5) a {
+.basketsecond .all .right .bottom .paywith p a {
   text-decoration: underline;
   font-family: var(--neuebold);
   font-size: 12px;
+}
+.basketsecond .all .right .bottom .paywith span {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .basketsecond .all .right .bottom .paywith .policyhref {
   margin-top: 20px;
@@ -10687,9 +10647,7 @@ a {
   text-align: center;
   width: 100%;
   border: 1px solid black;
-  font-weight: 300;
   font-size: 10px;
-  line-height: 12px;
   letter-spacing: 0.08em;
 }
 .basketsecond .all .basketboshdu {
@@ -10711,7 +10669,7 @@ a {
 
 :root {
   --white: #FFFFFF;
-  --yellow: #EDF109;
+  --yellow: #7c7c75;
   --neueregular: NeuePowerRegular;
   --neuemedium: NeuePowerMedium;
   --neuelight: NeuePowerLight;
@@ -10722,181 +10680,197 @@ a {
   --select-arrow: var(--select-border);
 }
 
-.basketthird .thirdall .youmaylikesection {
-  margin: 50px 0;
+.basketthird,
+.basketfourth {
+  margin-top: 20px;
 }
-.basketthird .thirdall .youmaylikesection p {
-  font-weight: 800;
+.basketthird .firstp,
+.basketfourth .firstp {
   font-size: 50px;
-  line-height: 114%;
   letter-spacing: 0.08em;
   font-family: var(--neuebold);
   color: var(--yellow);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.basketthird .thirdall .youmaylikesection p span {
+.basketthird .firstp span,
+.basketfourth .firstp span {
   font-style: oblique;
   padding: 0;
   margin: 0;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv {
-  padding: 5px;
+.basketthird .sliderkeeper,
+.basketfourth .sliderkeeper {
+  margin: 0;
+  padding: 0;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .nextbasket {
-  margin-bottom: -1px;
+.basketthird .sliderkeeper .slick-slide,
+.basketfourth .sliderkeeper .slick-slide {
+  margin: 0 10px;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .arrows {
-  margin-top: 15px;
-  cursor: pointer;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product {
-  padding-right: 10px;
+.basketthird .sliderkeeper .product,
+.basketfourth .sliderkeeper .product {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .top .wishlist {
-  visibility: visible !important;
-  opacity: 1 !important;
+.basketthird .sliderkeeper .product .top,
+.basketfourth .sliderkeeper .product .top {
+  margin: 0;
+  padding: 0;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .bottom .basket {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .bottom .bobotleft {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .bottom .bobotright {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top {
-  position: relative;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist {
-  visibility: hidden;
-  opacity: 0;
+.basketthird .sliderkeeper .product .top .wishlist,
+.basketfourth .sliderkeeper .product .top .wishlist {
   position: absolute;
-  top: 5.8%;
-  right: 5%;
+  top: 4%;
+  right: 4%;
   transition: 0.2s;
   cursor: pointer;
   background-color: transparent;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist svg {
+.basketthird .sliderkeeper .product .top .wishlist svg,
+.basketfourth .sliderkeeper .product .top .wishlist svg {
   transition: 0.2s;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:hover svg {
+.basketthird .sliderkeeper .product .top .wishlist svg path,
+.basketfourth .sliderkeeper .product .top .wishlist svg path {
+  transition: 0.2s;
+}
+.basketthird .sliderkeeper .product .top .wishlist:hover svg,
+.basketfourth .sliderkeeper .product .top .wishlist:hover svg {
   fill: var(--yellow);
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:hover svg path {
+.basketthird .sliderkeeper .product .top .wishlist:hover svg path,
+.basketfourth .sliderkeeper .product .top .wishlist:hover svg path {
   fill: var(--yellow);
   stroke: var(--yellow);
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .discount_percent {
+.basketthird .sliderkeeper .product .top .discount_percent,
+.basketfourth .sliderkeeper .product .top .discount_percent {
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 3%;
+  bottom: 20%;
   right: 3%;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .discount_percent span {
-  font-family: var(--neuebold);
+.basketthird .sliderkeeper .product .top .discount_percent span,
+.basketfourth .sliderkeeper .product .top .discount_percent span {
   font-size: 13px;
   padding: 5px 10px;
-  letter-spacing: 0.1em;
   background-color: var(--yellow);
   color: black;
+  font-family: var(--neuemedium);
+  letter-spacing: 2px;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom {
+.basketthird .sliderkeeper .product .bottom,
+.basketfourth .sliderkeeper .product .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.08em;
+}
+.basketthird .sliderkeeper .product .bottom .botop,
+.basketfourth .sliderkeeper .product .bottom .botop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   margin-top: 8px;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopleft {
-  padding-left: 10px;
+.basketthird .sliderkeeper .product .bottom .botop .botopleft,
+.basketfourth .sliderkeeper .product .bottom .botop .botopleft {
+  max-width: 80%;
+  margin: 0;
+  padding: 0;
   font-size: 15px;
-  font-family: var(--neuelight);
-  letter-spacing: 0.08em;
+  font-family: var(--neuemedium);
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopright {
+.basketthird .sliderkeeper .product .bottom .botop .botopright,
+.basketfourth .sliderkeeper .product .bottom .botop .botopright {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+  padding: 0;
   font-family: var(--neuebold);
-  letter-spacing: 0.08em;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopright .discprice {
-  text-align: end;
   font-size: 19px;
-  text-decoration: none !important;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom {
+.basketthird .sliderkeeper .product .bottom .bobottom,
+.basketfourth .sliderkeeper .product .bottom .bobottom {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   margin-top: 8px;
-}
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 5%;
-  left: 5%;
+  letter-spacing: 0.08em;
   transition: 0.2s;
+}
+.basketthird .sliderkeeper .product .bottom .bobottom .basket,
+.basketfourth .sliderkeeper .product .bottom .bobottom .basket {
+  position: absolute;
+  top: 4%;
+  left: 4%;
   cursor: pointer;
   border: none;
   outline: none;
   background-color: transparent;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket svg {
+.basketthird .sliderkeeper .product .bottom .bobottom .basket svg,
+.basketfourth .sliderkeeper .product .bottom .bobottom .basket svg {
   transition: 0.2s;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg {
+.basketthird .sliderkeeper .product .bottom .bobottom .basket svg path,
+.basketfourth .sliderkeeper .product .bottom .bobottom .basket svg path {
+  transition: 0.2s;
+}
+.basketthird .sliderkeeper .product .bottom .bobottom .basket:hover svg,
+.basketfourth .sliderkeeper .product .bottom .bobottom .basket:hover svg {
   fill: var(--yellow);
   stroke: var(--yellow);
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg path {
+.basketthird .sliderkeeper .product .bottom .bobottom .basket:hover svg path,
+.basketfourth .sliderkeeper .product .bottom .bobottom .basket:hover svg path {
   fill: var(--yellow);
   stroke: var(--yellow);
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft {
-  opacity: 0;
-  transition: 0.2s;
-  visibility: hidden;
-  padding-left: 10px;
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotleft,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotleft {
+  padding: 0;
+  margin: 0;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft select {
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotleft select,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotleft select {
   width: 100%;
   outline: none;
-  font-family: var(--neueregular);
+  font-family: var(--neuemedium);
   border-radius: 0;
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 0.08em;
+  font-size: 14px;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright {
-  opacity: 0;
-  transition: 0.2s;
-  visibility: hidden;
-  margin: 0 auto;
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotright,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotright {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright input {
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotright input,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotright input {
   display: none;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright label,
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright .color_box {
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotright label,
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotright .color_box,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotright label,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotright .color_box {
   height: 15px;
   width: 15px;
   cursor: pointer;
@@ -10905,216 +10879,33 @@ a {
   position: relative;
   margin-left: 8px;
 }
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright label .markicon,
-.basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright .color_box .markicon {
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotright label .markicon,
+.basketthird .sliderkeeper .product .bottom .bobottom .bobotright .color_box .markicon,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotright label .markicon,
+.basketfourth .sliderkeeper .product .bottom .bobottom .bobotright .color_box .markicon {
   font-size: 20px;
   position: absolute;
   bottom: -30%;
   left: -25%;
 }
-
-:root {
-  --white: #FFFFFF;
-  --yellow: #EDF109;
-  --neueregular: NeuePowerRegular;
-  --neuemedium: NeuePowerMedium;
-  --neuelight: NeuePowerLight;
-  --neueultra: NeuePowerUltra;
-  --neuebold: NeuePowerBold;
-  --select-border: #777;
-  --select-focus: blue;
-  --select-arrow: var(--select-border);
+.basketthird .sliderkeeper .slick-dots,
+.basketfourth .sliderkeeper .slick-dots {
+  width: 50%;
+  right: 0;
+  bottom: -55px !important;
+  display: flex;
+  justify-content: flex-end;
 }
-
-.basketfourth .fourthall .recentlyviewed {
-  margin: 50px 0;
-}
-.basketfourth .fourthall .recentlyviewed p {
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
-  font-family: var(--neuebold);
-  color: var(--yellow);
-  margin-bottom: 30px;
-}
-.basketfourth .fourthall .recentlyviewed p span {
-  font-style: oblique;
-  padding: 0;
-  margin: 0;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv {
-  padding: 5px;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .nextbasket {
-  margin-bottom: -1px;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .arrows {
+.basketthird .sliderkeeper .arrows,
+.basketfourth .sliderkeeper .arrows {
   margin-top: 15px;
   cursor: pointer;
 }
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product {
-  padding-right: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .top .wishlist {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .bottom .basket {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .bottom .bobotleft {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .bottom .bobotright {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top {
-  position: relative;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 5.8%;
-  right: 5%;
-  transition: 0.2s;
-  cursor: pointer;
-  background-color: transparent;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
-  transition: 0.2s;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:hover svg {
-  fill: var(--yellow);
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:hover svg path {
-  fill: var(--yellow);
-  stroke: var(--yellow);
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 3%;
-  right: 3%;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent span {
-  font-family: var(--neuebold);
-  font-size: 13px;
-  padding: 5px 10px;
-  letter-spacing: 0.1em;
-  background-color: var(--yellow);
-  color: black;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 8px;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopleft {
-  padding-left: 10px;
-  font-size: 15px;
-  font-family: var(--neuelight);
-  letter-spacing: 0.08em;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopright {
-  font-family: var(--neuebold);
-  letter-spacing: 0.08em;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopright .discprice {
-  text-align: end;
-  font-size: 19px;
-  text-decoration: none !important;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 8px;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  transition: 0.2s;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket svg {
-  transition: 0.2s;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg {
-  fill: var(--yellow);
-  stroke: var(--yellow);
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg path {
-  fill: var(--yellow);
-  stroke: var(--yellow);
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft {
-  opacity: 0;
-  transition: 0.2s;
-  visibility: hidden;
-  padding-left: 10px;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft select {
-  width: 100%;
-  outline: none;
-  font-family: var(--neueregular);
-  border-radius: 0;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright {
-  opacity: 0;
-  transition: 0.2s;
-  visibility: hidden;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright input {
-  display: none;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright label,
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright .color_box {
-  height: 15px;
-  width: 15px;
-  cursor: pointer;
-  border: 0.3px solid white;
-  outline: 0.3px solid black;
-  position: relative;
-  margin-left: 8px;
-}
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright label .markicon,
-.basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright .color_box .markicon {
-  font-size: 20px;
-  position: absolute;
-  bottom: -30%;
-  left: -25%;
+.basketthird .sliderkeeper .arrows .basketnextfirst,
+.basketthird .sliderkeeper .arrows .basketnextsecond,
+.basketfourth .sliderkeeper .arrows .basketnextfirst,
+.basketfourth .sliderkeeper .arrows .basketnextsecond {
+  margin-top: 2px;
 }
 
 .discover {
@@ -11136,1438 +10927,6 @@ a {
   letter-spacing: 0.08em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-@font-face {
-  font-family: NeuePowerLight;
-  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
-}
-@font-face {
-  font-family: NeuePowerMedium;
-  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
-}
-@font-face {
-  font-family: NeuePowerRegular;
-  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
-}
-@font-face {
-  font-family: NeuePowerUltra;
-  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
-}
-@font-face {
-  font-family: NeuePowerBold;
-  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
-}
-:root {
-  --white: #FFFFFF;
-  --yellow: #EDF109;
-  --neueregular: NeuePowerRegular;
-  --neuemedium: NeuePowerMedium;
-  --neuelight: NeuePowerLight;
-  --neueultra: NeuePowerUltra;
-  --neuebold: NeuePowerBold;
-  --select-border: #777;
-  --select-focus: blue;
-  --select-arrow: var(--select-border);
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-}
-
-.where {
-  opacity: 0;
-  margin-top: 30px;
-}
-
-@media (max-width: 576px) {
-  .basketfirst {
-    display: none;
-  }
-  .basketsecond {
-    margin-top: 30px;
-  }
-  .basketsecond .firstp {
-    font-family: var(--neueultra);
-    font-size: 25px;
-    text-align: center;
-    letter-spacing: 0.08em;
-    color: var(--yellow);
-    margin-bottom: 30px;
-  }
-  .basketsecond .all {
-    display: flex;
-    justify-content: space-between;
-  }
-  .basketsecond .all .left {
-    display: flex;
-    flex-direction: column;
-  }
-  .basketsecond .all .left .basketlement {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-bottom: 30px;
-  }
-  .basketsecond .all .left .basketlement:last-child {
-    margin-bottom: 8px;
-  }
-  .basketsecond .all .left .basketlement .rightleft {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .basketsecond .all .left .basketlement .rightleft .top {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    padding-left: 10px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .top p {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.09em;
-  }
-  .basketsecond .all .left .basketlement .rightleft .top .price {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neueultra);
-    position: absolute;
-    top: 2px;
-    right: 0;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    padding-left: 10px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
-    padding-left: 10px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(1), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2) {
-    margin-bottom: 5px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 114%;
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .compwishlist {
-    display: none;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .mobilewishlist {
-    position: absolute;
-    bottom: 0%;
-    right: 12%;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .fororderwish {
-    order: 2;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .fororderquan {
-    order: 1;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .deletefrombasketinbaskethtmlpage {
-    position: absolute;
-    bottom: 1px;
-    right: 0;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
-    display: flex;
-    padding: 2px 5px;
-    border: 0.8px solid black;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity a {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
-    width: 20%;
-    text-align: center;
-    border: none;
-    outline: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 114%;
-    font-family: var(--neueregular);
-  }
-  .basketsecond .all .right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-  }
-  .basketsecond .all .right .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .basketsecond .all .right .top span {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-  }
-  .basketsecond .all .right .top span:nth-child(1), .basketsecond .all .right .top span:nth-child(2) {
-    padding-bottom: 10px;
-  }
-  .basketsecond .all .right .top span:nth-child(2), .basketsecond .all .right .top span:nth-child(4) {
-    font-family: var(--neuebold);
-    text-align: end;
-  }
-  .basketsecond .all .right .middle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: 1px solid black;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .basketsecond .all .right .middle span {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-  }
-  .basketsecond .all .right .middle span:nth-child(2) {
-    text-align: end;
-    font-family: var(--neuebold);
-  }
-  .basketsecond .all .right .bottom {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-  }
-  .basketsecond .all .right .bottom .checkouthref {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    width: 100%;
-    padding: 20px;
-    background-color: var(--yellow);
-    border: 1px solid black;
-    color: black;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  .basketsecond .all .right .bottom .paywith {
-    border-top: 1px solid black;
-    font-family: var(--neuemedium);
-    padding-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(1) {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    margin-bottom: 10px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(2), .basketsecond .all .right .bottom .paywith span:nth-child(3) {
-    margin-bottom: 10px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(2) {
-    margin-right: 10px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(4) {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 127%;
-    letter-spacing: 0.08em;
-    margin-top: 15px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(5) {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 127%;
-    letter-spacing: 0.08em;
-    margin-top: 20px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(5) a {
-    text-decoration: underline;
-    font-family: var(--neuebold);
-    font-size: 12px;
-  }
-  .basketsecond .all .right .bottom .paywith .policyhref {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    border: 1px solid black;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.08em;
-  }
-  .basketsecond .all .basketboshdu {
-    margin: 60px 0;
-  }
-  .basketsecond .all .basketboshdu .bskp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .basketsecond .all .basketboshdu .bskp p {
-    text-align: center;
-    font-family: var(--neuebold);
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    color: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection {
-    margin: 20px 0;
-    padding-left: 17px;
-  }
-  .basketthird .thirdall .youmaylikesection p {
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    color: var(--yellow);
-    margin-bottom: 15px;
-  }
-  .basketthird .thirdall .youmaylikesection p span {
-    font-style: oblique;
-    padding: 0;
-    margin: 0;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv {
-    padding: 5px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .arrows {
-    margin-top: 10px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .arrows .nextbasket {
-    margin-bottom: -1px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-    padding: 0 5px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top {
-    position: relative;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist {
-    position: absolute;
-    top: 4.8%;
-    right: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist svg {
-    transition: 0.2s;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:focus svg {
-    fill: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:focus svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    right: 2%;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .discount_percent span {
-    font-size: 11px;
-    padding: 3px 7px;
-    background-color: var(--yellow);
-    color: black;
-    font-family: var(--neueregular);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopleft {
-    padding-left: 8px;
-    font-size: 13px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket {
-    position: absolute;
-    top: 4%;
-    left: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket svg {
-    transition: 0.2s;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft {
-    padding-left: 10px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    color: black;
-    background-color: white;
-    border: 0.7px solid black;
-    border-radius: 2px;
-    letter-spacing: 0.08em;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft select option {
-    background-color: white;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright {
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright label,
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright .color_box {
-    height: 20px;
-    width: 20px;
-    max-width: 19px;
-    max-height: 19px;
-    cursor: pointer;
-    outline: 0.8px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright label .markicon,
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright .color_box .markicon {
-    font-size: 25px;
-    position: absolute;
-    bottom: -10%;
-    left: -10%;
-  }
-  .basketfourth .fourthall .recentlyviewed {
-    margin: 20px 0;
-    padding-left: 17px;
-  }
-  .basketfourth .fourthall .recentlyviewed p {
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    color: var(--yellow);
-    margin-bottom: 15px;
-  }
-  .basketfourth .fourthall .recentlyviewed p span {
-    font-style: oblique;
-    padding: 0;
-    margin: 0;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv {
-    padding: 5px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .nextbasketsecond {
-    margin-bottom: -1px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .arrows {
-    margin-top: 10px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-    padding: 0 5px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top {
-    position: relative;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist {
-    position: absolute;
-    top: 4.8%;
-    right: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
-    transition: 0.2s;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:focus svg {
-    fill: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:focus svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    right: 2%;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent span {
-    font-size: 11px;
-    padding: 3px 7px;
-    background-color: var(--yellow);
-    color: black;
-    font-family: var(--neueregular);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopleft {
-    padding-left: 8px;
-    font-size: 13px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket {
-    position: absolute;
-    top: 4%;
-    left: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket svg {
-    transition: 0.2s;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft {
-    padding-left: 10px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    color: black;
-    background-color: white;
-    border: 0.7px solid black;
-    border-radius: 2px;
-    letter-spacing: 0.08em;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft select option {
-    background-color: white;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright {
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright label,
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright .color_box {
-    height: 20px;
-    width: 20px;
-    max-width: 19px;
-    max-height: 19px;
-    cursor: pointer;
-    outline: 0.8px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright label .markicon,
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright .color_box .markicon {
-    font-size: 25px;
-    position: absolute;
-    bottom: -10%;
-    left: -10%;
-  }
-  .discover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-  }
-  .discover a {
-    padding: 15px 40px;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1350px) {
-  .basketfirst {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .basketfirst .all {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-  }
-  .basketfirst .all .keeper {
-    display: flex;
-    flex-direction: column;
-  }
-  .basketfirst .all .keeper .top {
-    font-family: var(--neueultra);
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.08em;
-    margin-bottom: 12px;
-  }
-  .basketfirst .all .keeper .bottom {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 114%;
-    text-align: center;
-    letter-spacing: 0.08em;
-    font-family: var(--neuemedium);
-  }
-  .basketsecond {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .basketsecond .firstp {
-    font-family: var(--neueultra);
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.08em;
-    color: var(--yellow);
-    margin-bottom: 30px;
-  }
-  .basketsecond ::-webkit-scrollbar-thumb {
-    background: rgb(220, 220, 220);
-  }
-  .basketsecond ::-webkit-scrollbar-thumb:hover {
-    background: rgb(220, 220, 220);
-  }
-  .basketsecond .all {
-    display: flex;
-    justify-content: space-between;
-  }
-  .basketsecond .all .left {
-    display: flex;
-    flex-direction: column;
-    height: 86vh;
-    overflow-y: scroll;
-  }
-  .basketsecond .all .left .basketlement {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  .basketsecond .all .left .basketlement:last-child {
-    margin-bottom: 15px;
-  }
-  .basketsecond .all .left .basketlement .rightleft {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .basketsecond .all .left .basketlement .rightleft .top {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-    padding-left: 15px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .top p {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
-    margin-bottom: 10px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .top span {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neueultra);
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 18px;
-    padding-left: 15px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(4) {
-    padding-left: 15px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(1), .basketsecond .all .left .basketlement .rightleft .middle div:nth-child(2) {
-    margin-bottom: 15px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(1) {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-  }
-  .basketsecond .all .left .basketlement .rightleft .middle div span:nth-child(2) {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 114%;
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .mobilewishlist {
-    display: none;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .deletefrombasketinbaskethtmlpage {
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .compwishlist {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    text-decoration-line: underline;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity {
-    display: flex;
-    padding: 5px 10px;
-    border: 0.8px solid black;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity a {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-  }
-  .basketsecond .all .left .basketlement .rightleft .bottom .productquantity input {
-    width: 20%;
-    text-align: center;
-    border: none;
-    outline: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    font-family: var(--neueregular);
-  }
-  .basketsecond .all .right {
-    display: flex;
-    flex-direction: column;
-    padding-left: 40px;
-  }
-  .basketsecond .all .right .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .basketsecond .all .right .top span {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-  }
-  .basketsecond .all .right .top span:nth-child(1), .basketsecond .all .right .top span:nth-child(2) {
-    padding-bottom: 20px;
-  }
-  .basketsecond .all .right .top span:nth-child(2), .basketsecond .all .right .top span:nth-child(4) {
-    font-family: var(--neuebold);
-  }
-  .basketsecond .all .right .middle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: 1px solid black;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .basketsecond .all .right .middle span {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neueregular);
-  }
-  .basketsecond .all .right .middle span:nth-child(2) {
-    font-family: var(--neuebold);
-  }
-  .basketsecond .all .right .bottom {
-    display: flex;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 100%;
-  }
-  .basketsecond .all .right .bottom .checkouthref {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    width: 100%;
-    padding: 20px;
-    background-color: var(--yellow);
-    border: 1px solid black;
-    color: black;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  .basketsecond .all .right .bottom .paywith {
-    border-top: 1px solid black;
-    font-family: var(--neuemedium);
-    padding-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(1) {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    margin-bottom: 10px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(2), .basketsecond .all .right .bottom .paywith span:nth-child(3) {
-    margin-bottom: 10px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(2) {
-    margin-right: 10px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(4) {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 127%;
-    letter-spacing: 0.08em;
-    margin-top: 15px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(5) {
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 127%;
-    letter-spacing: 0.08em;
-    margin-top: 20px;
-  }
-  .basketsecond .all .right .bottom .paywith span:nth-child(5) a {
-    text-decoration: underline;
-    font-family: var(--neuebold);
-    font-size: 12px;
-  }
-  .basketsecond .all .right .bottom .paywith .policyhref {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    border: 1px solid black;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.08em;
-  }
-  .basketsecond .all .basketboshdu {
-    margin: 60px 0;
-  }
-  .basketsecond .all .basketboshdu .bskp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .basketsecond .all .basketboshdu .bskp p {
-    text-align: center;
-    font-family: var(--neuebold);
-    font-size: 26px;
-    letter-spacing: 0.1em;
-    color: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection {
-    margin: 50px 0;
-  }
-  .basketthird .thirdall .youmaylikesection p {
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    color: var(--yellow);
-    margin-bottom: 30px;
-  }
-  .basketthird .thirdall .youmaylikesection p span {
-    font-style: oblique;
-    padding: 0;
-    margin: 0;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv {
-    padding: 5px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .nextbasket {
-    margin-bottom: -1px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .arrows {
-    margin-top: 15px;
-    cursor: pointer;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product {
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .top .wishlist {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .bottom .basket {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .bottom .bobotleft {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product:hover .bottom .bobotright {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top {
-    position: relative;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 5.8%;
-    right: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist svg {
-    transition: 0.2s;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .wishlist:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 3%;
-    right: 3%;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .top .discount_percent span {
-    font-family: var(--neuebold);
-    font-size: 13px;
-    padding: 5px 10px;
-    letter-spacing: 0.1em;
-    background-color: var(--yellow);
-    color: black;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopleft {
-    padding-left: 10px;
-    font-size: 15px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket svg {
-    transition: 0.2s;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft {
-    opacity: 0;
-    transition: 0.2s;
-    visibility: hidden;
-    padding-left: 10px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright {
-    opacity: 0;
-    transition: 0.2s;
-    visibility: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright label,
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright .color_box {
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border: 0.3px solid white;
-    outline: 0.3px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright label .markicon,
-  .basketthird .thirdall .youmaylikesection .youmaylikediv .youmaylikeitems .product .bottom .bobottom .bobotright .color_box .markicon {
-    font-size: 20px;
-    position: absolute;
-    bottom: -30%;
-    left: -25%;
-  }
-  .basketfourth .fourthall .recentlyviewed {
-    margin: 50px 0;
-  }
-  .basketfourth .fourthall .recentlyviewed p {
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-    font-family: var(--neuebold);
-    color: var(--yellow);
-    margin-bottom: 30px;
-  }
-  .basketfourth .fourthall .recentlyviewed p span {
-    font-style: oblique;
-    padding: 0;
-    margin: 0;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv {
-    padding: 5px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .nextbasket {
-    margin-bottom: -1px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .arrows {
-    margin-top: 15px;
-    cursor: pointer;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product {
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .top .wishlist {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .bottom .basket {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .bottom .bobotleft {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product:hover .bottom .bobotright {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top {
-    position: relative;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 5.8%;
-    right: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist svg {
-    transition: 0.2s;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:hover svg {
-    fill: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .wishlist:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 3%;
-    right: 3%;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .top .discount_percent span {
-    font-family: var(--neuebold);
-    font-size: 13px;
-    padding: 5px 10px;
-    letter-spacing: 0.1em;
-    background-color: var(--yellow);
-    color: black;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopleft {
-    padding-left: 10px;
-    font-size: 15px;
-    font-family: var(--neuelight);
-    letter-spacing: 0.08em;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopright {
-    font-family: var(--neuebold);
-    letter-spacing: 0.08em;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .botop .botopright .discprice {
-    text-align: end;
-    font-size: 19px;
-    text-decoration: none !important;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 8px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    transition: 0.2s;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket svg {
-    transition: 0.2s;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .basket:hover svg path {
-    fill: var(--yellow);
-    stroke: var(--yellow);
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft {
-    opacity: 0;
-    transition: 0.2s;
-    visibility: hidden;
-    padding-left: 10px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotleft select {
-    width: 100%;
-    outline: none;
-    font-family: var(--neueregular);
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright {
-    opacity: 0;
-    transition: 0.2s;
-    visibility: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright input {
-    display: none;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright label,
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright .color_box {
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border: 0.3px solid white;
-    outline: 0.3px solid black;
-    position: relative;
-    margin-left: 8px;
-  }
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright label .markicon,
-  .basketfourth .fourthall .recentlyviewed .recentlyvieweddiv .recentlyvieweditems .product .bottom .bobottom .bobotright .color_box .markicon {
-    font-size: 20px;
-    position: absolute;
-    bottom: -30%;
-    left: -25%;
-  }
-  .discover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-  }
-  .discover a {
-    padding: 15px 40px;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    font-family: var(--neueregular);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 114%;
-    letter-spacing: 0.08em;
-  }
-}
 * {
   margin: 0;
   padding: 0;

@@ -13,38 +13,41 @@
 
 .basketfirst {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 
     .all {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
         padding: 0;
         margin: 0;
 
         .keeper {
             display: flex;
             flex-direction: column;
+            padding: 0;
+            margin: 0;
 
             .top {
                 font-family: var(--neueultra);
-                font-weight: 800;
                 font-size: 20px;
-                line-height: 24px;
                 text-align: center;
                 letter-spacing: 0.08em;
                 margin-bottom: 18px;
             }
 
             .bottom {
-                font-weight: 500;
                 font-size: 15px;
-                line-height: 114%;
                 text-align: center;
                 letter-spacing: 0.08em;
                 font-family: var(--neuemedium);
             }
         }
+    }
+}
 
+@media (max-width: 768px) {
+    .basketfirst {
+        display: none;
     }
 }

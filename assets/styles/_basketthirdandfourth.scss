@@ -1,0 +1,240 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #7c7c75;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+
+.basketthird,
+.basketfourth {
+    margin-top: 20px;
+
+    .firstp {
+        font-size: 50px;
+        letter-spacing: 0.08em;
+        font-family: var(--neuebold);
+        color: var(--yellow);
+        margin-bottom: 20px;
+
+        span {
+            font-style: oblique;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .sliderkeeper {
+        margin: 0;
+        padding: 0;
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            margin: 0;
+            padding: 0;
+
+            .top {
+                margin: 0;
+                padding: 0;
+
+                .wishlist {
+                    position: absolute;
+                    top: 4%;
+                    right: 4%;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    background-color: transparent;
+
+                    svg {
+                        transition: 0.2s;
+
+                        path {
+                            transition: 0.2s;
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            fill: var(--yellow);
+
+                            path {
+                                fill: var(--yellow);
+                                stroke: var(--yellow);
+                            }
+                        }
+                    }
+                }
+
+                .discount_percent {
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    bottom: 20%;
+                    right: 3%;
+
+                    span {
+                        font-size: 13px;
+                        padding: 5px 10px;
+                        background-color: var(--yellow);
+                        color: black;
+                        font-family: var(--neuemedium);
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                letter-spacing: 0.08em;
+
+                .botop {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 8px;
+
+                    .botopleft {
+                        max-width: 80%;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 15px;
+                        font-family: var(--neuemedium);
+                    }
+
+                    .botopright {
+                        width: max-content;
+                        margin: 0;
+                        padding: 0;
+                        font-family: var(--neuebold);
+                        font-size: 19px;
+                    }
+                }
+
+                .bobottom {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-top: 8px;
+                    letter-spacing: 0.08em;
+                    transition: 0.2s;
+
+                    .basket {
+                        position: absolute;
+                        top: 4%;
+                        left: 4%;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+
+                        svg {
+                            transition: 0.2s;
+
+                            path {
+                                transition: 0.2s;
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                fill: var(--yellow);
+                                stroke: var(--yellow);
+
+                                path {
+                                    fill: var(--yellow);
+                                    stroke: var(--yellow);
+                                }
+                            }
+                        }
+                    }
+
+                    .bobotleft {
+                        padding: 0;
+                        margin: 0;
+
+                        select {
+                            width: 100%;
+                            outline: none;
+                            font-family: var(--neuemedium);
+                            border-radius: 0;
+                            letter-spacing: 0.08em;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .bobotright {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        input {
+                            display: none;
+                        }
+
+                        label,
+                        .color_box {
+                            height: 15px;
+                            width: 15px;
+                            cursor: pointer;
+                            border: 0.3px solid white;
+                            outline: 0.3px solid black;
+                            position: relative;
+                            margin-left: 8px;
+
+                            .markicon {
+                                font-size: 20px;
+                                position: absolute;
+                                bottom: -30%;
+                                left: -25%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            width: 50%;
+            right: 0;
+            bottom: -55px !important;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .arrows {
+            margin-top: 15px;
+            cursor: pointer;
+
+            .basketnextfirst,
+            .basketnextsecond {
+                margin-top: 2px;
+            }
+        }
+    }
+}

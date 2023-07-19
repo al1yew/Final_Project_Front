@@ -12,17 +12,15 @@
 }
 
 .basketsecond {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
 
     .firstp {
         font-family: var(--neueultra);
         font-size: 50px;
-        line-height: 60px;
         text-align: center;
         letter-spacing: 0.08em;
         color: var(--yellow);
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -48,11 +46,7 @@
                 justify-content: space-between;
                 align-items: center;
                 position: relative;
-                margin-bottom: 50px;
-
-                &:last-child {
-                    margin-bottom: 15px;
-                }
+                margin-bottom: 20px;
 
                 .rightleft {
                     display: flex;
@@ -62,22 +56,20 @@
                     .top {
                         display: flex;
                         flex-direction: column;
-                        margin-bottom: 25px;
+                        margin-bottom: 20px;
                         padding-left: 20px;
 
                         p {
                             font-family: var(--neueregular);
-                            font-weight: 400;
-                            font-size: 15px;
-                            line-height: 18px;
+                            font-size: 18px;
                             letter-spacing: 0.08em;
-                            margin-bottom: 10px;
                         }
 
-                        span {
-                            font-weight: 700;
-                            font-size: 15px;
-                            line-height: 114%;
+                        .total {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            font-size: 18px;
                             letter-spacing: 0.08em;
                             font-family: var(--neueultra);
                         }
@@ -87,18 +79,13 @@
                         display: flex;
                         align-items: center;
                         flex-wrap: wrap;
-                        margin-bottom: 25px;
+                        margin-bottom: 20px;
                         padding-left: 20px;
 
                         div {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-
-                            &:nth-child(2),
-                            &:nth-child(4) {
-                                padding-left: 20px;
-                            }
 
                             &:nth-child(1),
                             &:nth-child(2) {
@@ -107,17 +94,13 @@
 
                             span {
                                 &:nth-child(1) {
-                                    font-family: var(--neueregular);
-                                    font-weight: 400;
-                                    font-size: 13px;
-                                    line-height: 114%;
+                                    font-family: var(--neuemedium);
+                                    font-size: 15px;
                                     letter-spacing: 0.08em;
                                 }
 
                                 &:nth-child(2) {
-                                    font-weight: 700;
-                                    font-size: 13px;
-                                    line-height: 114%;
+                                    font-size: 16px;
                                     font-family: var(--neuebold);
                                     letter-spacing: 0.08em;
                                 }
@@ -136,51 +119,26 @@
 
                         .deletefrombasketinbaskethtmlpage {
                             position: absolute;
-                            top: 0;
+                            bottom: 1%;
                             right: 0;
                             cursor: pointer;
                         }
 
                         .compwishlist {
                             font-family: var(--neueregular);
-                            font-weight: 400;
                             font-size: 16px;
-                            line-height: 114%;
                             letter-spacing: 0.08em;
                             text-decoration-line: underline;
                         }
 
                         .productquantity {
                             display: flex;
-                            padding: 5px 10px;
+                            padding: 0;
+                            margin: 0;
                             border: 0.8px solid black;
                             justify-content: space-between;
                             align-items: center;
                             position: relative;
-
-                            // .confirmcount {
-                            //     font-family: var(--neuebold);
-                            //     font-weight: 400;
-                            //     display: none;
-                            //     font-size: 14px;
-                            //     letter-spacing: 0.1em;
-                            //     color: var(--yellow);
-                            //     text-align: center;
-                            //     text-decoration: none;
-                            //     padding: 3px;
-                            //     width: 100%;
-                            //     position: absolute;
-                            //     left: 50%;
-                            //     top: -100%;
-                            //     z-index: 423;
-                            //     transform: translateX(-50%);
-                            //     transition: 0.4s;
-
-                            //     &:hover {
-                            //         border-top: 0.5px dashed black;
-                            //         border-bottom: 0.5px dashed black;
-                            //     }
-                            // }
 
                             a {
                                 width: 30%;
@@ -190,15 +148,17 @@
                                 font-size: 20px;
                             }
 
+                            ion-icon {
+                                font-size: 25px;
+                            }
+
                             input {
                                 width: 20%;
                                 text-align: center;
                                 border: none;
                                 outline: none;
                                 font-style: normal;
-                                font-weight: 400;
                                 font-size: 16px;
-                                line-height: 114%;
                                 font-family: var(--neueregular);
                             }
                         }
@@ -219,13 +179,10 @@
                 flex-wrap: wrap;
                 border-bottom: 1px solid black;
                 border-top: 1px solid black;
-                padding-top: 25px;
-                padding-bottom: 25px;
+                padding: 20px 0;
 
                 span {
-                    font-weight: 400;
                     font-size: 18px;
-                    line-height: 114%;
                     letter-spacing: 0.08em;
                     font-family: var(--neueregular);
 
@@ -247,13 +204,10 @@
                 align-items: center;
                 flex-wrap: wrap;
                 border-bottom: 1px solid black;
-                padding-top: 25px;
-                padding-bottom: 25px;
+                padding: 20px 0;
 
                 span {
-                    font-weight: 400;
                     font-size: 18px;
-                    line-height: 114%;
                     letter-spacing: 0.08em;
                     font-family: var(--neueregular);
 
@@ -266,15 +220,12 @@
             .bottom {
                 display: flex;
                 flex-direction: column;
-                padding-top: 25px;
-                padding-bottom: 25px;
+                padding: 20px 0;
                 width: 100%;
 
                 .checkouthref {
                     font-family: var(--neueregular);
-                    font-weight: 400;
                     font-size: 16px;
-                    line-height: 114%;
                     letter-spacing: 0.08em;
                     width: 100%;
                     padding: 20px;
@@ -282,58 +233,32 @@
                     border: 1px solid black;
                     color: black;
                     text-align: center;
-                    margin-bottom: 25px;
+                    margin-bottom: 20px;
                 }
 
                 .paywith {
                     border-top: 1px solid black;
                     font-family: var(--neuemedium);
-                    padding-top: 25px;
+                    padding-top: 20px;
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
 
+                    p {
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                        letter-spacing: 0.08em;
+
+                        a {
+                            text-decoration: underline;
+                            font-family: var(--neuebold);
+                            font-size: 12px;
+                        }
+                    }
+
                     span {
-                        &:nth-child(1) {
-                            font-weight: 500;
-                            font-size: 13px;
-                            line-height: 114%;
-                            letter-spacing: 0.08em;
-                            margin-bottom: 10px;
-                        }
-
-                        &:nth-child(2),
-                        &:nth-child(3) {
-                            margin-bottom: 10px;
-                        }
-
-                        &:nth-child(2) {
-                            margin-right: 10px;
-                        }
-
-                        &:nth-child(4) {
-                            font-family: var(--neueregular);
-                            font-weight: 400;
-                            font-size: 11px;
-                            line-height: 127%;
-                            letter-spacing: 0.08em;
-                            margin-top: 15px;
-                        }
-
-                        &:nth-child(5) {
-                            font-family: var(--neueregular);
-                            font-weight: 400;
-                            font-size: 11px;
-                            line-height: 127%;
-                            letter-spacing: 0.08em;
-                            margin-top: 20px;
-
-                            a {
-                                text-decoration: underline;
-                                font-family: var(--neuebold);
-                                font-size: 12px;
-                            }
-                        }
+                        margin-left: 10px;
+                        margin-bottom: 10px;
                     }
 
                     .policyhref {
@@ -342,9 +267,7 @@
                         text-align: center;
                         width: 100%;
                         border: 1px solid black;
-                        font-weight: 300;
                         font-size: 10px;
-                        line-height: 12px;
                         letter-spacing: 0.08em;
                     }
                 }
