@@ -34,42 +34,65 @@
     .all {
         display: flex;
         justify-content: space-between;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        padding: 10px 0;
 
         .left {
             display: flex;
             flex-direction: column;
-            height: 86vh;
+            height: 460px;
             overflow-y: scroll;
+            margin: 0;
+            padding: 0;
 
             .basketlement {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                display: grid;
+                grid-template-columns: 200px auto;
+                margin: 0;
+                padding: 0;
                 position: relative;
-                margin-bottom: 20px;
+                padding: 10px 0;
+                border-bottom: 1px solid black;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    padding: 0;
+                    border: none;
+                }
 
                 .rightleft {
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-between;
                     position: relative;
+                    margin: 0;
+                    padding: 0;
 
                     .top {
                         display: flex;
+                        margin: 0;
+                        padding: 0;
                         flex-direction: column;
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                         padding-left: 20px;
 
                         p {
-                            font-family: var(--neueregular);
-                            font-size: 18px;
+                            font-family: var(--neuebold);
+                            font-size: 20px;
                             letter-spacing: 0.08em;
                         }
 
                         .total {
+                            margin: 0;
+                            padding: 0;
                             position: absolute;
                             top: 0;
-                            right: 0;
-                            font-size: 18px;
+                            right: 3%;
+                            font-size: 20px;
                             letter-spacing: 0.08em;
                             font-family: var(--neueultra);
                         }
@@ -78,14 +101,19 @@
                     .middle {
                         display: flex;
                         align-items: center;
+                        margin: 0;
+                        padding: 0;
                         flex-wrap: wrap;
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                         padding-left: 20px;
 
                         div {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
+                            margin: 0;
+                            padding: 0;
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: 100px auto;
+                            column-gap: 20px;
 
                             &:nth-child(1),
                             &:nth-child(2) {
@@ -95,12 +123,12 @@
                             span {
                                 &:nth-child(1) {
                                     font-family: var(--neuemedium);
-                                    font-size: 15px;
+                                    font-size: 17px;
                                     letter-spacing: 0.08em;
                                 }
 
                                 &:nth-child(2) {
-                                    font-size: 16px;
+                                    font-size: 18px;
                                     font-family: var(--neuebold);
                                     letter-spacing: 0.08em;
                                 }
@@ -110,25 +138,34 @@
 
                     .bottom {
                         display: flex;
+                        margin: 0;
+                        padding: 0;
                         align-items: center;
                         padding-left: 20px;
 
-                        .mobilewishlist {
-                            display: none;
-                        }
-
                         .deletefrombasketinbaskethtmlpage {
                             position: absolute;
-                            bottom: 1%;
-                            right: 0;
+                            bottom: 1px;
+                            right: 3%;
                             cursor: pointer;
+                            display: flex;
+                            align-items: flex-end;
+
+                            ion-icon {
+                                font-size: 35px;
+                            }
                         }
 
-                        .compwishlist {
-                            font-family: var(--neueregular);
-                            font-size: 16px;
-                            letter-spacing: 0.08em;
-                            text-decoration-line: underline;
+                        .addtowishlist {
+                            position: absolute;
+                            right: 11%;
+                            bottom: 0%;
+                            display: flex;
+                            align-items: flex-end;
+
+                            ion-icon {
+                                font-size: 35px;
+                            }
                         }
 
                         .productquantity {
@@ -145,11 +182,10 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                font-size: 20px;
                             }
 
                             ion-icon {
-                                font-size: 25px;
+                                font-size: 30px;
                             }
 
                             input {
@@ -158,8 +194,8 @@
                                 border: none;
                                 outline: none;
                                 font-style: normal;
-                                font-size: 16px;
-                                font-family: var(--neueregular);
+                                font-size: 18px;
+                                font-family: var(--neuemedium);
                             }
                         }
                     }
@@ -170,48 +206,55 @@
         .right {
             display: flex;
             flex-direction: column;
+            margin: 0;
+            padding: 0;
             padding-left: 40px;
 
             .top {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin: 0;
+                padding: 0;
                 flex-wrap: wrap;
                 border-bottom: 1px solid black;
-                border-top: 1px solid black;
-                padding: 20px 0;
+                padding-bottom: 15px;
 
                 span {
                     font-size: 18px;
                     letter-spacing: 0.08em;
-                    font-family: var(--neueregular);
+                    font-family: var(--neuemedium);
 
                     &:nth-child(1),
                     &:nth-child(2) {
-                        padding-bottom: 20px;
+                        padding-bottom: 15px;
                     }
 
                     &:nth-child(2),
                     &:nth-child(4) {
                         font-family: var(--neuebold);
+                        text-align: end;
                     }
                 }
             }
 
             .middle {
+                margin: 0;
+                padding: 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
                 border-bottom: 1px solid black;
-                padding: 20px 0;
+                padding: 15px 0;
 
                 span {
                     font-size: 18px;
                     letter-spacing: 0.08em;
-                    font-family: var(--neueregular);
+                    font-family: var(--neuemedium);
 
                     &:nth-child(2) {
+                        text-align: end;
                         font-family: var(--neuebold);
                     }
                 }
@@ -219,12 +262,14 @@
 
             .bottom {
                 display: flex;
+                margin: 0;
+                padding: 0;
                 flex-direction: column;
-                padding: 20px 0;
+                padding: 15px 0;
                 width: 100%;
 
                 .checkouthref {
-                    font-family: var(--neueregular);
+                    font-family: var(--neuemedium);
                     font-size: 16px;
                     letter-spacing: 0.08em;
                     width: 100%;
@@ -233,18 +278,22 @@
                     border: 1px solid black;
                     color: black;
                     text-align: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
                 }
 
                 .paywith {
                     border-top: 1px solid black;
+                    margin: 0;
+                    padding: 0;
                     font-family: var(--neuemedium);
-                    padding-top: 20px;
+                    padding-top: 15px;
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
 
                     p {
+                        margin: 0;
+                        padding: 0;
                         margin-bottom: 10px;
                         font-size: 12px;
                         letter-spacing: 0.08em;
@@ -262,12 +311,12 @@
                     }
 
                     .policyhref {
-                        margin-top: 20px;
+                        margin-top: 0px;
                         padding: 10px;
                         text-align: center;
                         width: 100%;
                         border: 1px solid black;
-                        font-size: 10px;
+                        font-size: 14px;
                         letter-spacing: 0.08em;
                     }
                 }
@@ -289,6 +338,657 @@
                     font-size: 28px;
                     letter-spacing: 0.1em;
                     color: var(--yellow);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .basketsecond {
+        margin-top: 0;
+
+        .firstp {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .all {
+            border-top: unset;
+            border-bottom: unset;
+            padding: 0;
+
+            .left {
+                height: unset;
+                overflow-y: unset;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+                padding: 10px 0;
+
+                .basketlement {
+                    display: grid;
+                    grid-template-columns: 152px auto;
+                    padding: 10px 0;
+
+                    .rightleft {
+
+                        .top {
+                            margin-bottom: 5px;
+                            padding-left: 10px;
+
+                            p {
+                                font-size: 13px;
+                                font-family: var(--neuemedium);
+                                width: 70%;
+                            }
+
+                            .total {
+                                right: 0%;
+                                font-size: 16px;
+                                font-family: var(--neueultra);
+                            }
+                        }
+
+                        .middle {
+                            margin-bottom: 5px;
+                            padding-left: 10px;
+
+                            div {
+                                grid-template-columns: 60px auto;
+                                column-gap: 10px;
+
+                                &:nth-child(1),
+                                &:nth-child(2) {
+                                    margin-bottom: 5px;
+                                }
+
+                                span {
+                                    &:nth-child(1) {
+                                        font-size: 13px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            padding-left: 10px;
+
+                            .deletefrombasketinbaskethtmlpage {
+                                bottom: 1px;
+                                right: 0%;
+
+                                ion-icon {
+                                    font-size: 30px;
+                                }
+                            }
+
+                            .addtowishlist {
+                                right: 20%;
+
+                                ion-icon {
+                                    font-size: 30px;
+                                }
+                            }
+
+                            .productquantity {
+                                height: 30px;
+
+                                ion-icon {
+                                    font-size: 35px;
+                                }
+
+                                input {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin: 0;
+                padding: 0;
+
+                .top {
+                    padding: 10px 0;
+
+                    span {
+                        font-size: 16px;
+                        font-family: var(--neuemedium);
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+
+                .middle {
+                    padding: 10px 0;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                .bottom {
+                    padding: 10px 0;
+
+                    .checkouthref {
+                        font-size: 20px;
+                        padding: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    .paywith {
+                        padding-top: 10px;
+
+                        p {
+                            font-size: 14px;
+
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+
+                        span {
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .policyhref {
+                            margin-top: 10px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .basketboshdu {
+                margin: 40px 0;
+
+                .bskp {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+    .basketsecond {
+        margin-top: 0;
+
+        .firstp {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .all {
+            border-top: unset;
+            border-bottom: unset;
+            padding: 0;
+
+            .left {
+                height: unset;
+                overflow-y: unset;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+                padding: 13px 0;
+
+                .basketlement {
+                    display: grid;
+                    grid-template-columns: 180px auto;
+                    padding: 13px 0;
+
+                    .rightleft {
+
+                        .top {
+                            margin-bottom: 7px;
+                            padding-left: 13px;
+
+                            p {
+                                font-size: 18px;
+                                font-family: var(--neuemedium);
+                                width: 70%;
+                            }
+
+                            .total {
+                                right: 0%;
+                                font-size: 20px;
+                                font-family: var(--neueultra);
+                            }
+                        }
+
+                        .middle {
+                            margin-bottom: 7px;
+                            padding-left: 13px;
+
+                            div {
+                                grid-template-columns: 70px auto;
+                                column-gap: 10px;
+
+                                &:nth-child(1),
+                                &:nth-child(2) {
+                                    margin-bottom: 7px;
+                                }
+
+                                span {
+                                    &:nth-child(1) {
+                                        font-size: 16px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            padding-left: 13px;
+
+                            .deletefrombasketinbaskethtmlpage {
+                                bottom: 1px;
+                                right: 0%;
+
+                                ion-icon {
+                                    font-size: 35px;
+                                }
+                            }
+
+                            .addtowishlist {
+                                right: 13%;
+
+                                ion-icon {
+                                    font-size: 35px;
+                                }
+                            }
+
+                            .productquantity {
+                                height: 35px;
+
+                                ion-icon {
+                                    font-size: 35px;
+                                }
+
+                                input {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin: 0;
+                padding: 0;
+
+                .top {
+                    padding: 13px 0;
+
+                    span {
+                        font-size: 18px;
+                        font-family: var(--neuemedium);
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            padding-bottom: 13px;
+                        }
+                    }
+                }
+
+                .middle {
+                    padding: 13px 0;
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+
+                .bottom {
+                    padding: 13px 0;
+
+                    .checkouthref {
+                        font-size: 20px;
+                        padding: 20px;
+                        margin-bottom: 13px;
+                    }
+
+                    .paywith {
+                        padding-top: 13px;
+
+                        p {
+                            font-size: 15px;
+
+                            a {
+                                font-size: 15px;
+                            }
+                        }
+
+                        span {
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .policyhref {
+                            margin-top: 13px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .basketboshdu {
+                margin: 40px 0;
+
+                .bskp {
+                    p {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+    .basketsecond {
+        margin-top: 0;
+
+        .firstp {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .all {
+            border-top: unset;
+            border-bottom: unset;
+            padding: 0;
+
+            .left {
+                height: unset;
+                overflow-y: unset;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+                padding: 15px 0;
+
+                .basketlement {
+                    display: grid;
+                    grid-template-columns: 220px auto;
+                    padding: 15px 0;
+
+                    .rightleft {
+
+                        .top {
+                            margin-bottom: 10px;
+                            padding-left: 15px;
+
+                            p {
+                                font-size: 22px;
+                                font-family: var(--neuemedium);
+                                width: 80%;
+                            }
+
+                            .total {
+                                right: 0%;
+                                font-size: 25px;
+                                font-family: var(--neueultra);
+                            }
+                        }
+
+                        .middle {
+                            margin-bottom: 10px;
+                            padding-left: 15px;
+
+                            div {
+                                grid-template-columns: 90px auto;
+                                column-gap: 15px;
+
+                                &:nth-child(1),
+                                &:nth-child(2) {
+                                    margin-bottom: 10px;
+                                }
+
+                                span {
+                                    &:nth-child(1) {
+                                        font-size: 18px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            padding-left: 15px;
+
+                            .deletefrombasketinbaskethtmlpage {
+                                bottom: 1px;
+                                right: 0%;
+
+                                ion-icon {
+                                    font-size: 40px;
+                                }
+                            }
+
+                            .addtowishlist {
+                                right: 12%;
+
+                                ion-icon {
+                                    font-size: 40px;
+                                }
+                            }
+
+                            .productquantity {
+
+                                ion-icon {
+                                    font-size: 40px;
+                                }
+
+                                input {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin: 0;
+                padding: 0;
+
+                .top {
+                    padding: 15px 0;
+
+                    span {
+                        font-size: 25px;
+                        font-family: var(--neuemedium);
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            padding-bottom: 15px;
+                        }
+                    }
+                }
+
+                .middle {
+                    padding: 15px 0;
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+
+                .bottom {
+                    padding: 15px 0;
+
+                    .checkouthref {
+                        font-size: 30px;
+                        padding: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .paywith {
+                        padding-top: 15px;
+
+                        p {
+                            font-size: 18px;
+
+                            a {
+                                font-size: 18px;
+                            }
+                        }
+
+                        span {
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .policyhref {
+                            font-size: 18px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+
+            .basketboshdu {
+                margin: 50px 0;
+
+                .bskp {
+                    p {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .basketsecond {
+
+        .firstp {
+            font-size: 45px;
+        }
+
+        .all {
+            .left {
+                height: 450px;
+
+                .basketlement {
+                    grid-template-columns: 165px auto;
+
+                    .rightleft {
+
+                        .top {
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+
+                        .middle {
+
+                            div {
+                                grid-template-columns: 90px auto;
+                                column-gap: 18px;
+
+                                &:nth-child(1),
+                                &:nth-child(2) {
+                                    margin-bottom: 10px;
+                                }
+
+                                span {
+                                    &:nth-child(1) {
+                                        font-size: 16px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bottom {
+
+                            .deletefrombasketinbaskethtmlpage {
+                                bottom: 1px;
+                                right: 3%;
+
+                                ion-icon {
+                                    font-size: 30px;
+                                }
+                            }
+
+                            .addtowishlist {
+                                right: 12%;
+
+                                ion-icon {
+                                    font-size: 30px;
+                                }
+                            }
+
+                            .productquantity {
+                                input {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                padding-left: 30px;
+
+                .top {
+                    padding-bottom: 12px;
+
+                    span {
+                        font-size: 17px;
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            padding-bottom: 12px;
+                        }
+                    }
+                }
+
+                .middle {
+                    padding: 12px 0;
+
+                    span {
+                        font-size: 17px;
+                    }
+                }
+
+                .bottom {
+                    padding: 12px 0;
+
+                    .checkouthref {
+                        margin-bottom: 12px;
+                    }
+
+                    .paywith {
+                        padding-top: 12px;
+
+                        .policyhref {
+                            margin-top: 0px;
+                        }
+                    }
                 }
             }
         }
