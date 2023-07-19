@@ -76,10 +76,20 @@
             .imagekeeper {
                 position: relative;
 
+                .price {
+                    font-size: 14px;
+                    position: absolute;
+                    top: 3%;
+                    left: 3%;
+                    color: black;
+                    padding: 4px;
+                    background-color: var(--yellow);
+                }
+
                 .wishlist {
                     position: absolute;
-                    top: 5%;
-                    right: 5%;
+                    top: 4%;
+                    right: 4%;
                     transition: 0.2s;
                     cursor: pointer;
 
@@ -99,10 +109,6 @@
             .name {
                 font-family: var(--neueregular);
                 margin-top: 5px;
-                font-size: 15px;
-            }
-
-            .price {
                 font-size: 15px;
             }
         }
@@ -159,7 +165,7 @@
                 }
 
                 .price {
-                    font-size: 13px;
+                    font-size: 12px;
                 }
             }
         }
@@ -275,7 +281,7 @@
                 }
 
                 .price {
-                    font-size: 16px;
+                    font-size: 15px;
                 }
             }
         }

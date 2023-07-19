@@ -3,9 +3,7 @@ $(function () {
 
     //obshak and main page
 
-    //#region slayderi
-
-    //---------------------------------main page first slider
+    //#region main page slayderi
 
     $(".sliderfirst").slick({
         dots: true,
@@ -19,7 +17,7 @@ $(function () {
         autoplay: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     adaptiveHeight: true,
@@ -37,8 +35,6 @@ $(function () {
             },
         ],
     });
-
-    //---------------------------------main page second slider
 
     $(".slidersecond").slick({
         dots: true,
@@ -52,7 +48,7 @@ $(function () {
         autoplay: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     adaptiveHeight: true,
@@ -71,7 +67,7 @@ $(function () {
         ],
     });
 
-    //#endregion slayderi
+    //#endregion main page slayderi
 
     //---------------------------------------------------------------------------------------------------------------
 
@@ -554,7 +550,7 @@ $(function () {
         autoplay: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     adaptiveHeight: true,
@@ -585,7 +581,7 @@ $(function () {
         autoplay: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     adaptiveHeight: true,
@@ -605,9 +601,4 @@ $(function () {
     });
 
     //#endregion basket sliders
-
-
-
-
-
 });
