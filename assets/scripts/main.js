@@ -415,8 +415,6 @@ $(function () {
 
     //#endregion form shop page buy product
 
-    //---------------------------------------------------------------------------------------------------------------
-
     //account info page
 
     //#region account info page input checked label

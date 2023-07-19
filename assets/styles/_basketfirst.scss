@@ -1,0 +1,50 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #EDF109;
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neuelight: NeuePowerLight;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.basketfirst {
+    width: 100%;
+    margin-top: 30px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        .keeper {
+            display: flex;
+            flex-direction: column;
+
+            .top {
+                font-family: var(--neueultra);
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                margin-bottom: 18px;
+            }
+
+            .bottom {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 114%;
+                text-align: center;
+                letter-spacing: 0.08em;
+                font-family: var(--neuemedium);
+            }
+        }
+
+    }
+}
