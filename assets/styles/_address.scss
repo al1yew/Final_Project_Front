@@ -110,15 +110,12 @@
                     position: absolute;
                     bottom: 10px;
                     right: 20px;
+                    text-decoration: underline;
+                    font-size: 14px;
+                    transition: 0.2s;
 
-                    a {
-                        text-decoration: underline;
-                        font-size: 13px;
-                        transition: 0.2s;
-
-                        &:hover {
-                            color: var(--yellow);
-                        }
+                    &:hover {
+                        color: var(--yellow);
                     }
                 }
 
@@ -237,6 +234,8 @@
 
                 .addressform {
                     .addaddress {
+                        padding: 10px;
+                        
                         .addressozu {
                             button {
                                 font-size: 11px;

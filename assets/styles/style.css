@@ -15727,37 +15727,6 @@ a:hover {
     text-align: center;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-@font-face {
-  font-family: NeuePowerLight;
-  src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
-}
-@font-face {
-  font-family: NeuePowerMedium;
-  src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
-}
-@font-face {
-  font-family: NeuePowerRegular;
-  src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
-}
-@font-face {
-  font-family: NeuePowerUltra;
-  src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
-}
-@font-face {
-  font-family: NeuePowerBold;
-  src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
-}
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -15771,192 +15740,227 @@ p {
   --select-arrow: var(--select-border);
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-}
-
-.where {
-  opacity: 0;
-  margin-top: 30px;
-}
-
 .mycards {
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 .mycards .all {
   display: flex;
   justify-content: space-between;
+  letter-spacing: 0.08em;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .mycards .all .firstp {
   font-family: var(--neueultra);
+  margin: 0;
+  padding: 0;
   font-size: 50px;
-  line-height: 60px;
   text-align: center;
-  letter-spacing: 0.08em;
   color: var(--yellow);
   margin-bottom: 30px;
+  width: 100%;
 }
-.mycards .all .carddiv {
-  display: flex;
-  flex-wrap: wrap;
+.mycards .all .cards {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
-.mycards .all .carddiv .cardinozu {
-  padding: 0 10px;
-  margin-top: 20px;
-}
-.mycards .all .carddiv .cardinozu .cardozu {
+.mycards .all .cards .karta {
   border: 0.8px solid black;
-  border-radius: 10px;
   background-color: white;
-  height: 200px;
+  height: 220px;
+  margin: 0;
+  padding: 0;
   color: black;
+  border-radius: 10px;
   position: relative;
 }
-.mycards .all .carddiv .cardinozu .cardozu span {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 114%;
+.mycards .all .cards .karta span {
+  font-size: 14px;
   font-family: var(--neuebold);
-  letter-spacing: 0.08em;
   color: black;
   background-color: white;
-  margin-bottom: 10px;
   position: absolute;
 }
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(1) {
+.mycards .all .cards .karta span:nth-child(1) {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(2) {
+.mycards .all .cards .karta span:nth-child(2) {
   position: absolute;
   top: 4%;
   left: 10px;
 }
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(3) {
+.mycards .all .cards .karta span:nth-child(3) {
   position: absolute;
-  top: 14%;
+  top: 20%;
   left: 10px;
 }
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(4) {
+.mycards .all .cards .karta span:nth-child(4) {
   position: absolute;
-  bottom: 0%;
+  bottom: 4%;
   left: 10px;
 }
-.mycards .all .carddiv .cardinozu .cardozu span:nth-child(5) {
+.mycards .all .cards .karta span:nth-child(5) {
   position: absolute;
   top: 27%;
   right: 10px;
 }
-.mycards .all .carddiv .cardinozu .cardozu .headword {
+.mycards .all .cards .karta .makemain {
   position: absolute;
-  bottom: 14%;
-  left: 10px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 114%;
-  font-family: var(--neuebold);
-  letter-spacing: 0.08em;
-  width: 40%;
-}
-.mycards .all .carddiv .cardinozu .cardozu .makemain {
-  position: absolute;
-  bottom: 0%;
+  bottom: 4%;
   right: 10px;
-}
-.mycards .all .carddiv .cardinozu .cardozu .makemain a {
   text-decoration: underline;
-  font-size: 13px;
+  font-size: 14px;
   transition: 0.2s;
 }
-.mycards .all .carddiv .cardinozu .cardozu .makemain a:hover {
+.mycards .all .cards .karta .makemain:hover {
   color: var(--yellow);
 }
-.mycards .all .carddiv .cardinozu .cardozu .ismain {
+.mycards .all .cards .karta .ismain {
   position: absolute;
+  bottom: 10px;
   right: 10px;
-  bottom: 0%;
-  text-decoration: underline;
-  font-size: 13px;
   color: var(--yellow);
 }
-.mycards .all .carddiv .cardform {
-  padding: 0 10px;
-  margin-top: 20px;
+.mycards .all .cards .cardform {
+  border: 0.8px solid black;
+  background-color: white;
+  height: 220px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  border-radius: 10px;
   position: relative;
 }
-.mycards .all .carddiv .cardform .clicktoaddnewcard {
+.mycards .all .cards .cardform .clicktoaddnewcard {
   font-size: 30px;
   font-family: var(--neueultra);
   opacity: 0.6;
   color: black;
   cursor: pointer;
   position: absolute;
+  width: -moz-max-content;
+  width: max-content;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.2s;
   z-index: 14;
 }
-.mycards .all .carddiv .cardform .clicktoaddnewcard:hover {
+.mycards .all .cards .cardform .clicktoaddnewcard:hover {
   opacity: 1;
 }
-.mycards .all .carddiv .cardform .again_allcontent {
-  border: 0.8px solid black;
-  border-radius: 10px;
-  height: 200px;
-  color: black;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mycards .all .carddiv .cardform .again_allcontent .allcontent {
+.mycards .all .cards .cardform .addcard {
+  margin: 0;
   display: none;
+  padding: 10px;
 }
-.mycards .all .carddiv .cardform .again_allcontent .allcontent .cardozu {
+.mycards .all .cards .cardform .addcard .cardozu {
   background-color: white;
   color: black;
   position: relative;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
-.mycards .all .carddiv .cardform .again_allcontent .allcontent .cardozu button {
+.mycards .all .cards .cardform .addcard .cardozu button {
   margin-top: 10px;
   background-color: black;
   text-align: center;
   padding: 5px 0;
   color: white;
   font-family: var(--neueregular);
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 114%;
-  letter-spacing: 0.08em;
+  font-size: 12px;
 }
-.mycards .all .carddiv .cardform .again_allcontent .allcontent .cardozu input {
-  border: 1px solid black;
+.mycards .all .cards .cardform .addcard .cardozu input {
+  border: 0.8px solid black;
   outline: none;
   border-radius: 3px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding: 5px 8px;
-  font-family: var(--neuelight);
-  font-weight: 300;
-  font-size: 13px;
+  padding: 5px;
+  font-family: var(--neuemedium);
   letter-spacing: 0.08em;
+  font-size: 14px;
 }
 
+@media (max-width: 576px) {
+  .mycards .all .firstp {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .mycards .all .cards {
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+  }
+  .mycards .all .cards .karta {
+    height: 240px;
+  }
+  .mycards .all .cards .karta span {
+    font-size: 13px;
+  }
+  .mycards .all .cards .cardform {
+    height: 240px;
+  }
+  .mycards .all .cards .cardform .clicktoaddnewcard {
+    font-size: 20px;
+  }
+  .mycards .all .cards .cardform .addcard .cardozu button {
+    font-size: 11px;
+  }
+  .mycards .all .cards .cardform .addcard .cardozu input {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mycards .all .firstp {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .mycards .all .cards {
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+  }
+  .mycards .all .cards .karta {
+    height: 300px;
+  }
+  .mycards .all .cards .karta span {
+    font-size: 13px;
+  }
+  .mycards .all .cards .cardform {
+    height: 300px;
+  }
+  .mycards .all .cards .cardform .clicktoaddnewcard {
+    font-size: 20px;
+  }
+  .mycards .all .cards .cardform .addcard .cardozu button {
+    font-size: 11px;
+  }
+  .mycards .all .cards .cardform .addcard .cardozu input {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .mycards .all .firstp {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .mycards .all .cards {
+    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 :root {
   --white: #FFFFFF;
   --yellow: #EDF109;
@@ -16060,13 +16064,11 @@ a:hover {
   position: absolute;
   bottom: 10px;
   right: 20px;
-}
-.myaddresses .all .addresses .address .makemain a {
   text-decoration: underline;
-  font-size: 13px;
+  font-size: 14px;
   transition: 0.2s;
 }
-.myaddresses .all .addresses .address .makemain a:hover {
+.myaddresses .all .addresses .address .makemain:hover {
   color: var(--yellow);
 }
 .myaddresses .all .addresses .address .ismain {
@@ -16160,6 +16162,9 @@ a:hover {
   }
   .myaddresses .all .addresses .address .bottom div {
     font-size: 13px;
+  }
+  .myaddresses .all .addresses .addressform .addaddress {
+    padding: 10px;
   }
   .myaddresses .all .addresses .addressform .addaddress .addressozu button {
     font-size: 11px;
