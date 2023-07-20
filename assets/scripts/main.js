@@ -366,25 +366,23 @@ $(function () {
 
     //---------------------------------------------------------------------------------------------------------------
 
-    //#region form shop page buy product
+    //#region form shop page buy product, input radio
 
     //shop page make input selected
     $(document).on(
         "mousedown",
         ".addingtobasketinshoppage .colorlabel",
-        function (e) {
-            if ($(this).html() == "") {
+        function () {
+
+            if ($(this).find('.markicon').length === 0) {
                 $(this).append(
                     '<ion-icon name="checkmark-outline" class="markicon"></ion-icon>'
                 );
             } else {
-                $(this).text("");
+                $(this).find(".markicon").remove();
             }
 
-            $(this).siblings("input").prop("checked", "false");
-            $(this).siblings(".colorlabel").text("");
-
-            $(this).prev().prop("checked", "true");
+            $(this).siblings("label").find(".markicon").remove();
         }
     );
 
@@ -409,7 +407,7 @@ $(function () {
         $(this).find("select").val("0");
     });
 
-    //#endregion form shop page buy product
+    //#endregion form shop page buy product, input radio
 
     //account info page
 

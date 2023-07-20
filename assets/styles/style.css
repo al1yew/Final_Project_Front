@@ -4508,8 +4508,6 @@ body {
   .shopcategories .head_categories li .categorymenu {
     height: 370px;
     padding: 15px;
-    visibility: visible;
-    opacity: 1;
   }
   .shopcategories .head_categories li .categorymenu .left .categories {
     gap: 20px;
