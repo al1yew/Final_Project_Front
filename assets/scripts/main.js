@@ -192,20 +192,19 @@ $(function () {
 
     //shop page
 
-    //---------------------------------------------------------------------------------------------------------------
-
     //#region shop page open close categories megamenu
 
     //open categories megamenu
     $(document).on("click", ".headcategoryli", function (e) {
-        e.stopPropagation(); // icindeki a hrefe gore
+        e.stopPropagation();
 
         if ($(window).width() < 768) {
             e.preventDefault();
 
-            $(this).siblings("li").find(".categorymenu").hide();
+            $(this).siblings("li").find(".categorymenu").fadeOut(100);
 
             $(this).siblings("li").removeClass("activeli");
+
             $(this).addClass("activeli");
 
             $(this).find(".categorymenu").fadeToggle(100);
@@ -395,12 +394,11 @@ $(function () {
 
         let select = $(this).find("option:selected");
 
-        let colorname = "";
-
         console.log(select.val());
         console.log(input.val());
 
         if (input.val() != undefined && select.val() != 0) {
+            alert(`${select.val()} razmer, ${input.val()} reng`);
         }
 
         $(this).find("input:checked").prop("checked", false);
