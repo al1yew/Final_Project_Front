@@ -336,6 +336,7 @@ $(function () {
         e.stopPropagation();
         $(this).find(".filterul").toggle();
         $(this).siblings("div").find(".filterul").hide();
+        $(this).siblings("div").find(".svgkeeper").removeClass("roundarrow");
         $(this).find(".svgkeeper").toggleClass("roundarrow");
     });
 
@@ -354,10 +355,11 @@ $(function () {
 
         if (isParentClass) {
             $(this).find(".filterul").fadeToggle(200);
-            console.log("salam");
+            $(this).find(".svgkeeper").toggleClass("roundarrow");
         }
 
         if (!isParentClass) {
+            $(this).find(".svgkeeper").removeClass("roundarrow");
             $(this).find(".filterul").fadeOut(200);
         }
     });
@@ -373,8 +375,7 @@ $(function () {
         "mousedown",
         ".addingtobasketinshoppage .colorlabel",
         function () {
-
-            if ($(this).find('.markicon').length === 0) {
+            if ($(this).find(".markicon").length === 0) {
                 $(this).append(
                     '<ion-icon name="checkmark-outline" class="markicon"></ion-icon>'
                 );
